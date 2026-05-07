@@ -1,0 +1,182 @@
+WEBVTT	#Elemental Media Engine(TM) 2.18.0.0
+X-TIMESTAMP-MAP=LOCAL:00:00:00.000,MPEGTS:187200
+
+00:00:08.636 --> 00:00:11.716
+Hello, everyone. Welcome to the afternoon session.
+
+00:00:13.116 --> 00:00:17.756
+Hey, so you see the title is Practitioners Guide and I'm in it.
+
+00:00:18.196 --> 00:00:25.396
+Whether you are building Agentic AI today or start
+to think about when to start, this is the session for you.
+
+00:00:26.276 --> 00:00:28.116
+There’s no theories for theories sake.
+
+00:00:28.316 --> 00:00:34.476
+We'll keep it practical, right?
+Real examples, real architecture and real decision.
+
+00:00:34.476 --> 00:00:35.196
+Your face.
+
+00:00:36.316 --> 00:00:38.836
+So here's the plan for the next 30 minutes.
+
+00:00:39.236 --> 00:00:41.796
+We'll start with Agentic AI fundamental.
+
+00:00:42.476 --> 00:00:47.596
+Before we compare the traditional app to Agentic AI apps
+
+00:00:48.196 --> 00:00:53.796
+and start to discuss a unified
+architecture of Agentic AI and data store.
+
+00:00:54.836 --> 00:01:00.796
+Then we'll introduce our friends from PropertyGuru
+to share how they are implementing it in practice.
+
+00:01:02.076 --> 00:01:07.676
+Let's go. So an agent does three things right.
+
+00:01:07.716 --> 00:01:09.596
+The first one is reasoning.
+
+00:01:11.596 --> 00:01:15.596
+A large language model doesn't just do text generations.
+
+00:01:16.556 --> 00:01:22.596
+They can understand a request,
+break it down into steps and create a plan.
+
+00:01:23.396 --> 00:01:24.756
+And this is reasoning.
+
+00:01:26.556 --> 00:01:28.636
+Well the second thing is act.
+
+00:01:29.796 --> 00:01:35.316
+Reasoning alone is not enough.
+The agent has to do something in the real world.
+
+00:01:35.916 --> 00:01:44.596
+They use tools. It can be something like an API call
+an NCP server or they want to communicate with the human.
+
+00:01:45.116 --> 00:01:48.436
+So think of the tools as the agent's hands.
+
+00:01:50.076 --> 00:01:59.556
+And also you have. Remember, without memory,
+agent will have to start each turn of this conversation from scratch.
+
+00:02:00.556 --> 00:02:07.276
+While the agent has to hold on to its instructions,
+its context and conversation histories.
+
+00:02:07.796 --> 00:02:10.396
+So memory is what ties it all together.
+
+00:02:11.876 --> 00:02:14.316
+And here's where it becomes quite interesting.
+
+00:02:14.876 --> 00:02:24.716
+So if you put all those three steps into a loop,
+so we have reasoning act and remember and repeat,
+
+00:02:25.396 --> 00:02:30.796
+right. You get something powerful.
+The agent doesn't just do one thing and stop.
+
+00:02:31.516 --> 00:02:39.996
+It can start to plan and do one step,
+check the result and decide what to do next.
+
+00:02:41.796 --> 00:02:44.836
+As a result, the agent can course correct itself.
+
+00:02:45.276 --> 00:02:46.876
+It can handle surprises.
+
+00:02:48.036 --> 00:02:52.116
+And this loop is what we call a reactive pattern.
+
+00:02:52.836 --> 00:02:57.196
+And this is the foundation of every Agentic AI system,
+
+00:02:58.356 --> 00:03:01.996
+right? Let me show you how it works with an example.
+
+00:03:02.276 --> 00:03:07.916
+So let's meet Terry. Terry is a customer of any company insurance.
+
+00:03:08.356 --> 00:03:13.756
+He wants to buy car insurance.
+So he goes to the chat and type something.
+
+00:03:13.796 --> 00:03:17.316
+Right. And beside the scene the agent is going to.
+
+00:03:17.356 --> 00:03:23.796
+Run through multiple loops of that react
+pattern we just talked about and return a reply.
+
+00:03:24.716 --> 00:03:29.196
+Let's see how it works. So the agent receives the message from Terry.
+
+00:03:30.876 --> 00:03:34.196
+Now it starts its first iteration of that react loop.
+
+00:03:34.916 --> 00:03:40.036
+It pulls the system prompt.
+It's something like you are a insurance agent.
+
+00:03:41.036 --> 00:03:44.076
+And now it also pulls Terry’s preferences.
+
+00:03:44.276 --> 00:03:48.356
+The conversation histories. And this is the memory step.
+
+00:03:49.156 --> 00:03:56.076
+Right now the agent format a prompt based
+on all those memory states into a prompt
+
+00:03:56.476 --> 00:03:59.196
+and send it to the large language model to reason.
+
+00:03:59.796 --> 00:04:02.476
+And this is the reasoning step we just talked about.
+
+00:04:04.036 --> 00:04:11.316
+Now ARM decides I have the request context,
+but I don't know any details about the driver.
+
+00:04:11.916 --> 00:04:18.956
+So it decides to call a tool,
+get driver details, and come back to Terry's name,
+
+00:04:19.116 --> 00:04:23.996
+his license numbers and the driving histories.
+
+00:04:24.836 --> 00:04:29.716
+Right. So you see, this is a small loop of the react.
+
+00:04:30.156 --> 00:04:36.596
+What it did is it remember your reasons and your act, right?
+
+00:04:36.636 --> 00:04:43.556
+Now let's see the second round. In the second round
+we already have the driver detail in the memory state.
+
+00:04:44.436 --> 00:04:50.236
+Right. The LLM reasons and decide I actually
+want to know more details about the vehicle.
+
+00:04:50.596 --> 00:04:54.196
+So it calls a get vehicle detail tool.
+
+00:04:55.316 --> 00:05:00.000
+So it is the same loop but with a different tool call.
+

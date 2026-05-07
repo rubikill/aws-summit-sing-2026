@@ -1,0 +1,180 @@
+WEBVTT	#Elemental Media Engine(TM) 2.18.0.0
+X-TIMESTAMP-MAP=LOCAL:00:00:00.000,MPEGTS:187200
+
+00:45:00.000 --> 00:45:01.956
+Two technologies sit at the center of this modernization.
+
+00:45:02.596 --> 00:45:08.316
+The first is AI. AI is helping us make
+better decisions on how we deploy people,
+
+00:45:08.756 --> 00:45:12.636
+how we process information, and how we respond to incidents.
+
+00:45:13.236 --> 00:45:18.916
+The second is robotics. Robotics takes
+on repetitive, physical, demanding,
+
+00:45:18.916 --> 00:45:23.156
+higher risk tasks that are often so
+that our officers can really focus on.
+
+00:45:23.156 --> 00:45:27.236
+Work that requires judgment, requires empathy
+
+00:45:27.356 --> 00:45:35.076
+and human interaction to make all these things
+work together. We have built Mozart on AWS.
+
+00:45:37.036 --> 00:45:41.756
+Mozart brings together data from sensors, from cameras, from robots,
+
+00:45:42.116 --> 00:45:48.316
+from operational systems into a single view so
+that our operators can really see what is happening
+
+00:45:48.596 --> 00:45:52.396
+and be able to respond quickly. Behind the scenes
+
+00:45:52.396 --> 00:45:56.676
+Mozart uses Amazon Bedrock to power its AI reasoning.
+
+00:45:57.156 --> 00:46:03.836
+This gives the agents the ability to understand the context,
+to make decisions, to learn from past incidents,
+
+00:46:04.076 --> 00:46:08.076
+and to communicate naturally, just like you saw from Max.
+
+00:46:11.156 --> 00:46:15.276
+On top of that sits Mozart multi-agent orchestration layer.
+
+00:46:15.516 --> 00:46:20.316
+And this is where we've developed a whole
+suite of AI agents that are working together.
+
+00:46:20.316 --> 00:46:23.916
+The first of it is CFO. CFO is our computer vision agent,
+
+00:46:24.356 --> 00:46:31.876
+which is using computer models trained on Amazon SageMaker
+to really detect over 20 types of security incidents, for example,
+
+00:46:31.916 --> 00:46:37.916
+unattended bags. The second is intelligent IQ,
+which is our large language model.
+
+00:46:38.116 --> 00:46:44.756
+Oxygen. And this helps our human officers
+actually generate and submit reports up to 30% faster.
+
+00:46:45.156 --> 00:46:49.516
+And finally we have the AERORL, which is the reinforcement agent.
+
+00:46:49.716 --> 00:46:58.836
+And this helps to roster which of our human officers to manage
+what tasks, when to escalate to human operators and how to respond.
+
+00:47:00.636 --> 00:47:03.236
+Now we don't use AI just to generate insights.
+
+00:47:03.716 --> 00:47:09.676
+We use it actually to orchestrate decisions
+in our operations, to coordinate resources,
+
+00:47:09.676 --> 00:47:14.156
+and to drive action in the real world so that operators can trust.
+
+00:47:14.876 --> 00:47:17.436
+Our customers are not just asking what AI can do.
+
+00:47:18.076 --> 00:47:26.356
+They're asking how all these systems are secured on safety and security,
+against breaches, against manipulation and against failures.
+
+00:47:27.476 --> 00:47:30.716
+Cyber security is not separate from AI.
+
+00:47:30.916 --> 00:47:38.356
+It is foundational, and we've recently started building our AI agents
+built for cyber security based on Amazon Bedrock.
+
+00:47:39.476 --> 00:47:43.476
+And another important area in operations context is trust.
+
+00:47:43.516 --> 00:47:47.836
+Trust by the operators. What matters is not just that it works.
+
+00:47:48.356 --> 00:47:50.876
+Our operators must be able to trust it.
+
+00:47:51.036 --> 00:47:56.396
+They must be able to understand it,
+respond accordingly for it to operate reliably.
+
+00:47:59.796 --> 00:48:04.156
+So today we deploy many different types
+of robots across different environments.
+
+00:48:04.596 --> 00:48:10.036
+We have real enforcement and deterrent robots like MAXINE and MAX M1.
+
+00:48:10.836 --> 00:48:14.636
+And we also have humanoid concierge
+like MAX that you just saw just now.
+
+00:48:14.636 --> 00:48:20.076
+And we also have autonomous quadrupeds like Eve, which are robot dogs.
+
+00:48:20.356 --> 00:48:24.836
+And now that you’ve seen MAX, I would like to introduce you to ACE.
+
+00:48:37.236 --> 00:48:38.596
+Thank you everyone.
+
+00:48:39.636 --> 00:48:41.956
+I'll make sure I'll get out of the way.
+
+00:48:41.956 --> 00:48:46.516
+So meet ACE, everyone. ACE is our autonomous canine explorer.
+
+00:48:47.316 --> 00:48:51.556
+It extends our operational reach in frontline security environments.
+
+00:48:52.116 --> 00:49:00.316
+ACE patrols autonomously in large,
+complex environments, and it detects anomalies via vision models.
+
+00:49:00.916 --> 00:49:06.996
+And these feed into Mozart. And then the system decides
+in real time how to respond.
+
+00:49:07.636 --> 00:49:14.996
+And that's the power of having robots,
+AI agents and humans working on one single platform.
+
+00:49:17.916 --> 00:49:23.316
+So now you've seen two different robots on this same stage,
+different forms, different jobs,
+
+00:49:23.316 --> 00:49:27.636
+but both are connected to the same platform and cloud infrastructure.
+
+00:49:30.556 --> 00:49:37.836
+And that's the real story here. It's not just about any single robot,
+but it's really about the system behind it.
+
+00:49:38.116 --> 00:49:41.476
+And this is why building with AWS matters.
+
+00:49:41.916 --> 00:49:44.796
+AWS has given us more than just infrastructure.
+
+00:49:45.116 --> 00:49:52.516
+They've given us the foundation to build,
+to test, to train, to deploy and to continuously improve.
+
+00:49:53.356 --> 00:50:00.000
+And the ability to scale a new generation of AI
+powered operational technologies. At Certis
+

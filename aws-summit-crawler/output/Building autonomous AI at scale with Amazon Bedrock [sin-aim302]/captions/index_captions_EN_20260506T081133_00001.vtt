@@ -1,0 +1,227 @@
+WEBVTT	#Elemental Media Engine(TM) 2.18.0.0
+X-TIMESTAMP-MAP=LOCAL:00:00:00.000,MPEGTS:187200
+
+00:00:10.756 --> 00:00:14.316
+Hi everyone. I'm Isaac. I am from the AI and ML team in Asean.
+
+00:00:14.316 --> 00:00:17.356
+With me. I have Vas, my teammate and Henry from BIPO.
+
+00:00:17.916 --> 00:00:24.716
+So today what we will talk about is we're going to teach you all
+of the lessons that we have learnt over the last two years on how
+
+00:00:24.716 --> 00:00:27.876
+to build and scale autonomous agents on Bedrock.
+
+00:00:28.276 --> 00:00:33.836
+But before we do that, let's talk about how did we actually
+get here and what has changed in these two years.
+
+00:00:33.836 --> 00:00:41.396
+Right? So one of the very, very big things is that people
+moved away from the very stateless types of LLM calls.
+
+00:00:41.396 --> 00:00:46.316
+So I just have a chatbot that answers
+your questions to more Agentic driven things.
+
+00:00:46.316 --> 00:00:49.196
+So multiple steps, multiple types of orchestration.
+
+00:00:49.196 --> 00:00:53.476
+And there's a lot more data and a lot more complexity because of this.
+
+00:00:54.836 --> 00:00:58.516
+So that led to the emergence of super agents.
+
+00:00:58.636 --> 00:01:01.476
+So what exactly are super agents, right?
+
+00:01:01.716 --> 00:01:06.956
+So think of the way that you used to build
+a traditional Agentic or like a LLM application.
+
+00:01:06.996 --> 00:01:08.916
+You had one agent that did one thing.
+
+00:01:09.276 --> 00:01:14.076
+A super agent is now multiple agents
+coming together to perform any type of task.
+
+00:01:14.396 --> 00:01:17.916
+So in this example, we kind of have like
+a chief of staff agent, right?
+
+00:01:17.916 --> 00:01:23.076
+Multiple sub agents that have to be orchestrated together
+to be able to complete a specific task.
+
+00:01:23.516 --> 00:01:26.956
+Now that brings us a lot of different problems, right?
+
+00:01:27.116 --> 00:01:30.396
+So the first thing is, is a lot of performance issues, right?
+
+00:01:30.436 --> 00:01:34.636
+It's a lot of cost overruns,
+a lot of reliability as well as privacy challenges.
+
+00:01:34.996 --> 00:01:39.396
+So let's step through some of these problems
+and how do we actually fix them.
+
+00:01:39.916 --> 00:01:42.116
+So the first thing is performance optimization.
+
+00:01:42.116 --> 00:01:47.116
+How do I make sure that my agent runs very
+fast and doesn't waste me a lot of money.
+
+00:01:47.156 --> 00:01:53.916
+Right. The first thing we need to acknowledge is that there is a trade
+off between cost, speed, and intelligence.
+
+00:01:54.236 --> 00:01:58.196
+You cannot have all three of it
+together and expect it to be good, right?
+
+00:01:58.316 --> 00:02:02.476
+So we need to think about whether we want it
+to be fast or whether we want it to be intelligent.
+
+00:02:02.476 --> 00:02:08.196
+And that's where your model selection comes
+in. You have to pick the right model for the right job.
+
+00:02:08.436 --> 00:02:12.396
+Right now, most of our customers are picking
+the very large model, right?
+
+00:02:12.436 --> 00:02:15.956
+So everyone's using like an entropic opus or sonnet to do everything.
+
+00:02:16.396 --> 00:02:21.996
+But when you run it at scale, you realize,
+hey, that's actually very slow and also possibly very expensive.
+
+00:02:22.356 --> 00:02:27.876
+So based on the task that you're doing,
+you could be picking and choosing the different types of models.
+
+00:02:27.876 --> 00:02:32.556
+There is also a trade off between having
+reasoning and not having reasoning for specific tasks.
+
+00:02:32.556 --> 00:02:35.676
+If all you're doing is summarization, you don't need reasoning.
+
+00:02:35.676 --> 00:02:38.476
+But if you need an orchestrator, then reasoning helps.
+
+00:02:38.476 --> 00:02:45.076
+And if you don't know what model to pick, right run evaluations,
+evaluations is going to be a very important thing that we do.
+
+00:02:45.956 --> 00:02:48.436
+And of course, because we are Amazon. Right.
+
+00:02:48.476 --> 00:02:52.316
+Amazon. Bedrock has all of the different
+choices of models for you right now.
+
+00:02:52.316 --> 00:02:59.676
+We have 17 different models. And I obviously have to highlight
+the OpenAI models that we just launched in private preview.
+
+00:02:59.676 --> 00:03:04.236
+So OpenAI, GPT 5.5 and 5.4 will be available very soon.
+
+00:03:05.676 --> 00:03:10.196
+Bedrock has other things besides models as well
+that will become important throughout this talk.
+
+00:03:10.196 --> 00:03:12.236
+So Bedrock not only serves the models,
+
+00:03:12.236 --> 00:03:17.516
+but has the Guardrails and knowledge bases and things
+that help you build your Agentic application.
+
+00:03:17.516 --> 00:03:23.876
+But we also have Bedrock AgentCore, which is a separate
+set of tools that help you build and then scale the agents.
+
+00:03:23.876 --> 00:03:29.796
+So now that we've talked a lot about the models,
+let's talk about the tools that you're using for your agents, right?
+
+00:03:29.796 --> 00:03:36.236
+One of the major problems that we have seen is that when
+people are doing tool descriptions or building out different tools,
+
+00:03:36.236 --> 00:03:40.516
+they are not building the tools in a way
+that is very easy for them to understand.
+
+00:03:40.516 --> 00:03:42.596
+They give very abstract instructions.
+
+00:03:42.596 --> 00:03:45.716
+They don't explain how they expect data to be transmitted.
+
+00:03:45.716 --> 00:03:48.436
+So what is the format? What is the Json that you're using?
+
+00:03:48.436 --> 00:03:54.796
+Right. So in order for you to optimize your tool calls,
+and especially if you're seeing issues with tool trajectory,
+
+00:03:55.276 --> 00:03:58.276
+optimize the way that your tool descriptions are written.
+
+00:04:00.436 --> 00:04:03.316
+And now let's think about the speed of everything, right?
+
+00:04:03.316 --> 00:04:07.516
+So one of the biggest things that has changed
+in the last year is that context.
+
+00:04:07.516 --> 00:04:09.236
+Windows have become larger and larger.
+
+00:04:09.236 --> 00:04:12.436
+We've gone from 128 K to 1 million to 10 million.
+
+00:04:12.596 --> 00:04:14.756
+Right? So because of that right now,
+
+00:04:14.756 --> 00:04:20.276
+people are just shoving everything inside the context
+window and expecting the LLM to perform very, very well.
+
+00:04:20.276 --> 00:04:22.556
+Well, that's not true anymore, right?
+
+00:04:22.676 --> 00:04:27.876
+So every time you say that your agent is slow,
+it's typically because of a context engineering problem.
+
+00:04:27.876 --> 00:04:34.956
+You need to prioritize what's inside the context,
+summarize whatever is important and remove the rest from it.
+
+00:04:35.356 --> 00:04:41.476
+And there's also a little trick we can do to kind
+of like lower the perceived latency, so to speak.
+
+00:04:41.516 --> 00:04:46.116
+Right? So if your LLM takes or your agent takes 30s to do something,
+
+00:04:46.516 --> 00:04:52.596
+what we can do is we can use streaming to give you the feel
+as if it's very fast, even though it's not actually fast.
+
+00:04:55.316 --> 00:04:59.276
+So let’s jump into to the reliability and scalability.
+

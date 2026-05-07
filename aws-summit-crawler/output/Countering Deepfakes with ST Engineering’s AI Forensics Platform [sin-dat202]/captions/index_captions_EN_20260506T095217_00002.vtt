@@ -1,0 +1,207 @@
+WEBVTT	#Elemental Media Engine(TM) 2.18.0.0
+X-TIMESTAMP-MAP=LOCAL:00:00:00.000,MPEGTS:187200
+
+00:05:00.000 --> 00:05:02.876
+Now, a show of hands from the audience who is actually
+building and using custom models here.
+
+00:05:03.916 --> 00:05:11.356
+Oh, there's a few. I'm sure my next few slides will probably
+resonate well with the challenges of actually building custom models,
+
+00:05:11.356 --> 00:05:17.076
+and how a structure will follow can help you
+achieve rapid experimentation and faster iteration.
+
+00:05:17.356 --> 00:05:23.716
+For those who did not raise your hand and probably are considering
+using custom models to enhance your product or applications,
+
+00:05:23.716 --> 00:05:29.036
+I'm confident the next few slides will give you a clear
+picture on how you can embark on your journey.
+
+00:05:31.316 --> 00:05:37.396
+Putting into context of the challenge of model customization first,
+there are no shortage of techniques here.
+
+00:05:37.596 --> 00:05:42.516
+You can start off with supervised fine tuning,
+reinforce learning, or any other advanced methods.
+
+00:05:42.516 --> 00:05:45.076
+But in reality, many of these approaches.
+
+00:05:45.436 --> 00:05:50.436
+It requires deep expertise and they are not easy to iterate quickly.
+
+00:05:50.716 --> 00:05:53.676
+The learning curve is steep. Turnaround time can be slow.
+
+00:05:54.676 --> 00:05:58.876
+Second, different customization
+techniques require different infrastructure.
+
+00:05:59.236 --> 00:06:03.556
+You need to understand not just what you are building,
+but what it takes to build.
+
+00:06:03.556 --> 00:06:05.476
+And this is not a simple task.
+
+00:06:07.316 --> 00:06:10.236
+Third, the gap between use case and specification.
+
+00:06:10.476 --> 00:06:15.116
+Customers or users typically have a strong
+understanding of their use case.
+
+00:06:15.396 --> 00:06:23.356
+However, translating this into a concrete technical
+specification is much more complex than most anticipate.
+
+00:06:24.276 --> 00:06:28.116
+And finally, piecing this all together
+for all this to happen at scale,
+
+00:06:28.436 --> 00:06:33.556
+speed of iteration directly correlates to the success
+of your customization techniques here.
+
+00:06:33.916 --> 00:06:42.756
+So what's the answer? To truly achieve an effective custom models,
+you need to have a structured model customization workflow.
+
+00:06:44.556 --> 00:06:50.396
+What you are looking here on the screen here is five
+key pillars of model customization workflow.
+
+00:06:50.836 --> 00:06:54.276
+This is not just a theoretical framework, but a practical one.
+
+00:06:54.916 --> 00:07:01.036
+It's actually designed to guide you through and support you
+through every stage of deploying a successful custom model.
+
+00:07:01.036 --> 00:07:05.076
+This is also the same approach on how
+you build and train their models.
+
+00:07:05.756 --> 00:07:14.236
+This workflow allows them to perform rapid AI experiments,
+enabling them to keep pace with the constant evolution of technology.
+
+00:07:14.276 --> 00:07:16.836
+New model releases and emerging trends.
+
+00:07:17.196 --> 00:07:24.076
+It's a structured yet agile approach that allows them
+to stay ahead of their mission to combat deep fakes.
+
+00:07:27.636 --> 00:07:31.676
+So before we write any single line
+of code or create a single data set,
+
+00:07:31.796 --> 00:07:36.596
+we need to be crystal clear
+on what our goal is here and what success looks like.
+
+00:07:36.916 --> 00:07:40.876
+What we want to optimize for and what's
+the metrics we want to measure against.
+
+00:07:40.876 --> 00:07:47.796
+This particular Northstar is very important
+as it helps to align every subsequent decisions later on.
+
+00:07:48.036 --> 00:07:50.836
+For Geotrust, the North Star has always been clear.
+
+00:07:50.836 --> 00:07:54.236
+Building the capability to detect and combat deep fakes.
+
+00:07:54.396 --> 00:08:00.436
+Every model they train, experiments they run is actually
+anchored toward this singular mission.
+
+00:08:02.476 --> 00:08:06.396
+Second, your model is only as good as the data it learns from.
+
+00:08:06.436 --> 00:08:10.316
+This is actually, in my opinion,
+the most important step in the workflow.
+
+00:08:11.236 --> 00:08:17.316
+You want to actually, at this stage,
+collect, clean and structure the right data for Geotrust.
+
+00:08:17.996 --> 00:08:20.996
+This is the most important part as speed is everything.
+
+00:08:20.996 --> 00:08:23.396
+The deep fakes landscape is constantly evolving.
+
+00:08:23.396 --> 00:08:27.236
+Newer and sophisticated generative models are emerging all the time,
+
+00:08:28.316 --> 00:08:31.356
+and they are producing content that is harder to detect.
+
+00:08:32.356 --> 00:08:38.196
+I myself is guilty of generating such content
+with the different models available on the market itself.
+
+00:08:38.676 --> 00:08:42.036
+Azure trust. Similarly, in order to stay ahead of the curve,
+
+00:08:42.356 --> 00:08:47.796
+they must be able to understand how these newer
+models generate the content and capture these patterns,
+
+00:08:47.796 --> 00:08:52.596
+and use these data sets to continuously feed them
+into their model training.
+
+00:08:54.916 --> 00:08:58.636
+Third, this is where the actual model building begins.
+
+00:08:59.196 --> 00:09:03.276
+We want to actually select the right
+training methods, train the models,
+
+00:09:03.276 --> 00:09:08.796
+and evaluate against the performance
+of of the criteria you have set in step one.
+
+00:09:09.436 --> 00:09:14.116
+So when it comes to model customization,
+achieving the highest possibility,
+
+00:09:14.516 --> 00:09:23.516
+highest possible accuracy from a multiple analysis
+requirements to analyze deep fakes is what trust is all about,
+
+00:09:23.756 --> 00:09:28.516
+be it detecting facial manipulation,
+voice synthesis, or video tampering.
+
+00:09:28.516 --> 00:09:33.596
+Their custom models are fine tuned to perform
+across a wide spectrum of deepfake techniques here.
+
+00:09:36.756 --> 00:09:40.276
+Model customization is inherently iterative.
+
+00:09:40.636 --> 00:09:43.316
+You want to test, learn and refine.
+
+00:09:43.836 --> 00:09:46.116
+This cycle brings you closer to the performance
+
+00:09:46.116 --> 00:09:55.516
+and accuracy your use case demands to meet with the demanding
+accuracy requirements that are just trust sets for themselves.
+
+00:09:57.556 --> 00:10:00.000
+Iteration is not optional. It is a requirement.
+

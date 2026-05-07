@@ -1,0 +1,209 @@
+WEBVTT	#Elemental Media Engine(TM) 2.18.0.0
+X-TIMESTAMP-MAP=LOCAL:00:00:00.000,MPEGTS:187200
+
+00:10:00.000 --> 00:10:07.756
+And the last one was batch inference.
+So anything which can which is not latency sensitive can happen offline.
+
+00:10:07.756 --> 00:10:10.516
+You get a 50% discount on batch inference.
+
+00:10:11.476 --> 00:10:15.156
+Important point is the second pillar data in context.
+
+00:10:15.236 --> 00:10:19.396
+What is your agent have and does it have the right information?
+
+00:10:19.476 --> 00:10:22.476
+Having the right data is very different from having the right information.
+
+00:10:22.476 --> 00:10:28.036
+And we'll talk about it. Most agent failures
+that we have seen are essentially data failures.
+
+00:10:28.276 --> 00:10:32.916
+They retrieve the wrong documents.
+The context was outdated. Maybe the data is not real time.
+
+00:10:32.916 --> 00:10:37.516
+It is three days old. So you're talking about a customer
+who's complaining to you for the first time,
+
+00:10:38.156 --> 00:10:42.996
+complaining to you for the second time,
+but your agent thinks it's only the first time because the data is not there
+
+00:10:42.996 --> 00:10:47.996
+or the relevant information was not indexed
+and hence not available to your agents as well.
+
+00:10:47.996 --> 00:10:53.356
+So let's take this example.
+Customer a order one, two three, four five is delayed.
+
+00:10:53.396 --> 00:10:57.876
+That is a piece of information. Now with that information can we figure out
+
+00:10:57.876 --> 00:11:01.596
+who was the customer for this particular order. What was their order history.
+
+00:11:01.596 --> 00:11:06.116
+What are the kind of things that they generally
+order that is getting that information,
+
+00:11:06.116 --> 00:11:14.516
+processing it and making it into a final structure which says or customer
+Vishesh Kumar with order one, two, three, four,
+
+00:11:14.516 --> 00:11:20.356
+five has placed three orders in the last two months,
+and the last order of grocery delivery was delayed.
+
+00:11:20.356 --> 00:11:25.356
+That is real information for the user to work with,
+rather than just for the agent to work with.
+
+00:11:25.356 --> 00:11:27.836
+Rather than just order one, two, 345 was delayed.
+
+00:11:29.396 --> 00:11:36.356
+It's important to ground your agents in your data with RAG,
+and we provide this capability with AWS knowledge bases.
+
+00:11:36.636 --> 00:11:40.756
+So the chunking strategy is important.
+How we split our documents, the embedding quality.
+
+00:11:40.756 --> 00:11:45.076
+The embedding quality has to be good,
+otherwise the agent doesn't really understand what's happening.
+
+00:11:45.076 --> 00:11:51.236
+And to be able to surface the right information,
+relevant information and make sure that it is fresh.
+
+00:11:51.436 --> 00:11:54.516
+Make sure that is up to date based on what is happening.
+
+00:11:56.276 --> 00:11:59.236
+Memory is another capability which AgentCore provides.
+
+00:11:59.236 --> 00:12:06.516
+So earlier we used to create these vector databases to keep
+track of information and manage them and patch them and operate them.
+
+00:12:06.516 --> 00:12:12.956
+We don't have to do that anymore. With AgentCore Memory,
+you have the capability of short term memory and long term memory.
+
+00:12:12.956 --> 00:12:18.756
+In short term memory, you can store conversation history within
+the particular interaction and in. For example, in long term memory,
+
+00:12:18.756 --> 00:12:20.876
+you can store the user preferences, right?
+
+00:12:20.916 --> 00:12:26.156
+So when the user comes back in again after three days,
+after three months, you have the context,
+
+00:12:26.196 --> 00:12:31.316
+the agent has the context of what was really
+happening with that conversation and that customer.
+
+00:12:33.196 --> 00:12:38.836
+The key data takeaways from our discussion is we cannot automate chaos, right?
+
+00:12:38.876 --> 00:12:42.756
+We have to fix the underlying data without fixing the underlying data.
+
+00:12:42.796 --> 00:12:45.236
+No amount of automation can really help you.
+
+00:12:45.836 --> 00:12:51.436
+Most agent failures are data failures.
+If the data is right, if the data is accurate, the data is fresh.
+
+00:12:51.956 --> 00:12:55.716
+We will be able to make a good Agentic solution.
+
+00:12:56.916 --> 00:12:58.916
+Number three is trust.
+
+00:13:00.756 --> 00:13:06.956
+Can users trust? Their data is protected and the agent stays within bounds?
+
+00:13:07.396 --> 00:13:12.756
+Is the agent doing only what it is supposed to do and not one bit extra?
+
+00:13:12.916 --> 00:13:15.676
+Right? That is the question that we are going to ask.
+
+00:13:15.916 --> 00:13:22.396
+A system which works well, but if it is not trusted,
+is not a great system because you don't.
+
+00:13:22.436 --> 00:13:29.796
+If you can't trust an agent which works in a non-deterministic way anyways,
+you don't know how the system really behaves.
+
+00:13:29.956 --> 00:13:34.196
+So we have to consider security, identity, the Guardrails and privacy.
+
+00:13:34.236 --> 00:13:41.076
+Data privacy as well. For this we have AgentCore Identity again,
+
+00:13:41.116 --> 00:13:46.956
+one of those undifferentiated heavy lifting things
+that AWS is great at which you don't have to worry about.
+
+00:13:47.436 --> 00:13:50.716
+So we get secure delegated access across AI AI agents.
+
+00:13:50.756 --> 00:13:53.716
+Now the AI agents, their identity is established.
+
+00:13:53.756 --> 00:13:58.636
+We know who they are, then we know what
+they are supposed to do and we only allow for that.
+
+00:13:58.636 --> 00:14:06.116
+So the agent is now able to talk to different AWS services
+or third party tools. Because the identity is established.
+
+00:14:06.836 --> 00:14:13.436
+It might not be something that you worry about in the POC,
+but going to production and having an administrative,
+
+00:14:13.476 --> 00:14:19.476
+administrative permission to your agent is something
+that will not fly right, probably never reach production.
+
+00:14:19.476 --> 00:14:27.916
+This happens to be the core reason why those 46% number
+that we have as part of this, of the Agentic solutions, which failed,
+
+00:14:29.156 --> 00:14:32.116
+we also are able to streamline the agent experiences.
+
+00:14:32.356 --> 00:14:35.876
+For example, if a user's preference is stored.
+
+00:14:36.396 --> 00:14:40.996
+We don't have to repeatedly ask for permission,
+and that is enabled by a secure token store,
+
+00:14:40.996 --> 00:14:47.276
+which stores these user user
+acknowledgements and then is dedicated for each user.
+
+00:14:47.556 --> 00:14:50.756
+So we have isolation at the store level itself.
+
+00:14:50.956 --> 00:14:53.876
+And this also accelerates the AI agent development.
+
+00:14:53.876 --> 00:15:00.000
+Just imagine if every one of you was building a solution today,
+and you have to create your own identity infrastructure and not just create,
+

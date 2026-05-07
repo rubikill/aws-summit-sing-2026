@@ -1,0 +1,174 @@
+WEBVTT	#Elemental Media Engine(TM) 2.18.0.0
+X-TIMESTAMP-MAP=LOCAL:00:00:00.000,MPEGTS:187200
+
+01:15:00.000 --> 01:15:01.356
+driving, accelerating profitable growth.
+
+01:15:01.356 --> 01:15:06.876
+Building on this foundation has been AWS
+and it has been central to that journey.
+
+01:15:07.596 --> 01:15:10.476
+But here's the thing. We're still scratching the surface.
+
+01:15:11.036 --> 01:15:14.676
+Grab has also taken that foundation and made it AI ready.
+
+01:15:15.476 --> 01:15:18.356
+The next layer we’re adding on now is called BriX.
+
+01:15:18.716 --> 01:15:25.276
+Our enterprise AI platform. It sits on top of Grab House,
+it governs data,
+
+01:15:25.276 --> 01:15:33.476
+and lets our team query financial data in natural language,
+run scenario analysis and generate insights without writing code.
+
+01:15:34.316 --> 01:15:40.756
+We are piloting a module called insight,
+an AI agent for finance that can pull from various sources,
+
+01:15:40.756 --> 01:15:43.316
+all within an auditable governance framework.
+
+01:15:44.316 --> 01:15:51.796
+This unified data foundation unlocks the ability for every team
+to have the autonomy to build their own automation workflows,
+
+01:15:51.956 --> 01:15:55.436
+create internal tools, and deploy AI agents at scale.
+
+01:15:56.996 --> 01:16:00.156
+This is what excites me the most. For the first time in my career,
+
+01:16:00.156 --> 01:16:07.156
+I can see a path where strategic finance teams spend most of our time
+on actual strategy, on advising leadership,
+
+01:16:07.156 --> 01:16:11.716
+navigating complexity rather than on extracting and reconciling data.
+
+01:16:12.316 --> 01:16:16.236
+At Grab we are leaning on the pace of change with AI.
+
+01:16:16.836 --> 01:16:19.396
+We are not waiting for the technology to mature.
+
+01:16:19.396 --> 01:16:23.356
+We are building it, iterating it, deploying it into production.
+
+01:16:24.476 --> 01:16:28.556
+And the reason we can move
+this fast is the infrastructure layer underneath.
+
+01:16:28.956 --> 01:16:33.476
+The reason Grab can adopt AI
+capabilities in weeks rather than quarters is
+
+01:16:33.476 --> 01:16:37.756
+because we spend time to build a governance unified Data foundation.
+
+01:16:38.396 --> 01:16:40.956
+The first decade of Grab was about scale.
+
+01:16:41.596 --> 01:16:48.716
+The next decade is about intelligence,
+and we are building it here on AWS with this community.
+
+01:16:49.116 --> 01:16:49.676
+Thank you.
+
+01:17:12.236 --> 01:17:18.916
+Ken. Thank you for showing us what happens
+when you actually get the foundation right on AWS.
+
+01:17:20.116 --> 01:17:23.196
+And it's not just our customers pushing boundaries.
+
+01:17:23.756 --> 01:17:29.916
+Our partners right here in Singapore are building
+some remarkable things on AWS.
+
+01:17:30.716 --> 01:17:36.116
+Take AXRAIL an AWS Gen AI competency partner.
+
+01:17:36.236 --> 01:17:40.476
+Founded in Singapore that provides AI platforms,
+
+01:17:40.836 --> 01:17:48.516
+they're using Kiro and AWS to deploy
+autonomous agents that deliver projects in half the time,
+
+01:17:48.836 --> 01:17:55.956
+with a third of the people typically
+needed at 40% lower cost. Or OneByZero.
+
+01:17:56.396 --> 01:18:02.116
+Another Singapore based AI partner that uses Amazon Bedrock to power.
+
+01:18:02.156 --> 01:18:10.436
+Erin. Erin is a Gen AI social media
+responder that caught a Philippine telco agent,
+
+01:18:10.436 --> 01:18:17.716
+assisted responses by 80% and saved over 12 million Philippine pesos,
+
+01:18:18.156 --> 01:18:22.836
+and Accenture is using our sovereign architecture to power Nav AI,
+
+01:18:23.356 --> 01:18:33.196
+a multi-agent defense platform serving over 50,000 users globally,
+including Singapore government Agencies.
+
+01:18:33.196 --> 01:18:42.276
+We're talking cyber remediation, intelligence analysis,
+multi-domain operations, all in fully air gapped environments.
+
+01:18:42.716 --> 01:18:51.396
+So from startups to global systems integrators,
+everyone is moving fast and they're choosing to build on AWS.
+
+01:18:51.996 --> 01:18:55.196
+Now what makes all of this possible?
+
+01:18:55.516 --> 01:18:59.796
+The agents, the partners, the customer breakthroughs.
+
+01:18:59.996 --> 01:19:02.796
+It’s a foundation built for performance and scale.
+
+01:19:03.236 --> 01:19:06.836
+And inference has become a key building block for applications.
+
+01:19:07.276 --> 01:19:13.076
+But taking AI from prototype to production reliably, securely,
+
+01:19:13.076 --> 01:19:18.956
+and at enterprise scale is one of the hardest
+challenges teams face today.
+
+01:19:19.516 --> 01:19:26.316
+So why not make it as simple
+to deploy a model as it is to imagine what it could do?
+
+01:19:26.636 --> 01:19:35.756
+This is exactly why AWS built
+Amazon Bedrock. Bedrock handles model hosting, scaling,
+
+01:19:35.876 --> 01:19:42.876
+security integration so you can truly
+focus on the problem you're trying to solve.
+
+01:19:43.476 --> 01:19:50.036
+And because no single model fits every need,
+we continue to expand the model selection on Bedrock.
+
+01:19:50.236 --> 01:19:58.676
+In fact, we nearly doubled the number of models available
+in the last year, adding models like Gemma, Quinn, and Nemotron.
+
+01:19:59.156 --> 01:20:00.000
+And as you all know, we recently
+announced a preview of OpenAI GPT models.
+

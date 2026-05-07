@@ -1,0 +1,112 @@
+WEBVTT	#Elemental Media Engine(TM) 2.18.0.0
+X-TIMESTAMP-MAP=LOCAL:00:00:00.000,MPEGTS:187200
+
+00:30:00.000 --> 00:30:01.876
+First, a search relevance workbench,
+a systematic framework for evaluating and tuning search relevance.
+
+00:30:02.276 --> 00:30:08.396
+As our corpus grows and user needs evolve,
+we need automated ways to measure and improve quality.
+
+00:30:09.556 --> 00:30:14.596
+Second, unified analytics, visual data transformation,
+and pipelines for legal data processing.
+
+00:30:14.956 --> 00:30:20.276
+This will make our ingestion pipeline
+more accessible and easier to maintain.
+
+00:30:21.276 --> 00:30:28.036
+Third, additional agent tools, specifically
+summarization and legal principle extraction as new NCP tools.
+
+00:30:28.316 --> 00:30:30.516
+Remember the composability principle?
+
+00:30:30.516 --> 00:30:35.356
+Every new capability we build becomes a tool that an agent can use.
+
+00:30:35.836 --> 00:30:42.756
+And fourth, an agent evaluation framework
+objectively measures of agent accuracy and performance.
+
+00:30:42.956 --> 00:30:48.036
+This is critical for moving the research
+agent from proof of concept to production.
+
+00:30:48.396 --> 00:30:54.996
+We need to be able to quantify how well the agent
+performs across different types of legal research tasks.
+
+00:31:00.236 --> 00:31:03.436
+Let me leave you with five key takeaways from our journey.
+
+00:31:04.716 --> 00:31:10.876
+Start with a strong foundation. Hybrid search combined
+with fine tuned models delivers production grade legal search.
+
+00:31:10.916 --> 00:31:12.556
+Don't skip the fundamentals.
+
+00:31:13.716 --> 00:31:18.596
+Measure and iterate. SageMaker Unified Studio
+enables data driven product improvement.
+
+00:31:18.636 --> 00:31:21.436
+You can't improve what you can't measure.
+
+00:31:22.756 --> 00:31:29.476
+Go. Agentic Bedrock AgentCore lets you compose
+existing AI products into intelligent assistance,
+
+00:31:29.476 --> 00:31:33.356
+but only do this once your individual components are solid.
+
+00:31:34.716 --> 00:31:39.716
+Responsible AI matters, especially
+in high stakes domains like law. Bedrock.
+
+00:31:39.716 --> 00:31:48.516
+Guardrails ensures trustworthy outputs build
+trust from day one and finally build composable.
+
+00:31:48.556 --> 00:31:52.836
+Every AI capability you build should be designed as a reusable tool.
+
+00:31:53.316 --> 00:31:59.596
+This is what enables you to move from individual
+features to intelligent agents without starting over.
+
+00:32:00.716 --> 00:32:03.716
+These principles aren't specific to just legal search.
+
+00:32:03.716 --> 00:32:08.636
+They apply to any domain where you're building
+AI powered search and research systems.
+
+00:32:10.756 --> 00:32:14.156
+For those in the live stream, thank you for joining us online.
+
+00:32:14.156 --> 00:32:16.796
+For those here, thank you all for joining us today.
+
+00:32:16.796 --> 00:32:20.476
+We hope this gave you practical
+insights into how you can apply your own AI
+
+00:32:20.476 --> 00:32:24.716
+and data initiatives to improve
+the quality of our future summit events,
+
+00:32:24.716 --> 00:32:28.156
+and to better understand the topics and services
+you would like to know more about,
+
+00:32:28.156 --> 00:32:34.956
+please help us to complete the session survey by scanning
+a QR code on screen or using the event app to rate the session.
+
+00:32:35.676 --> 00:32:37.916
+Thank you for coming and see you next time.
+

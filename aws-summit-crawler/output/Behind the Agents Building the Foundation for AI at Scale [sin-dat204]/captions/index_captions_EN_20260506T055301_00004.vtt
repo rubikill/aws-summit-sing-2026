@@ -1,0 +1,222 @@
+WEBVTT	#Elemental Media Engine(TM) 2.18.0.0
+X-TIMESTAMP-MAP=LOCAL:00:00:00.000,MPEGTS:187200
+
+00:15:00.000 --> 00:15:01.636
+Thanks, Jan. Hi everyone. My name is Ney and I lead the enterprise
+data warehouse and data architecture teams at Grab.
+
+00:15:02.476 --> 00:15:07.876
+Grab is a fairly household name here in Southeast Asia,
+but for the uninitiated, we are a super app.
+
+00:15:08.116 --> 00:15:14.276
+We provide parcel delivery, food delivery,
+mobility and fintech services amongst a host of other things.
+
+00:15:14.276 --> 00:15:17.436
+So data and AI has been an integral part of how we've grown.
+
+00:15:18.116 --> 00:15:24.236
+Every time you book a ride, every time you make a food order,
+the allocation, the pricing, the ETA prediction,
+
+00:15:24.356 --> 00:15:26.516
+everything is powered by AI models.
+
+00:15:27.716 --> 00:15:33.756
+We've got more than a thousand of these already in production,
+and we keep adding more and more as we evolve.
+
+00:15:33.756 --> 00:15:41.796
+And speaking of evolving with the new Agentic AI world, we are now
+innovating and making these workflows more and more Agentic.
+
+00:15:44.836 --> 00:15:49.036
+If you had a chance to catch our annual
+product launch event last month,
+
+00:15:49.036 --> 00:15:56.356
+we launched 13 AI powered experiences which included AI assistants
+for our merchants, for our consumers, drivers alike.
+
+00:15:56.716 --> 00:16:01.636
+We introduced local life. We spoke about
+personalized travel experiences and much more.
+
+00:16:01.716 --> 00:16:04.596
+But while agents get all the glory,
+
+00:16:04.596 --> 00:16:10.396
+there's a lot of foundational work that is required
+to ensure your agents can do what you want them to do.
+
+00:16:10.396 --> 00:16:16.676
+The three broad pillars being platforms and tooling,
+data practices and AI enablement for everyone.
+
+00:16:18.116 --> 00:16:21.876
+Before we dive into all three of those,
+let's look at the scale that we operate at.
+
+00:16:21.876 --> 00:16:25.716
+Because models and tooling is commoditized
+now and available to everybody.
+
+00:16:25.716 --> 00:16:29.636
+But at Grab, we have a wealth of first party data and a lot of it.
+
+00:16:30.316 --> 00:16:34.196
+Last I checked, our data lake stood at 117PB.
+
+00:16:34.676 --> 00:16:40.476
+We processed up to 300TB of data every day,
+and we have more than 20 240,000 tables in our data lake.
+
+00:16:42.436 --> 00:16:49.396
+Speaking of platform and tooling as the first pillar,
+using the base as is services like EKS,
+
+00:16:50.676 --> 00:16:51.356
+S3,
+
+00:16:52.796 --> 00:16:54.636
+EMR, and Aurora,
+
+00:16:55.676 --> 00:17:00.716
+we built the base platform and infrastructure
+layer where we have compute for ML.
+
+00:17:01.356 --> 00:17:06.396
+We've got Trino, spark one and Starrocks
+for our data compute and the data lake,
+
+00:17:06.396 --> 00:17:12.796
+which sits in S3. The next layer is the data transformation layer,
+where for orchestration we use airflow.
+
+00:17:13.316 --> 00:17:17.596
+We have an in-house platform called slide built
+on EMR for data integration.
+
+00:17:18.316 --> 00:17:22.636
+Chimaira again is our open source spark implementation
+on ECS for data transformations.
+
+00:17:22.636 --> 00:17:25.476
+And then for data ingestion, we have a platform called Hugo.
+
+00:17:26.076 --> 00:17:29.276
+Next comes data management and governance.
+
+00:17:29.996 --> 00:17:36.636
+We have a data catalog platform called Hubble, which is a fork
+of data hub where we store data, contracts, table metadata,
+
+00:17:36.636 --> 00:17:39.756
+any and all of that. We have an access control platform.
+
+00:17:39.796 --> 00:17:43.116
+We have a data observability platform which
+checks in for completeness,
+
+00:17:43.156 --> 00:17:45.436
+data quality issues, things of that nature called Gen AI.
+
+00:17:47.716 --> 00:17:52.316
+And then we have our own implementation of data mesh called
+signals Marketplace, which I’ll talk about more in an upcoming slide.
+
+00:17:52.396 --> 00:18:00.276
+Once we create these signals, we store them in our feature store
+for serving and then in our metrics store for consumption,
+
+00:18:00.276 --> 00:18:01.116
+for analytics,
+
+00:18:02.196 --> 00:18:06.996
+for models, we have a model serving layer,
+a training layer, and a model registry layer.
+
+00:18:08.196 --> 00:18:14.036
+And lastly, in the last couple of years, we've invested
+heavily into AI tooling where we have a framework to build chatbots
+
+00:18:14.076 --> 00:18:21.756
+and Slack bots. We have an eval platform called
+Eval Sub where we can eval all our agents.
+
+00:18:21.796 --> 00:18:25.076
+We made creation and deployment of front ends very easy.
+
+00:18:25.116 --> 00:18:30.196
+By providing front end components.
+It's easy to apply guardrails and security as need be.
+
+00:18:30.436 --> 00:18:36.876
+And we have a unified AI gateway, which helps you access
+all the frontier models via the central gateway at one go
+
+00:18:38.236 --> 00:18:44.516
+And then on top set all the applications which can use any and all
+of these platforms and tools based on whatever you need to do.
+
+00:18:45.116 --> 00:18:48.756
+What this has done is it's made everybody a builder, every persona.
+
+00:18:48.796 --> 00:18:53.076
+Now at Grab is a builder. Be it a data scientist,
+a product manager, an analyst.
+
+00:18:53.796 --> 00:18:56.156
+Engineers of course. And what we call data swarmers.
+
+00:18:56.156 --> 00:18:58.036
+Again, I'll talk about them in a bit.
+
+00:18:58.276 --> 00:19:05.156
+And then the solutions include agents like a merchant AI
+assistant or MarketWatch, which is a marketplace management platform,
+
+00:19:05.156 --> 00:19:11.156
+or bricks, which is our creation and hosting Agentic platform,
+which I'll delve into deeper in a bit.
+
+00:19:12.876 --> 00:19:14.876
+So let's talk about data practices now.
+
+00:19:14.876 --> 00:19:19.756
+So we've spent a lot of time and effort over
+the last few years on quality and certification.
+
+00:19:19.756 --> 00:19:25.196
+We implemented our own version of data mesh called
+signals Marketplace, where we defined ownership contracts,
+
+00:19:25.196 --> 00:19:28.796
+data quality checks for tables, metrics, and attributes alike.
+
+00:19:29.316 --> 00:19:33.636
+We institutionalized what we call data swarmers,
+where for each business vertical,
+
+00:19:33.676 --> 00:19:39.076
+the engineers double up as data engineers taking
+full control and ownership of their own data sets.
+
+00:19:39.076 --> 00:19:45.996
+And then we made data production incidents mainstream so that they get
+the same level of importance as an operational incident would.
+
+00:19:46.596 --> 00:19:48.996
+Next up, context and skills. Relatively new,
+
+00:19:49.196 --> 00:19:55.236
+but we've already built a context store where each
+of the verticals is responsible for publishing their context
+
+00:19:55.756 --> 00:19:58.236
+and to standardize a workflows and tasks.
+
+00:19:58.236 --> 00:20:00.000
+We are heavily leveraging skills.
+

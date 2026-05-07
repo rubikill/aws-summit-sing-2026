@@ -1,0 +1,158 @@
+WEBVTT	#Elemental Media Engine(TM) 2.18.0.0
+X-TIMESTAMP-MAP=LOCAL:00:00:00.000,MPEGTS:187200
+
+00:30:00.476 --> 00:30:09.116
+Think about your routine tasks from the everyday that you do
+with weekly sales summaries, inventory threshold reports,
+
+00:30:09.156 --> 00:30:15.596
+financial reports, all described in natural
+language and automated without any code.
+
+00:30:16.036 --> 00:30:20.876
+In this example here I'm automating
+a store performance briefing generation.
+
+00:30:21.956 --> 00:30:28.436
+This can transform how data gets accessed,
+and that's the capability that automation allows you.
+
+00:30:29.676 --> 00:30:31.836
+Look at this example that I have here.
+
+00:30:32.396 --> 00:30:39.436
+Taking this prompt where I am a retail analyst and I want
+to focus on three variables such as the store,
+
+00:30:39.716 --> 00:30:47.676
+my time period and my area from a single problem that I copied,
+I'm able to actually have quick automate.
+
+00:30:47.956 --> 00:30:51.316
+Decompose this into six separate workflow steps.
+
+00:30:51.956 --> 00:30:57.636
+Retrieve my store data, analyze departments,
+generate the briefing documents,
+
+00:30:57.756 --> 00:31:04.956
+evaluate margins the system has inferred from my prompt,
+and created out this complex workflow for me.
+
+00:31:06.516 --> 00:31:15.556
+So this allows analysts pulling data from multiple systems,
+building pivot tables, delivering a report multiple days later.
+
+00:31:15.956 --> 00:31:19.876
+And you can see how this is able to automate it in within minutes.
+
+00:31:20.636 --> 00:31:26.236
+And anyone with access to this automation can run it
+on demand with their own prompt as well.
+
+00:31:28.716 --> 00:31:34.796
+And this brings me to Quick Desktop Amazon Quick
+native desktop application.
+
+00:31:34.996 --> 00:31:37.276
+Now available in public preview.
+
+00:31:38.596 --> 00:31:42.916
+It connects to your internal and external
+system you may need for work.
+
+00:31:43.796 --> 00:31:48.636
+Imagine having an AI assistant that doesn't
+just live in your browser tab.
+
+00:31:49.036 --> 00:31:57.076
+It lives on your desktop and it's directly connected to all the files,
+emails, messengers that lives on your computer.
+
+00:31:58.196 --> 00:32:05.396
+That's Amazon Quick desktop. It extends everything
+you love about QuIC into a native desktop experience.
+
+00:32:05.956 --> 00:32:13.076
+For example, outlook is connected with dozens of built
+in actions for reading, replying, and scheduling.
+
+00:32:13.596 --> 00:32:21.676
+Slack is available to connect your messages as well
+as NCP on the side for advanced integration for custom AWS servers
+
+00:32:21.676 --> 00:32:25.236
+and third party tools for business like Popular.
+
+00:32:25.276 --> 00:32:32.516
+This means that analysts can ask a question that draws from
+their ERP data and cross-reference with their email thread,
+
+00:32:32.876 --> 00:32:37.676
+and pulls them into a team conversation in one natural language query.
+
+00:32:40.396 --> 00:32:44.836
+So let me bring this all together. You have heard Ee Siew Ping story.
+
+00:32:44.876 --> 00:32:50.956
+A hundred year old brand terabytes of data
+and teams waiting for days of their reports.
+
+00:32:51.836 --> 00:33:01.076
+Today, they experienced 70% faster reporting,
+increase in by usage and increase in adoption within their teams,
+
+00:33:01.396 --> 00:33:04.756
+where they are allowed to make decisions on today's data.
+
+00:33:06.076 --> 00:33:08.876
+Three takeaways are like for everyone here to have.
+
+00:33:09.276 --> 00:33:17.356
+Firstly, starting with the Data foundation,
+a clean unified data layer and what is what makes all this possible.
+
+00:33:17.716 --> 00:33:20.876
+Dashboards. Gen AI and automation.
+
+00:33:21.956 --> 00:33:26.476
+Next design from design for self-service from day one.
+
+00:33:27.156 --> 00:33:30.636
+The real return of investment isn't one faster report.
+
+00:33:30.956 --> 00:33:36.876
+It's hundreds of people getting their work
+done and answers quicker without filing a ticket.
+
+00:33:38.116 --> 00:33:40.876
+Thirdly, transform incrementally.
+
+00:33:42.436 --> 00:33:48.156
+Sorry. Transform incrementally.
+Popular started with finance and retail reporting.
+
+00:33:48.476 --> 00:33:54.596
+Then they layered on Gen AI and what if
+scenario analysis and natural language queries.
+
+00:33:55.196 --> 00:34:00.636
+So start where the pain point is hardest
+and transform incrementally to build on top.
+
+00:34:03.396 --> 00:34:06.876
+So thank you for attending today's session for those that is online.
+
+00:34:07.396 --> 00:34:10.716
+I also want to thank you for attending today.
+
+00:34:10.876 --> 00:34:15.076
+And feel free to scan the QR code if you like to give us any feedback.
+
+00:34:15.876 --> 00:34:16.556
+Thank you.
+
+00:34:20.596 --> 00:34:29.036
+Thank you, Kelly and SUP, and thank you for joining us at the session
+in harnessing AI through Data Foundations track. We are now.
+

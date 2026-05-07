@@ -1,0 +1,197 @@
+WEBVTT	#Elemental Media Engine(TM) 2.18.0.0
+X-TIMESTAMP-MAP=LOCAL:00:00:00.000,MPEGTS:187200
+
+00:00:13.716 --> 00:00:19.876
+Good afternoon. I am Puneet. I'm a principal
+in the enterprise team based out of Singapore.
+
+00:00:20.876 --> 00:00:27.756
+The topic for this session is AgentCore Best Practices
+and AgentCore is a new service.
+
+00:00:27.796 --> 00:00:34.356
+It went GA in September 25th and in this very short span of time,
+it has found a lot of interest from enterprises.
+
+00:00:34.476 --> 00:00:38.516
+It allows us to scale with AI agents
+across the enterprise very quickly.
+
+00:00:38.916 --> 00:00:44.476
+Later in this session, I'll be joined by Brian Ong,
+who is the managing director of real estate at Keppel,
+
+00:00:44.476 --> 00:00:50.996
+and he'll tell us how they are using AgentCore to transform
+the tenant experience for various buildings they manage
+
+00:00:50.996 --> 00:00:52.996
+in Singapore and in other countries.
+
+00:00:53.436 --> 00:00:57.036
+I'll also be joined by Kamal, who heads their data and AI engineering,
+
+00:00:57.396 --> 00:01:02.156
+and she'll tell us about the data platform which they have built,
+which powers their Agentic solutions,
+
+00:01:02.156 --> 00:01:09.676
+and she will also show a demo of a very unique voice based agent,
+which they have created for managing investor relations.
+
+00:01:11.156 --> 00:01:14.316
+Now, before we talk about AgentCore and best practices,
+
+00:01:14.756 --> 00:01:21.836
+let’s look at how an Agentic AI app differs from
+any other normal application, which also uses generative AI.
+
+00:01:22.916 --> 00:01:26.836
+A lot of things. Andrew gave a very detailed presentation of Agentic.
+
+00:01:27.316 --> 00:01:33.996
+I'll summarize that in basically three traits
+which an Agentic AI app has, which other apps don't.
+
+00:01:34.436 --> 00:01:41.596
+So the three primary differences. The first is that the Agentic AI
+app tries to achieve an objective or a goal,
+
+00:01:42.076 --> 00:01:48.676
+and to achieve that objective or a goal, it takes a series of steps,
+and the order of those steps is not always the same.
+
+00:01:48.676 --> 00:01:50.916
+So that's the first fundamental difference.
+
+00:01:50.916 --> 00:01:57.876
+The second difference is, since it takes a series of steps,
+the whole interaction is long running or it is,
+
+00:01:59.156 --> 00:02:06.076
+you know, Stateful in nature. And hence the agent
+needs to remember the context over a period of time,
+
+00:02:06.076 --> 00:02:07.876
+which can be hours or days sometimes.
+
+00:02:07.876 --> 00:02:11.916
+So this memory ability is the second fundamental difference.
+
+00:02:11.996 --> 00:02:17.076
+The third is in most of the scenarios,
+the agent, in order to be helpful,
+
+00:02:17.396 --> 00:02:21.436
+have to integrate with multiple apps in the in the enterprise.
+
+00:02:21.436 --> 00:02:25.476
+And that it does by orchestrating
+a series of tools which you give to it.
+
+00:02:25.836 --> 00:02:28.956
+So let's these three traits of an Agentic app.
+
+00:02:28.956 --> 00:02:33.636
+Let's keep them in mind because we'll
+revisit them as we see the best practices.
+
+00:02:34.076 --> 00:02:37.116
+Now the brain of an Agentic AI app is still an LLM.
+
+00:02:37.156 --> 00:02:39.516
+It takes. It figures out what steps to take.
+
+00:02:39.716 --> 00:02:46.676
+It figures out which tools to call for which steps,
+and then what to put in memory, when and when to read from memory.
+
+00:02:47.836 --> 00:02:51.036
+Now, when we are taking an Agentic AI app to production,
+
+00:02:51.076 --> 00:02:55.756
+we are faced with typical challenges
+you are faced with for any other application, right?
+
+00:02:55.756 --> 00:02:59.556
+So we have to figure out how we'll host it, figure out how it will be.
+
+00:02:59.596 --> 00:03:05.916
+It will scale. You have to figure out how you'll secure it,
+and you'll figure out how you will monitor or observe it.
+
+00:03:06.316 --> 00:03:11.356
+Now, these are all important concerns,
+but it also constitutes undifferentiated heavy lifting.
+
+00:03:11.716 --> 00:03:19.276
+And this is where AgentCore helps us by eliminating all
+these undifferentiated heavy lifting, by giving us ten capabilities.
+
+00:03:19.596 --> 00:03:23.636
+The first capability it gives us is an execution runtime.
+
+00:03:23.916 --> 00:03:29.316
+This execution runtime, you know,
+so we can create an agent using any model or any framework,
+
+00:03:29.316 --> 00:03:33.036
+package it as a container, and AWS does the rest, right?
+
+00:03:33.076 --> 00:03:42.436
+So whether one user accesses it or 10,000 users accesses it,
+the whole life cycle of the execution environment is managed by AWS.
+
+00:03:43.676 --> 00:03:46.236
+The second is how we talked about memory, right?
+
+00:03:46.276 --> 00:03:48.316
+So how does the agent get access to memory.
+
+00:03:48.316 --> 00:03:54.156
+It does it through AgentCore memory,
+which is which provides the memory capability as a managed service.
+
+00:03:54.156 --> 00:03:57.796
+How does the agent talk to various tools in your enterprise.
+
+00:03:57.796 --> 00:04:03.556
+It does it through AgentCore Gateway, which allows it to access
+various enterprise assets, whether they are Rest APIs,
+
+00:04:03.556 --> 00:04:06.836
+NCP servers, or or Lambda functions.
+
+00:04:07.356 --> 00:04:10.636
+Now, how all of this happens securely, right?
+
+00:04:10.676 --> 00:04:16.516
+How the how the agents are called securely,
+how the agents call tools securely,
+
+00:04:16.516 --> 00:04:22.316
+how the tools call enterprise agents or enterprise
+apps securely two legged authentication,
+
+00:04:22.316 --> 00:04:27.716
+three legged authentication or entry ID
+all that is managed by AgentCore Identity.
+
+00:04:28.516 --> 00:04:37.156
+Many times we have to apply certain business
+rules to to decide when a tool should be called, and more importantly,
+
+00:04:37.156 --> 00:04:39.676
+when a tool should not be called right.
+
+00:04:39.716 --> 00:04:46.996
+So for example, suppose we have a tool which processes refunds
+and we want to call the tool if the refund is less than $200.
+
+00:04:47.516 --> 00:04:50.556
+But we don't want to call the tool and flag it for human review.
+
+00:04:50.556 --> 00:04:59.236
+If the refund is more than $200.
+Now this business rule, we can actually externalize and
+

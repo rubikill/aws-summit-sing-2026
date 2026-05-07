@@ -1,0 +1,228 @@
+WEBVTT	#Elemental Media Engine(TM) 2.18.0.0
+X-TIMESTAMP-MAP=LOCAL:00:00:00.000,MPEGTS:187200
+
+00:20:00.000 --> 00:20:00.116
+We are heavily leveraging skills.
+
+00:20:01.156 --> 00:20:02.996
+Lastly, evals. Very important.
+
+00:20:03.236 --> 00:20:09.676
+So the verticals are also responsible to run offline evals
+to ensure that their context gives a high level of accuracy,
+
+00:20:10.036 --> 00:20:17.036
+and then also monitor user traces to ensure the golden
+data sets keep getting updated. What does this led to?
+
+00:20:17.196 --> 00:20:24.516
+So from nothing. Now most of our queries 85% of our queries
+now hit certified data sets due to signals Marketplace.
+
+00:20:24.916 --> 00:20:27.396
+The data sets, which are the most used data sets,
+
+00:20:27.396 --> 00:20:34.676
+have gone down from 1300 to roughly over 550. And then
+we've seen a ten x improvement in our DPI SLA compliance.
+
+00:20:36.116 --> 00:20:39.836
+and we've published more than 2000 context files already.
+
+00:20:39.876 --> 00:20:42.076
+With more incoming. We're not done yet.
+
+00:20:42.076 --> 00:20:44.516
+We have a skills governance framework in works.
+
+00:20:44.716 --> 00:20:50.236
+And then we have a framework by each business
+vertical where they are held to a certain level of threshold.
+
+00:20:52.076 --> 00:20:57.356
+The last pillar is AI enablement.
+So we've done a few things here starting with Gen AI sprints.
+
+00:20:57.356 --> 00:21:03.356
+So both in 2024 and 2025, we ran what we call Gen AI sprints,
+where for a few weeks we shut down.
+
+00:21:04.436 --> 00:21:06.636
+The entire company was focused on learning.
+
+00:21:07.316 --> 00:21:12.636
+We we wanted all the grabbers to upskill,
+learn, experiment with the latest and greatest Gen AI tools.
+
+00:21:12.636 --> 00:21:22.436
+At that point in time, the goal was to build better tools
+for and change the way we really work and really unleash productivity,
+
+00:21:22.796 --> 00:21:28.076
+and then apply those learnings to solve real
+customer customer problems and gain customer delight.
+
+00:21:28.676 --> 00:21:32.236
+We also made the hottest coding tools available to all of grabbers.
+
+00:21:33.076 --> 00:21:40.636
+A case in point is that at this point for tech grabbers,
+97% of us use AI augmented coding tools,
+
+00:21:41.676 --> 00:21:44.236
+and we are evolving with whatever comes our way.
+
+00:21:44.836 --> 00:21:51.676
+When NCP became a thing, we created a central portal where
+we are hosting as many as 50 centrally hosted NCP servers.
+
+00:21:52.396 --> 00:22:00.796
+We are making tens of thousands of calls daily to these NCP servers,
+and they are widely used both by agents and users alike.
+
+00:22:01.756 --> 00:22:07.316
+When skills became a thing, we enhanced the portal and introduced
+skills where it's a crowdsourced portal of sorts,
+
+00:22:07.316 --> 00:22:11.476
+where everybody can publish a skill
+which everybody can then benefit from.
+
+00:22:11.476 --> 00:22:14.796
+We have more than 1000 already,
+and we continue to add more and more every day.
+
+00:22:16.036 --> 00:22:20.076
+But we came to a realization. While coding may look easy,
+
+00:22:20.116 --> 00:22:26.836
+where you have a coding agent or you use a system
+prompt context model interface, and it just magically works.
+
+00:22:27.396 --> 00:22:31.236
+But the moment you try to productionize it,
+you have to think about scaling.
+
+00:22:31.236 --> 00:22:33.716
+I'm a non-tech user. I don't know what deployment means.
+
+00:22:33.716 --> 00:22:36.996
+Hosting consistency are you give up.
+
+00:22:38.116 --> 00:22:42.796
+So then we thought to ourselves,
+how might we enable analytics with most up to date context
+
+00:22:42.796 --> 00:22:47.316
+and problems where it doesn't need to be updated
+by everyone when something gets updated?
+
+00:22:47.316 --> 00:22:52.516
+How are the configurations for a specific agent
+consistent across the board with a uniform setup of models?
+
+00:22:52.516 --> 00:22:59.756
+MC context scales and prompts. How do we make the agents
+reliable where they give accurate and dependable answers?
+
+00:23:00.316 --> 00:23:01.996
+How do we support tailored interfaces?
+
+00:23:01.996 --> 00:23:04.196
+Because it's very easy to create them now.
+
+00:23:04.196 --> 00:23:10.756
+How do we handle the intricacies of use cases for the end
+users so that so that they don't have to think about it twice?
+
+00:23:11.156 --> 00:23:14.396
+And how do we democratize access, which is ease of discovery,
+
+00:23:14.396 --> 00:23:20.356
+but ensure it's also secure at the same time,
+which is what gave birth to BRICs.
+
+00:23:21.316 --> 00:23:24.756
+So BRICs is our own Agentic creation and hosting platform,
+
+00:23:25.876 --> 00:23:33.396
+where the builder comes in and configures the context model skills,
+sets the Guardrails just like they would do in their local,
+
+00:23:33.396 --> 00:23:35.196
+but on a web hosted interface here.
+
+00:23:36.076 --> 00:23:38.996
+Once configured, the Brick's infra takes care of the rest.
+
+00:23:39.396 --> 00:23:43.436
+Things like user ID propagation across
+M.c.p.s. User logs, audit trails,
+
+00:23:43.556 --> 00:23:48.436
+and much more is just taken taken
+care of magically and to the end user.
+
+00:23:48.476 --> 00:23:50.396
+All of this complexity is obfuscated.
+
+00:23:50.716 --> 00:23:53.476
+They simply come to the web interface, log in with their.
+
+00:23:53.476 --> 00:23:56.636
+So get certified insights via the managed apps.
+
+00:23:56.876 --> 00:24:04.116
+They can still see the configurations,
+but they can't really change them for cause behind bricks.
+
+00:24:04.676 --> 00:24:06.916
+One is we've made it model agnostic.
+
+00:24:06.916 --> 00:24:12.716
+So based on your need, based on the trade off that you
+want to make cost versus performance horses for courses.
+
+00:24:12.716 --> 00:24:16.236
+We provided all the state of the art frontier models to choose from.
+
+00:24:17.316 --> 00:24:18.716
+Connectivity is taken care of. You.
+
+00:24:18.716 --> 00:24:21.396
+So all the all the sub apps do require connectivity.
+
+00:24:21.396 --> 00:24:24.276
+So the models are already pre-configured.
+
+00:24:24.276 --> 00:24:29.316
+And your so propagates to these M.c.p.s,
+ensuring the access is tuned to whatever you have access for.
+
+00:24:30.556 --> 00:24:32.356
+and then the configs are centralised.
+
+00:24:32.356 --> 00:24:38.356
+So each brick has an admin and the admin centralizes
+these conflicts and locks them down, be it user rules,
+
+00:24:38.356 --> 00:24:42.236
+system prompts or NCP that they want to use or the order
+in which they want to use them.
+
+00:24:42.236 --> 00:24:44.556
+And then everybody just consumes this.
+
+00:24:45.436 --> 00:24:48.556
+Plus, we support custom UIs where it's all centrally hosted.
+
+00:24:48.556 --> 00:24:52.276
+Everybody doesn't have to worry
+about hosting their own server somewhere.
+
+00:24:53.516 --> 00:24:58.476
+Let's see it in action. So a user logs in. They land on the home page.
+
+00:24:58.476 --> 00:25:00.000
+They see all the applications. They can search for.
+

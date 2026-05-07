@@ -1,0 +1,174 @@
+WEBVTT	#Elemental Media Engine(TM) 2.18.0.0
+X-TIMESTAMP-MAP=LOCAL:00:00:00.000,MPEGTS:187200
+
+00:20:00.000 --> 00:20:06.476
+Data is also stored in Apache Iceberg Open table format,
+and this is a very important concept, which I'll explain on later.
+
+00:20:07.556 --> 00:20:15.316
+This allows for asset transactions in your data lake, and you
+can time travel so that you can query historical data in the past.
+
+00:20:16.076 --> 00:20:24.156
+This allows also for schema evolution so that when your new
+data sources come online, you do not have expensive data rewrites.
+
+00:20:25.076 --> 00:20:28.796
+Your data lake can stay flexible as the business grows.
+
+00:20:30.716 --> 00:20:38.036
+AWS glue then handles all the transformation,
+such as business, applying rules and the entire pipeline.
+
+00:20:38.836 --> 00:20:45.596
+Glue is fully serverless, and you only pay
+for the resources used during the execution of your ETL jobs.
+
+00:20:46.756 --> 00:20:50.756
+For Popular, this means that their ETL pipeline
+can scale as the business grows,
+
+00:20:50.756 --> 00:20:54.716
+and they don’t have to manage for capacity planning.
+
+00:20:56.796 --> 00:21:04.356
+On the output side, QuickSight connects to redshift for live
+interactive dashboards, which has seen earlier from Ee Siew Ping.
+
+00:21:05.316 --> 00:21:12.556
+Amazon Quick then adds the Gen AI layer on top so
+that your users can ask questions to your data in natural language.
+
+00:21:14.356 --> 00:21:23.196
+Spanning the entire architecture, Amazon SageMaker Unified Studio
+brings this whole stack together so that your data engineers,
+
+00:21:23.356 --> 00:21:29.236
+data scientists can do data preparation and model building
+in one governance environment.
+
+00:21:30.396 --> 00:21:36.836
+The last session in this track actually tells a great story of how
+Unified Studio is used in the legal domain.
+
+00:21:37.156 --> 00:21:40.476
+I'll have you attended session if you can.
+
+00:21:43.356 --> 00:21:50.316
+So back on the open data strategy and why it's so important
+for the for the foundation of scalable Data lake.
+
+00:21:51.516 --> 00:22:00.116
+Open data formats such as Apache Iceberg and Parquet allow you
+to scale because your data is not locked into one single data engine.
+
+00:22:00.676 --> 00:22:08.716
+You can sort out for different analytic solution
+Redshift if you like Athena and other third party solutions.
+
+00:22:08.716 --> 00:22:13.236
+If you want all reading from the same shared data set.
+
+00:22:14.476 --> 00:22:18.276
+No duplication and no expensive data rewrites.
+
+00:22:19.236 --> 00:22:25.956
+This is the difference between building a platform that you can evolve
+with compared to one that may hold you hostage.
+
+00:22:26.756 --> 00:22:29.036
+This architecture we built with them today.
+
+00:22:31.516 --> 00:22:38.516
+And the scale here is real. When you're talking about
+exabytes of Apache parquet data sitting in Amazon S3,
+
+00:22:39.316 --> 00:22:43.796
+this actually allows you to handle over 25 million requests per second
+
+00:22:43.996 --> 00:22:50.156
+and hundreds of petabytes of data served daily.
+This isn't a theoretical pattern.
+
+00:22:50.156 --> 00:22:52.316
+It's production at massive scale.
+
+00:22:53.836 --> 00:22:57.316
+The takeaway here is when your foundation layer is open.
+
+00:22:57.636 --> 00:23:01.556
+Everything you build on top can stay portable and composable.
+
+00:23:02.476 --> 00:23:05.156
+And the starting point for what I'll show you next.
+
+00:23:06.956 --> 00:23:12.036
+So once we set this open architecture in place,
+what can we build up on top?
+
+00:23:13.436 --> 00:23:19.396
+Open data formats have taken off because
+customers don't want a monolithic analytics stack.
+
+00:23:19.876 --> 00:23:26.836
+Different teams in a company can have different needs, and they
+should pick up the tool that is necessary that is right for them.
+
+00:23:27.716 --> 00:23:33.476
+Looking at this diagram, you can see
+Redshift Athena managed streaming Kinesis.
+
+00:23:33.756 --> 00:23:38.636
+So these are different tools that can scale
+independently based on their use cases.
+
+00:23:39.636 --> 00:23:46.396
+Open means open. You can see that third party
+analytics are right side by side with AWS tools as well.
+
+00:23:47.716 --> 00:23:54.556
+Up top SageMaker serverless notebooks,
+quick for dashboarding and glue, zero ETL,
+
+00:23:54.996 --> 00:23:58.076
+all connecting to your AI and application.
+
+00:23:58.116 --> 00:23:58.956
+On the right,
+
+00:24:00.396 --> 00:24:07.196
+this open analytics architecture helps you to evolve
+your strategy without expensive data migrations.
+
+00:24:07.676 --> 00:24:13.716
+You can choose to stop your engine,
+change to a new one, and your entire data stays put.
+
+00:24:17.516 --> 00:24:23.116
+Moving back to quick what if scenarios here gives gives a highlight.
+
+00:24:24.516 --> 00:24:28.876
+What if modeling used to need a data scientist and weeks of work.
+
+00:24:29.756 --> 00:24:32.756
+Scenario analysis in Amazon Quick changes.
+
+00:24:32.756 --> 00:24:36.316
+That is an Agentic AI that walks you through.
+
+00:24:36.356 --> 00:24:43.076
+Walks you through a complex problem,
+step by step, suggesting the right ethical approach as you go.
+
+00:24:43.836 --> 00:24:50.396
+The example on screen I just showed was me
+asking a question what if December holiday spikes
+
+00:24:50.396 --> 00:24:59.276
+in 2026 is 15% higher than 2025?
+How much should I pre-position my stock to prepare for that?
+
+00:24:59.756 --> 00:25:00.000
+You can see was a question I asked with a what if analysis
+and Amazon Quick is enabled, is able to help you analyze that.
+

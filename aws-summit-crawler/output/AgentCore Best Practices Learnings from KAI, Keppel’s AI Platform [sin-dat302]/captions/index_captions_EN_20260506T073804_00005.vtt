@@ -1,0 +1,192 @@
+WEBVTT	#Elemental Media Engine(TM) 2.18.0.0
+X-TIMESTAMP-MAP=LOCAL:00:00:00.000,MPEGTS:187200
+
+00:20:00.000 --> 00:20:05.036
+So when they move into a commercial asset,
+they move these two solutions in as well.
+
+00:20:05.676 --> 00:20:10.636
+Click plus is a tenant engagement app in the hands of the tenant.
+
+00:20:10.836 --> 00:20:13.196
+They can gain access to the building.
+
+00:20:13.436 --> 00:20:16.836
+They they can consume FNB at a discounted rate.
+
+00:20:17.196 --> 00:20:21.676
+They can also engage in communities or participate in activities.
+
+00:20:22.476 --> 00:20:29.596
+Now click plus is the only connection
+we have between the tenants to the operating team.
+
+00:20:30.076 --> 00:20:32.756
+So feedback is really, really important to us.
+
+00:20:33.316 --> 00:20:39.716
+We need to know if there's an issue in a building
+or there is an extension of aircon that you want, right?
+
+00:20:39.756 --> 00:20:47.476
+As an FM request or even giving us a compliment,
+click plus is the channel that they use to submit that to us.
+
+00:20:48.916 --> 00:20:56.836
+The problem is right here. We made that form so easy
+to use in just a few, you know,
+
+00:20:56.876 --> 00:20:59.796
+just a short description and a click.
+
+00:20:59.996 --> 00:21:04.716
+You send it to us and we need a property manager that sits in between,
+
+00:21:04.756 --> 00:21:10.916
+across the whole floor to kind of understand
+the intent of that ticket that has been submitted.
+
+00:21:10.916 --> 00:21:16.596
+Because it is so brief, sometimes the property
+manager has to call up the tenant
+
+00:21:16.596 --> 00:21:20.116
+and ask to clarify exactly what are they looking for.
+
+00:21:20.956 --> 00:21:29.036
+So with that, we now have the tickets coming
+in. They have to understand and decipher the thing.
+
+00:21:29.156 --> 00:21:36.716
+And there's one more step. The property manager has to do it has to do
+with an FM request or a service ticket
+
+00:21:36.756 --> 00:21:43.676
+or an issue with a building, they need
+to push that ticket to the next solution, which is click plus FM.
+
+00:21:43.916 --> 00:21:49.316
+That's a CMS, a facility management
+solution that empowers our technicians.
+
+00:21:50.756 --> 00:22:00.116
+So with AgentCore and multi-agent architecture, we kind of like
+eliminate the need for this human in the middle intervention.
+
+00:22:00.996 --> 00:22:05.676
+We have now a orchestrator agent.
+We haven't got a name for the agents yet.
+
+00:22:06.276 --> 00:22:15.796
+So the orchestrator agent doubles up as a chatbot and converse
+with the tenant to understand the intent
+
+00:22:15.996 --> 00:22:18.036
+and know exactly what action to take.
+
+00:22:19.236 --> 00:22:24.276
+Now, if that ticket is coming in or that call
+that's coming in is actually related to FM,
+
+00:22:24.956 --> 00:22:30.836
+it will need to work alongside the FM agent and submit that ticket.
+
+00:22:31.156 --> 00:22:36.116
+Now, the tools that the orchestrator
+agent has is information about the building.
+
+00:22:36.356 --> 00:22:40.516
+The features of that building are the SOPs and the tenancy guide,
+
+00:22:40.796 --> 00:22:48.476
+while the FM agent has an inventory of all the equipment that's
+in that building. Look around you.
+
+00:22:48.916 --> 00:22:56.916
+Every piece of equipment here the FM agent needs to know,
+including the historical repair records as there.
+
+00:22:57.276 --> 00:23:03.556
+And we design it purposely, you know,
+into multi agents because what Puneet Sachdev.
+
+00:23:03.716 --> 00:23:06.076
+You know we do not want an agent to bloat.
+
+00:23:07.796 --> 00:23:15.476
+So here you see me a tenant engaging the board to say, hey, you know,
+
+00:23:15.516 --> 00:23:20.676
+there's a water heater in the female changing room is not working.
+
+00:23:21.036 --> 00:23:24.636
+Not that I use the female changing room, by the way.
+
+00:23:24.836 --> 00:23:33.836
+So because the orchestrator agent knows that there's only
+two buildings that have the shower points, right?
+
+00:23:33.876 --> 00:23:36.596
+Keppel Bay Tower and Keppel South Central.
+
+00:23:36.916 --> 00:23:41.036
+It comes and clarifies with me
+automatically and say, which building is that?
+
+00:23:41.316 --> 00:23:45.236
+So I say, okay, KSC, which stands for,
+you know, capital South Central.
+
+00:23:45.756 --> 00:23:50.876
+And then it goes off and say, I'm on it and then tries
+to log that ticket with the FM agent.
+
+00:23:51.716 --> 00:23:57.876
+The FM agent comes back and say, hold on, hold on, hold on.
+There are actually three in Keppel, South Central,
+
+00:23:57.876 --> 00:24:00.076
+all on level five podium. Which one is it?
+
+00:24:00.676 --> 00:24:04.596
+But I'm a tenant. I wouldn't know whether. Is it cubicle one, 2 or 3?
+
+00:24:04.596 --> 00:24:07.316
+So I say all of them. So what you see,
+
+00:24:07.316 --> 00:24:15.756
+the interesting thing is the orchestrator
+agent goes and negotiate with the FM agent,
+
+00:24:16.076 --> 00:24:21.076
+and they agreed to lock three tickets,
+one for each of the shower room that's there.
+
+00:24:21.996 --> 00:24:27.276
+So with this change, our property
+managers are now saving 2 to 3 hours a day,
+
+00:24:27.996 --> 00:24:35.436
+having to deal and comb through the incidents that are coming
+in. And at the tech level, this is just scratching the surface.
+
+00:24:35.476 --> 00:24:42.276
+There are immense potential on how we're going
+to scale this across the other parts of the real estate operations.
+
+00:24:42.476 --> 00:24:43.636
+Over to you. Come on.
+
+00:24:43.636 --> 00:24:45.636
+Wow. That's very interesting, Brian.
+
+00:24:46.076 --> 00:24:51.076
+Like I said before, I'll be walking
+walking you through another Agentic use case.
+
+00:24:51.276 --> 00:24:54.476
+One of my favorite agents from the Chi family of agents.
+
+00:24:56.956 --> 00:24:58.316
+Meet Ivy.
+

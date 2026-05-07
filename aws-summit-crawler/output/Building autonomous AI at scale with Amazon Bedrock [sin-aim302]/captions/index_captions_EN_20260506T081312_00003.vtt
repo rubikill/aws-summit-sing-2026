@@ -1,0 +1,212 @@
+WEBVTT	#Elemental Media Engine(TM) 2.18.0.0
+X-TIMESTAMP-MAP=LOCAL:00:00:00.000,MPEGTS:187200
+
+00:10:00.000 --> 00:10:03.156
+The other the fourth strategy is to optimize your prompts.
+
+00:10:03.156 --> 00:10:09.516
+And the main idea again here is that if you
+have shorter prompts, this means fewer input tokens.
+
+00:10:09.516 --> 00:10:13.036
+And this results into lower cost and faster execution.
+
+00:10:13.116 --> 00:10:15.836
+So how can we optimize our prompts?
+
+00:10:16.076 --> 00:10:20.876
+Here are a few ways. The first one is that not to be too prescriptive.
+
+00:10:21.316 --> 00:10:24.036
+In the older days, when the models were not so smart,
+
+00:10:24.036 --> 00:10:29.556
+you had to be very explicitly prescriptive when it comes
+to specifically to negative steering.
+
+00:10:29.596 --> 00:10:31.916
+Don't do this, don't do that, and so on.
+
+00:10:31.916 --> 00:10:35.516
+Nowadays, the models actually are much more smarter.
+
+00:10:35.516 --> 00:10:38.076
+So you can actually give positive steering.
+
+00:10:38.076 --> 00:10:44.116
+You can specifically say what to do,
+the model, what to do, and it actually can follow quite well.
+
+00:10:44.116 --> 00:10:46.996
+So you can actually shorten your prompts there.
+
+00:10:46.996 --> 00:10:49.716
+The other one is to use progressive disclosure.
+
+00:10:49.956 --> 00:10:53.916
+And basically this means don't reveal all your context at once.
+
+00:10:54.116 --> 00:10:56.396
+Reveal it gradually, whenever it's needed.
+
+00:10:56.396 --> 00:11:02.916
+So this is the same idea that we have,
+for example, for skills in cloud code or in Kiro.
+
+00:11:03.116 --> 00:11:07.436
+And finally, try to use, for example, some Chrome optimizer.
+
+00:11:07.476 --> 00:11:10.516
+There is a built in chrome optimizer in Amazon Bedrock.
+
+00:11:10.556 --> 00:11:16.716
+There are also some other open source optimizers,
+so pick your selection there.
+
+00:11:18.276 --> 00:11:20.196
+The fifth strategy is cost governance.
+
+00:11:20.196 --> 00:11:28.996
+And this basically means knowing who is spending what and having
+the right controls in order to stop costs from spiraling, right?
+
+00:11:29.596 --> 00:11:32.836
+Amazon Bedrock allows you to measure many different metrics.
+
+00:11:32.836 --> 00:11:37.196
+And this could be, for example, consumption metrics, latency metrics,
+
+00:11:38.716 --> 00:11:40.516
+invocation metrics, and so on.
+
+00:11:41.716 --> 00:11:46.276
+It allows you to allocate cost.
+And specifically you can tag IAM users.
+
+00:11:46.276 --> 00:11:53.876
+You can tag IAM roles, projects,
+or even whole applications using application inference profiles.
+
+00:11:54.156 --> 00:11:57.716
+You can set up alerts in AWS budgets.
+
+00:11:57.836 --> 00:11:59.796
+And also you can have visualizations.
+
+00:11:59.796 --> 00:12:03.156
+You can have a bird's eye view of what's happening with your cost.
+
+00:12:03.156 --> 00:12:07.316
+There is a built in dashboard in CloudWatch,
+or you can create your own.
+
+00:12:07.436 --> 00:12:10.996
+So basically Amazon Bedrock gives you full.
+
+00:12:11.316 --> 00:12:15.996
+Per app, per team, per per user cost.
+
+00:12:16.036 --> 00:12:16.836
+Governance.
+
+00:12:18.596 --> 00:12:23.636
+Now let's talk about security.
+And this is this makes a difference between a demo
+
+00:12:23.636 --> 00:12:27.236
+and a production system. And let's start with the basics.
+
+00:12:27.276 --> 00:12:31.996
+Right. Amazon Bedrock is by design secure and compliant.
+
+00:12:32.276 --> 00:12:36.916
+All your data is never shared with any model providers.
+
+00:12:37.316 --> 00:12:42.476
+All data in transit is always encrypted with
+
+00:12:42.516 --> 00:12:50.316
+at least TLS 1.2. All API calls are monitored with AWS CloudTrail,
+
+00:12:50.396 --> 00:12:58.156
+there is a very rich portfolio of compliance standards
+for example, ISO, SoC, two, HIPAA and so on.
+
+00:12:58.756 --> 00:13:04.596
+Customers who are using Bedrock are compliant with GDPR,
+
+00:13:04.876 --> 00:13:11.036
+and also Amazon Bedrock is approved for further
+up high workloads in the US government.
+
+00:13:11.476 --> 00:13:14.556
+So with that out of the way, let's talk about Amazon Bedrock.
+
+00:13:14.556 --> 00:13:20.116
+Guardrails. Amazon Bedrock. Guardrails is one
+of the features of Amazon Bedrock that allows you
+
+00:13:20.116 --> 00:13:25.436
+to implement responsible AI
+principles in your Generative AI applications.
+
+00:13:25.796 --> 00:13:33.756
+It allows you it gives you six different key safeguards things,
+for example, like denied topics,
+
+00:13:35.076 --> 00:13:38.956
+blocking, detecting and redacting PII,
+
+00:13:40.436 --> 00:13:44.676
+blocked words, prompt attacks, hallucination detection, and so on.
+
+00:13:44.876 --> 00:13:51.036
+Now, until now, you were able
+to apply these guardrails on AWS account level,
+
+00:13:51.036 --> 00:13:58.716
+but now it is possible to apply it in the whole
+organization across all AWS accounts of a whole organization.
+
+00:13:58.716 --> 00:14:07.916
+You can apply Guardrails per agent,
+in knowledge bases or even in models that are not hosted in Bedrock.
+
+00:14:08.076 --> 00:14:11.796
+And now it can be also applied for coding use cases.
+
+00:14:14.676 --> 00:14:20.716
+Bedrock. Guardrails is very good
+for safeguarding your content, but when it comes to agents,
+
+00:14:20.836 --> 00:14:23.916
+it's important for us to control their actions, right?
+
+00:14:23.956 --> 00:14:27.516
+And this is where Amazon Bedrock AgentCore Policy comes.
+
+00:14:28.076 --> 00:14:33.876
+It intercepts any tool call and it
+evaluates it against deterministic policies.
+
+00:14:34.076 --> 00:14:40.716
+So in real time you're able to control
+the actions of your agents, right?
+
+00:14:40.756 --> 00:14:46.676
+Basically, for example, what tool they're calling with,
+what parameters under what conditions and so on.
+
+00:14:47.076 --> 00:14:51.476
+It's very important because again,
+this is in real time And it's deterministic.
+
+00:14:51.476 --> 00:14:52.676
+It's not probabilistic.
+
+00:14:54.036 --> 00:14:56.836
+And finally, Amazon Bedrock AgentCore registry.
+
+00:14:56.836 --> 00:15:00.000
+This is our unified catalog for models and tools.
+

@@ -1,0 +1,202 @@
+WEBVTT	#Elemental Media Engine(TM) 2.18.0.0
+X-TIMESTAMP-MAP=LOCAL:00:00:00.000,MPEGTS:187200
+
+00:15:00.000 --> 00:15:00.436
+Third, we felt we should have all applications be portable.
+
+00:15:00.916 --> 00:15:06.196
+In fact, nowadays it's not only fixing to one Cloud we want it
+to be running. Running on every cloud.
+
+00:15:06.196 --> 00:15:08.076
+You can run on prem if you need to.
+
+00:15:08.436 --> 00:15:14.316
+So this AIDLC or the way that we architected
+it makes it really, really portable.
+
+00:15:14.916 --> 00:15:18.636
+Okay. For metric, we want to be faster in security fixes.
+
+00:15:18.996 --> 00:15:25.196
+Well, if you fix a pen test findings or you
+fix the VA findings, you will know all this.
+
+00:15:25.596 --> 00:15:29.036
+So instead of days or weeks, now we're talking about hours.
+
+00:15:29.316 --> 00:15:35.756
+So in fact, if the AI is prompted correctly steered properly right,
+it could be fixed really, really fast.
+
+00:15:36.116 --> 00:15:42.396
+Oh yeah. In terms of hours. Fifth, no unnecessary platform fees.
+
+00:15:42.876 --> 00:15:47.596
+Well, we are breaking free from PaaS or SaaS licensing models.
+
+00:15:47.836 --> 00:15:52.276
+So we just want to pay for the actual computing resources we consume.
+
+00:15:52.836 --> 00:15:56.476
+Okay, last one human in the loop. That is the most important.
+
+00:15:56.476 --> 00:16:02.556
+In fact, when we talk about AI, it's no longer AI autonomously.
+
+00:16:02.556 --> 00:16:03.996
+Like what I think.
+
+00:16:05.036 --> 00:16:10.636
+If you look at the AWS paper,
+they talk about strong human in the loop.
+
+00:16:11.156 --> 00:16:17.156
+So in this case, right. That’s why I think
+Microsoft CEO talk about everyone will be an architect
+
+00:16:17.156 --> 00:16:20.996
+instead of a developer, which is true, I think.
+
+00:16:21.476 --> 00:16:29.636
+So it pays well. I mean, you should get developers that are really
+good, really senior and rather than novice developers,
+
+00:16:29.756 --> 00:16:33.876
+we find that those strong developers
+can do really well under AI coding.
+
+00:16:34.396 --> 00:16:36.996
+Okay. That's that's the end of my tech section.
+
+00:16:37.196 --> 00:16:40.316
+How do you achieve this? Let me bring you back to now.
+
+00:16:40.476 --> 00:16:40.956
+Yeah.
+
+00:16:47.116 --> 00:16:51.236
+All right. Thank you for sharing the challenges,
+key outcomes and metrics.
+
+00:16:51.236 --> 00:16:54.276
+So how do we work with NIE to achieve those?
+
+00:16:55.156 --> 00:17:02.476
+Now, one of the key tools we use for NIE
+modernization journey through AIDLC was AWS Transform custom.
+
+00:17:02.796 --> 00:17:10.956
+AWS Transform custom is a command line, interface based autonomous
+agent that supports virtually any code transformation scenarios.
+
+00:17:11.236 --> 00:17:18.196
+It targets specific frameworks, language to language conversion,
+version upgrades, and even architectural changes.
+
+00:17:18.596 --> 00:17:23.476
+AWS Transform custom breaks down the barrier
+of language and framework lock in,
+
+00:17:23.516 --> 00:17:26.756
+putting the power of customization directly into your hands.
+
+00:17:27.076 --> 00:17:30.156
+And one of its key differentiator is continual learning.
+
+00:17:30.676 --> 00:17:37.596
+The AWS Transform Custom Agent improves with every run,
+incorporating feedback to become smarter over time.
+
+00:17:38.076 --> 00:17:46.596
+And because it is command line interface based, it can also be ran
+virtually from anywhere from your local laptop's EC2 instances,
+
+00:17:46.756 --> 00:17:54.676
+containers, CI, CD pipelines, or even AWS Batch,
+where you can process thousands of repositories in parallel.
+
+00:17:55.676 --> 00:17:58.076
+So how does AWS transform custom work?
+
+00:17:58.796 --> 00:18:01.196
+Firstly, you can provide a source code.
+
+00:18:01.196 --> 00:18:08.036
+So this could be one or more repositories from GitHub,
+GitLab, a local machine, or any source control system.
+
+00:18:09.236 --> 00:18:17.716
+Next, you can then also provide organization specific instructions
+such as custom validation commands, library upgrade requirements,
+
+00:18:17.716 --> 00:18:21.236
+or any company specific coding standards or constraints.
+
+00:18:22.036 --> 00:18:24.356
+And once you have provided that information,
+
+00:18:24.356 --> 00:18:29.316
+AWS Transform custom verifies your code
+by building it in the source environment
+
+00:18:29.316 --> 00:18:37.116
+and running tests to ensure that everything works as expected
+in the original version and one source verification passes.
+
+00:18:37.436 --> 00:18:42.916
+AWS Transform custom proceeds
+to the transformation phase with its multi-agent system.
+
+00:18:43.436 --> 00:18:46.276
+So over here, firstly you have your planner agent.
+
+00:18:46.556 --> 00:18:52.676
+The planner agent analyzes the project and generates
+a comprehensive step by step transformation plan.
+
+00:18:53.036 --> 00:18:59.676
+Human review is invited at this stage to approve,
+modify or redirect the plan before execution begins.
+
+00:19:00.796 --> 00:19:06.316
+Secondly, your execution agent,
+your execution agent, executes the plan incrementally.
+
+00:19:06.516 --> 00:19:12.716
+It creates a local staging branch and commits changes to it,
+enabling rollback to any point in time.
+
+00:19:13.196 --> 00:19:20.196
+And it also provides a live workload so that you can monitor
+exactly what is changing now throughout execution.
+
+00:19:20.396 --> 00:19:25.236
+The agent references a knowledge base that is built
+from the additional context you provide.
+
+00:19:25.236 --> 00:19:31.436
+So this could be documentation or organization
+specific rules that will be used for code generation.
+
+00:19:32.316 --> 00:19:34.476
+And then you have your validation agent.
+
+00:19:34.476 --> 00:19:40.916
+Now your validation agent validates the transformation
+by ensuring that the transform code compiles successfully.
+
+00:19:41.076 --> 00:19:47.436
+So this is done by running unit tests and automating
+and executing any automated scripts that may have defined.
+
+00:19:47.836 --> 00:19:54.516
+And if validation fails, the self debug agent
+automatically takes over to identify and fix those issues.
+
+00:19:55.436 --> 00:19:59.156
+Now, after each run, the agent captures knowledge items.
+
+00:19:59.156 --> 00:20:00.000
+So knowledge items are automatically extracted.
+

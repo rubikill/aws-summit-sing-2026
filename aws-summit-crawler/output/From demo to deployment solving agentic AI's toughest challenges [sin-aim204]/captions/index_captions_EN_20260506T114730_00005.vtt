@@ -1,0 +1,168 @@
+WEBVTT	#Elemental Media Engine(TM) 2.18.0.0
+X-TIMESTAMP-MAP=LOCAL:00:00:00.000,MPEGTS:187200
+
+00:20:00.000 --> 00:20:05.476
+We are able to score and interact,
+score live interactions on 13 built in evaluations.
+
+00:20:05.676 --> 00:20:09.196
+This is common across all use case and we should definitely use that.
+
+00:20:09.196 --> 00:20:14.516
+But the more important bit is the custom evaluations,
+which is very specific to your use case.
+
+00:20:14.516 --> 00:20:17.996
+And we can automate this process with AgentCore custom evaluations.
+
+00:20:18.756 --> 00:20:22.156
+And the important part, which is the undifferentiated heavy lifting here.
+
+00:20:22.156 --> 00:20:27.316
+There is no infrastructure overhead required.
+This is all done as a managed service for you.
+
+00:20:28.276 --> 00:20:36.196
+The key point is this we have to be able to test over and over again,
+from the dev cycle to production, and not just in production.
+
+00:20:36.396 --> 00:20:43.356
+We have to do that because then we are able to understand
+the behavior of the Agentic AI system that we have built,
+
+00:20:43.356 --> 00:20:46.676
+and not just see it for the first time in production.
+
+00:20:46.676 --> 00:20:50.156
+Remember, POCs are great. You prove that it works.
+
+00:20:50.156 --> 00:20:53.236
+You've established that the foundation is there.
+
+00:20:53.516 --> 00:20:57.916
+Then you adjust. You add the extra bits around the non-functional requirements.
+
+00:20:57.916 --> 00:21:04.996
+You add the observability, you add the trust capabilities,
+you add the evaluation, and you add the reliability of these agents.
+
+00:21:04.996 --> 00:21:09.516
+And then you scale to hundreds of thousands
+of users or whatever your use case may be.
+
+00:21:09.516 --> 00:21:16.916
+This is the capability of Amazon Bedrock AgentCore
+that we wanted to talk to you about, and that's all I had for today.
+
+00:21:16.916 --> 00:21:18.436
+Thank you so much.
+
+00:21:22.596 --> 00:21:27.596
+I now invite Mr. Seong Per Lee. He's the head of data and AI at StraitsX.
+
+00:21:28.956 --> 00:21:30.476
+Thank you.
+
+00:21:35.076 --> 00:21:37.876
+Okay, so let me just introduce myself first.
+
+00:21:37.916 --> 00:21:42.956
+I am Seong Per,  I’m the head of data and AI in StraitsX.
+
+00:21:43.316 --> 00:21:46.636
+Let me just quickly give an introduction to what StraitsX.
+
+00:21:47.156 --> 00:21:52.276
+StraitsX is licensed in Singapore to issue stablecoins.
+
+00:21:52.516 --> 00:21:56.716
+And we are using these stablecoins to provide payment services to businesses.
+
+00:21:56.956 --> 00:22:00.556
+And we believe that this will be the future of how payment is made.
+
+00:22:00.596 --> 00:22:07.356
+And we are here positioned to take advantage of this trend
+and enable the future of payments using stablecoins.
+
+00:22:08.436 --> 00:22:15.156
+Now, let me get back to our problem
+statement of what we are developing with AWS.
+
+00:22:15.596 --> 00:22:24.756
+So the problem statement here is this.
+We have an infra team who is maintaining our infrastructure that we use to
+
+00:22:25.156 --> 00:22:29.596
+and to make payments transactions for our customers.
+
+00:22:29.916 --> 00:22:37.756
+And this is built on top of AWS.
+This infrastructure needs to be maintained constantly,
+
+00:22:37.916 --> 00:22:50.116
+and different engineering teams are making use of this because of because
+we have a very small team of infra infra team members about a couple of them,
+
+00:22:50.116 --> 00:22:56.196
+and they are serving a fairly large team of 50, 60, 70 engineers.
+
+00:22:56.196 --> 00:23:00.476
+And these engineers are making quite a lot of requests every day.
+
+00:23:00.476 --> 00:23:06.356
+Every week. We receive on average, about 25 to 35 requests per week,
+
+00:23:06.596 --> 00:23:11.196
+and half of them are actually considered
+to be considered to be urgent by the teams.
+
+00:23:12.436 --> 00:23:24.196
+Of course, we could try to have a bigger infra team to manage all of these this
+request, but we thought, why can't why don't we do this in a better way?
+
+00:23:24.556 --> 00:23:32.556
+And so the team actually set out to create an intelligent
+agent to help solve this problem for them, for themselves.
+
+00:23:33.876 --> 00:23:41.876
+So what we realized is many requests are actually very similar
+to what has happened in the past.
+
+00:23:41.876 --> 00:23:46.756
+And so we could make use of past information to help solve this problem.
+
+00:23:47.676 --> 00:23:52.756
+And this is exactly what the team did. So last sometime last year,
+
+00:23:52.756 --> 00:24:02.076
+the team actually worked with Amazon with AWS
+to run a hackathon and infra team actually then develop this as a prototype
+
+00:24:02.076 --> 00:24:11.156
+and later on productionize this to deliver the agent
+for our for our entire engineering team.
+
+00:24:11.436 --> 00:24:19.556
+So what happens here is this. When a user first creates a request,
+they will do this on Jira in the past.
+
+00:24:19.916 --> 00:24:29.316
+Without the agent, they will have to wait for an infra team member
+to pick up the ticket and respond to their requests, or provide an answer,
+
+00:24:29.356 --> 00:24:37.316
+either to provide answer for them on how to take the next step,
+or to help them troubleshoot an issue that they are facing with an agent.
+
+00:24:37.356 --> 00:24:45.396
+Now that we have developed, the agent will actually pick up
+the ticket immediately after the after it has been created,
+
+00:24:45.396 --> 00:24:57.716
+and it will draw upon a knowledge base that we have created,
+pulling the pulling data from past cases that were in from, from,
+
+00:24:57.756 --> 00:25:00.000
+from Jira and using those information in the tickets.
+

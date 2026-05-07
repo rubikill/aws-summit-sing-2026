@@ -1,0 +1,160 @@
+WEBVTT	#Elemental Media Engine(TM) 2.18.0.0
+X-TIMESTAMP-MAP=LOCAL:00:00:00.000,MPEGTS:187200
+
+00:40:00.000 --> 00:40:04.036
+And while we knew helping you modernize faster would be Popular,
+
+00:40:04.676 --> 00:40:13.956
+it turns out that there's a really long list of legacy code
+that you want to transform things like Python, JavaScript,
+
+00:40:14.316 --> 00:40:17.836
+C2, Roche, migrations, and many, many more.
+
+00:40:18.316 --> 00:40:23.196
+So we ask ourselves, why not support all modernizations?
+
+00:40:23.516 --> 00:40:26.876
+And that's why we built AWS Transform custom.
+
+00:40:27.396 --> 00:40:35.716
+Now you can create transformation agents
+that can modernize any code, API, runtime,
+
+00:40:35.996 --> 00:40:41.676
+even programming languages and frameworks
+that are unique to your company.
+
+00:40:42.036 --> 00:40:47.196
+It continuously improves accuracy by
+learning from every execution and code change,
+
+00:40:47.476 --> 00:40:51.756
+making each transformation more reliable and efficient.
+
+00:40:52.076 --> 00:41:00.836
+With transform, you can finally tackle those migration
+projects and get back to building features that truly matter.
+
+00:41:01.716 --> 00:41:08.556
+Which is exactly what Air Canada
+did with thousands of Lambda functions running
+
+00:41:08.596 --> 00:41:17.036
+on Node.js. 16 Air Canada needed
+to modernize to the more capable Node.js training.
+
+00:41:17.396 --> 00:41:26.596
+The team was able to deploy AWS Transform to coordinate and execute
+their modernization in just a few days with transform.
+
+00:41:26.636 --> 00:41:36.556
+They saw an 80% reduction in both time and cost compared to what
+they had originally expected for their modernization project.
+
+00:41:36.956 --> 00:41:43.756
+We are thrilled to see what agents are delivering value for you. Now,
+
+00:41:44.436 --> 00:41:54.316
+I am truly honored and pleased to welcome the president and Group CEO
+of Certis, Ng Tian Beng to share how they are bringing agents
+
+00:41:54.316 --> 00:42:01.236
+and robotics together on AWS to reimagine security operations.
+
+00:42:01.596 --> 00:42:02.196
+Welcome.
+
+00:42:30.996 --> 00:42:34.636
+Thank you Jaime. Good morning, ladies and gentlemen.
+
+00:42:35.076 --> 00:42:38.916
+I'm very pleased to be here.
+And it looks like I'm joined by a colleague.
+
+00:42:41.356 --> 00:42:43.996
+MAX, could you please say hello to our guests?
+
+00:42:47.276 --> 00:42:52.156
+Hello, everyone. It is a pleasure
+to be here at the AWS Summit, Singapore.
+
+00:42:52.636 --> 00:42:55.956
+Welcome, and I hope you enjoy today's keynote.
+
+00:42:57.156 --> 00:42:57.996
+Thank you MAX.
+
+00:43:03.396 --> 00:43:06.076
+Let me introduce Max to all of you.
+
+00:43:06.956 --> 00:43:10.716
+MAX stands for Multi-Service Autonomous Executive.
+
+00:43:11.076 --> 00:43:16.356
+He's a humanoid concierge,
+and he's an example of a new generation of robotics.
+
+00:43:16.636 --> 00:43:19.116
+We are bringing into real world operations.
+
+00:43:20.116 --> 00:43:24.596
+I know it looks simple, but it
+represents something much, much bigger for us.
+
+00:43:24.956 --> 00:43:32.356
+It's a future that we are building at Certis,
+where AI and robotics are embedded into real life operations.
+
+00:43:33.156 --> 00:43:42.436
+It's a world where intelligent systems can serve as AI agents
+to communicate, to understand context and work alongside humans.
+
+00:43:43.076 --> 00:43:46.076
+This is a direction that Certis is going.
+
+00:43:47.636 --> 00:43:49.556
+Let me briefly talk about our history.
+
+00:43:49.836 --> 00:43:55.676
+We began in 1958 as a guard and escort
+unit within the Singapore Police Force.
+
+00:43:56.036 --> 00:44:01.276
+In 2005 we corporatized and became a Temasek portfolio company.
+
+00:44:01.916 --> 00:44:05.636
+We have now more than 60 years of being part of Singapore's history.
+
+00:44:06.036 --> 00:44:13.036
+We secure aviation sites like Changi Airport,
+critical infrastructure, commercial estates and more.
+
+00:44:14.996 --> 00:44:18.956
+Today, we employ more than 25,000 people across the world.
+
+00:44:19.556 --> 00:44:22.636
+Half of them are here in Singapore and on the front lines.
+
+00:44:24.476 --> 00:44:29.756
+However, like many other manpower intensive industries,
+we do have a fundamental challenge.
+
+00:44:30.236 --> 00:44:37.676
+While the demand for our services is growing quickly,
+the supply of manpower willing to do frontline jobs is very tight.
+
+00:44:38.236 --> 00:44:41.356
+So in 2018, we actually made a decision.
+
+00:44:42.116 --> 00:44:47.516
+Instead of asking how technology can support
+our operations, we asked a bigger question.
+
+00:44:47.836 --> 00:44:55.996
+We ask how should operations themselves be redesigned for worldwide,
+AI and automation are becoming part of the workforce.
+
+00:44:57.876 --> 00:45:00.000
+Two technologies sit at the center of this modernization.
+

@@ -1,0 +1,191 @@
+WEBVTT	#Elemental Media Engine(TM) 2.18.0.0
+X-TIMESTAMP-MAP=LOCAL:00:00:00.000,MPEGTS:187200
+
+00:20:00.000 --> 00:20:06.436
+It's been trained using reinforcement learning specifically
+on ERP systems, form based data applications,
+
+00:20:06.436 --> 00:20:12.476
+and internal systems that don't have APIs
+and can be automated through traditional means.
+
+00:20:13.076 --> 00:20:15.436
+It's not designed to book your travel trips.
+
+00:20:15.596 --> 00:20:20.316
+It's designed to navigate the systems your business actually runs on.
+
+00:20:21.516 --> 00:20:29.956
+The second type is custom process agent built
+and deployed using AgentCore fully know code,
+
+00:20:30.636 --> 00:20:36.036
+you define the set of instructions,
+select the tools that the agents can use,
+
+00:20:36.276 --> 00:20:40.236
+and point it to the specific knowledge it has access to.
+
+00:20:41.356 --> 00:20:44.316
+And from there, we handle the deployment for you.
+
+00:20:45.036 --> 00:20:51.356
+To top it off, you get the full benefit of AgentCore
+capabilities from memory, Guardrails,
+
+00:20:51.356 --> 00:20:57.476
+and even the upcoming evaluation experiences,
+all tailored precisely to your needs.
+
+00:20:58.356 --> 00:21:00.836
+The third type is bring your own agents.
+
+00:21:01.076 --> 00:21:08.276
+Whether you have built agents in AgentCore Bedrock
+or pull them in from third party systems via NCP,
+
+00:21:09.036 --> 00:21:12.916
+they can all be incorporated into your automation fabric.
+
+00:21:13.596 --> 00:21:17.956
+Quick automate doesn't require you
+to rebuild what you have already invested
+
+00:21:17.956 --> 00:21:25.876
+in. Wrapping all of this together is the operational
+infrastructure deployment, versioning,
+
+00:21:26.116 --> 00:21:28.876
+monitoring and governance controls.
+
+00:21:29.516 --> 00:21:38.996
+You have full visibility into what your agents are doing and a
+complete audit trail of activity across your entire organization.
+
+00:21:40.956 --> 00:21:46.076
+The use case on screen gives you a sense
+of range of what Quick is designed to handle,
+
+00:21:46.716 --> 00:21:51.756
+but the real question is what are your most
+critical business processes?
+
+00:21:52.236 --> 00:21:55.196
+The one that actually runs your business?
+
+00:21:55.636 --> 00:21:59.316
+And that’s where Quick Automate is designed to operate.
+
+00:21:59.956 --> 00:22:08.196
+We have customers doing all of this today, from merchant
+onboarding workflows that verify compliance with banking policies.
+
+00:22:08.636 --> 00:22:17.076
+We also have due diligence processes for merger and acquisition,
+supply chain resilience and rebalancing optimizations.
+
+00:22:17.436 --> 00:22:26.876
+The list goes on and on. But let me remind you, these are serious,
+high stakes processes and they are running on quick.
+
+00:22:26.916 --> 00:22:27.956
+Automate today.
+
+00:22:28.996 --> 00:22:31.796
+Well, enough of hearing me rambling on and on, right?
+
+00:22:31.796 --> 00:22:34.396
+Let's hear it from the users themselves.
+
+00:22:34.676 --> 00:22:41.276
+With that, I'll hand over the time to Jonathan from
+Astrata Group who will take you through their quick experience.
+
+00:22:51.076 --> 00:22:56.036
+Hi, my name is Jonathan and at strata
+we are an operating system for motion,
+
+00:22:56.236 --> 00:23:02.596
+the platform of record for mission critical
+operations whose complexity changes by the minute.
+
+00:23:02.956 --> 00:23:11.196
+So we do fleet management, but much more to get
+two decades of operational domain expertise distilled
+
+00:23:11.196 --> 00:23:17.316
+into a software that turns live signals from vehicles,
+assets and people into faster, safer,
+
+00:23:17.316 --> 00:23:24.196
+and more efficient decision making and with an addition
+of AI that augments operators, not replace them.
+
+00:23:24.876 --> 00:23:28.836
+So we started in 2004 on collecting data on the move.
+
+00:23:28.836 --> 00:23:34.316
+And today we are in present. We are presently
+operating in six out of the seven continents.
+
+00:23:34.316 --> 00:23:38.316
+So I'm guessing so far we haven't crossed Antarctica.
+
+00:23:38.356 --> 00:23:39.716
+We could try cold outreach,
+
+00:23:40.916 --> 00:23:42.956
+try to focus on operational intelligence.
+
+00:23:42.956 --> 00:23:47.916
+We enable our customers to make every single
+shift more intelligible, predictable,
+
+00:23:47.916 --> 00:23:53.836
+and improvable in real time by providing them
+real time signals on their fleet of vehicles,
+
+00:23:53.876 --> 00:23:57.436
+assets and people unified into one consolidated platform.
+
+00:23:58.156 --> 00:24:04.916
+We believe that tech enables teams and individuals
+to better their lives, and with the introduction of LMS,
+
+00:24:05.196 --> 00:24:13.796
+we can integrate AI to help our customers with our domain knowledge
+to surface potential problems, suggest solutions,
+
+00:24:13.796 --> 00:24:19.396
+and accelerate the incident response time
+with the operator at the helm of decision making.
+
+00:24:20.836 --> 00:24:25.836
+So when we integrated quake into our platform,
+we built an entire new pipeline for it.
+
+00:24:25.836 --> 00:24:30.396
+A strata intelligence at strata. When we design a product,
+
+00:24:30.436 --> 00:24:34.916
+our guiding question has always been how
+do we make our customers look good?
+
+00:24:34.916 --> 00:24:42.636
+We believe if our service enables our customers to perform better
+at their jobs, it will make them look good and business will come.
+
+00:24:43.156 --> 00:24:45.756
+Hence, our partnership with AWS came naturally,
+
+00:24:46.036 --> 00:24:50.956
+as integrating quake into our platform would provide
+immense value to our customers by saving time
+
+00:24:50.956 --> 00:24:55.236
+on one specific pain point that all our customers have shared with us.
+
+00:24:55.916 --> 00:25:00.000
+Reporting. Now we know our customers,
+our business and operations people.
+

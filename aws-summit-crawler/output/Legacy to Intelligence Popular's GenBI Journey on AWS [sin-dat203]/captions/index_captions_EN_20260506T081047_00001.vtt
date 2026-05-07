@@ -1,0 +1,160 @@
+WEBVTT	#Elemental Media Engine(TM) 2.18.0.0
+X-TIMESTAMP-MAP=LOCAL:00:00:00.000,MPEGTS:187200
+
+00:00:10.436 --> 00:00:14.556
+Good afternoon everyone. I hope you're enjoying the summit so far.
+
+00:00:15.116 --> 00:00:18.396
+I'm Kelly, a solution architect here at AWS.
+
+00:00:19.076 --> 00:00:25.276
+And today I have the pleasure of sharing the stage with Ee Siew Ping,
+director of IT at Popular Holdings,
+
+00:00:25.276 --> 00:00:28.476
+who'll be joining us shortly in today's session.
+
+00:00:28.476 --> 00:00:31.476
+This session is called Legacy to Intelligence.
+
+00:00:32.036 --> 00:00:35.676
+Popular Generative AI Business Intelligence Journey on AWS.
+
+00:00:36.316 --> 00:00:45.716
+I'll be telling you the story about how Popular built a modern,
+AI powered analytics platform on AWS by the end of the session.
+
+00:00:45.716 --> 00:00:51.756
+I hope that you'll take away the transformation
+journey that we have built on AWS and the key takeaways.
+
+00:00:51.796 --> 00:00:53.676
+I'd love for you to walk away with.
+
+00:00:56.036 --> 00:00:58.556
+Our first open with the business story.
+
+00:00:58.836 --> 00:01:05.596
+Who Popular is and where they were on their data
+journey and the visions that guided the transformation today.
+
+00:01:06.596 --> 00:01:13.356
+Then I'll walk you through the architecture we built
+on AWS and the specific capabilities we are leveraging.
+
+00:01:14.396 --> 00:01:19.156
+I'll close with what is next
+for Popular and the possibilities now open to them,
+
+00:01:19.796 --> 00:01:23.316
+and the key takeaways that you'll learn throughout this journey.
+
+00:01:23.316 --> 00:01:27.916
+With that, let me invite Ee Siew Ping
+up directly to share about Popular story.
+
+00:01:48.556 --> 00:01:49.516
+Thank you Kelly.
+
+00:01:49.876 --> 00:01:52.916
+Good afternoon everyone. I'm SUP from Popular.
+
+00:02:01.876 --> 00:02:08.796
+Okay, today I'm going to share a quick story
+about how we transforming our analytics with AWS.
+
+00:02:09.276 --> 00:02:11.516
+So before that, just a bit of context.
+
+00:02:11.916 --> 00:02:15.116
+Popular has been around for more than 100 years.
+
+00:02:15.476 --> 00:02:18.356
+We have 100 stores across Singapore and Malaysia.
+
+00:02:20.356 --> 00:02:25.036
+I believe most of you in this room,
+you may have shopped at Popular shop before.
+
+00:02:25.076 --> 00:02:32.596
+Be it for school books, for stationery,
+or just to walk around behind that shopping experience.
+
+00:02:32.876 --> 00:02:37.036
+There's quite a bit happening managing stores across countries,
+
+00:02:38.476 --> 00:02:42.756
+wide range of products and a different business working together.
+
+00:02:43.396 --> 00:02:46.476
+And all this is supported by a lot of data.
+
+00:02:49.956 --> 00:02:55.796
+Let me give you a bit more context on where we started our reporting.
+
+00:02:55.836 --> 00:03:04.796
+Foundations was built on SAP BW running on premise,
+and it has served us well over the few decades.
+
+00:03:05.556 --> 00:03:11.876
+Over time, the business expanded and the volume
+of data also has increased a lot.
+
+00:03:12.876 --> 00:03:21.916
+At the same time, the pace of decision
+making also pick up in day to day operation.
+
+00:03:23.436 --> 00:03:30.556
+When the business needed new insight,
+it often takes time and sometimes require it involvement.
+
+00:03:31.836 --> 00:03:36.796
+At the same time, different teams working with different data views.
+
+00:03:37.356 --> 00:03:40.636
+So alignment is actually making it quite difficult.
+
+00:03:42.116 --> 00:03:46.956
+So overall we have the foundation and
+
+00:03:47.676 --> 00:03:54.596
+but we saw actually there are opportunities
+for us to improve how we are able to provide a more quick
+
+00:03:54.596 --> 00:03:57.996
+and consistent insights to our teams.
+
+00:04:00.556 --> 00:04:02.196
+From a technical perspective,
+
+00:04:03.676 --> 00:04:06.956
+we are working with a significant amount of business data,
+
+00:04:07.236 --> 00:04:13.596
+years of transactions across multiple
+markets covering finance and our retailers.
+
+00:04:14.556 --> 00:04:21.276
+So we have our front end system,
+the SAP ERP, supporting finance and operations.
+
+00:04:21.876 --> 00:04:30.916
+And on the other hand, we have our SPC POS systems that are actually
+collecting all sales transactions across the network.
+
+00:04:31.796 --> 00:04:36.916
+So together we have a very comprehensive view of our entire business.
+
+00:04:37.996 --> 00:04:40.956
+But our data continued to grow over time.
+
+00:04:45.356 --> 00:04:46.796
+On the output part,
+
+00:04:48.276 --> 00:04:56.156
+we saw actually there are opportunities to improve
+how our team can access the pool of information.
+
+00:04:57.756 --> 00:05:00.000
+Many reports are still being prepared manually,
+

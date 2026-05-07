@@ -1,0 +1,205 @@
+WEBVTT	#Elemental Media Engine(TM) 2.18.0.0
+X-TIMESTAMP-MAP=LOCAL:00:00:00.000,MPEGTS:187200
+
+00:15:00.000 --> 00:15:02.796
+That's what makes this a true foundation for both humans and AI.
+
+00:15:06.476 --> 00:15:11.636
+And the tool that brings this data foundation
+to life is Amazon SageMaker Unified Studio.
+
+00:15:11.676 --> 00:15:15.276
+Think of this as an AI powered, integrated developer experience.
+
+00:15:15.916 --> 00:15:19.476
+It provides serverless notebooks with built in AI assistants.
+
+00:15:19.756 --> 00:15:23.516
+It's integrated with SageMaker catalog for end to end data governance.
+
+00:15:23.676 --> 00:15:26.236
+On screen, what you see is a notebook interface.
+
+00:15:26.476 --> 00:15:31.716
+There's a Data Explorer on the left where you
+can browse catalogs and discover data assets.
+
+00:15:32.916 --> 00:15:39.156
+In the main panel, you can work with SQL, create visualizations,
+or even use natural language to query your data.
+
+00:15:40.436 --> 00:15:43.156
+There's also a data agent capability.
+
+00:15:43.156 --> 00:15:47.596
+You can ask questions about your data
+in plain English and get answers.
+
+00:15:49.036 --> 00:15:58.356
+This dramatically lowers the barrier for non-technical team members
+to explore usage patterns and derive insights for our use case.
+
+00:15:58.356 --> 00:16:03.036
+This is where we analyse search
+query patterns, measure answer quality,
+
+00:16:03.156 --> 00:16:10.076
+identify gaps in our legal corpus and plan
+product improvements all on governed high quality data.
+
+00:16:14.436 --> 00:16:17.676
+But building a great search system isn't a one and done effort.
+
+00:16:18.036 --> 00:16:21.796
+You need to continuously measure, analyze and iterate,
+
+00:16:21.796 --> 00:16:27.116
+and SageMaker Unified Studio gives us an AI
+powered integrated environment to do just that.
+
+00:16:28.356 --> 00:16:31.076
+Here are the four key capabilities that we leveraged.
+
+00:16:32.836 --> 00:16:39.716
+First, governance and sharing. This is about data
+publishing and subscription across the organization.
+
+00:16:40.716 --> 00:16:45.076
+The marketing account and CRM
+account each have their own S3 data stores.
+
+00:16:45.516 --> 00:16:51.436
+These are for usage patterns on ide.com,
+such as the areas of law and the intents of the usage.
+
+00:16:54.196 --> 00:16:59.116
+Glue data quality rules are applied
+to those data sets to ensure that they can be trusted.
+
+00:17:00.396 --> 00:17:04.796
+That data then gets catalogued and published to the SageMaker catalog.
+
+00:17:05.556 --> 00:17:12.076
+Then, in our product account inside SageMaker studio,
+we simply subscribe to those data assets.
+
+00:17:12.156 --> 00:17:14.716
+No data copying, no ad hoc access requests.
+
+00:17:14.716 --> 00:17:18.436
+It's a governed self-service model for cross team data sharing.
+
+00:17:20.716 --> 00:17:23.796
+The second capability that we leverage on is notebooks.
+
+00:17:24.076 --> 00:17:28.716
+We use Jupyter notebooks to process
+and visualize usage data and run experiments.
+
+00:17:28.716 --> 00:17:32.556
+For example, how are users interacting with our search?
+
+00:17:33.276 --> 00:17:35.836
+Which queries return low relevance results?
+
+00:17:36.436 --> 00:17:38.396
+Where are the gaps in our coverage?
+
+00:17:38.596 --> 00:17:44.396
+Our data scientists can explore all of this with built
+in AI assistants without managing any infrastructure.
+
+00:17:46.596 --> 00:17:53.156
+Third, the query editor. This gives us SQL
+based exploration of structured data through Athena,
+
+00:17:53.436 --> 00:17:57.036
+or the built in query editor on SageMaker Unified Studio.
+
+00:17:57.036 --> 00:18:04.716
+We can query our entire query history, search patterns,
+click through rates and relevant scores using familiar SQL.
+
+00:18:05.316 --> 00:18:10.116
+It's fast, it's serverless,
+and it connects directly to our cataloged data.
+
+00:18:12.156 --> 00:18:16.796
+And fourth, the Bedrock chat agent
+with a knowledge base for structured data.
+
+00:18:18.116 --> 00:18:23.276
+This is particularly powerful. It lets us run
+natural language queries over our structured data.
+
+00:18:23.716 --> 00:18:29.476
+So instead of writing complex SQL and analysts
+can simply ask what were the top ten queries
+
+00:18:29.476 --> 00:18:32.996
+with the lowest relevant scores last week and get an answer.
+
+00:18:33.036 --> 00:18:34.196
+Powered by Claude,
+
+00:18:35.236 --> 00:18:42.996
+the. The key takeaway here is the flow of raw data
+and S3 quality checks with glue cataloging and publishing,
+
+00:18:42.996 --> 00:18:45.716
+then subscription and exploration in Unified Studio.
+
+00:18:45.996 --> 00:18:48.156
+It's a clean separation of concerns.
+
+00:18:48.316 --> 00:18:53.876
+Data producers publish data, consumers
+subscribe and governance is built in at every step.
+
+00:18:55.716 --> 00:18:57.876
+This is what enables us to go from.
+
+00:18:58.076 --> 00:19:00.716
+We think search is working well to.
+
+00:19:01.076 --> 00:19:05.956
+We know search is working well and here's
+exactly where we can improve next.
+
+00:19:09.836 --> 00:19:13.956
+Let me show you the practical workflow,
+starting with how we query our data.
+
+00:19:13.956 --> 00:19:20.796
+The pipeline is straightforward. Data lands in S3. On screen you
+see the query history and interactions info folders in S3 bucket.
+
+00:19:21.596 --> 00:19:27.076
+Technical metadata is registered in the glue Data
+catalog with the field names and types recorded.
+
+00:19:27.796 --> 00:19:33.036
+We then apply glue data quality rules to assess
+the completeness and characteristics of the data.
+
+00:19:33.036 --> 00:19:38.836
+Things like null rates, schema conformance,
+and whether values in a column are part of those in a fixed list,
+
+00:19:38.836 --> 00:19:41.796
+such as areas of law which are being shown on screen now.
+
+00:19:43.356 --> 00:19:49.276
+And finally, we use Amazon Athena
+to run interactive SQL queries directly against the data
+
+00:19:49.356 --> 00:19:53.476
+in S3. No data movement, no ETL into a separate warehouse.
+
+00:19:53.476 --> 00:19:57.636
+Just query the data in place and using the right SQL queries,
+
+00:19:57.636 --> 00:20:00.000
+we can answer questions like how many clicks did
+it take to get the answer based on each intent?
+

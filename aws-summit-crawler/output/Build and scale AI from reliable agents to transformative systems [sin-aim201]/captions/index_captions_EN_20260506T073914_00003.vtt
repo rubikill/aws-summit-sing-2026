@@ -1,0 +1,197 @@
+WEBVTT	#Elemental Media Engine(TM) 2.18.0.0
+X-TIMESTAMP-MAP=LOCAL:00:00:00.000,MPEGTS:187200
+
+00:10:00.000 --> 00:10:06.396
+We partnered with AWS for two things the infrastructure
+to run this reliably for millions of interactions,
+
+00:10:06.796 --> 00:10:11.996
+and the team to work alongside ours
+to solve problems we never saw before.
+
+00:10:12.956 --> 00:10:16.156
+This wasn't here's a product. Figure it out.
+
+00:10:16.636 --> 00:10:21.636
+This was, let's build something
+together that none of us could build alone.
+
+00:10:22.156 --> 00:10:24.916
+And that collaboration made all the difference.
+
+00:10:27.396 --> 00:10:31.916
+We envisioned a five level transformation from basic monitoring
+
+00:10:32.156 --> 00:10:39.156
+and manual processes to AI powered capabilities
+like predictive analytics and self-healing systems.
+
+00:10:40.516 --> 00:10:48.676
+This journey is about moving from reactive
+to proactive and eventually to fully automated operations.
+
+00:10:49.556 --> 00:10:55.716
+Each level builds on the last,
+progressing from manual processes to predictive analytics.
+
+00:10:58.156 --> 00:11:01.756
+Our first step was creating a unified platform called cockpit.
+
+00:11:02.636 --> 00:11:10.596
+This brought data together across 130 plus accounts,
+enabling real time insights and proactive monitoring.
+
+00:11:11.436 --> 00:11:17.316
+Accessing information is now faster,
+reducing search time from hours to just minutes.
+
+00:11:17.996 --> 00:11:23.196
+Proactive monitoring ensures
+issues are identified before they escalate.
+
+00:11:25.836 --> 00:11:33.116
+The impact was immediate. Accessing
+information went from five hours to just five minutes.
+
+00:11:33.836 --> 00:11:37.756
+A consolidated view replaced the chaos of scattered data.
+
+00:11:38.476 --> 00:11:44.276
+Proactive monitoring helped us spot issues early,
+avoiding cascading failures.
+
+00:11:47.236 --> 00:11:51.036
+Phase two focused on scaling efficiency with Agentic AI.
+
+00:11:51.996 --> 00:11:57.556
+We wanted operations that were fast,
+accurate, and easy for everyone to use.
+
+00:11:58.396 --> 00:12:06.156
+The goal was to transform Multi-account AWS
+operations into natural conversations via Slack.
+
+00:12:08.756 --> 00:12:15.356
+Before I continue further, I'd like
+to show a video to illustrate the change and impact with Agentic AI.
+
+00:12:17.236 --> 00:12:19.196
+So Mr. Wong did what good engineers do.
+
+00:12:19.436 --> 00:12:25.076
+He went back to the whiteboard.
+One platform, one unified view of everything.
+
+00:12:25.076 --> 00:12:28.756
+The team built it together for the first time.
+
+00:12:29.036 --> 00:12:32.396
+Everyone looking at the same data at the same time.
+
+00:12:33.116 --> 00:12:37.356
+Collaboration replaced. Firefighting insights.
+
+00:12:37.396 --> 00:12:39.116
+Replaced guesswork.
+
+00:12:41.116 --> 00:12:45.476
+Today, the platform runs itself real time.
+
+00:12:45.996 --> 00:12:48.556
+Automated. Always on.
+
+00:12:49.076 --> 00:12:49.716
+One evening.
+
+00:12:49.956 --> 00:12:52.636
+Jagadeesh gets a CVE alert heading home.
+
+00:12:53.156 --> 00:12:56.476
+He opens Slack, asks the AI agent one question.
+
+00:12:56.796 --> 00:13:04.076
+Within seconds, every vulnerable project,
+every account identified before he leaves the station.
+
+00:13:04.076 --> 00:13:08.916
+What used to mean a three hour
+scramble back to the office now takes seconds.
+
+00:13:09.196 --> 00:13:12.116
+Not just a milestone. A transformation.
+
+00:13:16.036 --> 00:13:16.556
+And behind.
+
+00:13:16.556 --> 00:13:17.076
+It all.
+
+00:13:17.596 --> 00:13:19.596
+The team that made it real.
+
+00:13:20.996 --> 00:13:23.556
+And this is a team that made it all possible.
+
+00:13:26.916 --> 00:13:33.116
+Information access is now 95% faster,
+reducing time from minutes to seconds.
+
+00:13:33.716 --> 00:13:38.476
+Troubleshooting is streamlined. Cutting resolution time by 60%.
+
+00:13:39.076 --> 00:13:47.516
+Centralized access eliminates the need
+for multiple logins, improving efficiency. At MoE.
+
+00:13:47.756 --> 00:13:52.996
+We believe if we take care of our schools,
+our school leaders will take care of our teachers.
+
+00:13:53.596 --> 00:13:57.396
+When teachers are well taken care of, they can focus on our students.
+
+00:13:57.996 --> 00:14:02.076
+When students are well taken care of,
+They will take care of our future.
+
+00:14:02.956 --> 00:14:08.876
+Technology is not just a tool.
+It is a catalyst that empowers every stakeholder.
+
+00:14:09.596 --> 00:14:13.276
+We are building a system that empowers every stakeholder,
+
+00:14:13.276 --> 00:14:18.116
+and together we are shaping a brighter future
+for Singapore's education landscape.
+
+00:14:18.836 --> 00:14:20.636
+Thank you for listening and back to you.
+
+00:14:20.636 --> 00:14:21.196
+Witness.
+
+00:14:28.356 --> 00:14:30.596
+Thank you Karen. That was incredible.
+
+00:14:31.356 --> 00:14:35.116
+So how do we build it? Let me show you what's under the hood.
+
+00:14:35.596 --> 00:14:42.796
+To start with, we used Strands Agent,
+which is an open source Python SDK that powered what you just saw.
+
+00:14:43.436 --> 00:14:48.476
+Why it matters. Because strands
+as an agent framework is model agnostic.
+
+00:14:49.116 --> 00:14:56.596
+It's lightweight, it's NCP native.
+And from a hello world all the way to multi-agent workflows.
+
+00:14:56.716 --> 00:14:58.556
+It's just a few lines of code.
+
+00:14:59.156 --> 00:15:00.000
+This is the framework that powered what you just saw.
+

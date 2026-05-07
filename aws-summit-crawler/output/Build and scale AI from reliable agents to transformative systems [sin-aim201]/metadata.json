@@ -1,0 +1,34 @@
+{
+  "sessionEventId": "sin-aim201",
+  "eventtitle": "Build and scale AI: from reliable agents to transformative systems",
+  "description": "Many teams move fast with agentic AI prototypes that impress in demos but stall in production—blocked by gaps in reliability, accuracy, and safety. In this session, AWS agentic AI technical leaders will help builders rethink how to build and scale production-grade, trustworthy agentic AI. Learn proven patterns to build and deploy agents that earn trust in the real world. See AWS agentic AI platform Amazon Bedrock AgentCore in action. Discover how AWS customers move fast from sparks of experiment to scaled AI-driven innovation with trust at the core, transforming industries.",
+  "customCategory": "AWS Summit Singapore - AI for Everyone",
+  "eventdate": "6 May 2026",
+  "eventtime": "2:00 PM - 02:25 PM",
+  "eventStart": "2026-05-06T14:00+08:00",
+  "eventEnd": "2026-05-06T14:25+08:00",
+  "filterTags": "Industry:Government,Level:200 - Intermediate,Location:Singapore,Topic:Architecture,Topic:Artificial Intelligence",
+  "image": "https://d1o4t9h6a8fm0w.cloudfront.net/media/aws-summitsapj26/assets/images/Artificial Itelligence 200.png",
+  "speakers": [
+    {
+      "title": "Customer Solutions Manager, AWS",
+      "name": "Vignesh Pillai",
+      "portraitUrl": "https://d1o4t9h6a8fm0w.cloudfront.net/media/aws-summitsapj26/assets/images/Speaker Bio Gradient (v70).png",
+      "bio": ""
+    },
+    {
+      "title": "Dy CIO/Director, Ministry of Education",
+      "name": "Karen Chiah",
+      "portraitUrl": "https://d1o4t9h6a8fm0w.cloudfront.net/media/aws-summitsapj26/assets/images/Speaker Bio Gradient (v70).png",
+      "bio": ""
+    }
+  ],
+  "vod_m3u8_url": "https://dz2ooo85w8eqv.cloudfront.net/aws-summitsgp26/outputs/sin-aim201/hls/v2/index.m3u8",
+  "caption_urls": [
+    "https://dz2ooo85w8eqv.cloudfront.net/aws-summitsgp26/outputs/sin-aim201/hls/v2/index_captions_EN_20260506T073734_00001.vtt",
+    "https://dz2ooo85w8eqv.cloudfront.net/aws-summitsgp26/outputs/sin-aim201/hls/v2/index_captions_EN_20260506T073823_00002.vtt",
+    "https://dz2ooo85w8eqv.cloudfront.net/aws-summitsgp26/outputs/sin-aim201/hls/v2/index_captions_EN_20260506T073914_00003.vtt",
+    "https://dz2ooo85w8eqv.cloudfront.net/aws-summitsgp26/outputs/sin-aim201/hls/v2/index_captions_EN_20260506T074004_00004.vtt",
+    "https://dz2ooo85w8eqv.cloudfront.net/aws-summitsgp26/outputs/sin-aim201/hls/v2/index_captions_EN_20260506T074051_00005.vtt"
+  ]
+}

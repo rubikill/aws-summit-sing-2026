@@ -1,0 +1,201 @@
+WEBVTT	#Elemental Media Engine(TM) 2.18.0.0
+X-TIMESTAMP-MAP=LOCAL:00:00:00.000,MPEGTS:187200
+
+00:05:00.000 --> 00:05:01.036
+The question is important because what may work for one user may still work
+for ten users, but does it work for 100,000 users?
+
+00:05:01.036 --> 00:05:05.156
+Which might be your scale, right? There are no marks if you think about it.
+
+00:05:05.156 --> 00:05:11.596
+Just ask yourself a question do I get
+brownie points or does my business really change?
+
+00:05:11.596 --> 00:05:18.036
+If I do, a pok pok should be done.
+But the businesses don't change because you did a great POC.
+
+00:05:18.276 --> 00:05:23.996
+Businesses change when you did a great POC and took
+it to production and changed the business process.
+
+00:05:24.596 --> 00:05:26.956
+So let's talk about operational excellence.
+
+00:05:26.956 --> 00:05:30.876
+We will cover observability, cost, scale, and latency as the name.
+
+00:05:31.196 --> 00:05:33.236
+And we understand what these things are.
+
+00:05:33.356 --> 00:05:37.996
+Why is observability important?
+Do we really know what is happening in our application?
+
+00:05:37.996 --> 00:05:42.116
+Right. These Agentic applications that we're building,
+do we really understand what is happening?
+
+00:05:42.116 --> 00:05:48.396
+Do we understand which API is being called by which tool,
+which is in turn calls another tool?
+
+00:05:48.876 --> 00:05:54.356
+Do we really understand? Can we visualize
+graphically on what is really happening in these applications?
+
+00:05:54.596 --> 00:05:57.876
+If you are able to do so, then we can figure things out.
+
+00:05:57.876 --> 00:06:00.676
+If something wrong happens or if something bad happens.
+
+00:06:01.476 --> 00:06:08.916
+Can we do a root cause analysis between if something wrong
+happens in a particular use case in a particular interaction?
+
+00:06:08.916 --> 00:06:15.556
+So it is not just aggregation of data across the entire stack,
+across the entire experience of multiple users.
+
+00:06:15.676 --> 00:06:23.956
+Can you, deep down, when customer A complains about a specific call,
+that specific action that they made at 2 p.m. in the afternoon, right?
+
+00:06:23.996 --> 00:06:27.236
+That is the level of observability that we need.
+
+00:06:27.236 --> 00:06:35.716
+Are we able to track performance degradation when it happens,
+or can can it predict a performance degradation potential before it happens?
+
+00:06:36.116 --> 00:06:44.396
+We can proactively respond to such events with observability,
+and we can also understand and troubleshoot workflows like we've discussed.
+
+00:06:45.836 --> 00:06:49.676
+To do this right, we have to consider observability from the start.
+
+00:06:49.716 --> 00:06:53.276
+It's really important to use the frameworks that we are going to use.
+
+00:06:53.636 --> 00:06:59.596
+Let's say LangChain, LangGraph, or other standards framework,
+for example, which emit these otel traces.
+
+00:06:59.636 --> 00:07:05.396
+OpenTelemetry traces and integrate with the observability
+stack that AgentCore provides.
+
+00:07:06.396 --> 00:07:16.676
+We use dashboards to aggregate data, but also
+to drill down into individual interactions if the case may be CloudWatch.
+
+00:07:16.996 --> 00:07:19.036
+I'm assuming everyone knows about CloudWatch.
+
+00:07:19.036 --> 00:07:24.796
+It is the home of observability in AWS.
+Every AWS services is monitored using CloudWatch.
+
+00:07:24.956 --> 00:07:31.716
+And these systems that we build. And I'm
+consciously talking about the word systems, not just pure agents.
+
+00:07:32.036 --> 00:07:36.196
+The entire system that needs to be built can be monitored with CloudWatch.
+
+00:07:36.636 --> 00:07:41.196
+You have the frameworks, popular frameworks like strands, LangGraph, CrewAI.
+
+00:07:41.596 --> 00:07:47.156
+They emit OpenTelemetry format data,
+which can be ingested within CloudWatch itself.
+
+00:07:49.156 --> 00:07:51.436
+Just one important point. Model. Invocation.
+
+00:07:51.436 --> 00:07:53.876
+Logging. Logging isn't turned on by default.
+
+00:07:53.876 --> 00:07:56.676
+You have to enable it. So you select your data types.
+
+00:07:56.676 --> 00:08:01.676
+You choose your destination, and you're set for agent.
+
+00:08:01.676 --> 00:08:08.556
+Specifically, there is a new place which is provided
+within AgentCore itself called AgentCore Observability.
+
+00:08:08.916 --> 00:08:13.556
+Now this gives you complete visibility
+across all your AgentCore services and beyond.
+
+00:08:13.556 --> 00:08:18.076
+So you are able to trace, debug, and monitor agent performance in production.
+
+00:08:18.076 --> 00:08:24.396
+So you find the issues in minutes and not days,
+and you find these issues before your customer complaints.
+
+00:08:25.116 --> 00:08:33.796
+So metrics like session count, latency, duration, token usage,
+error rates, you know exactly where to optimize and what is costing you money.
+
+00:08:35.516 --> 00:08:38.156
+Here is a sample of the AgentCore observability dashboard.
+
+00:08:38.156 --> 00:08:41.636
+And it also integrates with third party dashboarding tools as well.
+
+00:08:45.596 --> 00:08:48.236
+Optimizing for cost, latency and accuracy.
+
+00:08:48.596 --> 00:08:51.956
+See something which works for $100 on your machine.
+
+00:08:52.276 --> 00:09:00.036
+If your first production invoice is $50,000, but it doesn't have to be $50,000,
+you only estimated it more or less in the $10,000 range.
+
+00:09:00.276 --> 00:09:06.916
+That's a problem, right? We don't have infinite
+amounts of money or budget to solve a particular problem.
+
+00:09:07.116 --> 00:09:12.156
+Every use case is different. So we need to use
+the right tool because the right tool might be faster.
+
+00:09:12.156 --> 00:09:18.716
+The right tool might be less expensive as the suboptimal tool,
+even though functionally they would give a good enough answer.
+
+00:09:22.756 --> 00:09:27.356
+With optimizing for cost. We have Bedrock inference consumption options.
+
+00:09:27.356 --> 00:09:32.716
+So compare that with something that we are familiar with EC2 pricing.
+
+00:09:32.916 --> 00:09:37.956
+So we have three potential tiers on demand reserved and batch inference.
+
+00:09:37.956 --> 00:09:42.036
+On demand has sub tiers for priority workloads standard and flex.
+
+00:09:42.436 --> 00:09:47.676
+Essentially on demand, but a different
+performance SLA and a cost benefit as well.
+
+00:09:48.036 --> 00:09:53.916
+Reserved is for predictable, high volume use cases
+where you know your customers are going to hit your traffic
+
+00:09:53.916 --> 00:09:58.716
+and you use the reserved category or tier for Bedrock inference.
+
+00:09:59.796 --> 00:10:00.000
+And the last one was batch inference.
+So anything which can which is not latency sensitive can happen offline.
+

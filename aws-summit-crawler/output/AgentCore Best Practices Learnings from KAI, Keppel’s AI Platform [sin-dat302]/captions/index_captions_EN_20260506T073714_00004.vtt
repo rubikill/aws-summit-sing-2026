@@ -1,0 +1,166 @@
+WEBVTT	#Elemental Media Engine(TM) 2.18.0.0
+X-TIMESTAMP-MAP=LOCAL:00:00:00.000,MPEGTS:187200
+
+00:15:00.000 --> 00:15:01.956
+And I'll take this moment to welcome Brian and Carmel on the stage,
+
+00:15:01.956 --> 00:15:07.636
+who will tell us how Keppel is using AgentCore in Keppel AI platform.
+
+00:15:25.836 --> 00:15:27.076
+Hello, everybody.
+
+00:15:27.636 --> 00:15:29.636
+Very good afternoon to all of you.
+
+00:15:30.676 --> 00:15:35.356
+It's a really a great honor for the both of us
+to be invited on stage to share
+
+00:15:35.356 --> 00:15:39.836
+with you the solutions that we have built on top of AgentCore.
+
+00:15:40.436 --> 00:15:47.196
+My name is Brian, and I lead the digital
+solutions team for the real estate division in capital.
+
+00:15:48.076 --> 00:15:55.716
+Over the last two years, there has been two major
+transformation in capital from a conglomerate of companies.
+
+00:15:56.276 --> 00:16:03.516
+We are now a global asset manager with deep
+operating capabilities and that includes digital.
+
+00:16:05.076 --> 00:16:12.396
+The second transformation is really the adoption
+and the embedding of AI into our business segments,
+
+00:16:12.556 --> 00:16:16.436
+as well as our business processes. In 2025,
+
+00:16:16.476 --> 00:16:23.676
+we spent a whole year building up the foundation to allow AI
+
+00:16:23.796 --> 00:16:32.916
+to coexist securely in capital,
+and that includes controls, governance, Guardrails,
+
+00:16:33.436 --> 00:16:36.356
+and of course, not forgetting the data foundation.
+
+00:16:36.356 --> 00:16:44.996
+I'm going to let Kamel share with you what we did
+at the Data foundation layer to enable Cai or capital R AI.
+
+00:16:46.196 --> 00:16:51.356
+Thanks, Brian. Hi guys. Hopefully you guys are not asleep just yet.
+
+00:16:52.236 --> 00:16:58.796
+Let me walk you through what Cai is and why we built it.
+
+00:16:59.236 --> 00:17:06.316
+So Cai exists because we work backwards
+from a very real problem and not just AI hype.
+
+00:17:06.876 --> 00:17:16.196
+Across Keppel, teams were experimenting with AI tools, building
+one off solutions, hard to scale, and the value was fragmented.
+
+00:17:16.236 --> 00:17:21.756
+We knew we wanted to build something enterprise grade way
+
+00:17:21.756 --> 00:17:28.676
+and something enterprise grade way systems
+to turn data into decisions and AI into the capabilities.
+
+00:17:29.116 --> 00:17:35.156
+That's where Cai comes in. It sits
+at the intersection of AI and human potential.
+
+00:17:35.356 --> 00:17:43.196
+It is powered by our AI factory,
+which consists of nine composable modular engines designed
+
+00:17:43.236 --> 00:17:48.796
+to solve business problems end to end
+and not just build one off solutions.
+
+00:17:49.436 --> 00:17:53.716
+Most critically, we set observability from the very start.
+
+00:17:53.996 --> 00:18:02.756
+Every AI powered data product that gets built
+on Cai is measurable, traceable, and controllable.
+
+00:18:03.036 --> 00:18:08.516
+So we know what is working, why it's working, and when to intervene.
+
+00:18:08.996 --> 00:18:15.676
+So if Cai is how we industrialize AI at Keppel,
+the next logical question is what is it built on?
+
+00:18:16.036 --> 00:18:20.796
+None of it is possible without the strong data foundations in place.
+
+00:18:22.076 --> 00:18:28.636
+And that's where Keppel Data Exchange,
+or like we call Codex at Keppel comes into the picture.
+
+00:18:30.476 --> 00:18:36.156
+AI without quality data, as we all know, cannot, is hard to scale.
+
+00:18:36.156 --> 00:18:41.076
+In fact, it's impossible to scale.
+It's like building a skyscraper on sand.
+
+00:18:41.116 --> 00:18:45.676
+No matter how advanced the design, it will not stand.
+
+00:18:45.716 --> 00:18:49.356
+You may move fast, but it won't get you anywhere useful.
+
+00:18:49.876 --> 00:18:51.996
+One of the core AgentCore principles.
+
+00:18:51.996 --> 00:18:56.316
+Like Puneet said, I remember it was a best practice number six.
+
+00:18:57.236 --> 00:19:05.116
+It emphasizes that the production ready AI agents require clean,
+standardized and meaningful data.
+
+00:19:05.116 --> 00:19:08.596
+And that's exactly the reason why Codex exists.
+
+00:19:08.796 --> 00:19:14.396
+Data from across our enterprise
+systems is ingested into our data warehouse,
+
+00:19:14.516 --> 00:19:21.356
+where it is cleaned and made available
+at scale for analytics, reporting and to AI agents.
+
+00:19:21.596 --> 00:19:30.036
+So today we'll be sharing a couple of interesting use cases
+that we've implemented and rolled out into production at Keppel,
+
+00:19:30.196 --> 00:19:38.116
+harnessing our AI and data factories,
+one in a B2C context and one in a B2B context to you, Brian.
+
+00:19:38.996 --> 00:19:40.276
+Thank you. Kamal.
+
+00:19:40.876 --> 00:19:49.876
+Okay, I'm going to highlight a very real
+operational issue within the real estate division.
+
+00:19:50.276 --> 00:19:59.396
+Click plus and click plus. FM are two key solutions
+that is developed in-house to empower our operating team.
+
+00:19:59.396 --> 00:20:00.000
+So when they move into a commercial asset,
+they move these two solutions in as well.
+

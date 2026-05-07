@@ -1,0 +1,180 @@
+WEBVTT	#Elemental Media Engine(TM) 2.18.0.0
+X-TIMESTAMP-MAP=LOCAL:00:00:00.000,MPEGTS:187200
+
+00:05:00.000 --> 00:05:00.476
+So it is the same loop but with a different tool call.
+
+00:05:01.556 --> 00:05:04.316
+I think you are seeing the pattern now, right?
+
+00:05:04.356 --> 00:05:09.716
+A third round. The agent has both
+information of the driver and the vehicle.
+
+00:05:10.076 --> 00:05:16.676
+It calls a calculated risk calculate risk
+tool and first round with all the information.
+
+00:05:16.716 --> 00:05:18.796
+It calls another tool to get the code.
+
+00:05:19.596 --> 00:05:24.076
+And finally it gets back to the user by formatting the response.
+
+00:05:25.916 --> 00:05:27.916
+So you see what happens here. Right.
+
+00:05:28.036 --> 00:05:32.116
+The agent ran five loops of the react.
+
+00:05:33.516 --> 00:05:37.156
+It called for tools and finally give a response.
+
+00:05:38.956 --> 00:05:45.636
+Each loop is very small, but combined
+together it actually resolve a business problem.
+
+00:05:46.716 --> 00:05:56.516
+And I want you to notice here the agent is actually
+picking its own tools at its own order here, right?
+
+00:05:56.556 --> 00:05:59.396
+Things can become even more interesting.
+
+00:05:59.396 --> 00:06:02.916
+Theory can have follow up questions and multiple ones.
+
+00:06:02.956 --> 00:06:11.196
+For example, he wants to change the deductible
+to $1,000. And we can have an issue here because behind the scene,
+
+00:06:11.396 --> 00:06:18.116
+after running multiple loops of that react
+pattern and each follow up can trigger more react loops.
+
+00:06:18.796 --> 00:06:24.196
+The large language model can hit its context window limit, right?
+
+00:06:24.236 --> 00:06:26.596
+So what do you do? There are two options.
+
+00:06:26.796 --> 00:06:32.956
+Either you use a sliding window to kick out
+some of the older messages to allow the new ones.
+
+00:06:33.516 --> 00:06:40.196
+Or you use a large language model to compress
+the whole conversation into a short summary.
+
+00:06:41.476 --> 00:06:43.796
+Both work, but both have trade offs,
+
+00:06:45.596 --> 00:06:52.796
+so you need to have a strategy in place
+in order for the whole react loop to continue delivering results.
+
+00:06:54.796 --> 00:07:01.316
+Now, as you can see, each iteration
+of that react loop accumulates state.
+
+00:07:02.596 --> 00:07:05.996
+Where does the agent store its memory state?
+
+00:07:07.516 --> 00:07:14.236
+Agent needs memories and memory
+option varies from short term to long term.
+
+00:07:15.196 --> 00:07:19.356
+The short term memory is the working memory of the agent.
+
+00:07:20.716 --> 00:07:23.556
+In the example of any company insurance agent,
+
+00:07:23.596 --> 00:07:33.076
+it can be something like the quote that is processing
+currently the conversation history and the execution plan.
+
+00:07:35.316 --> 00:07:44.476
+And then it comes to the longer term stuff your semantic
+memory via vector databases, the users profiles,
+
+00:07:45.036 --> 00:07:52.316
+and the episodic memory, which is the experience
+and interaction the agent can recall.
+
+00:07:53.236 --> 00:07:57.196
+And often you will use tools to retrieve those memories.
+
+00:07:58.596 --> 00:08:05.916
+And last but not least, you also have prompts your system
+prompts that is virtually controlled with your apps,
+
+00:08:06.956 --> 00:08:10.516
+and you can use that to tune the behavior of your agent.
+
+00:08:11.716 --> 00:08:12.596
+So in short.
+
+00:08:15.076 --> 00:08:23.156
+You have the short term memories that gets
+the agents through one conversation,
+
+00:08:23.636 --> 00:08:29.276
+and you also have the longer term memories
+that makes the agent better and better over time.
+
+00:08:29.876 --> 00:08:31.236
+You will need both.
+
+00:08:31.836 --> 00:08:40.596
+Now, NCP modal context protocol is a standard way
+for agents to communicate
+
+00:08:40.876 --> 00:08:42.156
+with your data stores.
+
+00:08:43.556 --> 00:08:48.396
+Think of it like a USB for your AI, right?
+
+00:08:48.436 --> 00:08:54.876
+It's a standard connector instead of one
+custom connect for each data store.
+
+00:08:56.156 --> 00:08:59.236
+So if you look at the example on the screen,
+
+00:08:59.236 --> 00:09:08.436
+the agent doesn't have to know any implementation
+detail of the data store because it can use the NCP servers.
+
+00:09:08.916 --> 00:09:15.756
+It is a standard connector and it's a clean
+separation between the agent and the data store.
+
+00:09:16.836 --> 00:09:23.316
+As a result, you can actually swap out the data
+store any time without changing the agent at all.
+
+00:09:25.036 --> 00:09:30.276
+Now, not every tool is the same.
+The two by two framework here help you decide.
+
+00:09:31.076 --> 00:09:36.636
+So on one axis is your tool reading data or changing data?
+
+00:09:37.756 --> 00:09:42.796
+On the other, is it general purpose or specialized,
+
+00:09:44.276 --> 00:09:46.476
+different users might need different tools.
+
+00:09:47.196 --> 00:09:53.756
+For example, a data analyst need broad
+read access to the data so they can analyze.
+
+00:09:54.676 --> 00:09:58.676
+A developer might need specialized mutation tools.
+
+00:09:59.716 --> 00:10:00.000
+An external user need both read and write, but with Guardrails, right.
+

@@ -1,0 +1,176 @@
+WEBVTT	#Elemental Media Engine(TM) 2.18.0.0
+X-TIMESTAMP-MAP=LOCAL:00:00:00.000,MPEGTS:187200
+
+01:20:00.000 --> 01:20:03.916
+And as you all know, we recently
+announced a preview of OpenAI GPT models.
+
+01:20:04.276 --> 01:20:09.556
+We are thrilled to see how Bedrock
+capabilities are helping organizations solve problems
+
+01:20:09.556 --> 01:20:13.036
+that matter, because choice actually matters.
+
+01:20:13.596 --> 01:20:19.156
+Now these capabilities are already
+changing healthcare right here in Singapore.
+
+01:20:20.276 --> 01:20:27.676
+Ng Teng Fong General Hospital was dealing
+with a common problem chronic disease management.
+
+01:20:27.676 --> 01:20:36.636
+That doesn't scale. You know, longitudinal patient specific data,
+communication gaps between appointments.
+
+01:20:36.956 --> 01:20:40.516
+A model that was entirely clinician led.
+
+01:20:40.836 --> 01:20:47.516
+So the team built Project Antenna,
+Asia's first population allergy database.
+
+01:20:47.916 --> 01:20:57.596
+It uses generative AI and large language models to shift
+from clinician led care to patient empowered care.
+
+01:20:58.036 --> 01:21:01.076
+AWS provided the database foundation
+
+01:21:01.076 --> 01:21:08.316
+and the AI tools LLMs powered
+by Bedrock that drive patient communication
+
+01:21:08.316 --> 01:21:11.356
+and help the hospital clear regulatory approval.
+
+01:21:11.756 --> 01:21:19.036
+Medication adherence went up 50% more patients
+discharged from acute hospitals to community care.
+
+01:21:19.316 --> 01:21:23.956
+Real cost savings for patients
+and for Singapore's health care systems.
+
+01:21:24.276 --> 01:21:27.876
+They went from concept to production in weeks,
+
+01:21:28.156 --> 01:21:34.676
+and prior content is now the blueprint for managing diabetes,
+hypertension, and even dementia.
+
+01:21:35.356 --> 01:21:39.076
+So we've seen incredible examples of what agents can do.
+
+01:21:39.596 --> 01:21:43.236
+But getting agents to production is still too hard.
+
+01:21:43.996 --> 01:21:47.596
+You write your agent logic, but then to give it memory,
+
+01:21:47.956 --> 01:21:54.476
+configure identity access controls
+and ensure it scales once it is deployed.
+
+01:21:54.716 --> 01:21:59.836
+That's a lot to build before your agent even does anything useful.
+
+01:22:00.556 --> 01:22:08.156
+For that, we launch Amazon Bedrock AgentCore
+to help you go from prototype to production faster.
+
+01:22:08.316 --> 01:22:12.796
+It provides a managed runtime with built in memory,
+
+01:22:12.996 --> 01:22:20.636
+a unified identity layer for security authentication
+to tools, APIs, and data sources.
+
+01:22:20.916 --> 01:22:29.236
+Native observability. So you can see what your agent did
+and why your agent needed an auto scaling across sessions
+
+01:22:29.236 --> 01:22:34.436
+so your agents stay responsive. And with the new AWS Agent registry,
+
+01:22:34.476 --> 01:22:39.956
+you can discover existing agents and tools
+instead of rebuilding capabilities that already exist.
+
+01:22:40.316 --> 01:22:46.796
+Now, what makes AgentCore unique is that it's open and it's modular.
+
+01:22:46.956 --> 01:22:53.916
+You can use it with any framework like LangChain,
+CrewAI, or strands, and you can connect to any model.
+
+01:22:54.436 --> 01:22:58.196
+So we don't force you down a fixed path.
+
+01:22:58.716 --> 01:23:01.516
+Again, we understand that choice matters
+
+01:23:02.076 --> 01:23:06.676
+because we believe that you should have the power
+
+01:23:06.676 --> 01:23:12.316
+to choose the path that works best for each of you.
+
+01:23:12.996 --> 01:23:18.316
+Choice matters. A great example
+of this is our recent announcement with OpenAI.
+
+01:23:19.036 --> 01:23:25.236
+Now Amazon Bedrock Managed agents
+powered by OpenAI is a new Bedrock capability.
+
+01:23:25.396 --> 01:23:33.196
+Using managed agents, you can quickly build open AI
+powered agents that maintain persistent memory across sessions,
+
+01:23:33.236 --> 01:23:37.196
+execute multi-step workflows, and take autonomous actions.
+
+01:23:37.636 --> 01:23:42.516
+The runtime is engineered to unlock the full
+potential of open AI frontier models.
+
+01:23:42.516 --> 01:23:51.556
+Using the open AI agent harness. It delivers faster execution,
+sharper reasoning, and reliable steering of long running tasks,
+
+01:23:51.756 --> 01:23:58.556
+and every agent operates with its own identity,
+logs every action for auditability,
+
+01:23:58.556 --> 01:24:02.436
+and runs inside your VPC with all inference on Bedrock.
+
+01:24:02.716 --> 01:24:10.636
+Bedrock managed agents and Bedrock AgentCore are great examples of why
+Amazon Bedrock is the best place to build with AI.
+
+01:24:12.516 --> 01:24:21.156
+Now, we actually covered a lot of ground ground
+today from Kiro reimagining how we write software
+
+01:24:21.636 --> 01:24:30.916
+to agents that secure and operate your applications
+to the infrastructure, to the data and inference that power it all.
+
+01:24:31.436 --> 01:24:38.916
+And if I take one step back and I think
+about what ties all of this together is you,
+
+01:24:40.756 --> 01:24:45.196
+and it is your relentless mindset to innovate.
+
+01:24:46.116 --> 01:24:54.956
+Everything I shared today is only possible because of the foundation
+we have built together over the last 20 years.
+
+01:24:55.316 --> 01:25:00.000
+We want to remove every barrier
+standing between your imagination and reality.
+

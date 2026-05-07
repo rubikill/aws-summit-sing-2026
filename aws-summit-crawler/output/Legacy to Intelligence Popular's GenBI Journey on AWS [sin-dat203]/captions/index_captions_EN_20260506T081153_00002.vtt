@@ -1,0 +1,167 @@
+WEBVTT	#Elemental Media Engine(TM) 2.18.0.0
+X-TIMESTAMP-MAP=LOCAL:00:00:00.000,MPEGTS:187200
+
+00:05:00.000 --> 00:05:01.236
+Many reports are still being prepared manually,
+
+00:05:02.596 --> 00:05:10.636
+from one off requests to it from individuals,
+files or many Excel based.
+
+00:05:12.076 --> 00:05:16.316
+So when new insights needed by our business team,
+
+00:05:17.556 --> 00:05:21.556
+it often takes time to compile and validate the data.
+
+00:05:23.356 --> 00:05:29.556
+The information was there,
+but how quickly we can access the information
+
+00:05:29.556 --> 00:05:36.716
+and the consistent information be able to provide it is something
+very important and that's something that we wanted to improve.
+
+00:05:38.316 --> 00:05:40.476
+And that lead us to a question.
+
+00:05:42.036 --> 00:05:47.076
+How do we make all this data be more accessible to our business?
+
+00:05:48.596 --> 00:05:54.276
+How can we enable our teams, be it in finance, retail operations,
+
+00:05:55.116 --> 00:05:59.356
+to get the the answer they want one needed more quickly.
+
+00:06:00.956 --> 00:06:03.756
+So we want to move towards more self-service.
+
+00:06:05.276 --> 00:06:09.956
+Today, we don't want them
+to rely too much on it on every single request.
+
+00:06:10.436 --> 00:06:20.276
+So for us, this actually has become a challenging,
+but also opportunities for us to evolve,
+
+00:06:20.276 --> 00:06:25.996
+not just in terms of technology,
+but we want to improve in terms of the organization,
+
+00:06:26.036 --> 00:06:29.756
+how actually we can work with the data day to day.
+
+00:06:32.836 --> 00:06:36.276
+So in practice, this is what happened.
+
+00:06:37.196 --> 00:06:38.796
+We had a lot of data,
+
+00:06:39.876 --> 00:06:44.636
+but turning it into the insight wasn't fast enough.
+
+00:06:45.636 --> 00:06:51.956
+So our team still rely on a lot of manual
+reports instead of self-service.
+
+00:06:54.156 --> 00:06:59.476
+So what we really wanted is actually
+to act on today's data, not last month.
+
+00:07:00.276 --> 00:07:07.356
+We wanted our team wanted to have a more
+self-service kind of analytic tools.
+
+00:07:07.676 --> 00:07:15.476
+So the team can access the insights directly instead of relying
+on manual reports in our IT requests.
+
+00:07:18.516 --> 00:07:24.796
+So naturally, all this actually has impact to our business operated.
+
+00:07:26.996 --> 00:07:30.076
+Limited visibility across the organizations.
+
+00:07:31.556 --> 00:07:38.276
+And we know that actually we always know there are a lot
+of opportunities for us to identify risks earlier
+
+00:07:38.596 --> 00:07:44.676
+because we want to respond quicker
+to any opportunities when it come out.
+
+00:07:45.916 --> 00:07:51.316
+So retail is a fast moving environment, meaning decision making.
+
+00:07:51.596 --> 00:07:55.796
+We have to make sure that we are able to keep pace with the business.
+
+00:07:56.476 --> 00:08:03.556
+So our team actually we do have the experience
+and we have the context,
+
+00:08:03.956 --> 00:08:13.876
+but what the team required is actually be able
+to be access to a data in a faster and more consistent way.
+
+00:08:14.596 --> 00:08:19.796
+So when the data sits across different
+systems without being fully connected,
+
+00:08:20.756 --> 00:08:25.156
+the challenge is actually how are we able to do the alignment quickly?
+
+00:08:25.836 --> 00:08:30.756
+So in many cases, actually our teams working
+with different data views.
+
+00:08:31.716 --> 00:08:37.996
+That's because actually we have not brought
+together all the information in a consistent way.
+
+00:08:38.916 --> 00:08:47.156
+So at that point we had a choice. We can continue
+to build more reports on top of what we already have.
+
+00:08:48.276 --> 00:08:57.956
+But we decided to take a step back and rethink
+how can we approach the data. and also analytics.
+
+00:08:59.156 --> 00:09:02.036
+So that's the direction that we decided to take.
+
+00:09:04.756 --> 00:09:08.036
+So let me show you. This is how it looks like today.
+
+00:09:09.876 --> 00:09:13.796
+This dashboard actually we are using a sample data for illustration,
+
+00:09:13.796 --> 00:09:19.876
+but the structure and insights is actually
+reflected our actual implementations.
+
+00:09:20.596 --> 00:09:23.556
+So this is our sales productivity analysis.
+
+00:09:24.156 --> 00:09:30.156
+At a glance you can see how the overall
+performance how's the trending over time.
+
+00:09:30.796 --> 00:09:34.516
+So immediately we know our productivity has improved or not.
+
+00:09:35.916 --> 00:09:44.516
+So what we if you want to go deeper,
+we can actually break it down by category, by departments, by source.
+
+00:09:45.116 --> 00:09:48.836
+And that's how you can actually understand the real performance.
+
+00:09:49.556 --> 00:09:55.396
+So for example, if we can identify
+any of the stalls that actually need attention
+
+00:09:56.036 --> 00:09:58.996
+and that's where the team supposed to take action on.
+

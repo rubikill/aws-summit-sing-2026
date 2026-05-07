@@ -1,0 +1,168 @@
+WEBVTT	#Elemental Media Engine(TM) 2.18.0.0
+X-TIMESTAMP-MAP=LOCAL:00:00:00.000,MPEGTS:187200
+
+00:00:13.556 --> 00:00:17.156
+My name is Nora and I'm a solutions architect at Amazon Web Services.
+
+00:00:17.276 --> 00:00:24.316
+I cover education and research in Singapore, and today I'm extremely
+thrilled to be joined by the Chief Information Officer, Chris,
+
+00:00:24.356 --> 00:00:31.316
+from National Institute of Education,
+as well as Benny, who heads Digital Solutions at NIE here at AWS.
+
+00:00:31.556 --> 00:00:38.356
+We’ve had the privilege of working closely together with NIE
+to support their journey across cloud adoption and modernization.
+
+00:00:38.356 --> 00:00:41.076
+And today, we're excited to share that story with you.
+
+00:00:41.996 --> 00:00:44.116
+So here's what we have for you in store today.
+
+00:00:44.116 --> 00:00:48.476
+We’ll first kick things off
+with a brief introduction to NIE before diving deeper
+
+00:00:48.476 --> 00:00:53.076
+into the challenges they've been facing
+around application maintenance and upgrades.
+
+00:00:53.076 --> 00:01:00.476
+From there, we'll explore how AWS has supported Nae, including
+a closer look at one of our key technologies that made it possible.
+
+00:01:00.996 --> 00:01:06.156
+And lastly, we wrap up with some key takeaways
+that you can bring back to your own organizations.
+
+00:01:06.156 --> 00:01:11.476
+So without further ado, I’ll first pass over the time
+to Chris to share with us more about NIE.
+
+00:01:19.436 --> 00:01:24.356
+Well hello everyone. A quick context
+before we get into our technical story,
+
+00:01:24.676 --> 00:01:33.556
+NIE is Singapore’s National Teacher Education Institute
+and the sole pre-service training ground for the country’s educators.
+
+00:01:35.276 --> 00:01:37.796
+We're an autonomous institute within NTU,
+
+00:01:38.076 --> 00:01:45.116
+and we cover the full teacher development lifecycle from initial
+teacher preparation through to graduate and leadership programs.
+
+00:01:45.396 --> 00:01:53.316
+We are ranked eighth globally in education and training
+and the QS World Rankings and top three in Asia by subject.
+
+00:01:55.396 --> 00:02:00.516
+So just a brief history from
+the Teachers Training College in 1950 to NIE.
+
+00:02:00.756 --> 00:02:07.076
+Today, our relocation into the new campus
+in 2000 was a deliberate step
+
+00:02:07.076 --> 00:02:15.836
+to embed teacher education inside a research
+intensive university that moved unlocked degree level
+
+00:02:15.836 --> 00:02:22.116
+and postgraduate pathways and deepened the research
+foundation that underpins everything that we do.
+
+00:02:26.876 --> 00:02:31.156
+Okay. A little bit about our mission is inspiring
+learning, transforming teaching,
+
+00:02:31.156 --> 00:02:39.236
+and advancing research across these four pillars of initial
+teacher preparation, graduate education, research,
+
+00:02:39.236 --> 00:02:45.596
+and external consultancy. That mission
+put growing pressure on our IT systems,
+
+00:02:46.756 --> 00:02:55.316
+which the more that we try to innovate, the more the same
+structural barriers are ended up being being present for us.
+
+00:02:55.796 --> 00:02:58.116
+Here's what some of those look like.
+
+00:03:01.236 --> 00:03:06.156
+Okay, so for us, the ambition and willingness was never a problem.
+
+00:03:06.156 --> 00:03:09.756
+The technology underneath was what couldn't support it.
+
+00:03:10.156 --> 00:03:17.276
+We had ageing Java and net stacks approaching
+the end of support and everything was tightly coupled.
+
+00:03:18.396 --> 00:03:28.076
+Any change meant testing everything, and that structural
+change and lock in was what AI assisted coding gave us a way out of.
+
+00:03:30.716 --> 00:03:35.796
+So the Agility trap, everything was tightly coupled
+in tightly coupled modules.
+
+00:03:35.836 --> 00:03:41.036
+All right. And the upgrade was manual across system effort features
+
+00:03:41.036 --> 00:03:49.516
+for users that are features that users needed were
+taking far too long in a fast changing environment.
+
+00:03:49.516 --> 00:03:54.596
+That lag compounds quickly on premise.
+
+00:03:54.596 --> 00:03:59.236
+So I'll go into the Agility sorry,
+the sustainability Scalability ceiling.
+
+00:03:59.236 --> 00:04:03.396
+And I think that this is well known in terms of cloud adoption.
+
+00:04:03.436 --> 00:04:07.396
+Our on premise hardware gave us fixed capacity.
+
+00:04:07.436 --> 00:04:16.156
+You either over provisioned at the peak and waste money,
+or you under-provision and degrade at moments that matter most.
+
+00:04:16.316 --> 00:04:20.396
+For an institution with a sharp academic year peaks, right?
+
+00:04:20.436 --> 00:04:28.876
+If you've been to our campus and you've worked in higher education,
+you'll see that obviously through the academic year cycle,
+
+00:04:29.316 --> 00:04:35.516
+the campus is buzzing at one point and then
+condenses down at break times, for example.
+
+00:04:35.516 --> 00:04:42.836
+And so some of that scalability ceiling was actually
+inhibiting our ability to cost optimize.
+
+00:04:43.076 --> 00:04:46.516
+And obviously, cloud bought us some advantages here.
+
+00:04:49.716 --> 00:04:54.076
+The last one was legacy systems accumulate risk.
+
+00:04:54.396 --> 00:04:57.676
+Libraries go unmanaged or unmaintained.
+
+00:04:57.876 --> 00:05:00.000
+Patching slows and vulnerabilities stay open longer, pulling
+developers into defensive work instead of building new value across.
+

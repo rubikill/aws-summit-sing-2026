@@ -1,0 +1,174 @@
+WEBVTT	#Elemental Media Engine(TM) 2.18.0.0
+X-TIMESTAMP-MAP=LOCAL:00:00:00.000,MPEGTS:187200
+
+00:20:00.000 --> 00:20:05.196
+And what is extremely important
+for us is to build trust in our solutions,
+
+00:20:05.676 --> 00:20:11.156
+because purchasing a property very
+often is a one time thing in your lifetime.
+
+00:20:11.396 --> 00:20:16.556
+And renting a property is also as important as purchasing it.
+
+00:20:17.276 --> 00:20:20.916
+And you're going to hear this word multiple times from me today.
+
+00:20:21.436 --> 00:20:22.716
+So please bear with me.
+
+00:20:24.196 --> 00:20:26.996
+And as this is a prerequisite for us.
+
+00:20:29.156 --> 00:20:38.196
+We are building a chatbot and going through a lot of iterations
+
+00:20:38.196 --> 00:20:41.076
+to make sure that it's working properly.
+
+00:20:42.196 --> 00:20:46.356
+This is a snapshot of what we built from a couple of weeks back.
+
+00:20:46.556 --> 00:20:52.556
+And don't look your phone in your phone
+right now because it's not present there yet.
+
+00:20:52.996 --> 00:20:58.556
+We really need to make sure that it's working perfectly
+before we release it, release it to our customers.
+
+00:21:00.356 --> 00:21:08.436
+So imagine you're looking for a place near the new office
+because your company decided to move offices, which by the way,
+
+00:21:08.436 --> 00:21:15.316
+we're doing right now. I have no idea
+about this new place and I want to research it.
+
+00:21:15.596 --> 00:21:23.836
+So instead of going through multiple filters, instead of going
+through, I don't know, Google going through social media.
+
+00:21:23.876 --> 00:21:30.916
+I can do bring this capability of discovery into PropertyGuru.
+
+00:21:31.796 --> 00:21:34.596
+That's the goal that we have in our minds,
+
+00:21:34.596 --> 00:21:37.356
+and that's where we want to bring this moment
+
+00:21:37.356 --> 00:21:45.316
+so that you not only are going
+for near real time data of the listings,
+
+00:21:45.876 --> 00:21:55.556
+you can actually discover it, fine tune your searches
+contextually based toward what you want to look further.
+
+00:21:55.556 --> 00:21:58.356
+So you might look for cheaper places.
+
+00:21:58.356 --> 00:22:01.476
+You might look for places elsewhere, right?
+
+00:22:01.676 --> 00:22:07.636
+You want to ask about that? Discover the places
+around like what are what is the neighborhood,
+
+00:22:07.916 --> 00:22:10.676
+what kind of cafes I have, and so on and so forth.
+
+00:22:11.676 --> 00:22:16.476
+So that's what we built. But how did we do it?
+
+00:22:19.756 --> 00:22:25.156
+Listings. Property listings. This is what our marketplace is about.
+
+00:22:25.836 --> 00:22:32.156
+They have their own life cycle.
+We know when they are created, expired, modified,
+
+00:22:32.196 --> 00:22:37.876
+changed in any way. Agents can upload new buy agents.
+
+00:22:37.876 --> 00:22:42.396
+I mean property agents can upload new images
+to them and so on and so forth.
+
+00:22:42.796 --> 00:22:45.356
+And this information is circulating.
+
+00:22:45.516 --> 00:22:52.836
+Luckily for us, because we're pretty long time in the business,
+I think we're adults now as PropertyGuru.
+
+00:22:53.476 --> 00:22:55.836
+We already have everything about the listing.
+
+00:22:55.836 --> 00:23:05.116
+We know exactly when it changes. Luckily,
+we already have message queue where all the state is being captured,
+
+00:23:06.436 --> 00:23:09.516
+so listings and everything. We didn't touch it
+
+00:23:09.516 --> 00:23:17.036
+to echo what Andrew mentioned about, but what we did is a new layer.
+
+00:23:17.396 --> 00:23:26.876
+We used spark on EMR to start getting this state,
+enhancing the information with contextual data that we already have.
+
+00:23:26.876 --> 00:23:36.436
+May it be information about locations, information about pricing,
+information about neighborhood project itself,
+
+00:23:37.836 --> 00:23:44.556
+and all the contextual informations that property
+agents are describing within a listing.
+
+00:23:47.676 --> 00:23:53.516
+We store this information as embeddings in OpenSearch,
+which is fairly straightforward.
+
+00:23:55.196 --> 00:24:00.636
+It takes a little bit of time because the more
+context you put, the bigger the embedding is.
+
+00:24:00.636 --> 00:24:06.396
+But we're still able to get this information
+within sub minute latency.
+
+00:24:06.676 --> 00:24:11.196
+We'll see if we can boil this, like get it even lower in the future.
+
+00:24:12.276 --> 00:24:14.836
+And that's it. That's the data pipeline.
+
+00:24:14.916 --> 00:24:22.156
+It's not very complex. It requires a lot of work,
+of course, but it's in the nutshell,
+
+00:24:22.196 --> 00:24:26.236
+what you have to think about to get the data for contextual search.
+
+00:24:27.396 --> 00:24:36.676
+And this is where Agentic AI on Bedrock kicks
+in. We have multi-agent solution with a dedicated NCP servers
+
+00:24:36.676 --> 00:24:41.116
+for different subagents because the journey is different.
+
+00:24:41.116 --> 00:24:44.636
+If I'm looking for purchasing the property,
+
+00:24:45.196 --> 00:24:51.876
+then when I'm discovering the area around the property
+or I'm just looking for the search for the rental,
+
+00:24:52.836 --> 00:25:00.000
+those things are different and they require
+different NCP server, different memory state,
+

@@ -1,0 +1,178 @@
+WEBVTT	#Elemental Media Engine(TM) 2.18.0.0
+X-TIMESTAMP-MAP=LOCAL:00:00:00.000,MPEGTS:187200
+
+00:15:00.000 --> 00:15:02.316
+So I want this to be auto triggered.
+
+00:15:02.316 --> 00:15:06.236
+And then some other use cases like for example
+whenever I write a certain code segment,
+
+00:15:06.236 --> 00:15:09.436
+I want it to generate documentation or auto commit to git.
+
+00:15:09.676 --> 00:15:13.316
+Or when I edit a certain module, please update the unit test for me.
+
+00:15:13.556 --> 00:15:16.276
+I can do all that kind of triggers.
+
+00:15:17.076 --> 00:15:20.836
+So I just click okay. And just like that, the hook is created.
+
+00:15:21.316 --> 00:15:25.436
+Kiro writes the instruction for the agent in its optimized format.
+
+00:15:25.436 --> 00:15:29.556
+It adds useful details, extra file types to monitor,
+
+00:15:29.876 --> 00:15:36.676
+and then picks file saved as the trigger
+and can also have other kinds of event triggers.
+
+00:15:36.676 --> 00:15:42.476
+Things like you can see file created,
+file deleted, or even manual triggers.
+
+00:15:45.076 --> 00:15:53.636
+So what we have just seen is Kiro as an Agentic IDE,
+which is able to effectively accelerate the AI DLC lifecycle.
+
+00:15:54.156 --> 00:15:57.756
+Some of the key features, best practices that we have talked about.
+
+00:15:57.756 --> 00:16:05.596
+First, the foundation specs gives you the blueprint steering
+gives you that direction, that Northstar and then your toolkit.
+
+00:16:05.636 --> 00:16:11.876
+You have things like skills, NCP,
+and powers to bring you best practices, patents, domain expertise,
+
+00:16:11.876 --> 00:16:16.196
+and up to date documentation and external
+tool access to that workflow.
+
+00:16:16.716 --> 00:16:21.556
+And finally, hooks helps you to automate certain repetitive tasks.
+
+00:16:22.516 --> 00:16:30.276
+So with this, I will now pass over the time to Yao to talk more about
+Kasumi's AI journey, which started with AI DLC using Kiro.
+
+00:16:33.036 --> 00:16:34.596
+Thank you Derek. Thank you.
+
+00:16:35.356 --> 00:16:39.436
+Hi, everyone. My name is Yao, a VP of operations at Sri.
+
+00:16:39.716 --> 00:16:49.476
+I'm very happy to be here today to share with you our experience
+with the ADL methodology with AWS Kiro, but more importantly,
+
+00:16:49.756 --> 00:16:56.756
+how the experience with ADL triggered our thinking
+
+00:16:56.996 --> 00:17:00.716
+and swift action about AI strategy.
+
+00:17:00.716 --> 00:17:05.356
+At S3. So first of all, a few quick facts about Kasturi.
+
+00:17:05.916 --> 00:17:15.636
+Kasturi is a direct to consumer furniture brand,
+proudly started and headquartered in Singapore with global operations.
+
+00:17:16.716 --> 00:17:25.876
+We control every step in the furniture value chain from furniture
+design, contract manufacturing, logistics, retail to customers,
+
+00:17:25.876 --> 00:17:27.876
+as well as delivery to the customers.
+
+00:17:28.356 --> 00:17:34.716
+This is not coincidence. We intentionally build built
+the business in this way because we believe that product
+
+00:17:34.716 --> 00:17:38.476
+and services are where brand promises are kept or broken.
+
+00:17:40.436 --> 00:17:45.676
+So right now, we are operating
+in five markets with our e-commerce websites,
+
+00:17:45.716 --> 00:17:49.516
+as well as four showrooms in Singapore, Australia and the US.
+
+00:17:50.196 --> 00:17:55.836
+In the last decade, we have delivered
+to more than half a million homes furnished.
+
+00:17:56.036 --> 00:18:01.476
+Right now we have 500 employees and 200 product collections.
+
+00:18:02.036 --> 00:18:05.836
+After 12 years of product innovation, we.
+
+00:18:05.996 --> 00:18:14.276
+Multiple of our product designs have won global
+design awards such as the red.af and Good Design Award.
+
+00:18:15.356 --> 00:18:23.196
+So while we are very proud of the scale
+that we have achieved, but even at our current scale,
+
+00:18:23.196 --> 00:18:27.236
+small inefficiencies started to compound very fast.
+
+00:18:27.476 --> 00:18:31.596
+So we started to face scaling challenges about two years ago.
+
+00:18:32.156 --> 00:18:41.996
+At that time, the only solution to support that rapid
+expansion globally seems to be just hiring more people
+
+00:18:41.996 --> 00:18:50.916
+and throwing throwing more bodies into the problems
+which are inevitably created even more complexities.
+
+00:18:52.996 --> 00:18:55.676
+Then finally, something fundamental has come.
+
+00:18:57.476 --> 00:19:03.636
+So in January 2026, we had the AI DLC
+workshop and hackathon in Shenzhen.
+
+00:19:03.636 --> 00:19:13.476
+So we brought in 70 team members from Singapore,
+as well as from Shenzhen to to have this week long event.
+
+00:19:14.796 --> 00:19:22.876
+So during the event, Derek delivered a two
+day workshop on the Idlc methodology bilingually
+
+00:19:24.156 --> 00:19:28.076
+because of the English proficiency of the Shenzhen team member.
+
+00:19:28.116 --> 00:19:33.436
+Thanks so much, Derek. And after that,
+we spent three days on a hackathon, right.
+
+00:19:33.476 --> 00:19:36.396
+12 cross-functional teams were created.
+
+00:19:36.996 --> 00:19:41.476
+They spent three days in designing and building new ideas.
+
+00:19:41.676 --> 00:19:48.996
+At the end of the week, they demonstrated 12 MVPs
+to the business team and the customer leadership team.
+
+00:19:50.396 --> 00:19:59.196
+This experience not only convinced our tech team
+and our business team about the power of AI DLC
+
+00:19:59.676 --> 00:20:00.000
+and significantly accelerated AI adoption in our software
+development process, but more importantly,
+

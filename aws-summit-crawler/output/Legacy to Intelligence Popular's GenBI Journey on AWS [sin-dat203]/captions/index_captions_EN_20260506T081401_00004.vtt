@@ -1,0 +1,181 @@
+WEBVTT	#Elemental Media Engine(TM) 2.18.0.0
+X-TIMESTAMP-MAP=LOCAL:00:00:00.000,MPEGTS:187200
+
+00:15:00.000 --> 00:15:07.676
+It gives us speed and confidence. So our team across will be able
+to work on the same data same times.
+
+00:15:08.076 --> 00:15:15.916
+And it makes it easier. And it basically is easier
+to align and speed up the decision making.
+
+00:15:16.436 --> 00:15:18.476
+So based on what we have seen so far,
+
+00:15:19.236 --> 00:15:28.636
+we actually see that there is a very strong potential
+that we can actually go up to 70% of reduction in terms of reports,
+
+00:15:29.836 --> 00:15:37.996
+reporting times. And then in terms of by usage
+in the organization also has increased significantly.
+
+00:15:38.236 --> 00:15:45.196
+And our users are actually actively
+engaged with using these analytics tools.
+
+00:15:45.916 --> 00:15:49.116
+So with that, I'm going to hand over to Kelly.
+
+00:15:49.716 --> 00:15:54.596
+She will walk you through how
+House Amazon Quick build this solution for us.
+
+00:15:55.196 --> 00:15:55.716
+Thank you.
+
+00:16:01.716 --> 00:16:02.316
+Good job.
+
+00:16:04.476 --> 00:16:04.996
+Thank you.
+
+00:16:04.996 --> 00:16:10.276
+Ee Siew Ping. We have covered the business outcome
+as well as the problem that Popular faces.
+
+00:16:10.596 --> 00:16:15.876
+Now I'll be walking through the technical
+journey and the architecture we built on AWS.
+
+00:16:18.516 --> 00:16:23.796
+The problem that many face is bridging
+the gap between data and wisdom.
+
+00:16:24.196 --> 00:16:30.956
+A lot of companies face this issue where they have a lot of data,
+but they are unable to get actionable insights out of it.
+
+00:16:31.636 --> 00:16:36.116
+What we have built with Popular is to bridge
+this gap between data and wisdom.
+
+00:16:38.316 --> 00:16:42.116
+The vision that SUP S-Team built towards had four pillars.
+
+00:16:42.676 --> 00:16:48.396
+Firstly, a single source of truth.
+Because when the whole business work from one source for data,
+
+00:16:48.916 --> 00:16:55.356
+decisions get faster and trust goes up For Popular,
+that meant unifying their finance,
+
+00:16:55.556 --> 00:17:03.036
+retail and operations data into one single
+business platform. Next self-service insights.
+
+00:17:03.396 --> 00:17:09.516
+This means that there is no bottleneck in the tech,
+and that people can get answers directly from their data.
+
+00:17:10.756 --> 00:17:17.196
+Real time visibility. We're always on dashboards
+means that you're acting on what's happening now and not.
+
+00:17:17.236 --> 00:17:20.516
+What about happen to your data in the in the past.
+
+00:17:20.516 --> 00:17:27.036
+And lastly, a scalable foundation,
+because what they have built is able to handle their data today.
+
+00:17:27.276 --> 00:17:31.556
+But it also meant to handle the growth
+as the business grow in the future.
+
+00:17:33.076 --> 00:17:36.196
+And here's what does the heavy lifting on AWS.
+
+00:17:36.756 --> 00:17:40.756
+Three main services and each with a distinct skill set.
+
+00:17:41.796 --> 00:17:45.916
+Firstly, Amazon S3 is a data lake solution.
+
+00:17:46.276 --> 00:17:55.916
+It holds all of historical and incremental data from SAP,
+ERP retail source to the POS retail systems across hundred stores.
+
+00:17:57.196 --> 00:18:01.276
+This allows for scalable, cost effective solution.
+
+00:18:02.476 --> 00:18:07.636
+Next, Amazon Redshift is a cloud data warehouse that Popular is using.
+
+00:18:08.316 --> 00:18:13.276
+This allows for single source of truth,
+which allows for high performance computing.
+
+00:18:14.836 --> 00:18:18.156
+Amazon Quick allows for the layer that sits on top.
+
+00:18:18.876 --> 00:18:25.476
+This is where they can build dashboards for executives
+and through QuickSight and with the generative AI layer on top,
+
+00:18:25.716 --> 00:18:30.276
+users can now ask questions in natural
+language and get answers instantly.
+
+00:18:31.756 --> 00:18:34.396
+The story isn't these individual services.
+
+00:18:34.676 --> 00:18:36.956
+It's how we actually build this together.
+
+00:18:38.956 --> 00:18:42.236
+So let me walk you through the architectural step by step.
+
+00:18:43.116 --> 00:18:45.716
+First, we have the corporate data center.
+
+00:18:45.716 --> 00:18:51.716
+We host SAP ERP data as well as the POS data across the retail system.
+
+00:18:52.676 --> 00:18:56.196
+We bring the data into AWS into two mechanisms.
+
+00:18:56.516 --> 00:19:05.556
+Firstly, we have the SAP glue SAP data connector,
+which brings in data from SAP via the OData API.
+
+00:19:06.756 --> 00:19:15.876
+This allows you to join your data in SAP
+with other data sources such as retail transactions, operations,
+
+00:19:15.996 --> 00:19:20.156
+and this allows you to build a unified view across your data sources.
+
+00:19:21.236 --> 00:19:29.076
+Next, we use AWS Database Migration Service
+that brings data in from the POS retail transaction.
+
+00:19:29.796 --> 00:19:38.116
+This allows for bulk incremental bulk loads
+into AWS as well as incremental load so that data stays updated.
+
+00:19:39.756 --> 00:19:43.876
+Everything lands in Amazon S3 as the central data lake.
+
+00:19:44.436 --> 00:19:48.116
+And this is a key design principle that we have built today.
+
+00:19:48.116 --> 00:19:57.076
+This allows you to scale independently when your compute and storage
+are completely decoupled and you pay for only what you use.
+
+00:19:58.316 --> 00:20:00.000
+Data is also stored in Apache Iceberg Open table format,
+and this is a very important concept, which I'll explain on later.
+

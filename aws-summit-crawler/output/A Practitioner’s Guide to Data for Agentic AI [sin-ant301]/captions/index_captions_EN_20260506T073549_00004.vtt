@@ -1,0 +1,174 @@
+WEBVTT	#Elemental Media Engine(TM) 2.18.0.0
+X-TIMESTAMP-MAP=LOCAL:00:00:00.000,MPEGTS:187200
+
+00:15:00.000 --> 00:15:06.476
+So what does she care about? Of course,
+she cares about the quality, the accuracy of the data as well.
+
+00:15:07.276 --> 00:15:15.236
+And she wants to add enough context
+in the catalog of its data product so the users can find it correctly.
+
+00:15:16.236 --> 00:15:22.876
+She also cares about the auditing.
+She wants to know who are using the data and how they are using it.
+
+00:15:24.716 --> 00:15:29.356
+Right. And every one of those governance here are still non-negotiable
+
+00:15:29.356 --> 00:15:35.596
+when you have agent in the picture. So we have all the pieces, right?
+
+00:15:35.636 --> 00:15:38.836
+Let's put it all together into one unified architecture.
+
+00:15:39.756 --> 00:15:42.476
+So let's start with the call your agent.
+
+00:15:43.196 --> 00:15:49.876
+You can use Amazon Bedrock AgentCore to run your agent in production.
+
+00:15:50.556 --> 00:15:56.756
+So you have your runtime that hosted
+the agent logic in an isolated sandbox.
+
+00:15:57.316 --> 00:16:00.916
+Memory help you to host the short term and long term memory,
+
+00:16:01.396 --> 00:16:10.476
+and you have the identity and gateway to make sure
+the agent is given the right access to the right tools.
+
+00:16:11.796 --> 00:16:18.596
+So external customer like theory comes from
+their internal customers like NKI and Jane.
+
+00:16:18.996 --> 00:16:20.676
+They also have their own agents.
+
+00:16:21.996 --> 00:16:25.876
+And behind the scenes they need to use large language models.
+
+00:16:26.276 --> 00:16:30.356
+And you can use Amazon Bedrock to access the large language models.
+
+00:16:31.236 --> 00:16:36.596
+And you give access to models like Claude, Nova and more.
+
+00:16:36.956 --> 00:16:40.116
+And when more new model comes out, you can easily swap them
+
+00:16:40.116 --> 00:16:47.196
+in. Now add RAG retrieval augmented generation into the picture.
+
+00:16:47.996 --> 00:16:54.116
+The agent can now search the documents
+and internal knowledge base of the organization,
+
+00:16:54.916 --> 00:16:57.996
+and you also have the NCP tools we just talked about, right.
+
+00:16:58.476 --> 00:17:00.796
+So it can access all kinds of tools,
+
+00:17:01.636 --> 00:17:09.676
+and the agent can use the NCP tools to directly
+query the knowledge base using natural languages.
+
+00:17:10.556 --> 00:17:16.836
+So the agent can use the same NCP
+standard to carry all kinds of tools.
+
+00:17:17.596 --> 00:17:20.956
+And that completes the agent side of the architecture.
+
+00:17:22.316 --> 00:17:31.276
+Now, on the data side, you have your database engines,
+your analytical Engines and they are all exposed through APIs.
+
+00:17:32.116 --> 00:17:36.436
+So note here this is actually what you already have, right?
+
+00:17:36.476 --> 00:17:44.676
+The APIs, the data engine and your MCP
+connects to those APIs through the MCP servers.
+
+00:17:46.476 --> 00:17:51.196
+And behind the scenes, your data
+processing is feeding data into the data engines.
+
+00:17:51.556 --> 00:18:00.756
+That's where your ETL lives, your streaming ingestion,
+and your lakehouse as foundation with catalog for discovery,
+
+00:18:01.276 --> 00:18:04.516
+fine grained access controls, and S3 storage.
+
+00:18:06.316 --> 00:18:08.316
+So notice what's happening here.
+
+00:18:09.876 --> 00:18:13.956
+The data side of architecture on the right is what you already have.
+
+00:18:15.596 --> 00:18:20.196
+And the Agentic layer of architecture is what you need to add, right?
+
+00:18:20.556 --> 00:18:25.516
+Again, building Agentic AI is not revolutionary.
+
+00:18:26.116 --> 00:18:28.036
+It's actually evolutionary.
+
+00:18:29.636 --> 00:18:31.796
+So this is the unified architecture,
+
+00:18:33.196 --> 00:18:37.116
+but it's just a diagram if you don't implement it.
+
+00:18:38.196 --> 00:18:44.236
+PropertyGuru is the Southeast Asia
+leading property technology company,
+
+00:18:44.796 --> 00:18:48.716
+and they’ve been building with Agentic AI on top of their data.
+
+00:18:49.276 --> 00:18:52.476
+Please welcome Marijke from PropertyGuru.
+
+00:18:58.276 --> 00:19:01.156
+Thank you Andrew. Good afternoon everyone.
+
+00:19:01.516 --> 00:19:04.836
+I hope you enjoyed the presentations up until now.
+
+00:19:05.076 --> 00:19:07.556
+Thank you for heavy lifting. Now I,
+
+00:19:08.636 --> 00:19:11.356
+as Director of Engineering of PropertyGuru,
+
+00:19:11.356 --> 00:19:20.356
+I'm representing a lot of people and teams who build up
+the foundations to what we were able recently built on top of.
+
+00:19:26.596 --> 00:19:30.916
+I'm responsible for data engineering, data science,
+
+00:19:30.916 --> 00:19:40.636
+and recently also took a pleasure
+to work with cross-functional team to build an Agentic AI solution
+
+00:19:40.636 --> 00:19:49.196
+for our property Marketplace. For those who might
+not be aware of us because we have some external guests also,
+
+00:19:49.236 --> 00:19:54.236
+I guess PropertyGuru is property Marketplace in Southeast Asia.
+
+00:19:54.236 --> 00:19:58.076
+We're in Malaysia, Singapore, Vietnam and Thailand.
+
+00:19:59.156 --> 00:20:00.000
+And what is extremely important
+for us is to build trust in our solutions,
+

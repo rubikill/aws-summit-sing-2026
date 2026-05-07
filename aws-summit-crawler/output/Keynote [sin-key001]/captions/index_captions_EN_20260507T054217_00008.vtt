@@ -1,0 +1,142 @@
+WEBVTT	#Elemental Media Engine(TM) 2.18.0.0
+X-TIMESTAMP-MAP=LOCAL:00:00:00.000,MPEGTS:187200
+
+00:35:00.000 --> 00:35:01.956
+He thinks through the problem first.
+
+00:35:01.956 --> 00:35:04.996
+It gives you full stories with acceptance criteria.
+
+00:35:05.476 --> 00:35:14.236
+Technical design docs, architecture diagrams,
+sequence flows, everything you would normally spend hours documenting.
+
+00:35:14.676 --> 00:35:18.996
+And you can jump in at any point and ask Kiro for changes.
+
+00:36:14.396 --> 00:36:20.396
+But what's the beauty? All of us are developers
+and let me just share a story.
+
+00:36:20.716 --> 00:36:28.716
+About six months ago, myself, the APJC leadership
+team spent two days using Kiro, trying every feature,
+
+00:36:29.076 --> 00:36:34.196
+and we realized the power of making your ideas become a reality.
+
+00:36:34.556 --> 00:36:40.156
+That's what Kiro is about. Because agents are not just for developers.
+
+00:36:40.356 --> 00:36:45.036
+The opportunity to transform extends
+far beyond application development.
+
+00:36:45.356 --> 00:36:49.516
+Just think about how we all spend our time every day.
+
+00:36:49.956 --> 00:36:56.476
+We lose hours doing work that doesn't
+actually need expertise searching.
+
+00:36:56.916 --> 00:37:02.116
+Summarizing context switching. The way we work is not working.
+
+00:37:02.716 --> 00:37:06.396
+Amazon Quick is built to give you the time back.
+
+00:37:06.796 --> 00:37:11.956
+It's the new, better way to get work done quick.
+
+00:37:12.356 --> 00:37:14.996
+And we're continuing to expand what quick can do.
+
+00:37:15.596 --> 00:37:23.716
+We actually recently launched capabilities that bring
+together your local files, calendar, email, and other applications.
+
+00:37:23.716 --> 00:37:27.156
+By pulling together knowledge from the systems we already use.
+
+00:37:27.516 --> 00:37:33.756
+Quick can connect the dots between people,
+projects, decisions, and actions.
+
+00:37:33.916 --> 00:37:38.796
+For example, here quick is helping me prep for a customer meeting.
+
+00:37:39.276 --> 00:37:46.076
+It uses relevant files like the current roadmap from
+my machine and layered in emails, the slack threads,
+
+00:37:46.236 --> 00:37:48.316
+and even a briefing from the accounting.
+
+00:37:48.556 --> 00:37:57.796
+It can create a presentation and executive briefing doc
+and fire off an email to help keep everybody coordinated,
+
+00:37:58.036 --> 00:38:03.876
+no matter where your work happens.
+Quick note what's most relevant to you?
+
+00:38:03.916 --> 00:38:12.236
+Customers are actually already seeing benefits using quick,
+like the sales managers at 3M. 3M
+
+00:38:12.276 --> 00:38:15.356
+They wanted to spend more time driving growth
+
+00:38:16.076 --> 00:38:25.596
+and less time collecting information about sales
+opportunities across the 100,000 reps that they have in their teams.
+
+00:38:25.956 --> 00:38:30.876
+Using Amazon Quick, they were able to quickly
+generate summaries of priority deals
+
+00:38:31.036 --> 00:38:40.916
+and identify risks to closing those deals quick help reduce
+their typical preparation time from five hours to minutes,
+
+00:38:41.396 --> 00:38:49.716
+and it gave them the data they needed to have more
+strategic coaching Conversations with the reps.
+
+00:38:51.476 --> 00:39:00.316
+But even with powerful AI tools at our disposal,
+there's still something that can still hold us back.
+
+00:39:00.876 --> 00:39:06.996
+In many cases, the technology choices you
+made decades ago are now slowing you down.
+
+00:39:07.436 --> 00:39:15.716
+In fact, it's estimated that 70% 70% of IT
+
+00:39:15.756 --> 00:39:21.996
+budgets are consumed by simply maintaining legacy systems.
+
+00:39:23.036 --> 00:39:30.316
+No meaningful business outcomes. But modernizing
+these systems is hard, and it can take years to complete.
+
+00:39:30.476 --> 00:39:35.116
+This is a real pain point and an area where we knew AI could help.
+
+00:39:35.556 --> 00:39:41.716
+We built AWS Transform to help
+accelerate the modernization of legacy platforms
+
+00:39:41.716 --> 00:39:45.796
+like VMware, mainframe and windows.
+
+00:39:46.396 --> 00:39:53.756
+Transform has saved 1.35 million hours of manual migration effort
+
+00:39:53.996 --> 00:39:59.356
+and transform over 1 billion lines of mainframe code.
+
+00:39:59.716 --> 00:40:00.000
+And while we knew helping you modernize faster would be Popular,
+

@@ -1,0 +1,190 @@
+WEBVTT	#Elemental Media Engine(TM) 2.18.0.0
+X-TIMESTAMP-MAP=LOCAL:00:00:00.000,MPEGTS:187200
+
+00:10:00.000 --> 00:10:04.796
+I can choose to accept its default recommendations
+or accept an alternative, or even propose my own.
+
+00:10:05.196 --> 00:10:07.476
+And I can do this discussion with Kiro.
+
+00:10:07.476 --> 00:10:11.276
+If I don't understand anything, I can ask Kiro to for suggestions.
+
+00:10:12.036 --> 00:10:19.156
+So once I've logged in my decision Kiro would then
+proceed to create the requirements document over here.
+
+00:10:19.716 --> 00:10:22.876
+Right. Based on all what we have discussed.
+
+00:10:25.676 --> 00:10:33.156
+Now we've just seen how Kiro can build new features,
+but there may be many of you out here.
+
+00:10:33.196 --> 00:10:40.916
+I mean, at least for myself, also many of my customers
+that have large legacy applications that you may want to modernize.
+
+00:10:41.356 --> 00:10:49.116
+So maybe a 20 year old.net application or Java monolith,
+but you have little or even zero documentation.
+
+00:10:49.556 --> 00:10:52.596
+You want to modernize, but how to do that?
+
+00:10:52.596 --> 00:10:56.396
+Because even understanding that code base takes forever.
+
+00:10:57.436 --> 00:11:07.196
+So for these scenarios, AI DLC starts by first reverse engineering
+the code base so you can point Kiro at your legacy repository.
+
+00:11:07.396 --> 00:11:13.196
+It will then scan all the different packages,
+maps, the architecture, produce structured documentation,
+
+00:11:13.236 --> 00:11:18.476
+things like your business overview,
+architecture, code structure, API documentation, and dependencies.
+
+00:11:18.796 --> 00:11:23.036
+And with this, you'll be in a much better place to modernize.
+
+00:11:25.036 --> 00:11:27.796
+Now let's go into a bit more technical details.
+
+00:11:27.796 --> 00:11:32.236
+And Kiro has this concept of steering documents.
+
+00:11:32.476 --> 00:11:36.276
+So you can think of this as Kiro or AI North Star.
+
+00:11:36.516 --> 00:11:45.196
+It steers the direction of your entire project and ensures
+Kiro Consistently follow your patterns, your libraries and standards.
+
+00:11:45.196 --> 00:11:50.836
+So things like your coding standards,
+security and governance standards CICD all that you need.
+
+00:11:50.836 --> 00:11:57.236
+So in this example, I'm loading a AI DLC
+decision workflow as a steering dock.
+
+00:11:57.756 --> 00:12:01.596
+You see decision driven document generation,
+implementation guidelines,
+
+00:12:01.596 --> 00:12:06.756
+user input handling all defined within this steering document.
+
+00:12:07.316 --> 00:12:11.356
+So with this steering dock,
+Kiro will ensure this workflow or this guideline
+
+00:12:11.396 --> 00:12:15.716
+or standard will be adhered to in every single chat session.
+
+00:12:15.716 --> 00:12:18.356
+So I do not have to explain myself.
+
+00:12:20.196 --> 00:12:26.996
+Now let me also introduce to you some tools
+in your toolkit to help you further accelerate AI DLC.
+
+00:12:27.756 --> 00:12:32.996
+So firstly skills. These are portable reusable instruction packages.
+
+00:12:33.236 --> 00:12:41.596
+So think of things like best practices workflows, templates
+repeatable, shareable across your teams, across your projects.
+
+00:12:41.996 --> 00:12:46.116
+So you can have a skill, for example,
+to create PowerPoints or run deep research.
+
+00:12:46.116 --> 00:12:50.316
+So in this example over here, I'm setting up an API platform.
+
+00:12:50.316 --> 00:12:54.516
+I want production level best practices for AWS API gateway.
+
+00:12:54.796 --> 00:12:59.356
+So what I'm doing is I load the official
+open source AWS API gateway skill.
+
+00:12:59.596 --> 00:13:02.636
+And with that, Kiro can give me the best practice guidance.
+
+00:13:02.676 --> 00:13:05.836
+Key considerations. Trade offs. All right.
+
+00:13:05.836 --> 00:13:11.916
+In the IDE next NCP a model context protocol.
+
+00:13:12.356 --> 00:13:20.636
+This extends keywords capabilities by connecting to specialized
+servers that provide additional tools and contexts.
+
+00:13:21.156 --> 00:13:26.116
+So over here you can see, for example, the AWS knowledge NCP server.
+
+00:13:26.436 --> 00:13:33.276
+It provides tools to search and get
+recommendations from AWS documentation guidance blocks,
+
+00:13:33.276 --> 00:13:36.356
+so that you're able to have that up to date context.
+
+00:13:36.476 --> 00:13:42.196
+And you can see all these NCP are defined
+right here in your NCP dot Json file.
+
+00:13:44.116 --> 00:13:51.116
+Now finally, Kiro powers Kiro powers packages all of these things
+together, packages your tools, workflows, best practices,
+
+00:13:51.156 --> 00:13:56.476
+NCP server skills, and all that into one installable bundle.
+
+00:13:56.996 --> 00:14:04.356
+And the best thing about it is also that it loads
+dynamically based on the context of what you are working on.
+
+00:14:04.676 --> 00:14:09.476
+So you're not burning that baseline
+context until the work actually calls for it.
+
+00:14:10.516 --> 00:14:14.276
+So over here you can see an example of how we install Kiro powers.
+
+00:14:14.316 --> 00:14:17.836
+It's very easy. You can see a list of community libraries.
+
+00:14:17.836 --> 00:14:24.916
+If I want to do UI UX, I can just install the Figma
+power one click installation and that's it.
+
+00:14:24.956 --> 00:14:31.316
+It loads up all the preloaded configuration
+with the instant domain expertise ready for use.
+
+00:14:33.556 --> 00:14:42.996
+Now finally, Agent hooks. Hooks helps you to automate
+that repetitive task based on events that you define.
+
+00:14:43.556 --> 00:14:47.476
+So let's see how this works. To create a hook,
+
+00:14:47.756 --> 00:14:54.636
+I'll just click on that plus button and I can start
+describing what I want in natural language.
+
+00:14:55.076 --> 00:14:59.916
+So in this example we are updating the change
+log whenever a Python file changes.
+
+00:14:59.916 --> 00:15:00.000
+So I want this to be auto triggered.
+

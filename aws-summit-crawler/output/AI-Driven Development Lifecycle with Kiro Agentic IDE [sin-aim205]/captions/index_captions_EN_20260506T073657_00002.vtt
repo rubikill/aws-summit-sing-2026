@@ -1,0 +1,196 @@
+WEBVTT	#Elemental Media Engine(TM) 2.18.0.0
+X-TIMESTAMP-MAP=LOCAL:00:00:00.000,MPEGTS:187200
+
+00:05:00.000 --> 00:05:04.596
+Now, the construction phase is where we then take all these contacts
+that we're building with AI agents from the inception phase
+
+00:05:05.316 --> 00:05:10.996
+and think about how can we apply technology to solve
+these problems and actually deliver this solution.
+
+00:05:11.676 --> 00:05:18.036
+We first start creating a conceptual model based on the product
+domain that we have defined from the inception phase.
+
+00:05:18.436 --> 00:05:21.156
+And then we ask ourselves, what are some of the cloud services?
+
+00:05:21.156 --> 00:05:22.996
+What are some of the design patterns?
+
+00:05:22.996 --> 00:05:27.676
+What are some of the architectural
+components that we can use to facilitate this?
+
+00:05:27.676 --> 00:05:32.756
+And by then you will have a robust
+framework or scaffold for the code generation.
+
+00:05:33.916 --> 00:05:39.396
+And from there, what we need
+to do is to create the infrastructure as code.
+
+00:05:39.956 --> 00:05:42.636
+And then that goes into your deployment pipeline.
+
+00:05:43.396 --> 00:05:46.876
+Now you might be wondering if
+you are utilizing so much AI and Agentic.
+
+00:05:46.876 --> 00:05:51.796
+AI. What's our role in this? As human engineers, as product managers,
+
+00:05:52.796 --> 00:05:58.796
+the collaboration model between human and AI is now
+shifting towards more of a partner model.
+
+00:05:58.796 --> 00:06:03.276
+It's no longer having an AI system that's
+super smart but knows nothing about your.
+
+00:06:03.276 --> 00:06:09.516
+Your entire enterprise context or your business,
+but rather now treating AI as a partner, right?
+
+00:06:09.556 --> 00:06:16.596
+Can you give me some suggestions? Can you help me
+break down this task so that we can build this together?
+
+00:06:18.116 --> 00:06:24.316
+Now, the key responsibility for human
+in the room is to maintain the validation and decision making process.
+
+00:06:24.756 --> 00:06:29.836
+Because ultimately, we are the ones who are responsible
+for everything that goes into production.
+
+00:06:31.396 --> 00:06:33.396
+And with that, I will pass the mic to Fabian,
+
+00:06:33.396 --> 00:06:39.716
+who will share more about how you can use Kiro
+on our Agentic IDE to facilitate and implement this process.
+
+00:06:49.436 --> 00:06:53.076
+Thank you Derek. So now I'll be introducing to you Kiro,
+
+00:06:53.356 --> 00:06:59.156
+the AI integrated development environment
+to bring you from prototype to production.
+
+00:06:59.556 --> 00:07:06.956
+Kiro accelerates every stage of the AI DLC
+by bringing structure to your AI coding,
+
+00:07:07.716 --> 00:07:14.156
+and one of its key differentiators is its native
+spec driven development capabilities.
+
+00:07:14.636 --> 00:07:17.716
+Now, I'm sure many of you have coded before.
+
+00:07:18.436 --> 00:07:26.796
+Yes. So coding, you just throw in a high level problem
+and AI can quickly come up with a certain implementation.
+
+00:07:27.076 --> 00:07:29.676
+And that works great for prototypes.
+
+00:07:30.156 --> 00:07:33.956
+But what if you want to ship this next into production?
+
+00:07:34.476 --> 00:07:39.716
+That's a different story.
+And that's where spec driven development can help.
+
+00:07:40.156 --> 00:07:49.916
+Spec driven dev is where you would focus first on the planning,
+always creating the specifications before you go into implementation.
+
+00:07:51.356 --> 00:07:59.356
+So Kiro helps you do that by turning your prompts
+into requirements system design as well as discrete tasks.
+
+00:07:59.796 --> 00:08:01.916
+So let's see a demo on how this is done.
+
+00:08:02.716 --> 00:08:06.036
+Suppose I want to create a new feature for an application.
+
+00:08:06.556 --> 00:08:13.956
+I will just clean the prompt and Kiro would then proceed
+to generate the relevant specifications to just open it
+
+00:08:13.956 --> 00:08:18.876
+and you can see the specifications being created
+starting with the requirements first.
+
+00:08:19.516 --> 00:08:21.676
+I can then look at the requirements.
+
+00:08:21.716 --> 00:08:27.716
+Each requirement having a user story
+as well as a list of acceptance criteria.
+
+00:08:28.396 --> 00:08:33.636
+And I can go back and forth with Kiro to refine all these criteria.
+
+00:08:33.796 --> 00:08:37.436
+I can add, I can modify based on what my needs are.
+
+00:08:38.436 --> 00:08:42.436
+So over here you can see the relevant
+acceptance criteria was being added.
+
+00:08:42.436 --> 00:08:46.396
+Once I'm happy with the requirements,
+I'll proceed to the design stage,
+
+00:08:46.796 --> 00:08:52.836
+and this is where Kiro would come up with a comprehensive
+design of the different component interfaces.
+
+00:08:52.836 --> 00:08:58.276
+And that includes things like API routing,
+error handling, and even testing strategy.
+
+00:08:59.436 --> 00:09:03.796
+And finally, when I'm happy, I'll proceed to the implementation plan.
+
+00:09:04.236 --> 00:09:12.076
+So over here you can see a detailed list of tasks,
+as well as a list of subtasks each mapped to relevant requirements.
+
+00:09:12.716 --> 00:09:15.876
+And here you can choose to execute all the tasks
+
+00:09:15.996 --> 00:09:22.476
+or just select the based on certain optional tasks
+in order to have the quickest MVP build.
+
+00:09:24.476 --> 00:09:28.916
+So now let's take this one step further with AI DLC.
+
+00:09:29.476 --> 00:09:35.676
+So if AI DLC, there's this structured
+human in the loop decision gates at every step.
+
+00:09:35.876 --> 00:09:41.476
+So Kiro will be actively asking
+for your input for your decisions over here.
+
+00:09:41.756 --> 00:09:50.316
+Kiro is generating requirement decisions for a chatbot feature,
+so it asks me questions on my chatbot capabilities, knowledge base,
+
+00:09:50.316 --> 00:09:53.756
+conversational features, functional non-functional requirements.
+
+00:09:54.076 --> 00:09:57.636
+And for each of these specifications,
+
+00:09:57.636 --> 00:10:00.000
+I can choose to accept its default recommendations
+or accept an alternative, or even propose my own.
+

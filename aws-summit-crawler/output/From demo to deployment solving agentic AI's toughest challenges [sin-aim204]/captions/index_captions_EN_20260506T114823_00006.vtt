@@ -1,0 +1,92 @@
+WEBVTT	#Elemental Media Engine(TM) 2.18.0.0
+X-TIMESTAMP-MAP=LOCAL:00:00:00.000,MPEGTS:187200
+
+00:25:00.000 --> 00:25:02.316
+from Jira and using those information in the tickets.
+
+00:25:02.356 --> 00:25:13.396
+It then tries to resolve and provide an answer to the user in Slack,
+and the same answer is also copied to the infra team members,
+
+00:25:13.396 --> 00:25:24.476
+who can then review the answers for either the the follow ups that you need
+to do to help the user further or review the answers also for accuracy
+
+00:25:24.476 --> 00:25:29.436
+and learn and help the youth and help the agent then learn from those cases.
+
+00:25:29.436 --> 00:25:40.356
+So as we accumulate more cases, the agent then becomes actually more
+intelligent and gets better at its job over time, pretty much automatically.
+
+00:25:42.756 --> 00:25:47.876
+So this is an example of how the agent works.
+
+00:25:48.076 --> 00:25:54.516
+On the left, you see actually a Slack thread that is pulled from our production.
+
+00:25:54.516 --> 00:25:58.436
+We had a user coming in to request for some.
+
+00:26:00.636 --> 00:26:09.596
+To to help with some CI CD deployments. And at the bottom you
+see the agent actually then saying telling the user it's working.
+
+00:26:09.756 --> 00:26:15.956
+And after a while it is then able
+to give some advice to the users on what to do next.
+
+00:26:17.396 --> 00:26:27.436
+So this whole process actually took about one and a half months to go
+from the initial conceptualization to, to delivering this into production.
+
+00:26:28.156 --> 00:26:36.756
+As of now, we have about more than 450 issues already processed by the agent,
+and it's working pretty much all the time.
+
+00:26:36.756 --> 00:26:43.316
+When a user comes in, they will be the agent will be there
+to take out the ticket and provide an initial response.
+
+00:26:44.116 --> 00:26:56.796
+We are also looking at how to improve the agent further by better
+tracking the time savings that we are delivering from the agent for ROI,
+
+00:26:57.116 --> 00:27:03.596
+and also looking at how we can improve the recommendations
+and further automating what the agent can do,
+
+00:27:04.836 --> 00:27:08.916
+all with the help of, of, of, of, of the tools that AWS is providing.
+
+00:27:11.116 --> 00:27:14.236
+Finally, I want to just share a little bit about how,
+
+00:27:15.476 --> 00:27:19.276
+with AWS, we have also changed the way that we are developing.
+
+00:27:19.796 --> 00:27:31.876
+We have adopted Kiro in internally is being used by all engineers,
+and we have then been able to see some improvements, productivity gains,
+
+00:27:31.876 --> 00:27:39.396
+more pills being merged by our engineers,
+and also less time taken to merge each PR.
+
+00:27:39.876 --> 00:27:49.636
+And we feel that having this standardized tool,
+we are able to actually share experiences across all our engineering teams.
+
+00:27:49.756 --> 00:27:58.436
+And once we have completed, once we have learned something,
+we are we we will share this experience across all the other teams.
+
+00:27:59.436 --> 00:28:02.476
+With this, I've come to the end of my,
+
+00:28:03.516 --> 00:28:06.036
+my, my sharing and I'll send this back to Vishesh.
+
+00:28:07.636 --> 00:28:11.516
+Thank you. Thank you for everyone on the live stream. Thank you for joining.
+

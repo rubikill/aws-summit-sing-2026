@@ -1,0 +1,176 @@
+WEBVTT	#Elemental Media Engine(TM) 2.18.0.0
+X-TIMESTAMP-MAP=LOCAL:00:00:00.000,MPEGTS:187200
+
+00:00:08.396 --> 00:00:12.236
+Hello everyone. My name is Vishesh. As Sid mentioned.
+
+00:00:12.916 --> 00:00:16.756
+And if you are wondering, I didn't wear this jacket on the MRT.
+
+00:00:17.916 --> 00:00:26.316
+It just makes me feel like a weirdo. But thankfully this is the place
+where I can be wearing this jacket and for everyone to understand.
+
+00:00:27.316 --> 00:00:35.676
+So today we are going to talk about how do we take POCs from
+a demo concept which everyone likes, to a production deployment,
+
+00:00:36.156 --> 00:00:39.356
+and how we can solve the Agentic AI's toughest challenges.
+
+00:00:39.356 --> 00:00:41.356
+While doing that,
+
+00:00:42.116 --> 00:00:47.716
+we have the agenda, first of all, when to build, to build, to build a new thing,
+
+00:00:47.716 --> 00:00:52.276
+or to use something which is existing and then
+figure out the non-functional requirements.
+
+00:00:52.276 --> 00:01:01.196
+So operational excellence, data, trust, and reliability are the non-functional
+requirements which organizations generally miss in the POC stage.
+
+00:01:02.396 --> 00:01:06.236
+This is the key metric that we want to start to understand.
+
+00:01:06.876 --> 00:01:12.036
+We have a great demo that worked fine, and between the demo for an organization,
+
+00:01:12.036 --> 00:01:19.956
+what we have found as a as a survey is that 46% of those use cases,
+those POCs don't make it to production.
+
+00:01:19.956 --> 00:01:23.956
+And it is absolutely okay for some of them to not make it to production.
+
+00:01:24.316 --> 00:01:31.036
+That's good. But 46% of them not making it
+to production is a challenge that we want to solve for.
+
+00:01:31.356 --> 00:01:40.436
+There might be real business use cases which have real money value
+for the business, and if they don't make it to production, that's a loss.
+
+00:01:42.876 --> 00:01:49.916
+When I. So let's take this example.
+We are starting with an application or an idea which we built.
+
+00:01:49.916 --> 00:01:52.476
+It works on our machine. Absolutely fine.
+
+00:01:52.516 --> 00:01:58.036
+A single user works great. Does it go to. Is it good enough to go to production.
+
+00:01:58.276 --> 00:02:00.956
+So functionally it works. The workflow works.
+
+00:02:00.956 --> 00:02:09.196
+The orchestration works on one machine.
+But does it really have it in itself by the builders of that POC?
+
+00:02:09.716 --> 00:02:11.916
+Have they considered the non-functional requirements?
+
+00:02:11.916 --> 00:02:14.116
+And these four are the non-functional pillars.
+
+00:02:14.116 --> 00:02:16.996
+So operational excellence being grounded in data,
+
+00:02:17.036 --> 00:02:24.236
+having the trust and the reliability of the of the entire
+solution is essentially the non-functional requirement that we need
+
+00:02:24.236 --> 00:02:28.796
+to have a close eye on, even in the in the POC stage.
+
+00:02:28.956 --> 00:02:36.036
+This is not something that we need to consider when we go to production,
+because it's already too late by then.
+
+00:02:36.076 --> 00:02:39.596
+We have to focus on these things in the POC stage itself.
+
+00:02:41.276 --> 00:02:47.036
+So the first point is do you need to build
+custom or can you just start with what you have?
+
+00:02:47.036 --> 00:02:55.916
+So if you have a use case which is related to employee
+productivity or coding assistant or customer Summer experience.
+
+00:02:55.916 --> 00:02:58.516
+We already have built solutions for that.
+
+00:02:59.316 --> 00:03:05.516
+They are ready to scale. They can be deployed
+in days to weeks time and you don't have to build for it.
+
+00:03:06.876 --> 00:03:11.236
+For example, we have quick. We have Kiro and Amazon Connect for these use cases.
+
+00:03:11.836 --> 00:03:16.076
+If you have a security or a DevOps use case, we have frontier agents for that.
+
+00:03:16.516 --> 00:03:20.996
+But what if you don't have these particular use cases?
+
+00:03:20.996 --> 00:03:28.796
+You now need to build custom. And for example,
+if you have a unique business logic which is very specific to your organization,
+
+00:03:28.796 --> 00:03:36.636
+and that needs to be part of the solution, or if you have to integrate with,
+let's say, a mainframe from the 90s within your application,
+
+00:03:36.636 --> 00:03:39.076
+that's a custom integration that's required.
+
+00:03:39.076 --> 00:03:44.236
+Or if you have your agent, let’s say, needs to
+speak the language of your business,
+
+00:03:44.236 --> 00:03:49.396
+for example, Basel three in banking or ICD ten codes in healthcare.
+
+00:03:49.396 --> 00:03:56.796
+If those are your use cases, then you need to build custom.
+
+00:03:56.796 --> 00:04:00.116
+This is probably my favorite slide from the session.
+
+00:04:00.116 --> 00:04:03.436
+If you see in blue, we have. AgentCore. Amazon Bedrock.
+
+00:04:03.436 --> 00:04:14.036
+AgentCore. And underneath AgentCore itself, we have multiple capabilities
+that AgentCore provides, which allows us to build custom Agentic solutions.
+
+00:04:14.356 --> 00:04:21.356
+This is the example of the undifferentiated
+heavy lifting that AWS can do on your behalf.
+
+00:04:21.676 --> 00:04:26.116
+Your job in the business that you are in is to solve for business problems.
+
+00:04:26.396 --> 00:04:31.476
+These are infrastructure operational issues which you can offload to AWS.
+
+00:04:31.716 --> 00:04:37.676
+While AWS can do a great job in making these available
+for your use cases and scaling them as required.
+
+00:04:38.556 --> 00:04:45.076
+We'll go over them as we go along. So let's talk about operational excellence,
+which is the first non-functional pillar.
+
+00:04:45.156 --> 00:04:52.836
+From that we should consider the question to be asked is can you
+really operate this in production at the scale you need.
+
+00:04:52.876 --> 00:05:00.000
+The question is important because what may work for one user may still work
+for ten users, but does it work for 100,000 users?
+

@@ -1,0 +1,35 @@
+{
+  "sessionEventId": "sin-aim204",
+  "eventtitle": "From demo to deployment: solving agentic AI's toughest challenges",
+  "description": "Most AI agent projects stall when moving from prototype to production. This session tackles the top challenges builders face when deploying agentic AI at scale. You'll learn how to answer the fundamental question of whether to build custom agents or leverage pre-built agents for DevOps, security, development, and business productivity use cases. Then you'll discover how to address the critical production challenges of reliability, observability, cost management, security, and evaluation. Drawing from real customer deployments and AWS's portfolio of agentic AI capabilities, you'll gain actionable approaches for building agents that don't just demo well but ship and scale.",
+  "customCategory": "AWS Summit Singapore - AI for Everyone",
+  "eventdate": "6 May 2026",
+  "eventtime": "11:30 AM - 12:01 PM",
+  "eventStart": "2026-05-06T11:30+08:00",
+  "eventEnd": "2026-05-06T12:01+08:00",
+  "filterTags": "Industry:Financial Services,Level:200 - Intermediate,Location:Singapore,Topic:Artificial Intelligence",
+  "image": "https://d1o4t9h6a8fm0w.cloudfront.net/media/aws-summitsapj26/assets/images/Artificial Itelligence 200.png",
+  "speakers": [
+    {
+      "title": "Principal Architect, AWS",
+      "name": "Vishesh Kumar",
+      "portraitUrl": "https://d1o4t9h6a8fm0w.cloudfront.net/media/aws-summitsapj26/assets/images/Speaker Bio Gradient (v70).png",
+      "bio": ""
+    },
+    {
+      "title": "Head of Data & AI, StraitsX",
+      "name": "Seong Per Lee",
+      "portraitUrl": "https://d1o4t9h6a8fm0w.cloudfront.net/media/aws-summitsapj26/assets/images/Speaker Bio Gradient (v70).png",
+      "bio": ""
+    }
+  ],
+  "vod_m3u8_url": "https://dz2ooo85w8eqv.cloudfront.net/aws-summitsgp26/outputs/sin-aim204/hls/v1/index.m3u8",
+  "caption_urls": [
+    "https://dz2ooo85w8eqv.cloudfront.net/aws-summitsgp26/outputs/sin-aim204/hls/v1/index_captions_EN_20260506T114359_00001.vtt",
+    "https://dz2ooo85w8eqv.cloudfront.net/aws-summitsgp26/outputs/sin-aim204/hls/v1/index_captions_EN_20260506T114455_00002.vtt",
+    "https://dz2ooo85w8eqv.cloudfront.net/aws-summitsgp26/outputs/sin-aim204/hls/v1/index_captions_EN_20260506T114551_00003.vtt",
+    "https://dz2ooo85w8eqv.cloudfront.net/aws-summitsgp26/outputs/sin-aim204/hls/v1/index_captions_EN_20260506T114640_00004.vtt",
+    "https://dz2ooo85w8eqv.cloudfront.net/aws-summitsgp26/outputs/sin-aim204/hls/v1/index_captions_EN_20260506T114730_00005.vtt",
+    "https://dz2ooo85w8eqv.cloudfront.net/aws-summitsgp26/outputs/sin-aim204/hls/v1/index_captions_EN_20260506T114823_00006.vtt"
+  ]
+}

@@ -1,0 +1,175 @@
+WEBVTT	#Elemental Media Engine(TM) 2.18.0.0
+X-TIMESTAMP-MAP=LOCAL:00:00:00.000,MPEGTS:187200
+
+00:15:00.396 --> 00:15:05.556
+For example, if a compliance team needs
+to deep dive into a specific policy,
+
+00:15:05.996 --> 00:15:09.836
+that research can now be embedded directly into the flow.
+
+00:15:10.396 --> 00:15:14.596
+And given that a thorough research takes about 20 to 40 minutes,
+
+00:15:14.836 --> 00:15:21.716
+flows can be scheduled to run at the right time so
+that the output is ready when you really need it.
+
+00:15:23.516 --> 00:15:29.036
+Quick can handle the most complex
+automation beyond single step workflows.
+
+00:15:29.476 --> 00:15:37.876
+Multi steps and multi-agent workflows Incorporate reasoning,
+research and UI agents that can be built,
+
+00:15:38.196 --> 00:15:42.436
+deployed and put into production by non-technical users.
+
+00:15:43.196 --> 00:15:49.516
+Honestly, many technical teams haven't yet
+reached that level of maturity with Agentic AI,
+
+00:15:50.196 --> 00:15:56.916
+because rolling out AI at an organizational scale is something
+most enterprises are still working towards.
+
+00:15:57.676 --> 00:16:03.756
+These business users got here first,
+and they did it without writing a single line of code.
+
+00:16:04.596 --> 00:16:09.036
+It's also worth noting that all of these processes is fully managed.
+
+00:16:09.236 --> 00:16:14.516
+No servers to spin up, no scaling to configure, no on call burden.
+
+00:16:14.716 --> 00:16:23.676
+It just runs. But what about your high volume
+back office processes, customer support tickets,
+
+00:16:23.996 --> 00:16:27.316
+claim processing, and loan origination?
+
+00:16:28.076 --> 00:16:31.596
+That's a whole different category of challenges, right?
+
+00:16:31.956 --> 00:16:40.356
+And it's exactly where Quick Automate
+comes in. Many of you are likely managing hundreds,
+
+00:16:40.356 --> 00:16:45.116
+if not thousands of enterprise systems that aren't well integrated.
+
+00:16:45.596 --> 00:16:48.996
+Data silos are the norm, but not the exception.
+
+00:16:49.636 --> 00:16:57.476
+And navigating between 5 or 10 different applications just
+to get a complete picture of something is a familiar experience
+
+00:16:57.476 --> 00:17:05.556
+for most of us. And for those of us on the technical side,
+we've spent years building integration pipelines,
+
+00:17:05.676 --> 00:17:09.516
+wrestling with ETL jobs, stitching systems together.
+
+00:17:09.876 --> 00:17:13.236
+And if we're being honest, some of it sort of works.
+
+00:17:14.916 --> 00:17:24.276
+We've also tried other approaches. RPA, low code applications,
+various automation platforms, all with varied results.
+
+00:17:24.876 --> 00:17:33.756
+And the fundamental limitation here is that most of these traditional
+tools can't handle processes that requires reasoning,
+
+00:17:34.156 --> 00:17:37.076
+human judgment, and contextual logic.
+
+00:17:37.836 --> 00:17:47.036
+They work well for rigid, rule based tasks, but breaks down
+the moment any complexity or ambiguity enters the picture.
+
+00:17:47.916 --> 00:17:52.276
+They are also expensive to build and even more expensive to maintain.
+
+00:17:52.916 --> 00:17:57.076
+RPA has practically become a three letter word at this point.
+
+00:17:57.756 --> 00:18:01.516
+Many of you have inherited RPA implementations.
+
+00:18:01.876 --> 00:18:08.716
+Yes, you are keeping them alive. But let's be honest,
+you are also actively looking for what comes next.
+
+00:18:10.596 --> 00:18:13.996
+Quick automate is our answer to that challenge.
+
+00:18:14.396 --> 00:18:19.716
+It's built into quick and designed specifically
+for building, deploying,
+
+00:18:19.756 --> 00:18:25.676
+and managing multi-agent automations
+for your most complex business processes.
+
+00:18:26.596 --> 00:18:32.076
+The starting point is simple.
+It's an agent that helps you build the automation itself.
+
+00:18:32.676 --> 00:18:38.596
+You describe your process in natural language
+or upload an existing standard operating procedure,
+
+00:18:39.076 --> 00:18:45.556
+and the agent scaffolds the entire
+operating procedure for you. It's iterative.
+
+00:18:45.836 --> 00:18:53.716
+It asks clarifying questions. It presents a high level structure
+for you to review before diving into the details,
+
+00:18:54.316 --> 00:18:57.836
+and it will make suggestions based on the best practices.
+
+00:18:58.476 --> 00:19:03.756
+So you're not manually dragging and dropping
+100 notes onto a blank canvas anymore.
+
+00:19:04.916 --> 00:19:10.756
+And when you need to make changes,
+you don't have to hunt down every single affected node.
+
+00:19:11.156 --> 00:19:13.516
+You describe the change in natural language
+
+00:19:13.836 --> 00:19:21.236
+and quick automate updates the workflow
+automatically handling all the cascading impacts for you.
+
+00:19:22.396 --> 00:19:29.636
+Quick automates follows a pure consumption based
+pricing consistent with how most AWS services are priced?
+
+00:19:30.116 --> 00:19:34.196
+You pay only for the time and automation is running.
+
+00:19:37.636 --> 00:19:41.716
+At the heart of Quick Automate as its role as an orchestration fabric.
+
+00:19:41.956 --> 00:19:50.036
+There are agents and. There are three types of agents
+that you can work with. So the first is the UI agent.
+
+00:19:50.396 --> 00:19:57.676
+It's similar to the one we saw in Quick Flows,
+purpose built and fine tuned for enterprise business applications.
+
+00:19:58.196 --> 00:20:00.000
+It's been trained using reinforcement learning specifically
+on ERP systems, form based data applications,
+

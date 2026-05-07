@@ -1,0 +1,170 @@
+WEBVTT	#Elemental Media Engine(TM) 2.18.0.0
+X-TIMESTAMP-MAP=LOCAL:00:00:00.000,MPEGTS:187200
+
+01:00:00.000 --> 01:00:03.716
+This was a great example of what one
+builder can do with the right tools and services,
+
+01:00:04.316 --> 01:00:12.036
+but the foundation that makes it all possible is infrastructure,
+data and inference working together.
+
+01:00:12.356 --> 01:00:14.476
+So let's start with infrastructure.
+
+01:00:15.076 --> 01:00:21.916
+Every agent, every model, every application,
+they all run on compute, networking and storage.
+
+01:00:22.396 --> 01:00:27.316
+Since day one, we have been obsessing
+over infrastructure so you don't have to.
+
+01:00:27.956 --> 01:00:32.916
+AWS continues to offer the broadest selection of instances,
+
+01:00:33.116 --> 01:00:39.276
+whether you're running web servers or performing
+video generation AWS instances to help.
+
+01:00:39.396 --> 01:00:47.156
+For almost 20 years, businesses have built
+on EC2 as their compute foundation, and we're not slowing down.
+
+01:00:47.436 --> 01:00:52.036
+We recently announced Graviton5,
+our next generation general purpose processor.
+
+01:00:52.476 --> 01:00:58.596
+Graviton5 gives you 25 more performance while
+maintaining the energy efficiency that graviton is known for.
+
+01:00:59.036 --> 01:01:06.436
+It is a great example of how investing in custom
+silicon allows us to pass along cost savings to all of you.
+
+01:01:06.796 --> 01:01:09.396
+We have also built a comprehensive,
+
+01:01:09.436 --> 01:01:16.996
+scalable and secure AI infrastructure and the latest GPU
+offerings through our long standing partnership with Nvidia,
+
+01:01:17.636 --> 01:01:23.396
+AWS is the best place to run your AI training workloads.
+
+01:01:23.676 --> 01:01:29.996
+And now, while compute is foundational,
+what really sets you apart is your data.
+
+01:01:31.276 --> 01:01:39.356
+When AI can truly understand your unique data,
+that's when data becomes your differentiator.
+
+01:01:39.996 --> 01:01:47.716
+But the reality is that data is often scattered
+across databases, data warehouses, data lakes,
+
+01:01:47.836 --> 01:01:52.196
+multiple applications disconnected and siloed.
+
+01:01:52.756 --> 01:01:59.476
+If we want AI to truly transform how we work,
+this fragmentation must be addressed first.
+
+01:01:59.796 --> 01:02:03.796
+We want to make it super easy for you to find insights.
+
+01:02:03.996 --> 01:02:08.156
+Make smarter decisions and innovate all across your data.
+
+01:02:08.756 --> 01:02:18.716
+And it all starts with S3. What began
+as simple storage is now the foundation for every data type.
+
+01:02:19.116 --> 01:02:23.236
+The role of effective storage isn't only to safely store data,
+
+01:02:23.516 --> 01:02:29.716
+it's also to help extract and decoupled
+data from individual applications.
+
+01:02:29.756 --> 01:02:33.636
+Now, as the pace of application development accelerates,
+
+01:02:33.636 --> 01:02:41.316
+this property of storage has become even more
+important because the easier the data is to access,
+
+01:02:41.556 --> 01:02:44.756
+the more we can explore new ways to benefit from it.
+
+01:02:45.396 --> 01:02:52.516
+In April, we just announced Amazon S3
+files integrating the Amazon Elastic File system
+
+01:02:52.756 --> 01:03:02.516
+into S3. You can mount any S3 bucket inside
+your EC2 instance container or Lambda function
+
+01:03:02.716 --> 01:03:06.196
+and then access that data through your file system.
+
+01:03:06.676 --> 01:03:15.996
+Now you don't have to copy data out of S3 to interact
+with it using a design tool or two point a training job at it.
+
+01:03:16.276 --> 01:03:18.476
+And if you make changes to your data,
+
+01:03:18.676 --> 01:03:28.276
+those changes will be propagated back to S3. S3
+files is a great example of meeting developers where you already work.
+
+01:03:28.636 --> 01:03:35.356
+And that same philosophy extends to how we think about data,
+about formats and about standards,
+
+01:03:35.636 --> 01:03:43.516
+which is why we continue to embrace open formats,
+open AI APIs, and open source software.
+
+01:03:43.876 --> 01:03:48.276
+For example, with Apache iceberg supports what.
+
+01:03:48.356 --> 01:03:53.756
+For example, with Apache. As we support S3
+analytics and real time streaming services,
+
+01:03:53.956 --> 01:04:02.236
+you can use whatever iceberg compatible
+processing engine you like without having to touch,
+
+01:04:02.676 --> 01:04:05.276
+without having to modify your data.
+
+01:04:05.876 --> 01:04:15.836
+We have also built data capabilities that understand technical
+metadata, business context, governance rules, and semantic meaning.
+
+01:04:16.276 --> 01:04:24.076
+So whether it's an application, whether it's an agent
+or you're sitting at your laptop at midnight,
+
+01:04:24.076 --> 01:04:29.436
+we're helping you discover and use data safely and easily.
+
+01:04:30.636 --> 01:04:32.876
+And what that happens behind the scenes,
+
+01:04:33.116 --> 01:04:41.276
+what makes that possible is the set of analytics
+services that we have been building and refining for years.
+
+01:04:41.676 --> 01:04:47.676
+Each one purpose built, but all of them designed to work together.
+
+01:04:50.076 --> 01:04:59.676
+AWS provides a comprehensive set of analytics services that supports
+the end to end analytic process to enable seamless data access
+

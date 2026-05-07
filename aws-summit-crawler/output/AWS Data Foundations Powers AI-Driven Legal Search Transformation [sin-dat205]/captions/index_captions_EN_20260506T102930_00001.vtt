@@ -1,0 +1,184 @@
+WEBVTT	#Elemental Media Engine(TM) 2.18.0.0
+X-TIMESTAMP-MAP=LOCAL:00:00:00.000,MPEGTS:187200
+
+00:00:10.956 --> 00:00:13.996
+All right. Good afternoon, everyone, and welcome to our session.
+
+00:00:13.996 --> 00:00:18.116
+AWS Data foundation powers AI driven legal search transformation.
+
+00:00:18.516 --> 00:00:22.876
+My name is Farid Baharuddin
+and I'm a senior solutions architect with AWS.
+
+00:00:22.876 --> 00:00:27.276
+As this is the last session of the day, I propose some light exercise.
+
+00:00:27.396 --> 00:00:29.276
+All right. So can I have a quick show of hands?
+
+00:00:29.276 --> 00:00:32.676
+How many of you here have heard of SageMaker Unified Studio before?
+
+00:00:34.716 --> 00:00:40.516
+Great. And among you, how many of you are currently using
+SageMaker Unified Studio in your workloads today?
+
+00:00:41.356 --> 00:00:44.556
+Fewer than expected, right? But I hope after this session,
+
+00:00:44.556 --> 00:00:49.916
+you'll know more about SageMaker studio
+and how you can use it in your workloads, right?
+
+00:00:49.956 --> 00:00:53.236
+Today, we're going to walk you through a real world story.
+
+00:00:53.756 --> 00:01:01.516
+How the Singapore Academy of Law modernized one of Singapore's
+most important legal research platforms Using AWS data
+
+00:01:01.516 --> 00:01:10.236
+and AI services with Amazon OpenSearch service to power search
+Amazon SageMaker studio for data exploration and governance,
+
+00:01:10.636 --> 00:01:15.676
+and Amazon Bedrock AgentCore
+to operate agents to begin this real world story.
+
+00:01:15.916 --> 00:01:18.556
+I would like to invite on stage Mr. Alvaro Vigil.
+
+00:01:18.956 --> 00:01:24.316
+Alvaro is the head of AI solutions at Lawnet Technology Services,
+part of the Singapore Academy of Law.
+
+00:01:24.876 --> 00:01:31.036
+He will bring you through the challenges of legal search
+and their impetus to modernize legal search in the AI era.
+
+00:01:31.756 --> 00:01:32.596
+Alvaro, please.
+
+00:01:46.116 --> 00:01:50.876
+Good afternoon. Let me start by
+giving you some context about who we are.
+
+00:01:51.636 --> 00:01:59.876
+Singapore Academy of Law, or Salj, is a statutory body whose mission
+is to enable future ready and trusted legal Professionals.
+
+00:02:00.316 --> 00:02:04.556
+Our broader mission is to position Singapore as a hub of Asia.
+
+00:02:05.396 --> 00:02:11.396
+A key part of that mission is our legal
+research platform serving Singapore's legal community.
+
+00:02:12.596 --> 00:02:18.276
+It provides access to a vast corpus of legal judgments,
+legislation and secondary sources.
+
+00:02:18.876 --> 00:02:22.756
+Thousands of legal professionals rely
+on it every day to do their work.
+
+00:02:25.396 --> 00:02:28.956
+Lawyers spend a significant amount of time on legal research.
+
+00:02:28.956 --> 00:02:32.476
+But here's a challenge legal research has not changed in decades.
+
+00:02:32.916 --> 00:02:40.356
+Lawyers still spend hours manually searching through documents,
+cross-reference citations, and piecing together arguments.
+
+00:02:41.356 --> 00:02:43.356
+Part of this research involves search.
+
+00:02:43.836 --> 00:02:47.036
+A traditional search brings certain constraints.
+
+00:02:47.636 --> 00:02:50.356
+First, it's inefficient and time consuming.
+
+00:02:50.716 --> 00:02:56.276
+Keyword searches for lawyers to choose between
+overly broad results that take time to sift through,
+
+00:02:56.756 --> 00:03:00.196
+or narrow searches that risk missing relevant cases.
+
+00:03:01.076 --> 00:03:03.796
+Second, Mr. President, due to terminology gaps,
+
+00:03:04.516 --> 00:03:09.996
+different judges and time periods uses
+various terminology causing keyword searches
+
+00:03:10.396 --> 00:03:15.356
+to miss relevant cases unless the lawyer
+knows all possible variations.
+
+00:03:16.316 --> 00:03:18.916
+Third, high dependency on Boolean expertise.
+
+00:03:19.196 --> 00:03:26.396
+Lawyers, especially juniors, may lack Boolean search skills,
+leading to float queries and incomplete research results,
+
+00:03:27.276 --> 00:03:30.236
+and thus loss of legal nuance and context.
+
+00:03:30.556 --> 00:03:40.236
+Keyword searches cannot understand legal reasoning or context,
+forcing oversimplification and missing or risking loss of neurons.
+
+00:03:41.476 --> 00:03:50.316
+This constraint increased the risk of incomplete, inefficient,
+and inaccurate research directly impacting the legal outcomes.
+
+00:03:51.116 --> 00:03:56.036
+We asked ourselves, what would it look like
+to modernize legal research for the AI era?
+
+00:03:56.676 --> 00:03:59.556
+That's a journey we want to share with you today.
+
+00:04:01.876 --> 00:04:09.916
+Our journey has three distinct phases, and I think this is a pattern
+many of you will recognize in your own AI initiatives.
+
+00:04:10.476 --> 00:04:12.476
+Phase one is legal search.
+
+00:04:13.516 --> 00:04:16.196
+A hybrid search system with fine tuned models.
+
+00:04:16.196 --> 00:04:21.636
+This is already in production
+on nie.com and it's what our users interact with today.
+
+00:04:22.396 --> 00:04:25.396
+Phase two is data driven improvement.
+
+00:04:25.796 --> 00:04:30.116
+Once we have the search system live,
+we need to understand how it is being used.
+
+00:04:30.796 --> 00:04:37.236
+We built a data foundation using
+SageMaker Unified Studio to run analytics, measure quality,
+
+00:04:37.476 --> 00:04:44.796
+and iterate on the product and phase three, and this is where
+things get really exciting is a legal research agent.
+
+00:04:45.476 --> 00:04:54.116
+This is an Agentic AI system built with Bedrock AgentCore that can
+orchestrate multiple tools to conduct legal research autonomously.
+
+00:04:55.036 --> 00:05:00.000
+This is currently in development.
+The key insight here is that each phase builds on the last.
+

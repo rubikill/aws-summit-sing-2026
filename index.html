@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>AWS Summit Singapore 2026 — Session digest</title>
+  <meta name="description" content="Interactive recap of AWS Summit Singapore 2026 sessions with search, filters, and caption-based summaries." />
+  <style>
+
+:root {
+  color-scheme: light dark;
+  --bg: #0f1419;
+  --surface: #1a2230;
+  --border: rgba(255,255,255,0.08);
+  --text: #e8eef8;
+  --muted: #9fb1c9;
+  --accent: #ff9900;
+  --accent-soft: rgba(255,153,0,0.14);
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: "Segoe UI", system-ui, -apple-system, Roboto, Ubuntu, Cantarell, sans-serif;
+  background: radial-gradient(1200px 800px at 10% -10%, #1f2d44 0%, var(--bg) 55%);
+  color: var(--text);
+  line-height: 1.55;
+}
+a { color: #ffb84d; }
+header.app {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  backdrop-filter: blur(10px);
+  background: rgba(15,20,25,0.85);
+  border-bottom: 1px solid var(--border);
+}
+.inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1.25rem 1.25rem 1rem;
+}
+h1 {
+  margin: 0 0 0.35rem;
+  font-size: 1.6rem;
+  letter-spacing: 0.02em;
+}
+.sub {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+.filters {
+  margin-top: 1rem;
+  display: grid;
+  gap: 0.75rem;
+  grid-template-columns: 1fr;
+}
+@media (min-width: 720px) {
+  .filters { grid-template-columns: 1.35fr repeat(3, auto); align-items: end; }
+}
+label {
+  font-size: 0.82rem;
+  color: var(--muted);
+}
+input[type="search"], select, button {
+  width: 100%;
+  padding: 0.55rem 0.65rem;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  color: var(--text);
+}
+button {
+  cursor: pointer;
+  font-weight: 600;
+}
+button.secondary { background: #243044; border-color: #31405a; }
+button:hover { filter: brightness(1.08); }
+main.inner { padding-bottom: 3rem; }
+.report-infographic {
+  margin: 0 0 1.25rem;
+}
+.report-infographic figcaption {
+  margin: 0.5rem 0 0;
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+.report-infographic img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  background: var(--surface);
+}
+.stats {
+  margin: 0.85rem 0 0.25rem;
+  color: var(--muted);
+  font-size: 0.92rem;
+}
+.card-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+.session-card {
+  background: linear-gradient(180deg, rgba(26,34,48,0.95), rgba(20,26,36,0.98));
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  overflow: clip;
+}
+.session-card.hidden { display: none; }
+.card-top {
+  padding: 1rem 1rem 0;
+}
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.2rem 0.55rem;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  color: var(--text);
+  background: var(--accent-soft);
+  border: 1px solid rgba(255,153,0,0.35);
+}
+h2.card-title {
+  margin: 0.55rem 0 0;
+  font-size: 1.12rem;
+  line-height: 1.35;
+}
+.meta-row {
+  margin-top: 0.6rem;
+  color: var(--muted);
+  font-size: 0.88rem;
+}
+.speaker-list {
+  margin: 0.5rem 0 0;
+  padding-left: 1rem;
+}
+.speaker-list li { margin-bottom: 0.25rem; }
+.card-video {
+  margin: 0.85rem -1rem 0;
+  padding: 0 1rem;
+}
+@media (max-width: 899px) {
+  .card-video { margin-left: 0; margin-right: 0; padding: 0; }
+}
+.card-video video {
+  display: block;
+  width: 100%;
+  max-height: min(40vh, 280px);
+  border-radius: 10px;
+  background: #000;
+  border: 1px solid var(--border);
+}
+.card-video .video-fallback {
+  margin: 0.35rem 0 0;
+  font-size: 0.82rem;
+  color: var(--muted);
+}
+details.more {
+  border-top: 1px solid var(--border);
+  margin-top: 0.85rem;
+  background: rgba(0,0,0,0.12);
+}
+details.more summary {
+  cursor: pointer;
+  list-style: none;
+  padding: 0.75rem 1rem;
+  font-weight: 650;
+  color: #ffd9a8;
+}
+details.more summary::-webkit-details-marker { display: none; }
+details.more[open] summary { border-bottom: 1px solid var(--border); }
+.section {
+  padding: 0 1rem 1rem;
+}
+.section h3 {
+  margin: 0.95rem 0 0.4rem;
+  font-size: 0.92rem;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+.section ul { margin: 0; padding-left: 1rem; }
+.section li { margin-bottom: 0.35rem; }
+.summary p {
+  margin: 0.55rem 0 0;
+  color: var(--text);
+}
+footer {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.25rem 2rem;
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+
+  </style>
+</head>
+<body>
+  <header class="app">
+    <div class="inner">
+      <h1>AWS Summit Singapore 2026</h1>
+      <p class="sub">Interactive report from <code>aws-summit-crawler/output</code> metadata &amp; WebVTT captions (13 sessions).</p>
+      
+<div class="filters">
+  <div>
+    <label for="search">Search</label>
+    <input id="search" type="search" placeholder="Titles, summaries, speakers…" autocomplete="off" />
+  </div>
+  <div>
+    <label for="categoryFilter">Category</label>
+    <select id="categoryFilter">
+      <option value="">All categories</option>
+      <option value="AWS Summit Singapore - AI for Everyone">AWS Summit Singapore - AI for Everyone</option><option value="AWS Summit Singapore - Harnessing AI through Data Foundations">AWS Summit Singapore - Harnessing AI through Data Foundations</option><option value="AWS Summit Singapore - Keynote">AWS Summit Singapore - Keynote</option>
+    </select>
+  </div>
+  <div>
+    <label for="speakerFilter">Speaker</label>
+    <select id="speakerFilter">
+      <option value="">All speakers</option>
+      <option value="Alvaro VIGIL">Alvaro VIGIL</option><option value="Andrew Ren">Andrew Ren</option><option value="Benny Lam">Benny Lam</option><option value="Bryan Ong">Bryan Ong</option><option value="Callie Cheong">Callie Cheong</option><option value="Dennis Tay">Dennis Tay</option><option value="Derick Chen">Derick Chen</option><option value="Desmond Tan">Desmond Tan</option><option value="Ee Siew Ping">Ee Siew Ping</option><option value="Fabrianne Effendi">Fabrianne Effendi</option><option value="Farid Baharuddin">Farid Baharuddin</option><option value="Henry Liew">Henry Liew</option><option value="Isaac Ibrahim">Isaac Ibrahim</option><option value="Jaime Vallés">Jaime Vallés</option><option value="Jan Michael Go Tan">Jan Michael Go Tan</option><option value="Jonathan Oh">Jonathan Oh</option><option value="Kamalpreet Kaur">Kamalpreet Kaur</option><option value="Karen Chiah">Karen Chiah</option><option value="Ken Lek">Ken Lek</option><option value="Kristopher O&#x27;Brien">Kristopher O&#x27;Brien</option><option value="Marek Tuchalski">Marek Tuchalski</option><option value="Ng Tian Beng">Ng Tian Beng</option><option value="Noorbakht Khan">Noorbakht Khan</option><option value="Priscilla Chong">Priscilla Chong</option><option value="Puneet Sachdev">Puneet Sachdev</option><option value="Seong Per Lee">Seong Per Lee</option><option value="Sneh Agrawal">Sneh Agrawal</option><option value="Tan Boon Leong">Tan Boon Leong</option><option value="Toh Yun Yun">Toh Yun Yun</option><option value="Vasileios Vonikakis">Vasileios Vonikakis</option><option value="Vignesh Pillai">Vignesh Pillai</option><option value="Vishesh Kumar">Vishesh Kumar</option><option value="Zhang Yao">Zhang Yao</option>
+    </select>
+  </div>
+  <div>
+    <label>&nbsp;</label>
+    <button type="button" class="secondary" id="resetFilters">Reset filters</button>
+  </div>
+</div>
+
+    </div>
+  </header>
+  <main class="inner">
+    <figure class="report-infographic">
+      <img src="Infographic.jpg" alt="AWS Summit Singapore 2026 infographic" loading="lazy" decoding="async" />
+      <figcaption>Event infographic</figcaption>
+    </figure>
+    <p id="stats" class="stats"></p>
+    <div class="card-grid">
+<article class="session-card" data-category="AWS Summit Singapore - Harnessing AI through Data Foundations" data-speakers="|Andrew Ren|Marek Tuchalski|" data-search="a practitioner’s guide to data for agentic ai so if you look at the example on the screen, the agent doesn&#x27;t have to know any implementation detail of the data store because it can use the ncp servers. she needs to find the right data product and retrieve data from the data product she needs, and then generate a report. she wants to discover the right data product, and she wants to see only the data she&#x27;s allowed to see. memory help you to host the short term and long term memory, and you have the identity and gateway to make sure the agent is given the right access to the right tools.
+
+and behind the scenes, your data processing is feeding data into the data engines. i&#x27;m responsible for data engineering, data science, and recently also took a pleasure to work with cross-functional team to build an agentic ai solution for our property marketplace. that&#x27;s the goal that we have in our minds, and that&#x27;s where we want to bring this moment so that you not only are going for near real time data of the listings, you can actually discover it, fine tune your searches contextually based toward what you want to look further. if i&#x27;m looking for purchasing the property, then when i&#x27;m discovering the area around the property or i&#x27;m just looking for the search for the rental, those things are different and they require different ncp server, different memory state, those things are different and they require different ncp server, different memory state, long term memory, short term memory. in this session, gain the skills needed to deploy end-to-end agentic ai applications using your most valuable data. this session focuses on data management using processes like model context protocol (mcp) and retrieval augmented generation (rag), and provides concepts that apply to other methods of customizing agentic ai applications. discover best practice architectures using aws database services like amazon aurora and opensearch service, along with analytical, data processing and streaming experiences found in sagemaker unified studio. learn data lake, governance, and data quality concepts and how amazon bedrock agentcore and bedrock knowledge bases, and other features tie solution components together. aws summit singapore - harnessing ai through data foundations andrew ren marek tuchalski">
+  <div class="card-top">
+    <span class="badge">AWS Summit Singapore - Harnessing AI through Data Foundations</span>
+    <h2 class="card-title">A Practitioner’s Guide to Data for Agentic AI</h2>
+    <div class="meta-row">6 May 2026 · 1:30 PM - 02:00 PM</div>
+    <div class="meta-row"><strong>Speaker(s)</strong></div>
+    <ul class="speaker-list"><li>Andrew Ren — Senior Solutions Architect, AWS</li><li>Marek Tuchalski — Director of Engineering, Data COE, PropertyGuru Group</li></ul>
+    <div class="card-video">
+      <video class="hls-player" controls playsinline preload="metadata" data-video-url="https://dz2ooo85w8eqv.cloudfront.net/aws-summitsgp26/outputs/sin-ant301/hls/v2/index.m3u8" aria-label="Recording: A Practitioner’s Guide to Data for Agentic AI">
+        <source src="https://dz2ooo85w8eqv.cloudfront.net/aws-summitsgp26/outputs/sin-ant301/hls/v2/index.m3u8" type="application/x-mpegURL" />
+      </video>
+      <p class="video-fallback" hidden>HLS playback may require Safari or a browser with MSE. <a href="https://dz2ooo85w8eqv.cloudfront.net/aws-summitsgp26/outputs/sin-ant301/hls/v2/index.m3u8" rel="noopener noreferrer" target="_blank">Open stream</a></p>
+    </div>
+  </div>
+  <details class="more">
+    <summary>Key takeaways &amp; caption-based summary</summary>
+    <div class="section">
+      <h3>Key takeaways</h3>
+      <ul><li>In this session, gain the skills needed to deploy end-to-end agentic AI applications using your most valuable data</li><li>This session focuses on data management using processes like Model Context Protocol (MCP) and Retrieval Augmented Generation (RAG), and provides concepts that apply to other methods of customizing agentic AI applications</li><li>Discover best practice architectures using AWS database services like Amazon Aurora and OpenSearch Service, along with analytical, data processing and streaming experiences found in SageMaker Unified Studio</li><li>If I&#x27;m looking for purchasing the property, then when I&#x27;m discovering the area around the property or I&#x27;m just looking for the search for the rental, those things are different and they require different NCP server, different memory state, those things are different and they require different NCP server, different memory state, long term memory, short term memory</li><li>Memory help you to host the short term and long term memory, and you have the identity and gateway to make sure the agent is given the right access to the right tools</li></ul>
+      <h3>Summary (from captions)</h3>
+      <div class="summary"><p>So if you look at the example on the screen, the agent doesn&#x27;t have to know any implementation detail of the data store because it can use the NCP servers. She needs to find the right data product and retrieve data from the data product she needs, and then generate a report. She wants to discover the right data product, and she wants to see only the data she&#x27;s allowed to see. Memory help you to host the short term and long term memory, and you have the identity and gateway to make sure the agent is given the right access to the right tools.</p><p>And behind the scenes, your data processing is feeding data into the data engines. I&#x27;m responsible for data engineering, data science, and recently also took a pleasure to work with cross-functional team to build an Agentic AI solution for our property Marketplace. That&#x27;s the goal that we have in our minds, and that&#x27;s where we want to bring this moment so that you not only are going for near real time data of the listings, you can actually discover it, fine tune your searches contextually based toward what you want to look further. If I&#x27;m looking for purchasing the property, then when I&#x27;m discovering the area around the property or I&#x27;m just looking for the search for the rental, those things are different and they require different NCP server, different memory state, those things are different and they require different NCP server, different memory state, long term memory, short term memory.</p></div>
+      <p style="margin:0.55rem 0 0;"><a href="https://dz2ooo85w8eqv.cloudfront.net/aws-summitsgp26/outputs/sin-ant301/hls/v2/index.m3u8" rel="noopener noreferrer" target="_blank">Open stream in new tab</a></p>
+    </div>
+  </details>
+</article>
+<article class="session-card" data-category="AWS Summit Singapore - Harnessing AI through Data Foundations" data-speakers="|Puneet Sachdev|Bryan Ong|Kamalpreet Kaur|" data-search="agentcore best practices: learnings from kai, keppel’s ai platform i&#x27;ll also be joined by kamal, who heads their data and ai engineering, and she&#x27;ll tell us about the data platform which they have built, which powers their agentic solutions, and she will also show a demo of a very unique voice based agent, which they have created for managing investor relations. how the how the agents are called securely, how the agents call tools securely, how the tools call enterprise agents or enterprise apps securely two legged authentication, three legged authentication or entry id all that is managed by agentcore identity. and lastly we have agent registry, which allows us to, you know, publish your agents and tools to the enterprise so that they are discoverable and then they are, you know, searchable. the second is it&#x27;s also a big topic of debate in many teams is that should they use single agent or should they use multiple agents or how many tools they should use?
+
+but if the agent has to has to take steps which are high level steps, which can further be broken down into other steps, then you may have a case with for a, for a multi-agent scenario. and you know, the agent doesn&#x27;t know anything about me, doesn&#x27;t know what kind of vacation i like, where am i based, who&#x27;s in my family? so what you can see here is the complete event loop of the agent is visible based on the traces which were captured, which tools, how many times it was called, what were the inputs, what were the outputs and what decisions the agent took in that whole event loop is visible. so what you see, the interesting thing is the orchestrator agent goes and negotiate with the fm agent, and they agreed to lock three tickets, one for each of the shower room that&#x27;s there. as organizations scale ai agent development, robust enterprise architecture becomes essential. this session explores how amazon bedrock agentcore enables modular systems with shared tools via mcp gateways, a2a collaboration, identity-based access controls, and integrated observability. learn practical strategies for secure runtime deployment, standardized tool integration, and end-to-end monitoring. keppel will share how they leveraged agentcore to power customer interactions across their real estate portfolio and manage investor relations through their conversational agent, ivy. leave with actionable insights to build secure and scalable agentic architectures leveraging amazon bedrock agentcore. aws summit singapore - harnessing ai through data foundations puneet sachdev bryan ong kamalpreet kaur">
+  <div class="card-top">
+    <span class="badge">AWS Summit Singapore - Harnessing AI through Data Foundations</span>
+    <h2 class="card-title">AgentCore Best Practices: Learnings from KAI, Keppel’s AI Platform</h2>
+    <div class="meta-row">6 May 2026 · 2:00 PM - 02:30 PM</div>
+    <div class="meta-row"><strong>Speaker(s)</strong></div>
+    <ul class="speaker-list"><li>Puneet Sachdev — Enterprise Principal Solutions Architect, AWS</li><li>Bryan Ong — Managing Director Real Estate Division, Keppel Ltd.</li><li>Kamalpreet Kaur — Head of Data &amp; AI Engineering, Keppel Ltd.</li></ul>
+    <div class="card-video">
+      <video class="hls-player" controls playsinline preload="metadata" data-video-url="https://dz2ooo85w8eqv.cloudfront.net/aws-summitsgp26/outputs/sin-dat302/hls/v2/index.m3u8" aria-label="Recording: AgentCore Best Practices: Learnings from KAI, Keppel’s AI Platform">
+        <source src="https://dz2ooo85w8eqv.cloudfront.net/aws-summitsgp26/outputs/sin-dat302/hls/v2/index.m3u8" type="application/x-mpegURL" />
+      </video>
+      <p class="video-fallback" hidden>HLS playback may require Safari or a browser with MSE. <a href="https://dz2ooo85w8eqv.cloudfront.net/aws-summitsgp26/outputs/sin-dat302/hls/v2/index.m3u8" rel="noopener noreferrer" target="_blank">Open stream</a></p>
+    </div>
+  </div>
+  <details class="more">
+    <summary>Key takeaways &amp; caption-based summary</summary>
+    <div class="section">
+      <h3>Key takeaways</h3>
+      <ul><li>As organizations scale AI agent development, robust enterprise architecture becomes essential</li><li>This session explores how Amazon Bedrock AgentCore enables modular systems with shared tools via MCP gateways, A2A collaboration, identity-based access controls, and integrated observability</li><li>Learn practical strategies for secure runtime deployment, standardized tool integration, and end-to-end monitoring</li><li>How the how the agents are called securely, how the agents call tools securely, how the tools call enterprise agents or enterprise apps securely two legged authentication, three legged authentication or entry ID all that is managed by AgentCore Identity</li><li>And you know, the agent doesn&#x27;t know anything about me, doesn&#x27;t know what kind of vacation I like, where am I based, who&#x27;s in my family?</li></ul>
+      <h3>Summary (from captions)</h3>
+      <div class="summary"><p>I&#x27;ll also be joined by Kamal, who heads their data and AI engineering, and she&#x27;ll tell us about the data platform which they have built, which powers their Agentic solutions, and she will also show a demo of a very unique voice based agent, which they have created for managing investor relations. How the how the agents are called securely, how the agents call tools securely, how the tools call enterprise agents or enterprise apps securely two legged authentication, three legged authentication or entry ID all that is managed by AgentCore Identity. And lastly we have agent registry, which allows us to, you know, publish your agents and tools to the enterprise so that they are discoverable and then they are, you know, searchable. The second is it&#x27;s also a big topic of debate in many teams is that should they use single agent or should they use multiple agents or how many tools they should use?</p><p>But if the agent has to has to take steps which are high level steps, which can further be broken down into other steps, then you may have a case with for a, for a multi-agent scenario. And you know, the agent doesn&#x27;t know anything about me, doesn&#x27;t know what kind of vacation I like, where am I based, who&#x27;s in my family? So what you can see here is the complete event loop of the agent is visible based on the traces which were captured, which tools, how many times it was called, what were the inputs, what were the outputs and what decisions the agent took in that whole event loop is visible. So what you see, the interesting thing is the orchestrator agent goes and negotiate with the FM agent, and they agreed to lock three tickets, one for each of the shower room that&#x27;s there.</p></div>
+      <p style="margin:0.55rem 0 0;"><a href="https://dz2ooo85w8eqv.cloudfront.net/aws-summitsgp26/outputs/sin-dat302/hls/v2/index.m3u8" rel="noopener noreferrer" target="_blank">Open stream in new tab</a></p>
+    </div>
+  </details>
+</article>
+<article class="session-card" data-category="AWS Summit Singapore - AI for Everyone" data-speakers="|Fabrianne Effendi|Derick Chen|Zhang Yao|" data-search="ai-driven development lifecycle with kiro agentic ide we want to understand what is the problem we&#x27;re solving and how can we build design a product that can deliver these benefits to in the right way to our users. now, the construction phase is where we then take all these contacts that we&#x27;re building with ai agents from the inception phase now, the construction phase is where we then take all these contacts that we&#x27;re building with ai agents from the inception phase and think about how can we apply technology to solve these problems and actually deliver this solution. kiro accelerates every stage of the ai dlc by bringing structure to your ai coding, and one of its key differentiators is its native spec driven development capabilities. once i&#x27;m happy with the requirements, i&#x27;ll proceed to the design stage, and this is where kiro would come up with a comprehensive design of the different component interfaces.
+
+now finally, kiro powers kiro powers packages all of these things together, packages your tools, workflows, best practices, ncp server skills, and all that into one installable bundle. i&#x27;m very happy to be here today to share with you our experience with the adl methodology with aws kiro, but more importantly, how the experience with adl triggered our thinking and swift action about ai strategy. this experience not only convinced our tech team and our business team about the power of ai dlc and significantly accelerated ai adoption in our software development process, but more importantly, and significantly accelerated ai adoption in our software development process, but more importantly, it triggered our leadership team to think hard and act swiftly to shape our ai strategy. so secondly, we want to help our engineering team and our data team to remove themselves from a lot of the daily tasks, right? in this session, learn how kiro is helping you go from idea to production faster with spec-driven development. learn how to delegate and automate development tasks using kiro&#x27;s agent hooks, multimodal agent chat and mcp support. we&#x27;ll show you how kiro&#x27;s agents challenge you to think beyond the code and work alongside you to solve hard engineering problems with confidence. aws summit singapore - ai for everyone fabrianne effendi derick chen zhang yao">
+  <div class="card-top">
+    <span class="badge">AWS Summit Singapore - AI for Everyone</span>
+    <h2 class="card-title">AI-Driven Development Lifecycle with Kiro Agentic IDE</h2>
+    <div class="meta-row">6 May 2026 · 1:30 PM - 02:00 PM</div>
+    <div class="meta-row"><strong>Speaker(s)</strong></div>
+    <ul class="speaker-list"><li>Fabrianne Effendi — Assc. Specialist SA, Serverless, AWS</li><li>Derick Chen — DevAx Solutions Architect, AWS</li><li>Zhang Yao — Vice President, IT &amp; Operations, Castlery</li></ul>
+    <div class="card-video">
+      <video class="hls-player" controls playsinline preload="metadata" data-video-url="https://dz2ooo85w8eqv.cloudfront.net/aws-summitsgp26/outputs/sin-aim205/hls/v2/index.m3u8" aria-label="Recording: AI-Driven Development Lifecycle with Kiro Agentic IDE">
+        <source src="https://dz2ooo85w8eqv.cloudfront.net/aws-summitsgp26/outputs/sin-aim205/hls/v2/index.m3u8" type="application/x-mpegURL" />
+      </video>
+      <p class="video-fallback" hidden>HLS playback may require Safari or a browser with MSE. <a href="https://dz2ooo85w8eqv.cloudfront.net/aws-summitsgp26/outputs/sin-aim205/hls/v2/index.m3u8" rel="noopener noreferrer" target="_blank">Open stream</a></p>
+    </div>
+  </div>
+  <details class="more">
+    <summary>Key takeaways &amp; caption-based summary</summary>
+    <div class="section">
+      <h3>Key takeaways</h3>
+      <ul><li>In this session, learn how Kiro is helping you go from idea to production faster with spec-driven development</li><li>Learn how to delegate and automate development tasks using Kiro&#x27;s agent hooks, multimodal agent chat and MCP support</li><li>We&#x27;ll show you how Kiro&#x27;s agents challenge you to think beyond the code and work alongside you to solve hard engineering problems with confidence</li><li>This experience not only convinced our tech team and our business team about the power of AI DLC and significantly accelerated AI adoption in our software development process, but more importantly, and significantly accelerated AI adoption in our software development process, but more importantly, it triggered our leadership team to think hard and act swiftly to shape our AI strategy</li><li>Now, the construction phase is where we then take all these contacts that we&#x27;re building with AI agents from the inception phase Now, the construction phase is where we then take all these contacts that we&#x27;re building with AI agents from the inception phase and think about how can we apply technology to solve these problems and actually deliver this solution</li></ul>
+      <h3>Summary (from captions)</h3>
+      <div class="summary"><p>We want to understand what is the problem we&#x27;re solving and how can we build design a product that can deliver these benefits to in the right way to our users. Now, the construction phase is where we then take all these contacts that we&#x27;re building with AI agents from the inception phase Now, the construction phase is where we then take all these contacts that we&#x27;re building with AI agents from the inception phase and think about how can we apply technology to solve these problems and actually deliver this solution. Kiro accelerates every stage of the AI DLC by bringing structure to your AI coding, and one of its key differentiators is its native spec driven development capabilities. Once I&#x27;m happy with the requirements, I&#x27;ll proceed to the design stage, and this is where Kiro would come up with a comprehensive design of the different component interfaces.</p><p>Now finally, Kiro powers Kiro powers packages all of these things together, packages your tools, workflows, best practices, NCP server skills, and all that into one installable bundle. I&#x27;m very happy to be here today to share with you our experience with the ADL methodology with AWS Kiro, but more importantly, how the experience with ADL triggered our thinking and swift action about AI strategy. This experience not only convinced our tech team and our business team about the power of AI DLC and significantly accelerated AI adoption in our software development process, but more importantly, and significantly accelerated AI adoption in our software development process, but more importantly, it triggered our leadership team to think hard and act swiftly to shape our AI strategy. So secondly, we want to help our engineering team and our data team to remove themselves from a lot of the daily tasks, right?</p></div>
+      <p style="margin:0.55rem 0 0;"><a href="https://dz2ooo85w8eqv.cloudfront.net/aws-summitsgp26/outputs/sin-aim205/hls/v2/index.m3u8" rel="noopener noreferrer" target="_blank">Open stream in new tab</a></p>
+    </div>
+  </details>
+</article>
+<article class="session-card" data-category="AWS Summit Singapore - AI for Everyone" data-speakers="|Toh Yun Yun|Jonathan Oh|" data-search="automate any business process using amazon quick  so first we are going to introduce what amazon quick is followed by two of the automated agents feature within it which is quick flows and quick automate. the goal is to let agents handle the heavy lifting of gathering, analyzing, and surfacing information so business users can focus on what they do best, which is to make good business decisions to drive the business forward. and when we say all your data, we mean it going from structured data from aurora redshift your data lakes or data warehouses, even if they don&#x27;t reside in aws. together with unstructured data from s3, together with unstructured data from s3, onedrive and sharepoint and other countless productivity tools where business context lives, all of it brought together in one place for you to use.
+
+it&#x27;s been trained using reinforcement learning specifically on erp systems, form based data applications, it&#x27;s been trained using reinforcement learning specifically on erp systems, form based data applications, and internal systems that don&#x27;t have apis and can be automated through traditional means. we enable our customers to make every single shift more intelligible, predictable, and improvable in real time by providing them real time signals on their fleet of vehicles, assets and people unified into one consolidated platform. with aurora intelligence, we get the data points from their fleet operations in real time, from both the driver as well as the vehicle, and through quick, we provide real time intelligence on operational capacity in an instant. so we merge our customers fleet data and the global data models into quick to deliver recommendations and benchmark the organizational performance as compared to the industry sector they are in, such as air airport ground operations or even civil defense. learn how amazon quick flows and amazon quick automate help organizations automate complex business processes while enabling the safe adoption of agentic ai at scale.
+using a real-world insurance claims scenario, this session demonstrates how agentic ai combines structured and unstructured data to accelerate decisions, reduce manual effort, and improve operational efficiency. leave with a clear understanding of how to implement agentic automations to drive measurable business impact and transform the way your teams work. aws summit singapore - ai for everyone toh yun yun jonathan oh">
+  <div class="card-top">
+    <span class="badge">AWS Summit Singapore - AI for Everyone</span>
+    <h2 class="card-title">Automate any business process using Amazon Quick </h2>
+    <div class="meta-row">6 May 2026 · 4:00 PM - 04:30 PM</div>
+    <div class="meta-row"><strong>Speaker(s)</strong></div>
+    <ul class="speaker-list"><li>Toh Yun Yun — Specialist SA, Analytics, AWS</li><li>Jonathan Oh — Product Lead Software Solutions, Astrata Group</li></ul>
+    <div class="card-video">
+      <video class="hls-player" controls playsinline preload="metadata" data-video-url="https://dz2ooo85w8eqv.cloudfront.net/aws-summitsgp26/outputs/sin-aim303/hls/v2/index.m3u8" aria-label="Recording: Automate any business process using Amazon Quick ">
+        <source src="https://dz2ooo85w8eqv.cloudfront.net/aws-summitsgp26/outputs/sin-aim303/hls/v2/index.m3u8" type="application/x-mpegURL" />
+      </video>
+      <p class="video-fallback" hidden>HLS playback may require Safari or a browser with MSE. <a href="https://dz2ooo85w8eqv.cloudfront.net/aws-summitsgp26/outputs/sin-aim303/hls/v2/index.m3u8" rel="noopener noreferrer" target="_blank">Open stream</a></p>
+    </div>
+  </div>
+  <details class="more">
+    <summary>Key takeaways &amp; caption-based summary</summary>
+    <div class="section">
+      <h3>Key takeaways</h3>
+      <ul><li>Learn how Amazon Quick Flows and Amazon Quick Automate help organizations automate complex business processes while enabling the safe adoption of agentic AI at scale</li><li>Using a real-world insurance claims scenario, this session demonstrates how agentic AI combines structured and unstructured data to accelerate decisions, reduce manual effort, and improve operational efficiency</li><li>Leave with a clear understanding of how to implement agentic automations to drive measurable business impact and transform the way your teams work</li><li>With Aurora intelligence, we get the data points from their fleet operations in real time, from both the driver as well as the vehicle, and through quick, we provide real time intelligence on operational capacity in an instant</li><li>It&#x27;s been trained using reinforcement learning specifically on ERP systems, form based data applications, It&#x27;s been trained using reinforcement learning specifically on ERP systems, form based data applications, and internal systems that don&#x27;t have APIs and can be automated through traditional means</li></ul>
+      <h3>Summary (from captions)</h3>
+      <div class="summary"><p>So first we are going to introduce what Amazon Quick is followed by two of the automated agents feature within it which is Quick flows and Quick Automate. The goal is to let agents handle the heavy lifting of gathering, analyzing, and surfacing information so business users can focus on what they do best, which is to make good business decisions to drive the business forward. And when we say all your data, we mean it going from structured data from Aurora Redshift your data lakes or data warehouses, even if they don&#x27;t reside in AWS. Together with unstructured data from S3, Together with unstructured data from S3, OneDrive and SharePoint and other countless productivity tools where business context lives, all of it brought together in one place for you to use.</p><p>It&#x27;s been trained using reinforcement learning specifically on ERP systems, form based data applications, It&#x27;s been trained using reinforcement learning specifically on ERP systems, form based data applications, and internal systems that don&#x27;t have APIs and can be automated through traditional means. We enable our customers to make every single shift more intelligible, predictable, and improvable in real time by providing them real time signals on their fleet of vehicles, assets and people unified into one consolidated platform. With Aurora intelligence, we get the data points from their fleet operations in real time, from both the driver as well as the vehicle, and through quick, we provide real time intelligence on operational capacity in an instant. So we merge our customers fleet data and the global data models into quick to deliver recommendations and benchmark the organizational performance as compared to the industry sector they are in, such as air airport ground operations or even civil defense.</p></div>
+      <p style="margin:0.55rem 0 0;"><a href="https://dz2ooo85w8eqv.cloudfront.net/aws-summitsgp26/outputs/sin-aim303/hls/v2/index.m3u8" rel="noopener noreferrer" target="_blank">Open stream in new tab</a></p>
+    </div>
+  </details>
+</article>
+<article class="session-card" data-category="AWS Summit Singapore - Harnessing AI through Data Foundations" data-speakers="|Farid Baharuddin|Alvaro VIGIL|" data-search="aws data foundations powers ai-driven legal search transformation how the singapore academy of law modernized one of singapore&#x27;s most important legal research platforms using aws data and ai services with amazon opensearch service to power search amazon sagemaker studio for data exploration and governance, and amazon bedrock agentcore to operate agents to begin this real world story. this foundation serves both humans and ai agents the same governance catalog data that a data analyst queries is the data that an ai agent uses to make decisions. here, a data analyst from the product team searches for available data sets in the catalog related to query history reviews the business and technical metadata, including business descriptions, data quality, and lineage to assess whether the data meets their needs. so he then subscribes to the data set through a streamlined approval process, providing justification for accessing the data and indicating that he only needs data on searches related to criminal law.
+
+the product team then receives a notification that the subscription was approved, and sees the filter conditions applied for the row values, and upon querying the data, he will only see data for those five categories in the data set. for the high court work done by data engineers and data scientists, sagemaker studio provides jupyter notebooks with full support for popular data frameworks. the data agent suggests code completions, troubleshoots errors, and even generates entire analysis scripts from natural language descriptions like right now, where the member generates visualizations on the top areas of law, and top query intents on the data set. sagemaker studio is also integrated with amazon quick, so from the data set, a data analyst can opt to visualize the data in quick, where they can create visuals and dashboards using natural language and topics to enable quick to provide answers to natural language questions. singapore academy of law revolutionizes legal research using aws&#x27;s ai and analytics services. their solution combines amazon opensearch service&#x27;s hybrid search—merging vector and full-text capabilities with fine-tuned embeddings—alongside gptlegal, a fine-tuned model for legal q&amp;a built using amazon sagemaker ai. aws glue etl pipelines process data within amazon sagemaker unified studio, while amazon quick delivers actionable insights. the breakthrough legal research assistant orchestrates multiple ai tools with bedrock agentcore, leveraging amazon bedrock&#x27;s foundation models for intelligent responses and implementing responsible ai through bedrock guardrails. this production-ready architecture demonstrates the future of conversational legal research at scale. aws summit singapore - harnessing ai through data foundations farid baharuddin alvaro vigil">
+  <div class="card-top">
+    <span class="badge">AWS Summit Singapore - Harnessing AI through Data Foundations</span>
+    <h2 class="card-title">AWS Data Foundations Powers AI-Driven Legal Search Transformation</h2>
+    <div class="meta-row">6 May 2026 · 4:30 PM - 05:00 PM</div>
+    <div class="meta-row"><strong>Speaker(s)</strong></div>
+    <ul class="speaker-list"><li>Farid Baharuddin — Senior Solutions Architect, AWS</li><li>Alvaro VIGIL — Head of AI Solutions, LawNet Technology Services, Singapore Academy of Law (SAL)</li></ul>
+    <div class="card-video">
+      <video class="hls-player" controls playsinline preload="metadata" data-video-url="https://dz2ooo85w8eqv.cloudfront.net/aws-summitsgp26/outputs/sin-dat205/hls/v2/index.m3u8" aria-label="Recording: AWS Data Foundations Powers AI-Driven Legal Search Transformation">
+        <source src="https://dz2ooo85w8eqv.cloudfront.net/aws-summitsgp26/outputs/sin-dat205/hls/v2/index.m3u8" type="application/x-mpegURL" />
+      </video>
+      <p class="video-fallback" hidden>HLS playback may require Safari or a browser with MSE. <a href="https://dz2ooo85w8eqv.cloudfront.net/aws-summitsgp26/outputs/sin-dat205/hls/v2/index.m3u8" rel="noopener noreferrer" target="_blank">Open stream</a></p>
+    </div>
+  </div>
+  <details class="more">
+    <summary>Key takeaways &amp; caption-based summary</summary>
+    <div class="section">
+      <h3>Key takeaways</h3>
+      <ul><li>Singapore Academy of Law revolutionizes legal research using AWS&#x27;s AI and analytics services</li><li>Their solution combines Amazon OpenSearch Service&#x27;s hybrid search—merging vector and full-text capabilities with fine-tuned embeddings—alongside GPTLegal, a fine-tuned model for legal Q&amp;A built using Amazon SageMaker AI</li><li>AWS Glue ETL pipelines process data within Amazon SageMaker Unified Studio, while Amazon Quick delivers actionable insights</li><li>Here, a data analyst from the product team searches for available data sets in the catalog related to query history reviews the business and technical metadata, including business descriptions, data quality, and lineage to assess whether the data meets their needs</li><li>How the Singapore Academy of Law modernized one of Singapore&#x27;s most important legal research platforms Using AWS data and AI services with Amazon OpenSearch service to power search Amazon SageMaker studio for data exploration and governance, and Amazon Bedrock AgentCore to operate agents to begin this real world story</li></ul>
+      <h3>Summary (from captions)</h3>
+      <div class="summary"><p>How the Singapore Academy of Law modernized one of Singapore&#x27;s most important legal research platforms Using AWS data and AI services with Amazon OpenSearch service to power search Amazon SageMaker studio for data exploration and governance, and Amazon Bedrock AgentCore to operate agents to begin this real world story. This foundation serves both humans and AI agents the same governance catalog data that a data analyst queries is the data that an AI agent uses to make decisions. Here, a data analyst from the product team searches for available data sets in the catalog related to query history reviews the business and technical metadata, including business descriptions, data quality, and lineage to assess whether the data meets their needs. So he then subscribes to the data set through a streamlined approval process, providing justification for accessing the data and indicating that he only needs data on searches related to criminal law.</p><p>The product team then receives a notification that the subscription was approved, and sees the filter conditions applied for the row values, and upon querying the data, he will only see data for those five categories in the data set. For the High court work done by data engineers and data scientists, SageMaker studio provides Jupyter notebooks with full support for Popular data frameworks. The data agent suggests code completions, troubleshoots errors, and even generates entire analysis scripts from natural language descriptions like right now, where the member generates visualizations on the top areas of law, and top query intents on the data set. SageMaker studio is also integrated with Amazon Quick, so from the data set, a data analyst can opt to visualize the data in quick, where they can create visuals and dashboards using natural language and topics to enable quick to provide answers to natural language questions.</p></div>
+      <p style="margin:0.55rem 0 0;"><a href="https://dz2ooo85w8eqv.cloudfront.net/aws-summitsgp26/outputs/sin-dat205/hls/v2/index.m3u8" rel="noopener noreferrer" target="_blank">Open stream in new tab</a></p>
+    </div>
+  </details>
+</article>
+<article class="session-card" data-category="AWS Summit Singapore - Harnessing AI through Data Foundations" data-speakers="|Jan Michael Go Tan|Sneh Agrawal|" data-search="behind the agents: building the foundation for ai at scale it&#x27;s not only the y, but i&#x27;m also going to explain some of the key design principles on when you&#x27;re designing your data foundation, what are some of the key considerations that you should be having, and you should be designing in your systems to ensure success of not only your data foundation, but, but as you build on top of those, that foundation and then from grab will take you deeper into the platforms powering their ai agents in production. what are the databases, tables, columns, data types, what&#x27;s the partitioning scheme, serialization, deserialization data format, and any other metadata that you need in order to, to have that to be able to query that data. now, jaime and his keynote touch on a little bit of this one earlier on open data architecture allows you to be able to access data where it lives, or give you the flexibility to aggregate that data. so open data formats like iceberg allow you to access your data, allow you to choose, you know, whatever query engine that you, that you need to use to process your, to address, to process your data and, you know, address your specific requirements.
+
+so this means that you have the flexibility, you&#x27;re not relying on a single vendor, you&#x27;re not locked into a specific data format so that you have the flexibility to use whatever query engine that you deem is, you know, necessary to process that data. so if you have any issues with your data quality, how you trace back from the data source up to where your data is and all the processing steps in between to identify where the gaps are. we have a data catalog platform called hubble, which is a fork of data hub where we store data, contracts, table metadata, any and all of that. we institutionalized what we call data swarmers, where for each business vertical, the engineers double up as data engineers taking full control and ownership of their own data sets. this session explores grab’s evolving data journey on aws and the architecture behind its next-generation data and ai platform. learn how grab built a unified, governed enterprise data foundation using aws-native services to support cross-functional reporting, simplify data management across systems, and power internally developed analytics and ai applications. grab’s head of analytics will share key architectural decisions and lessons learned in building a scalable platform that enables real-time insights and supports innovation across the organization. aws summit singapore - harnessing ai through data foundations jan michael go tan sneh agrawal">
+  <div class="card-top">
+    <span class="badge">AWS Summit Singapore - Harnessing AI through Data Foundations</span>
+    <h2 class="card-title">Behind the Agents: Building the Foundation for AI at Scale</h2>
+    <div class="meta-row">6 May 2026 · 11:30 AM - 12:01 PM</div>
+    <div class="meta-row"><strong>Speaker(s)</strong></div>
+    <ul class="speaker-list"><li>Jan Michael Go Tan — Principal Solutions Architect, AWS</li><li>Sneh Agrawal — Head of Analytics - Data Architecture and EDW, Grab</li></ul>
+    <div class="card-video">
+      <video class="hls-player" controls playsinline preload="metadata" data-video-url="https://dz2ooo85w8eqv.cloudfront.net/aws-summitsgp26/outputs/sin-dat204/hls/v2/index.m3u8" aria-label="Recording: Behind the Agents: Building the Foundation for AI at Scale">
+        <source src="https://dz2ooo85w8eqv.cloudfront.net/aws-summitsgp26/outputs/sin-dat204/hls/v2/index.m3u8" type="application/x-mpegURL" />
+      </video>
+      <p class="video-fallback" hidden>HLS playback may require Safari or a browser with MSE. <a href="https://dz2ooo85w8eqv.cloudfront.net/aws-summitsgp26/outputs/sin-dat204/hls/v2/index.m3u8" rel="noopener noreferrer" target="_blank">Open stream</a></p>
+    </div>
+  </div>
+  <details class="more">
+    <summary>Key takeaways &amp; caption-based summary</summary>
+    <div class="section">
+      <h3>Key takeaways</h3>
+      <ul><li>This session explores Grab’s evolving data journey on AWS and the architecture behind its next-generation data and AI platform</li><li>Learn how Grab built a unified, governed enterprise data foundation using AWS-native services to support cross-functional reporting, simplify data management across systems, and power internally developed analytics and AI applications</li><li>Grab’s Head of Analytics will share key architectural decisions and lessons learned in building a scalable platform that enables real-time insights and supports innovation across the organization</li><li>So open data formats like iceberg allow you to access your data, allow you to choose, you know, whatever query engine that you, that you need to use to process your, to address, to process your data and, you know, address your specific requirements</li><li>Now, Jaime and his keynote touch on a little bit of this one earlier on open data architecture allows you to be able to access data where it lives, or give you the flexibility to aggregate that data</li></ul>
+      <h3>Summary (from captions)</h3>
+      <div class="summary"><p>It&#x27;s not only the Y, but I&#x27;m also going to explain some of the key design principles on when you&#x27;re designing your data foundation, what are some of the key considerations that you should be having, and you should be designing in your systems to ensure success of not only your data foundation, but, but as you build on top of those, that foundation and then from Grab will take you deeper into the platforms powering their AI agents in production. What are the databases, tables, columns, data types, what&#x27;s the partitioning scheme, serialization, deserialization data format, and any other metadata that you need in order to, to have that to be able to query that data. Now, Jaime and his keynote touch on a little bit of this one earlier on open data architecture allows you to be able to access data where it lives, or give you the flexibility to aggregate that data. So open data formats like iceberg allow you to access your data, allow you to choose, you know, whatever query engine that you, that you need to use to process your, to address, to process your data and, you know, address your specific requirements.</p><p>So this means that you have the flexibility, you&#x27;re not relying on a single vendor, you&#x27;re not locked into a specific data format so that you have the flexibility to use whatever query engine that you deem is, you know, necessary to process that data. So if you have any issues with your data quality, how you trace back from the data source up to where your data is and all the processing steps in between to identify where the gaps are. We have a data catalog platform called Hubble, which is a fork of data hub where we store data, contracts, table metadata, any and all of that. We institutionalized what we call data swarmers, where for each business vertical, the engineers double up as data engineers taking full control and ownership of their own data sets.</p></div>
+      <p style="margin:0.55rem 0 0;"><a href="https://dz2ooo85w8eqv.cloudfront.net/aws-summitsgp26/outputs/sin-dat204/hls/v2/index.m3u8" rel="noopener noreferrer" target="_blank">Open stream in new tab</a></p>
+    </div>
+  </details>
+</article>
+<article class="session-card" data-category="AWS Summit Singapore - AI for Everyone" data-speakers="|Noorbakht Khan|Benny Lam|Kristopher O&#x27;Brien|" data-search="breaking the legacy barrier: how ai is revolutionizing modernization aws transform custom is a command line, interface based autonomous agent that supports virtually any code transformation scenarios. and for the first one, i&#x27;ll show you how you can upgrade a java eight project to java 21 using aws managed transformation definitions. but for now we&#x27;ll see how you can create your custom transformation, publish your custom transformation to your registry so that other users can use that same definition for their projects with similar use cases. so i&#x27;ll first open up aws transform custom interactive mode and i&#x27;ll say create a new transformation.
+
+now, since aws transform custom is a command line interface based, you can wrap it up in a batch script, and all you need is a shell to run transformations in batch mode and scale it across your enterprise. and the next thing i&#x27;m going to do is i&#x27;ll open up my csv file so that you can take a look and you&#x27;ll see that it consists a bunch of github repositories and things like the repository path build command transformation, name validation commands, as well as additional plan contexts. so for this particular demo, i&#x27;ll show you how you can capture knowledge items, list them, review them, and enable them for future runs so that your aws transform custom agent can become smarter over time. so what this means is that the next time i run aws transform custom agent, this knowledge items will become part of the transformations knowledge base. enterprises remain trapped in legacy monoliths that drain millions in maintenance while stifling innovation. traditional modernization approaches like event storming rely heavily on fragmented human knowledge and incomplete documentation, making transformation slow and risky. an ai-driven approach can compress legacy code analysis from months to hours, uncovering hidden business rules and forgotten workflows. in this talk, we share how we partnered with nie to modernize two legacy java 8 applications—e-registration and student feedback on teaching—into modern .net 10 + vue.js architectures using ai-powered tools like aws transform and kiro, accelerating modernization outcomes dramatically. aws summit singapore - ai for everyone noorbakht khan benny lam kristopher o&#x27;brien">
+  <div class="card-top">
+    <span class="badge">AWS Summit Singapore - AI for Everyone</span>
+    <h2 class="card-title">Breaking the legacy barrier: How AI is revolutionizing modernization</h2>
+    <div class="meta-row">6 May 2026 · 4:30 PM - 05:00 PM</div>
+    <div class="meta-row"><strong>Speaker(s)</strong></div>
+    <ul class="speaker-list"><li>Noorbakht Khan — PS Solutions Architect, AWS</li><li>Benny Lam — Head of Digital Solutions, NIE</li><li>Kristopher O&#x27;Brien — CIO, Academic Computing and Information Services, NIE</li></ul>
+    <div class="card-video">
+      <video class="hls-player" controls playsinline preload="metadata" data-video-url="https://dz2ooo85w8eqv.cloudfront.net/aws-summitsgp26/outputs/sin-aim202/hls/v2/index.m3u8" aria-label="Recording: Breaking the legacy barrier: How AI is revolutionizing modernization">
+        <source src="https://dz2ooo85w8eqv.cloudfront.net/aws-summitsgp26/outputs/sin-aim202/hls/v2/index.m3u8" type="application/x-mpegURL" />
+      </video>
+      <p class="video-fallback" hidden>HLS playback may require Safari or a browser with MSE. <a href="https://dz2ooo85w8eqv.cloudfront.net/aws-summitsgp26/outputs/sin-aim202/hls/v2/index.m3u8" rel="noopener noreferrer" target="_blank">Open stream</a></p>
+    </div>
+  </div>
+  <details class="more">
+    <summary>Key takeaways &amp; caption-based summary</summary>
+    <div class="section">
+      <h3>Key takeaways</h3>
+      <ul><li>Enterprises remain trapped in legacy monoliths that drain millions in maintenance while stifling innovation</li><li>Traditional modernization approaches like event storming rely heavily on fragmented human knowledge and incomplete documentation, making transformation slow and risky</li><li>An AI-driven approach can compress legacy code analysis from months to hours, uncovering hidden business rules and forgotten workflows</li><li>And the next thing I&#x27;m going to do is I&#x27;ll open up my CSV file so that you can take a look and you&#x27;ll see that it consists a bunch of GitHub repositories and things like the repository path build command transformation, name validation commands, as well as additional plan contexts</li><li>But for now we&#x27;ll see how you can create your custom transformation, publish your custom transformation to your registry so that other users can use that same definition for their projects with similar use cases</li></ul>
+      <h3>Summary (from captions)</h3>
+      <div class="summary"><p>AWS Transform custom is a command line, interface based autonomous agent that supports virtually any code transformation scenarios. And for the first one, I&#x27;ll show you how you can upgrade a Java eight project to Java 21 using AWS Managed transformation definitions. But for now we&#x27;ll see how you can create your custom transformation, publish your custom transformation to your registry so that other users can use that same definition for their projects with similar use cases. So I&#x27;ll first open up AWS Transform custom interactive mode and I&#x27;ll say create a new transformation.</p><p>Now, since AWS Transform custom is a command line interface based, you can wrap it up in a batch script, and all you need is a shell to run transformations in batch mode and scale it across your enterprise. And the next thing I&#x27;m going to do is I&#x27;ll open up my CSV file so that you can take a look and you&#x27;ll see that it consists a bunch of GitHub repositories and things like the repository path build command transformation, name validation commands, as well as additional plan contexts. So for this particular demo, I&#x27;ll show you how you can capture knowledge items, list them, review them, and enable them for future runs so that your AWS Transform custom agent can become smarter over time. So what this means is that the next time I run AWS Transform custom agent, this knowledge items will become part of the transformations knowledge base.</p></div>
+      <p style="margin:0.55rem 0 0;"><a href="https://dz2ooo85w8eqv.cloudfront.net/aws-summitsgp26/outputs/sin-aim202/hls/v2/index.m3u8" rel="noopener noreferrer" target="_blank">Open stream in new tab</a></p>
+    </div>
+  </details>
+</article>
+<article class="session-card" data-category="AWS Summit Singapore - AI for Everyone" data-speakers="|Vignesh Pillai|Karen Chiah|" data-search="build and scale ai: from reliable agents to transformative systems it&#x27;s scaling ai agents into real production where they run every day and every time. but here&#x27;s the thing that scaling ai agents isn&#x27;t like scaling a model or a service, because building agents that you can actually trust is pretty hard because an agent isn&#x27;t really a model. every service, every pillar means nothing without one thing, which is data, right? and that&#x27;s why every real agent story doesn&#x27;t begin with a model, it actually begins with the data.
+
+we partnered with aws for two things the infrastructure to run this reliably for millions of interactions, we partnered with aws for two things the infrastructure to run this reliably for millions of interactions, and the team to work alongside ours to solve problems we never saw before. the agent calls again and it loops until the answer is vetted, is grounded with real data, and it&#x27;s fit for purpose. so every answer also passes through the same guardrails, ensuring that pii data or secrets or denied topics that jagadeesh cannot see. and that&#x27;s how every question, every answer earns your trust. many teams move fast with agentic ai prototypes that impress in demos but stall in production—blocked by gaps in reliability, accuracy, and safety. in this session, aws agentic ai technical leaders will help builders rethink how to build and scale production-grade, trustworthy agentic ai. learn proven patterns to build and deploy agents that earn trust in the real world. see aws agentic ai platform amazon bedrock agentcore in action. discover how aws customers move fast from sparks of experiment to scaled ai-driven innovation with trust at the core, transforming industries. aws summit singapore - ai for everyone vignesh pillai karen chiah">
+  <div class="card-top">
+    <span class="badge">AWS Summit Singapore - AI for Everyone</span>
+    <h2 class="card-title">Build and scale AI: from reliable agents to transformative systems</h2>
+    <div class="meta-row">6 May 2026 · 2:00 PM - 02:25 PM</div>
+    <div class="meta-row"><strong>Speaker(s)</strong></div>
+    <ul class="speaker-list"><li>Vignesh Pillai — Customer Solutions Manager, AWS</li><li>Karen Chiah — Dy CIO/Director, Ministry of Education</li></ul>
+    <div class="card-video">
+      <video class="hls-player" controls playsinline preload="metadata" data-video-url="https://dz2ooo85w8eqv.cloudfront.net/aws-summitsgp26/outputs/sin-aim201/hls/v2/index.m3u8" aria-label="Recording: Build and scale AI: from reliable agents to transformative systems">
+        <source src="https://dz2ooo85w8eqv.cloudfront.net/aws-summitsgp26/outputs/sin-aim201/hls/v2/index.m3u8" type="application/x-mpegURL" />
+      </video>
+      <p class="video-fallback" hidden>HLS playback may require Safari or a browser with MSE. <a href="https://dz2ooo85w8eqv.cloudfront.net/aws-summitsgp26/outputs/sin-aim201/hls/v2/index.m3u8" rel="noopener noreferrer" target="_blank">Open stream</a></p>
+    </div>
+  </div>
+  <details class="more">
+    <summary>Key takeaways &amp; caption-based summary</summary>
+    <div class="section">
+      <h3>Key takeaways</h3>
+      <ul><li>Many teams move fast with agentic AI prototypes that impress in demos but stall in production—blocked by gaps in reliability, accuracy, and safety</li><li>In this session, AWS agentic AI technical leaders will help builders rethink how to build and scale production-grade, trustworthy agentic AI</li><li>Learn proven patterns to build and deploy agents that earn trust in the real world</li><li>But here&#x27;s the thing that scaling AI agents isn&#x27;t like scaling a model or a service, because building agents that you can actually trust is pretty hard because an agent isn&#x27;t really a model</li><li>It&#x27;s scaling AI agents into real production where they run every day and every time</li></ul>
+      <h3>Summary (from captions)</h3>
+      <div class="summary"><p>It&#x27;s scaling AI agents into real production where they run every day and every time. But here&#x27;s the thing that scaling AI agents isn&#x27;t like scaling a model or a service, because building agents that you can actually trust is pretty hard because an agent isn&#x27;t really a model. Every service, every pillar means nothing without one thing, which is data, right? And that&#x27;s why every real agent story doesn&#x27;t begin with a model, it actually begins with the data.</p><p>We partnered with AWS for two things the infrastructure to run this reliably for millions of interactions, We partnered with AWS for two things the infrastructure to run this reliably for millions of interactions, and the team to work alongside ours to solve problems we never saw before. The agent calls again and it loops until the answer is vetted, is grounded with real data, and it&#x27;s fit for purpose. So every answer also passes through the same Guardrails, ensuring that PII data or secrets or denied topics that Jagadeesh cannot see. And that&#x27;s how every question, every answer earns your trust.</p></div>
+      <p style="margin:0.55rem 0 0;"><a href="https://dz2ooo85w8eqv.cloudfront.net/aws-summitsgp26/outputs/sin-aim201/hls/v2/index.m3u8" rel="noopener noreferrer" target="_blank">Open stream in new tab</a></p>
+    </div>
+  </details>
+</article>
+<article class="session-card" data-category="AWS Summit Singapore - AI for Everyone" data-speakers="|Isaac Ibrahim|Vasileios Vonikakis|Henry Liew|" data-search="building autonomous ai at scale with amazon bedrock so now that we&#x27;ve talked a lot about the models, let&#x27;s talk about the tools that you&#x27;re using for your agents, right? so if your llm takes or your agent takes 30s to do something, what we can do is we can use streaming to give you the feel as if it&#x27;s very fast, even though it&#x27;s not actually fast. and now that we have observability, right, we now want to think about how do i prove that my agent is working well or not well, and especially between different versions of the agent. talking to the ai, say for example, i want a different way to calculate and you give me a ppt based on this way of calculating, you know, headcount, sampling the data in different ways, in different frequency of time and getting the final outcome.
+
+you need to make sure that different models, you understand how different models behave in different ways and sometimes recommend that the user scope down the request. so when models change system prompt change guardrails change, data pipeline change, and especially when you decide to change your context window limit, you need to check, and the checking cost cannot exceed the benefits of this system. the first layer checks our agent like as if it&#x27;s a machine customer, right machine customer. when it comes to content to to write to to securing your content, the actions of your agents try to use amazon bedrock guardrails and amazon bedrock agentcore policy. building autonomous ai at scale with amazon bedrock marks a breakthrough for autonomous ai systems, from vibe coding to specialized assistants and super-agents disrupting multi-billion dollar industries. amazon bedrock empowers disruptive startups to rapidly prototype autonomous applications and agents, seamlessly scaling from proof-of-concept to production systems serving millions of users. we&#x27;ll tackle top scaling challenges, share best practices, from rapid mvp development to handling production traffic at scale. discover specific bedrock capabilities and support programs that optimize performance, reduce cost, achieve global scalability, and enable your vision without enterprise-level infrastructure investments. aws summit singapore - ai for everyone isaac ibrahim vasileios vonikakis henry liew">
+  <div class="card-top">
+    <span class="badge">AWS Summit Singapore - AI for Everyone</span>
+    <h2 class="card-title">Building autonomous AI at scale with Amazon Bedrock</h2>
+    <div class="meta-row">6 May 2026 · 3:00 PM - 03:30 PM</div>
+    <div class="meta-row"><strong>Speaker(s)</strong></div>
+    <ul class="speaker-list"><li>Isaac Ibrahim — Specialist SA – AI/ML, AWS</li><li>Vasileios Vonikakis — Sr. GTM SA for GenAI, AWS</li><li>Henry Liew — Director of Data Science and Analytics, BIPO</li></ul>
+    <div class="card-video">
+      <video class="hls-player" controls playsinline preload="metadata" data-video-url="https://dz2ooo85w8eqv.cloudfront.net/aws-summitsgp26/outputs/sin-aim302/hls/v2/index.m3u8" aria-label="Recording: Building autonomous AI at scale with Amazon Bedrock">
+        <source src="https://dz2ooo85w8eqv.cloudfront.net/aws-summitsgp26/outputs/sin-aim302/hls/v2/index.m3u8" type="application/x-mpegURL" />
+      </video>
+      <p class="video-fallback" hidden>HLS playback may require Safari or a browser with MSE. <a href="https://dz2ooo85w8eqv.cloudfront.net/aws-summitsgp26/outputs/sin-aim302/hls/v2/index.m3u8" rel="noopener noreferrer" target="_blank">Open stream</a></p>
+    </div>
+  </div>
+  <details class="more">
+    <summary>Key takeaways &amp; caption-based summary</summary>
+    <div class="section">
+      <h3>Key takeaways</h3>
+      <ul><li>Building autonomous AI at scale with Amazon Bedrock marks a breakthrough for autonomous AI systems, from vibe coding to specialized assistants and super-agents disrupting multi-billion dollar industries</li><li>Amazon Bedrock empowers disruptive startups to rapidly prototype autonomous applications and agents, seamlessly scaling from proof-of-concept to production systems serving millions of users</li><li>We&#x27;ll tackle top scaling challenges, share best practices, from rapid MVP development to handling production traffic at scale</li><li>And now that we have observability, right, we now want to think about how do I prove that my agent is working well or not well, and especially between different versions of the agent</li><li>Talking to the AI, say for example, I want a different way to calculate and you give me a PPT based on this way of calculating, you know, headcount, sampling the data in different ways, in different frequency of time and getting the final outcome</li></ul>
+      <h3>Summary (from captions)</h3>
+      <div class="summary"><p>So now that we&#x27;ve talked a lot about the models, let&#x27;s talk about the tools that you&#x27;re using for your agents, right? So if your LLM takes or your agent takes 30s to do something, what we can do is we can use streaming to give you the feel as if it&#x27;s very fast, even though it&#x27;s not actually fast. And now that we have observability, right, we now want to think about how do I prove that my agent is working well or not well, and especially between different versions of the agent. Talking to the AI, say for example, I want a different way to calculate and you give me a PPT based on this way of calculating, you know, headcount, sampling the data in different ways, in different frequency of time and getting the final outcome.</p><p>You need to make sure that different models, you understand how different models behave in different ways and sometimes recommend that the user scope down the request. So when models change system prompt change Guardrails change, data pipeline change, and especially when you decide to change your context window limit, you need to check, and the checking cost cannot exceed the benefits of this system. The first layer checks our agent like as if it&#x27;s a machine customer, right machine customer. When it comes to content to to write to to securing your content, the actions of your agents try to use Amazon Bedrock Guardrails and Amazon Bedrock AgentCore Policy.</p></div>
+      <p style="margin:0.55rem 0 0;"><a href="https://dz2ooo85w8eqv.cloudfront.net/aws-summitsgp26/outputs/sin-aim302/hls/v2/index.m3u8" rel="noopener noreferrer" target="_blank">Open stream in new tab</a></p>
+    </div>
+  </details>
+</article>
+<article class="session-card" data-category="AWS Summit Singapore - Harnessing AI through Data Foundations" data-speakers="|Dennis Tay|Tan Boon Leong|" data-search="countering deepfakes with st engineering’s ai forensics platform a recent study by gartner released in 2020 5th july, reveals that ai applications built with custom models is growing twice than those using foundational models. custom models give you the competitive edge, especially as you start building authentic solutions where the intelligence of the models directly translate to the value you ship to your customers. i&#x27;m sure my next few slides will probably resonate well with the challenges of actually building custom models, and how a structure will follow can help you achieve rapid experimentation and faster iteration. similarly, in order to stay ahead of the curve, they must be able to understand how these newer models generate the content and capture these patterns, and use these data sets to continuously feed them into their model training.
+
+that is actually ingesting media content that is running through their proprietary detection logic and leveraging the custom models to analyze and validate whether the content is authentic or a deepfake. for those that did not raise your hand and is looking to actually kick start your model customization techniques, here are some new features that have been launched recently that is able to actually guide you through your model customizations journey. this gives you the ability to actually evaluate your models against popular benchmark or custom benchmarks and matrices you set up for, especially for your custom models here. this is particularly important to us because on a day to day basis, we evaluate a lot of models every month, new models come out. misinformation and deepfakes are rising globally, posing risks to national security, public trust, and organisational credibility. built entirely on aws, st engineering’s agil trust is a cloud-native saas platform that helps organisations detect, analyse, and respond to digital threats at scale. using amazon bedrock for secure foundation models and amazon sagemaker for mlops, model training, and orchestration across 40+ aws services, agil trust integrates ai-powered fact-checking, deepfake detection, and influence campaign analysis to deliver scalable, real-time protection and preserve organisational trust and resilience. aws summit singapore - harnessing ai through data foundations dennis tay tan boon leong">
+  <div class="card-top">
+    <span class="badge">AWS Summit Singapore - Harnessing AI through Data Foundations</span>
+    <h2 class="card-title">Countering Deepfakes with ST Engineering’s AI Forensics Platform</h2>
+    <div class="meta-row">6 May 2026 · 4:00 PM - 04:30 PM</div>
+    <div class="meta-row"><strong>Speaker(s)</strong></div>
+    <ul class="speaker-list"><li>Dennis Tay — Senior Solutions Architect, AWS</li><li>Tan Boon Leong — VP/Head DeepBrain (Data Science &amp; Information), ST Engineering Group</li></ul>
+    <div class="card-video">
+      <video class="hls-player" controls playsinline preload="metadata" data-video-url="https://dz2ooo85w8eqv.cloudfront.net/aws-summitsgp26/outputs/sin-dat202/hls/v2/index.m3u8" aria-label="Recording: Countering Deepfakes with ST Engineering’s AI Forensics Platform">
+        <source src="https://dz2ooo85w8eqv.cloudfront.net/aws-summitsgp26/outputs/sin-dat202/hls/v2/index.m3u8" type="application/x-mpegURL" />
+      </video>
+      <p class="video-fallback" hidden>HLS playback may require Safari or a browser with MSE. <a href="https://dz2ooo85w8eqv.cloudfront.net/aws-summitsgp26/outputs/sin-dat202/hls/v2/index.m3u8" rel="noopener noreferrer" target="_blank">Open stream</a></p>
+    </div>
+  </div>
+  <details class="more">
+    <summary>Key takeaways &amp; caption-based summary</summary>
+    <div class="section">
+      <h3>Key takeaways</h3>
+      <ul><li>Misinformation and deepfakes are rising globally, posing risks to national security, public trust, and organisational credibility</li><li>Built entirely on AWS, ST Engineering’s AGIL Trust is a cloud-native SaaS platform that helps organisations detect, analyse, and respond to digital threats at scale</li><li>Using Amazon Bedrock for secure foundation models and Amazon SageMaker for MLOps, model training, and orchestration across 40+ AWS services, AGIL Trust integrates AI-powered fact-checking, deepfake detection, and influence campaign analysis to deliver scalable, real-time protection and preserve organisational trust and resilience</li><li>For those that did not raise your hand and is looking to actually kick start your model customization techniques, here are some new features that have been launched recently that is able to actually guide you through your model customizations journey</li><li>This gives you the ability to actually evaluate your models against Popular benchmark or custom benchmarks and matrices you set up for, especially for your custom models here</li></ul>
+      <h3>Summary (from captions)</h3>
+      <div class="summary"><p>A recent study by Gartner released in 2020 5th July, reveals that AI applications built with custom models is growing twice than those using foundational models. Custom models give you the competitive edge, especially as you start building authentic solutions where the intelligence of the models directly translate to the value you ship to your customers. I&#x27;m sure my next few slides will probably resonate well with the challenges of actually building custom models, and how a structure will follow can help you achieve rapid experimentation and faster iteration. Similarly, in order to stay ahead of the curve, they must be able to understand how these newer models generate the content and capture these patterns, and use these data sets to continuously feed them into their model training.</p><p>That is actually ingesting media content that is running through their proprietary detection logic and leveraging the custom models to analyze and validate whether the content is authentic or a deepfake. For those that did not raise your hand and is looking to actually kick start your model customization techniques, here are some new features that have been launched recently that is able to actually guide you through your model customizations journey. This gives you the ability to actually evaluate your models against Popular benchmark or custom benchmarks and matrices you set up for, especially for your custom models here. This is particularly important to us because on a day to day basis, we evaluate a lot of models every month, new models come out.</p></div>
+      <p style="margin:0.55rem 0 0;"><a href="https://dz2ooo85w8eqv.cloudfront.net/aws-summitsgp26/outputs/sin-dat202/hls/v2/index.m3u8" rel="noopener noreferrer" target="_blank">Open stream in new tab</a></p>
+    </div>
+  </details>
+</article>
+<article class="session-card" data-category="AWS Summit Singapore - AI for Everyone" data-speakers="|Vishesh Kumar|Seong Per Lee|" data-search="from demo to deployment: solving agentic ai&#x27;s toughest challenges so you&#x27;re talking about a customer who&#x27;s complaining to you for the first time, complaining to you for the second time, but your agent thinks it&#x27;s only the first time because the data is not there or the relevant information was not indexed and hence not available to your agents as well. how do i prevent the data that the user a has to scrape into the data that user b has, and have this data data flowing from one user to the other? we should also be able to gather diverse examples, which covers various user intents, and also have negative test cases in in play as well, just to figure out what really happens and how does our agent response if things are not working right? so last sometime last year, the team actually worked with amazon with aws to run a hackathon and infra team actually then develop this as a prototype and later on productionize this to deliver the agent for our for our entire engineering team.
+
+without the agent, they will have to wait for an infra team member to pick up the ticket and respond to their requests, or provide an answer, either to provide answer for them on how to take the next step, or to help them troubleshoot an issue that they are facing with an agent. now that we have developed, the agent will actually pick up the ticket immediately after the after it has been created, and it will draw upon a knowledge base that we have created, pulling the pulling data from past cases that were in from, from, from jira and using those information in the tickets. it then tries to resolve and provide an answer to the user in slack, and the same answer is also copied to the infra team members, who can then review the answers for either the the follow ups that you need to do to help the user further or review the answers also for accuracy and learn and help the youth and help the agent then learn from those cases. we are also looking at how to improve the agent further by better tracking the time savings that we are delivering from the agent for roi, and also looking at how we can improve the recommendations and further automating what the agent can do, all with the help of, of, of, of, of the tools that aws is providing. most ai agent projects stall when moving from prototype to production. this session tackles the top challenges builders face when deploying agentic ai at scale. you&#x27;ll learn how to answer the fundamental question of whether to build custom agents or leverage pre-built agents for devops, security, development, and business productivity use cases. then you&#x27;ll discover how to address the critical production challenges of reliability, observability, cost management, security, and evaluation. drawing from real customer deployments and aws&#x27;s portfolio of agentic ai capabilities, you&#x27;ll gain actionable approaches for building agents that don&#x27;t just demo well but ship and scale. aws summit singapore - ai for everyone vishesh kumar seong per lee">
+  <div class="card-top">
+    <span class="badge">AWS Summit Singapore - AI for Everyone</span>
+    <h2 class="card-title">From demo to deployment: solving agentic AI&#x27;s toughest challenges</h2>
+    <div class="meta-row">6 May 2026 · 11:30 AM - 12:01 PM</div>
+    <div class="meta-row"><strong>Speaker(s)</strong></div>
+    <ul class="speaker-list"><li>Vishesh Kumar — Principal Architect, AWS</li><li>Seong Per Lee — Head of Data &amp; AI, StraitsX</li></ul>
+    <div class="card-video">
+      <video class="hls-player" controls playsinline preload="metadata" data-video-url="https://dz2ooo85w8eqv.cloudfront.net/aws-summitsgp26/outputs/sin-aim204/hls/v1/index.m3u8" aria-label="Recording: From demo to deployment: solving agentic AI&#x27;s toughest challenges">
+        <source src="https://dz2ooo85w8eqv.cloudfront.net/aws-summitsgp26/outputs/sin-aim204/hls/v1/index.m3u8" type="application/x-mpegURL" />
+      </video>
+      <p class="video-fallback" hidden>HLS playback may require Safari or a browser with MSE. <a href="https://dz2ooo85w8eqv.cloudfront.net/aws-summitsgp26/outputs/sin-aim204/hls/v1/index.m3u8" rel="noopener noreferrer" target="_blank">Open stream</a></p>
+    </div>
+  </div>
+  <details class="more">
+    <summary>Key takeaways &amp; caption-based summary</summary>
+    <div class="section">
+      <h3>Key takeaways</h3>
+      <ul><li>Most AI agent projects stall when moving from prototype to production</li><li>This session tackles the top challenges builders face when deploying agentic AI at scale</li><li>You&#x27;ll learn how to answer the fundamental question of whether to build custom agents or leverage pre-built agents for DevOps, security, development, and business productivity use cases</li><li>So you&#x27;re talking about a customer who&#x27;s complaining to you for the first time, complaining to you for the second time, but your agent thinks it&#x27;s only the first time because the data is not there or the relevant information was not indexed and hence not available to your agents as well</li><li>It then tries to resolve and provide an answer to the user in Slack, and the same answer is also copied to the infra team members, who can then review the answers for either the the follow ups that you need to do to help the user further or review the answers also for accuracy and learn and help the youth and help the agent then learn from those cases</li></ul>
+      <h3>Summary (from captions)</h3>
+      <div class="summary"><p>So you&#x27;re talking about a customer who&#x27;s complaining to you for the first time, complaining to you for the second time, but your agent thinks it&#x27;s only the first time because the data is not there or the relevant information was not indexed and hence not available to your agents as well. How do I prevent the data that the user A has to scrape into the data that user B has, and have this data data flowing from one user to the other? We should also be able to gather diverse examples, which covers various user intents, and also have negative test cases in in play as well, just to figure out what really happens and how does our agent response if things are not working right? So last sometime last year, the team actually worked with Amazon with AWS to run a hackathon and infra team actually then develop this as a prototype and later on productionize this to deliver the agent for our for our entire engineering team.</p><p>Without the agent, they will have to wait for an infra team member to pick up the ticket and respond to their requests, or provide an answer, either to provide answer for them on how to take the next step, or to help them troubleshoot an issue that they are facing with an agent. Now that we have developed, the agent will actually pick up the ticket immediately after the after it has been created, and it will draw upon a knowledge base that we have created, pulling the pulling data from past cases that were in from, from, from Jira and using those information in the tickets. It then tries to resolve and provide an answer to the user in Slack, and the same answer is also copied to the infra team members, who can then review the answers for either the the follow ups that you need to do to help the user further or review the answers also for accuracy and learn and help the youth and help the agent then learn from those cases. We are also looking at how to improve the agent further by better tracking the time savings that we are delivering from the agent for ROI, and also looking at how we can improve the recommendations and further automating what the agent can do, all with the help of, of, of, of, of the tools that AWS is providing.</p></div>
+      <p style="margin:0.55rem 0 0;"><a href="https://dz2ooo85w8eqv.cloudfront.net/aws-summitsgp26/outputs/sin-aim204/hls/v1/index.m3u8" rel="noopener noreferrer" target="_blank">Open stream in new tab</a></p>
+    </div>
+  </details>
+</article>
+<article class="session-card" data-category="AWS Summit Singapore - Keynote" data-speakers="|Priscilla Chong|Jaime Vallés|Ng Tian Beng|Ken Lek|Desmond Tan|" data-search="keynote keppel they built agentic capabilities on our aws platform, enabling each agent voice agent iv to manage the investor’s relations as well as tenants concierge for the buildings that they manage across asia, including the iconic keppel tower bay, keppel bay tower, as well as the keppel south central olam. the cyber security agency of singapore uses aws agentic ai services like security agent to empower their team for security assessments, and you&#x27;ll hear more from them later today at the breakout tracks. aws enterprise support has been instrumental in helping singapore customers achieve their digital transformation goals to optimize their aws msk infrastructure to power real time property listings in millions and achieve 22% cost savings. under this partnership with aws as the lead multiplier, under this partnership with aws as the lead multiplier, ntuc and aws will support 100 companies in their business transformation, or at least 100 companies in their the transformation and expand access of ai skills for ten thousand workers.
+
+so whether you&#x27;re developing with autonomous agents, training foundation models, or running your most demanding workloads at scale, we&#x27;re focused on making aws the best place to build because what&#x27;s most exciting for us is seeing what you build. this was a great example of what one builder can do with the right tools and services, this was a great example of what one builder can do with the right tools and services, but the foundation that makes it all possible is infrastructure, data and inference working together. now i want to introduce another powerful customer example that will show us when when possible, when you combine bold ideas with the right data, foundation and infrastructure on aws. by modernizing on aws, grab has established a single reliable source of truth across the organization, eliminating data inconsistencies, reducing reconciliation overhead, and giving every team confidence to act on their data.  aws summit singapore - keynote priscilla chong jaime vallés ng tian beng ken lek desmond tan">
+  <div class="card-top">
+    <span class="badge">AWS Summit Singapore - Keynote</span>
+    <h2 class="card-title">Keynote</h2>
+    <div class="meta-row">6 May 2026 · 9:30 AM - 10:55 AM</div>
+    <div class="meta-row"><strong>Speaker(s)</strong></div>
+    <ul class="speaker-list"><li>Priscilla Chong — Managing Director, Singapore, AWS</li><li>Jaime Vallés — Vice President &amp; Managing Director APJC, AWS</li><li>Ng Tian Beng — President &amp; Group CEO, Certis</li><li>Ken Lek — Managing Director, Head of Strategic Finance &amp; Investor Relations, Grab</li><li>Desmond Tan — Senior Minister of State, Prime Ministers Office / Deputy Secretary-General NTUC</li></ul>
+    <div class="card-video">
+      <video class="hls-player" controls playsinline preload="metadata" data-video-url="https://dz2ooo85w8eqv.cloudfront.net/aws-summitsgp26/outputs/sin-key001/hls/v2/index.m3u8" aria-label="Recording: Keynote">
+        <source src="https://dz2ooo85w8eqv.cloudfront.net/aws-summitsgp26/outputs/sin-key001/hls/v2/index.m3u8" type="application/x-mpegURL" />
+      </video>
+      <p class="video-fallback" hidden>HLS playback may require Safari or a browser with MSE. <a href="https://dz2ooo85w8eqv.cloudfront.net/aws-summitsgp26/outputs/sin-key001/hls/v2/index.m3u8" rel="noopener noreferrer" target="_blank">Open stream</a></p>
+    </div>
+  </div>
+  <details class="more">
+    <summary>Key takeaways &amp; caption-based summary</summary>
+    <div class="section">
+      <h3>Key takeaways</h3>
+      <ul><li>Under this partnership with AWS as the lead multiplier, Under this partnership with AWS as the lead multiplier, NTUC and AWS will support 100 companies in their business transformation, or at least 100 companies in their The transformation and expand access of AI skills for ten thousand workers</li><li>AWS Enterprise Support has been instrumental in helping Singapore customers achieve their digital transformation goals To optimize their AWS MSK infrastructure to power real time property listings in millions and achieve 22% cost savings</li><li>This was a great example of what one builder can do with the right tools and services, This was a great example of what one builder can do with the right tools and services, but the foundation that makes it all possible is infrastructure, data and inference working together</li><li>By modernizing on AWS, Grab has established a single reliable source of truth across the organization, eliminating data inconsistencies, reducing reconciliation overhead, and giving every team confidence to act on their data</li><li>Now I want to introduce another powerful customer example that will show us when when possible, when you combine bold ideas with the right data, foundation and infrastructure on AWS</li></ul>
+      <h3>Summary (from captions)</h3>
+      <div class="summary"><p>Keppel they built Agentic capabilities on our AWS platform, enabling each agent Voice Agent IV to manage the investor’s relations as well as tenants concierge for the buildings that they manage across Asia, including the iconic Keppel Tower Bay, Keppel Bay tower, as well as the Keppel South Central Olam. The Cyber Security Agency of Singapore uses AWS Agentic AI services like security Agent to empower their team for security assessments, and you&#x27;ll hear more from them later today at the breakout tracks. AWS Enterprise Support has been instrumental in helping Singapore customers achieve their digital transformation goals To optimize their AWS MSK infrastructure to power real time property listings in millions and achieve 22% cost savings. Under this partnership with AWS as the lead multiplier, Under this partnership with AWS as the lead multiplier, NTUC and AWS will support 100 companies in their business transformation, or at least 100 companies in their The transformation and expand access of AI skills for ten thousand workers.</p><p>So whether you&#x27;re developing with autonomous agents, training foundation models, or running your most demanding workloads at scale, we&#x27;re focused on making AWS the best place to build because what&#x27;s most exciting for us is seeing what you build. This was a great example of what one builder can do with the right tools and services, This was a great example of what one builder can do with the right tools and services, but the foundation that makes it all possible is infrastructure, data and inference working together. Now I want to introduce another powerful customer example that will show us when when possible, when you combine bold ideas with the right data, foundation and infrastructure on AWS. By modernizing on AWS, Grab has established a single reliable source of truth across the organization, eliminating data inconsistencies, reducing reconciliation overhead, and giving every team confidence to act on their data.</p></div>
+      <p style="margin:0.55rem 0 0;"><a href="https://dz2ooo85w8eqv.cloudfront.net/aws-summitsgp26/outputs/sin-key001/hls/v2/index.m3u8" rel="noopener noreferrer" target="_blank">Open stream in new tab</a></p>
+    </div>
+  </details>
+</article>
+<article class="session-card" data-category="AWS Summit Singapore - Harnessing AI through Data Foundations" data-speakers="|Callie Cheong|Ee Siew Ping|" data-search="legacy to intelligence: popular&#x27;s genbi journey on aws so for us, this actually has become a challenging, but also opportunities for us to evolve, not just in terms of technology, but we want to improve in terms of the organization, how actually we can work with the data day to day. so our team actually we do have the experience and we have the context, but what the team required is actually be able to be access to a data in a faster and more consistent way. because when the whole business work from one source for data, decisions get faster and trust goes up for popular, that meant unifying their finance, retail and operations data into one single business platform. this allows you to join your data in sap with other data sources such as retail transactions, operations, and this allows you to build a unified view across your data sources.
+
+spanning the entire architecture, amazon sagemaker unified studio brings this whole stack together so that your data engineers, data scientists can do data preparation and model building in one governance environment. open data formats such as apache iceberg and parquet allow you to scale because your data is not locked into one single data engine. when you&#x27;re talking about exabytes of apache parquet data sitting in amazon s3, this actually allows you to handle over 25 million requests per second and hundreds of petabytes of data served daily. they can just ask a single question that draws from all of them, and that gets a richer analytic picture that spaces enables for popular for business like popular, your data spans across multiple markets and systems and this kind of unified view can take what they have built to the next level. popular, one of the most recognized retail and education brands in the region, built its reporting on a legacy infrastructure that served the business well for years. but as data volumes grew, reporting slowed and manual consolidation became a bottleneck. in this session, learn how popular built a cloud-native data platform on aws using amazon s3, aws glue, and amazon redshift. with amazon quicksight and amazon q delivering generative bi capabilities, business users can now query data in natural language. discover how this solution accelerated reporting, unified financial visibility, and laid a foundation for predictive analytics. aws summit singapore - harnessing ai through data foundations callie cheong ee siew ping">
+  <div class="card-top">
+    <span class="badge">AWS Summit Singapore - Harnessing AI through Data Foundations</span>
+    <h2 class="card-title">Legacy to Intelligence: Popular&#x27;s GenBI Journey on AWS</h2>
+    <div class="meta-row">6 May 2026 · 3:00 PM - 03:30 PM</div>
+    <div class="meta-row"><strong>Speaker(s)</strong></div>
+    <ul class="speaker-list"><li>Callie Cheong — Solutions Architect, AWS</li><li>Ee Siew Ping — Director of IT, Popular</li></ul>
+    <div class="card-video">
+      <video class="hls-player" controls playsinline preload="metadata" data-video-url="https://dz2ooo85w8eqv.cloudfront.net/aws-summitsgp26/outputs/sin-dat203/hls/v2/index.m3u8" aria-label="Recording: Legacy to Intelligence: Popular&#x27;s GenBI Journey on AWS">
+        <source src="https://dz2ooo85w8eqv.cloudfront.net/aws-summitsgp26/outputs/sin-dat203/hls/v2/index.m3u8" type="application/x-mpegURL" />
+      </video>
+      <p class="video-fallback" hidden>HLS playback may require Safari or a browser with MSE. <a href="https://dz2ooo85w8eqv.cloudfront.net/aws-summitsgp26/outputs/sin-dat203/hls/v2/index.m3u8" rel="noopener noreferrer" target="_blank">Open stream</a></p>
+    </div>
+  </div>
+  <details class="more">
+    <summary>Key takeaways &amp; caption-based summary</summary>
+    <div class="section">
+      <h3>Key takeaways</h3>
+      <ul><li>Popular, one of the most recognized retail and education brands in the region, built its reporting on a legacy infrastructure that served the business well for years</li><li>But as data volumes grew, reporting slowed and manual consolidation became a bottleneck</li><li>In this session, learn how Popular built a cloud-native data platform on AWS using Amazon S3, AWS Glue, and Amazon Redshift</li><li>This allows you to join your data in SAP with other data sources such as retail transactions, operations, and this allows you to build a unified view across your data sources</li><li>Because when the whole business work from one source for data, decisions get faster and trust goes up For Popular, that meant unifying their finance, retail and operations data into one single business platform</li></ul>
+      <h3>Summary (from captions)</h3>
+      <div class="summary"><p>So for us, this actually has become a challenging, but also opportunities for us to evolve, not just in terms of technology, but we want to improve in terms of the organization, how actually we can work with the data day to day. So our team actually we do have the experience and we have the context, but what the team required is actually be able to be access to a data in a faster and more consistent way. Because when the whole business work from one source for data, decisions get faster and trust goes up For Popular, that meant unifying their finance, retail and operations data into one single business platform. This allows you to join your data in SAP with other data sources such as retail transactions, operations, and this allows you to build a unified view across your data sources.</p><p>Spanning the entire architecture, Amazon SageMaker Unified Studio brings this whole stack together so that your data engineers, data scientists can do data preparation and model building in one governance environment. Open data formats such as Apache Iceberg and Parquet allow you to scale because your data is not locked into one single data engine. When you&#x27;re talking about exabytes of Apache parquet data sitting in Amazon S3, this actually allows you to handle over 25 million requests per second and hundreds of petabytes of data served daily. They can just ask a single question that draws from all of them, and that gets a richer analytic picture that spaces enables for Popular for business like Popular, your data spans across multiple markets and systems and this kind of unified view can take what they have built to the next level.</p></div>
+      <p style="margin:0.55rem 0 0;"><a href="https://dz2ooo85w8eqv.cloudfront.net/aws-summitsgp26/outputs/sin-dat203/hls/v2/index.m3u8" rel="noopener noreferrer" target="_blank">Open stream in new tab</a></p>
+    </div>
+  </details>
+</article>
+    </div>
+  </main>
+  <footer>
+    <p>GitHub Pages: commit <code>index.html</code> and <code>Infographic.jpg</code> at the site root, or run <code>python build_aws_summit_report.py</code> after updating crawler output.</p>
+  </footer>
+  <script>
+
+(function () {
+  const cards = Array.from(document.querySelectorAll(".session-card"));
+  const search = document.getElementById("search");
+  const categoryFilter = document.getElementById("categoryFilter");
+  const speakerFilter = document.getElementById("speakerFilter");
+  const resetBtn = document.getElementById("resetFilters");
+  const stats = document.getElementById("stats");
+
+  function apply() {
+    const q = search.value.trim().toLowerCase();
+    const cat = categoryFilter.value;
+    const spk = speakerFilter.value;
+    let shown = 0;
+    cards.forEach((card) => {
+      const blob = card.getAttribute("data-search") || "";
+      const cats = card.getAttribute("data-category") || "";
+      const speaks = card.getAttribute("data-speakers") || "";
+      const catOk = !cat || cats === cat;
+      const speakerOk = !spk || speaks.includes("|" + spk + "|");
+      const matchOk =
+        !q ||
+        blob.includes(q) ||
+        card.innerText.toLowerCase().includes(q);
+      const ok = catOk && speakerOk && matchOk;
+      card.classList.toggle("hidden", !ok);
+      if (ok) shown += 1;
+    });
+    stats.textContent = `${shown} of ${cards.length} sessions shown`;
+  }
+
+  categoryFilter.addEventListener("change", apply);
+  speakerFilter.addEventListener("change", apply);
+  search.addEventListener("input", apply);
+
+  resetBtn.addEventListener("click", () => {
+    search.value = "";
+    categoryFilter.value = "";
+    speakerFilter.value = "";
+    apply();
+  });
+
+  apply();
+
+  function attachHlsPlayers() {
+    document.querySelectorAll("video.hls-player").forEach((video) => {
+      const src = video.getAttribute("data-video-url");
+      if (!src) return;
+      if (window.Hls && window.Hls.isSupported()) {
+        const hls = new window.Hls({ enableWorker: true });
+        hls.loadSource(src);
+        hls.attachMedia(video);
+      } else if (video.canPlayType("application/vnd.apple.mpegurl")) {
+        video.src = src;
+      } else {
+        var fb = video.parentElement && video.parentElement.querySelector(".video-fallback");
+        if (fb) fb.hidden = false;
+      }
+    });
+  }
+  if (window.Hls) {
+    attachHlsPlayers();
+  } else {
+    var s = document.createElement("script");
+    s.src = "https://cdn.jsdelivr.net/npm/hls.js@1.5.7/dist/hls.min.js";
+    s.async = true;
+    s.onload = attachHlsPlayers;
+    document.head.appendChild(s);
+  }
+})();
+
+  </script>
+</body>
+</html>

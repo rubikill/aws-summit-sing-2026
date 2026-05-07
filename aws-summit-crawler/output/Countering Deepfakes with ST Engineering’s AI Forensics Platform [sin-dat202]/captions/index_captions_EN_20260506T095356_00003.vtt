@@ -1,0 +1,205 @@
+WEBVTT	#Elemental Media Engine(TM) 2.18.0.0
+X-TIMESTAMP-MAP=LOCAL:00:00:00.000,MPEGTS:187200
+
+00:10:00.000 --> 00:10:01.236
+Iteration is not optional. It is a requirement.
+
+00:10:01.756 --> 00:10:07.916
+And this is where ML flows become an essential
+part of their workflow with each training iteration.
+
+00:10:08.116 --> 00:10:11.396
+ML flow locks the parameters, metrics, and results,
+
+00:10:11.636 --> 00:10:17.516
+giving the trust team full visibility on how
+each experiments perform relative to the last.
+
+00:10:18.596 --> 00:10:22.836
+They can actually continue to run these experiments side by side,
+
+00:10:23.076 --> 00:10:28.276
+and make pinpoint decisions on where to push their next training on.
+
+00:10:29.316 --> 00:10:34.756
+This is how they are able to actually improve
+their model accuracy, which with the training cycles.
+
+00:10:37.116 --> 00:10:40.476
+Last but not least, once the model meets this smile.
+
+00:10:40.516 --> 00:10:42.516
+It hits the accuracy you are looking for.
+
+00:10:42.516 --> 00:10:44.556
+It's time to launch. Putting it where?
+
+00:10:44.596 --> 00:10:50.476
+Into production. Where the the models actually deliver values
+for your applications for your trust here.
+
+00:10:50.876 --> 00:10:55.036
+This particular models are actually behind their applications.
+
+00:10:55.036 --> 00:11:00.716
+That is actually ingesting media content that is running
+through their proprietary detection logic
+
+00:11:00.716 --> 00:11:06.676
+and leveraging the custom models to analyze and validate
+whether the content is authentic or a deepfake.
+
+00:11:07.156 --> 00:11:12.476
+Every image, video, or audio clip is actually
+processed through this particular pipeline.
+
+00:11:13.876 --> 00:11:21.596
+The model becomes the core of trust product, powering deepfake
+detection at scale and giving the trust the end users is looking for.
+
+00:11:23.316 --> 00:11:29.676
+For those that did not raise your hand and is looking
+to actually kick start your model customization techniques,
+
+00:11:29.876 --> 00:11:33.556
+here are some new features
+that have been launched recently that is able
+
+00:11:33.556 --> 00:11:36.956
+to actually guide you through your model customizations journey.
+
+00:11:37.316 --> 00:11:41.676
+On the left hand side. SageMaker Model Customization Agent.
+
+00:11:42.156 --> 00:11:45.796
+This is an agent where it's able to actually
+guide you through your business use case
+
+00:11:45.796 --> 00:11:52.076
+and translate them into the technical
+specifications through the use of natural language here
+
+00:11:53.156 --> 00:11:56.196
+in the middle here, serverless reinforced learning.
+
+00:11:57.516 --> 00:12:02.836
+This helps you to take abstract away the complexity
+of infrastructure complexity I mentioned earlier,
+
+00:12:03.156 --> 00:12:06.516
+and focus on the training of the model that you are looking for.
+
+00:12:07.556 --> 00:12:10.876
+On the extreme right hand side, serverless model evaluation.
+
+00:12:11.916 --> 00:12:18.716
+This gives you the ability to actually evaluate
+your models against Popular benchmark or custom benchmarks
+
+00:12:18.756 --> 00:12:22.956
+and matrices you set up for, especially for your custom models here.
+
+00:12:26.036 --> 00:12:33.396
+In summary, to sum it all up, these five pillars forms
+a continuous end to end cycle from setting a clear objective
+
+00:12:33.396 --> 00:12:38.516
+to building a strong data foundation Two hands on model deployment.
+
+00:12:40.076 --> 00:12:42.276
+Together, they provide a repeatable,
+
+00:12:42.276 --> 00:12:50.316
+scalable framework that removes the guesswork from model customization
+and accelerate your path from experimentation to production.
+
+00:12:51.636 --> 00:12:56.676
+But of course, the real power of any framework
+lies in how it is applied in the real world.
+
+00:12:56.676 --> 00:13:02.036
+But there's no better person to bring it
+to life than someone who is exactly doing that every day.
+
+00:13:02.036 --> 00:13:05.236
+It's my pleasure to invite Mr. Tan Boon Leong,
+
+00:13:05.276 --> 00:13:13.956
+VP and head of DeepBrain at ST Engineering
+to share his journey on building his Agile Trust platform.
+
+00:13:14.276 --> 00:13:15.276
+Mr. tan, please.
+
+00:13:23.996 --> 00:13:25.676
+Thank you, Dennis, for the sharing.
+
+00:13:25.676 --> 00:13:32.276
+So before I begin, I thought to give the audience here
+an idea of how we come about harnessing the power of AI.
+
+00:13:32.676 --> 00:13:35.236
+We have been implementing products and projects.
+
+00:13:35.276 --> 00:13:37.836
+Over the course of the past decade related to AI.
+
+00:13:37.956 --> 00:13:43.476
+In fact, I think the most common application
+that we build are decision support systems.
+
+00:13:44.356 --> 00:13:47.796
+Typically found in mission critical software or command centers.
+
+00:13:48.076 --> 00:13:54.956
+So to be able to build decision support systems,
+we need to integrate across multiple sources of data.
+
+00:13:54.956 --> 00:13:58.236
+So data fusion is a key capability that we need.
+
+00:13:58.316 --> 00:14:03.676
+And last but not least to be able
+to do it efficiently across different systems.
+
+00:14:04.396 --> 00:14:07.156
+Agentic capabilities is important as well.
+
+00:14:08.116 --> 00:14:10.156
+So here comes our development journey.
+
+00:14:10.156 --> 00:14:15.556
+This is, I think, the first time I
+have shared how this idea even come about.
+
+00:14:15.996 --> 00:14:21.556
+So we started out putting up a proposal
+internally as part of a venture build.
+
+00:14:21.916 --> 00:14:26.516
+So venture building is something,
+an internal initiative designed to harness
+
+00:14:26.516 --> 00:14:30.996
+or encourage innovation among
+different business units in the organization.
+
+00:14:30.996 --> 00:14:32.876
+So we have this program called In vain.
+
+00:14:32.876 --> 00:14:40.076
+So for me, right, I submitted a proposal to put
+this product through a 15 week innovation sprint.
+
+00:14:40.556 --> 00:14:47.076
+So every week we will be working
+on this idea to conduct interviews with different stakeholders
+
+00:14:47.076 --> 00:14:51.836
+and potential customer segments that we want
+to target to get their feedback.
+
+00:14:52.276 --> 00:14:59.676
+Using this feedback and some product consumer research,
+we then develop what we call an MVP,
+

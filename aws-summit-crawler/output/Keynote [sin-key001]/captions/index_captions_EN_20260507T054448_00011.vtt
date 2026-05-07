@@ -1,0 +1,161 @@
+WEBVTT	#Elemental Media Engine(TM) 2.18.0.0
+X-TIMESTAMP-MAP=LOCAL:00:00:00.000,MPEGTS:187200
+
+00:50:00.000 --> 00:50:00.516
+And the ability to scale a new generation of AI
+powered operational technologies. At Certis
+
+00:50:00.556 --> 00:50:10.556
+we believe that ops should be powered by tech, not tech
+for its own sake, but tech that make real operations safer, smarter,
+
+00:50:10.556 --> 00:50:15.596
+and better. The question is no longer if AI will transform operations.
+
+00:50:15.956 --> 00:50:22.676
+That's actually a given. But the real question is how
+quickly can we bring together these technologies out of the lab
+
+00:50:22.996 --> 00:50:26.316
+and into the real world so that we can really make a difference.
+
+00:50:28.236 --> 00:50:31.116
+If we do this well, the outcome is clear.
+
+00:50:31.316 --> 00:50:39.356
+We will have safer environments, we will have smarter operations
+and will have better services for the communities that we serve.
+
+00:50:39.756 --> 00:50:49.596
+More importantly, operations people can trust by our officers
+on the ground, by our customers, and by the communities that we serve.
+
+00:50:51.716 --> 00:50:55.116
+This everyone is the future that we're building at Certis.
+
+00:50:55.676 --> 00:50:59.996
+We're building a safer, a smarter and better world for all.
+
+00:51:00.316 --> 00:51:01.476
+Thank you all.
+
+00:51:23.676 --> 00:51:24.436
+That's cool.
+
+00:51:26.836 --> 00:51:32.196
+Wow. It was fun having MAX and ACE on our stage, but I can tell you,
+
+00:51:32.196 --> 00:51:39.836
+thank you Ng Tian Beng for showing us how modernizing
+legacy systems on AWS is building safer.
+
+00:51:39.996 --> 00:51:43.356
+And smarter communities. That's the purpose.
+
+00:51:43.876 --> 00:51:50.516
+Now, agents are already changing how
+we work and how we get things done.
+
+00:51:51.596 --> 00:52:00.436
+But why should we just stop here? Why not build a new
+class of agents that push the frontier of capability forward?
+
+00:52:01.236 --> 00:52:06.956
+Frontier agents are a new class of agents
+that are significantly more capable.
+
+00:52:07.596 --> 00:52:15.796
+Frontier agents are autonomous, meaning you direct
+them towards a goal and they figure out how to achieve it.
+
+00:52:16.076 --> 00:52:21.356
+They are massively scalable, able to perform multiple concurrent tasks
+
+00:52:21.596 --> 00:52:30.196
+and distribute work across multiple agents of the same
+type and their long running working for hours
+
+00:52:30.196 --> 00:52:35.796
+or even days in pursuit of ambitious and sometimes amorphous goals.
+
+00:52:36.276 --> 00:52:41.396
+For example, agents like Kiro are accelerating
+our ability to write code,
+
+00:52:41.796 --> 00:52:48.356
+but you also need to make sure that every stage of the development
+lifecycle can scale and accelerate at the same time.
+
+00:52:48.796 --> 00:52:56.236
+At AWS, we have a firm belief that to get security right,
+you have to build it from the ground up.
+
+00:52:57.036 --> 00:53:02.556
+The AWS security agent helps you build
+applications that are secure from the start.
+
+00:53:03.036 --> 00:53:08.836
+It proactively reviews your design docs
+and scans your code for vulnerabilities.
+
+00:53:09.236 --> 00:53:18.836
+Security agent can even help with Pentesting helping to find
+and fix vulnerabilities before they are found by a third party.
+
+00:53:19.916 --> 00:53:25.996
+We also know that as our services scales,
+operations can eat up more and more of your time.
+
+00:53:26.476 --> 00:53:30.596
+And that's why we created the AWS DevOps agent.
+
+00:53:30.796 --> 00:53:39.756
+This agent helps investigate incidents and identify operational
+improvements, just like an experienced DevOps engineer would.
+
+00:53:40.196 --> 00:53:42.276
+So let's take a look at how it works.
+
+00:53:42.956 --> 00:53:50.356
+Let's say an incident happens and the alarm goes off
+before your on call engineer even checks
+
+00:53:50.356 --> 00:53:55.196
+in the AWS DevOps agent is investigating the issue.
+
+00:53:55.596 --> 00:54:04.516
+You can see it diagnosing elevated authentication error rates
+that it found for a Lambda function that connects to your database.
+
+00:54:04.996 --> 00:54:13.476
+It uses the knowledge of your application topology
+and the relationship between components to work back from the alert
+
+00:54:13.676 --> 00:54:16.476
+and find the root cause of the problem.
+
+00:54:17.276 --> 00:54:22.036
+In this example, let's say you use Dynatrace for observability.
+
+00:54:22.516 --> 00:54:29.076
+The DevOps agent will use its built in integration
+with Dynatrace to provide more context for the incident.
+
+00:54:29.396 --> 00:54:34.516
+And when it identifies the problem,
+it tells you the change it introduced.
+
+00:54:34.916 --> 00:54:39.996
+In this case, it was a simple mistake on your CDK deployment.
+
+00:54:40.396 --> 00:54:44.596
+By the time your on call engineer logs on,
+
+00:54:45.236 --> 00:54:53.916
+the DevOps agent has found the issue suggested
+a change and is ready for review and your approval.
+
+00:54:54.316 --> 00:55:00.000
+These are incredibly capable tools and they will make
+you faster at a specific task like coding,
+

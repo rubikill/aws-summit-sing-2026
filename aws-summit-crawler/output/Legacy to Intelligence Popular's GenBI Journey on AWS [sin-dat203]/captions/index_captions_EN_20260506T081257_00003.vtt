@@ -1,0 +1,166 @@
+WEBVTT	#Elemental Media Engine(TM) 2.18.0.0
+X-TIMESTAMP-MAP=LOCAL:00:00:00.000,MPEGTS:187200
+
+00:10:00.116 --> 00:10:09.716
+So instead of seeing revenue,
+we actually immediately see our sales costs and margin.
+
+00:10:10.476 --> 00:10:11.716
+Okay. So.
+
+00:10:14.676 --> 00:10:21.796
+And what actually the most beautiful part of this is it's no
+longer static report that we are given to our users.
+
+00:10:22.116 --> 00:10:26.956
+So this dashboard actually are interactive and a user can filter.
+
+00:10:27.436 --> 00:10:31.276
+They can feel, they can drill down and important,
+
+00:10:31.876 --> 00:10:37.676
+they can explore the data themselves
+instead of sending a request to the it.
+
+00:10:38.156 --> 00:10:40.516
+So there's no need to prepare a report.
+
+00:10:41.596 --> 00:10:47.556
+There isn't a long waiting time because the analysis is already there.
+
+00:10:49.636 --> 00:10:58.516
+This is another view. So you can see that this is actually
+Presenting a year on year performance right on top.
+
+00:10:59.596 --> 00:11:07.076
+Actually, it allows our business, our business,
+our management team to see actually how our overall sales performance.
+
+00:11:07.796 --> 00:11:12.716
+You can see our sales cost margin compared to last year.
+
+00:11:14.036 --> 00:11:16.516
+Similarly, if you want to go deeper,
+
+00:11:17.196 --> 00:11:24.596
+you can go deeper into category or store in terms of department.
+
+00:11:24.796 --> 00:11:29.476
+And you're able to see what are the real sales, the margin.
+
+00:11:29.836 --> 00:11:32.956
+And now you are no longer just looking at the top line.
+
+00:11:33.236 --> 00:11:39.356
+So basically you are you will be able
+to know whether are you making a real profit?
+
+00:11:39.756 --> 00:11:42.596
+Okay. For each category of the product.
+
+00:11:43.236 --> 00:11:51.196
+So what we actually used to dictate
+for us to prepare such a presentation to our users.
+
+00:11:51.196 --> 00:11:54.316
+And now basically it can be done just in minutes.
+
+00:11:58.396 --> 00:12:08.396
+This hypothetical. These are the real questions that Popular
+team has and what actually they can ask to Amazon Quick.
+
+00:12:10.196 --> 00:12:18.556
+For example, which product categories are declining
+in Singapore this quarter previously?
+
+00:12:19.396 --> 00:12:28.956
+This actually requires us to generate multiple
+reports and it probably taking over a few days and was.
+
+00:12:28.956 --> 00:12:37.036
+The output is always in a static spreadsheet,
+so. But now the visuals reply.
+
+00:12:37.076 --> 00:12:40.516
+The visual answer is basically ready instantly.
+
+00:12:41.476 --> 00:12:45.356
+So this is what I meant for self-service analytics.
+
+00:12:45.836 --> 00:12:49.116
+This is what we really want it to be in practice.
+
+00:12:49.396 --> 00:12:57.596
+So imagine. So once you have this,
+basically you can just put your questions.
+
+00:12:57.636 --> 00:13:02.156
+Okay. And the insights will be able to present to you instantly.
+
+00:13:04.476 --> 00:13:10.756
+So next I'm going to show you a live actions.
+
+00:13:11.036 --> 00:13:13.996
+This is actually the dashboard we built in QuickSight.
+
+00:13:14.036 --> 00:13:20.556
+Basically what actually is show you are basically
+two main roles in organization.
+
+00:13:20.556 --> 00:13:29.676
+One is the author. The author basically be able to generate
+data by just give a natural language instructions.
+
+00:13:30.196 --> 00:13:37.956
+And a bar chart can just build without any manual
+configurations, any few drag and drop.
+
+00:13:38.716 --> 00:13:42.916
+The other role in the organization is reader experience.
+
+00:13:42.916 --> 00:13:44.836
+So these are mainly business users.
+
+00:13:45.116 --> 00:13:51.316
+They able to type in simple English, natural language, plain English,
+
+00:13:51.596 --> 00:13:58.716
+and the system will be a Amazon Quick
+will be able to show the answer to them instantly.
+
+00:13:59.756 --> 00:14:05.196
+So what actually we want is actually be able
+
+00:14:05.196 --> 00:14:09.916
+to build a single truth of our data.
+
+00:14:10.196 --> 00:14:16.236
+So our teams are basically all working
+on the same data source within the organizations.
+
+00:14:16.916 --> 00:14:21.796
+So this is actually the two sided value of our QuickSight.
+
+00:14:21.836 --> 00:14:29.956
+Jen bi. So authors build once readers can ask anything.
+
+00:14:30.996 --> 00:14:34.236
+So this is actually the true single truth.
+
+00:14:34.476 --> 00:14:37.996
+This is the true single source of truth that we always wanted.
+
+00:14:40.956 --> 00:14:46.636
+So what we actually have seen so far is pretty encouraging.
+
+00:14:47.636 --> 00:14:53.676
+The report used to take days, and now actually we are able
+to generate the reports in minutes.
+
+00:14:54.596 --> 00:14:58.116
+So more importantly is actually this platform.
+
+00:14:58.396 --> 00:15:00.000
+It gives us speed and confidence. So our team across will be able
+to work on the same data same times.
+

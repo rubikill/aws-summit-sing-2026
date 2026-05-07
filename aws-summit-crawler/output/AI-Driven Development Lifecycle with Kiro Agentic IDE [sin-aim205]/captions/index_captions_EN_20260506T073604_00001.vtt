@@ -1,0 +1,195 @@
+WEBVTT	#Elemental Media Engine(TM) 2.18.0.0
+X-TIMESTAMP-MAP=LOCAL:00:00:00.000,MPEGTS:187200
+
+00:00:11.796 --> 00:00:13.796
+Hi, very good afternoon to everyone.
+
+00:00:13.796 --> 00:00:15.756
+I hope you have enjoyed the lunch break.
+
+00:00:15.756 --> 00:00:20.756
+And my name is Derek. My. I am a solutions
+architect from Amazon Web Services.
+
+00:00:20.756 --> 00:00:24.036
+And today we have with me, Fabian and Yao and we'll be.
+
+00:00:24.236 --> 00:00:28.276
+Love to share with you a little bit on how we have applied AI
+
+00:00:28.316 --> 00:00:35.596
+in transforming the way that we deliver enterprise level software
+systems, and by reimagining the entire process and the methodology.
+
+00:00:39.356 --> 00:00:42.716
+So this is what we'll be talking about for the next half an hour.
+
+00:00:42.716 --> 00:00:47.356
+There are three key pillars to every AI adoption and adaptation.
+
+00:00:47.636 --> 00:00:53.636
+The first is the process, which I will discuss a little
+bit more on what is AI driven development lifecycle,
+
+00:00:53.916 --> 00:00:56.596
+what is the methodology and how you can apply this?
+
+00:00:57.156 --> 00:01:02.836
+And after that, Fabian will take over to share
+a little bit more on how you can utilize Kiro.
+
+00:01:03.076 --> 00:01:09.836
+Amazon. Agentic. IDE. To implement and operationalize
+this entire methodology across different personnel roles
+
+00:01:09.836 --> 00:01:17.916
+in your development teams. And then you'll be sharing
+our journey that AWS embarked together with Sri
+
+00:01:18.196 --> 00:01:21.596
+on how we have been transforming the way that we build and deliver.
+
+00:01:25.516 --> 00:01:31.876
+It's no question by now that AI is forever changing
+the way that we build and deliver software systems.
+
+00:01:32.436 --> 00:01:37.596
+I still remember in 2024,
+when we had access to early web based chatbots,
+
+00:01:37.596 --> 00:01:42.996
+I was copying and pasting prompts and code
+in between the chat interface and my IDE.
+
+00:01:43.636 --> 00:01:45.996
+But we've come a long way since then, right?
+
+00:01:46.036 --> 00:01:49.996
+In 2025, we started adding more context to our agent tools.
+
+00:01:50.236 --> 00:01:56.196
+We started doing vector databases and building
+agents with tools and additional instructions and prompts.
+
+00:01:56.876 --> 00:02:01.716
+But now we're in 2026. The key is real autonomy.
+
+00:02:02.316 --> 00:02:07.916
+And that means true collaboration without compromising
+on the on the quality of delivery.
+
+00:02:08.156 --> 00:02:13.516
+And as well as removing all the little friction
+that you have experienced so far working with AI,
+
+00:02:13.876 --> 00:02:14.876
+AI assistants.
+
+00:02:18.116 --> 00:02:20.236
+But if we take a step back, right.
+
+00:02:20.276 --> 00:02:24.716
+If we look at the problems with enterprise software development,
+
+00:02:24.996 --> 00:02:32.276
+we’re still encountering a lot of these bottlenecks in the
+organizations that have been to a lot of the times
+
+00:02:32.276 --> 00:02:37.516
+we are waiting for approvals.
+A lot of times we’re waiting for process reviews,
+
+00:02:37.716 --> 00:02:44.476
+specialists availability to to review
+some of the application decisions we're making.
+
+00:02:45.236 --> 00:02:47.356
+Everyone waits for everyone else.
+
+00:02:48.556 --> 00:02:52.356
+But why is that? Right. If you really think about it,
+
+00:02:52.356 --> 00:02:58.876
+the previous collaboration models we had the methodologies
+whether you were running waterfall or running scrum.
+
+00:03:00.196 --> 00:03:09.556
+These were the processes that were designed purely
+for human collaboration, focusing on specialists, silos and handoffs.
+
+00:03:10.116 --> 00:03:12.516
+Because back then we didn't have Agentic AI,
+
+00:03:12.556 --> 00:03:17.956
+we didn't have AI technology that cuts across
+domain boundaries and different specialties.
+
+00:03:19.316 --> 00:03:25.116
+So that's why if we are only adopting AI
+tools today regarding what's the model?
+
+00:03:25.596 --> 00:03:28.956
+We are still making relatively incremental improvements.
+
+00:03:29.836 --> 00:03:36.116
+So the bigger challenge we have today is how
+can we actually transform the really in a big way,
+
+00:03:36.116 --> 00:03:43.596
+in a big significant to achieve a quantum leap in how
+we build and deliver both in terms of speed and quality.
+
+00:03:45.676 --> 00:03:49.476
+This is why we created the AI driven development lifecycle.
+
+00:03:50.196 --> 00:03:54.116
+This is a methodology that was invented
+by Amazon right here in Singapore.
+
+00:03:54.676 --> 00:03:58.676
+and I was very proud to be one of the early
+contributors to the White Paper.
+
+00:03:58.676 --> 00:04:01.196
+And today I lead a program in Asean.
+
+00:04:02.116 --> 00:04:06.596
+We've been to many customers in the region as well as globally.
+
+00:04:07.036 --> 00:04:13.796
+We have taken this methodology to over 100 key
+strategic partners and customers that we have,
+
+00:04:14.516 --> 00:04:20.316
+and we have gotten really good feedback in terms of how
+we can accelerate the way that we develop and build.
+
+00:04:21.996 --> 00:04:27.156
+Now, what's in this methodology?
+What's so different from waterfall or agile or Scrum?
+
+00:04:28.356 --> 00:04:33.636
+Without going into all the details today,
+we break this down into three main phases.
+
+00:04:34.356 --> 00:04:36.716
+The first phase is called inception, right?
+
+00:04:36.756 --> 00:04:43.396
+This is where we want to understand what is it that we're actually
+building before we talk about anything about technology.
+
+00:04:44.076 --> 00:04:46.596
+We want to understand what is the problem we're solving
+
+00:04:46.596 --> 00:04:53.116
+and how can we build design a product that can deliver
+these benefits to in the right way to our users.
+
+00:04:54.556 --> 00:04:57.556
+And after that, we go into the construction phase.
+
+00:04:57.556 --> 00:05:00.000
+Now, the construction phase is where we then take all these contacts
+that we're building with AI agents from the inception phase
+

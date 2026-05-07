@@ -1,0 +1,200 @@
+WEBVTT	#Elemental Media Engine(TM) 2.18.0.0
+X-TIMESTAMP-MAP=LOCAL:00:00:00.000,MPEGTS:187200
+
+00:15:00.000 --> 00:15:01.836
+This is the framework that powered what you just saw.
+
+00:15:01.836 --> 00:15:04.916
+And the best part? You can actually start building with it today.
+
+00:15:05.476 --> 00:15:08.036
+So what does it actually look like when it runs?
+
+00:15:11.756 --> 00:15:19.396
+Behind that simple chat, which is running on which is using
+Strands Agent and running on Amazon Bedrock AgentCore.
+
+00:15:20.516 --> 00:15:25.836
+Watch what happens. Right? So it's basically
+a natural language question that Jagadeesh asks,
+
+00:15:25.836 --> 00:15:29.356
+and it returns a structured answer in about 10s.
+
+00:15:29.716 --> 00:15:32.996
+So there is no dashboards. There is no tickets, there's no waiting.
+
+00:15:32.996 --> 00:15:38.156
+You just ask and the agent
+impersonates you and does the work on your behalf.
+
+00:15:38.956 --> 00:15:44.116
+It's simple on the outside, but
+underneath every question goes through a guardrail.
+
+00:15:44.716 --> 00:15:49.436
+So the mental model behind it is as simple
+as how we would interact with the system.
+
+00:15:50.716 --> 00:15:58.716
+You ask a question, you authenticate with the system,
+the system authorizes you, and then you orchestrate within the system.
+
+00:15:58.716 --> 00:16:01.276
+You move into different parts of the system.
+
+00:16:01.276 --> 00:16:03.396
+You think what you're going to get.
+
+00:16:03.556 --> 00:16:05.756
+Based out of the question that you have.
+
+00:16:05.756 --> 00:16:07.996
+You move to the respective forms or
+
+00:16:08.036 --> 00:16:14.276
+the specific tables, and then you translate
+what you want in terms of filters or in terms of.
+
+00:16:14.316 --> 00:16:19.996
+A SQL query. And then you do that against
+the ground truth, which is the data, right.
+
+00:16:19.996 --> 00:16:28.476
+And that's the flow. That any system would do, or we as human
+beings would also do against the system. So let me show you how.
+
+00:16:28.516 --> 00:16:31.196
+AgentCore delivers every step.
+
+00:16:33.756 --> 00:16:40.116
+Again, the user asks a question in Slack the identity
+AgentCore Identity identifies who you are.
+
+00:16:40.156 --> 00:16:45.436
+So it basically goes against your authorization
+authentication provider and gets your tokens down.
+
+00:16:46.116 --> 00:16:53.516
+The policy is AgentCore Policy sets the Guardrails on what
+you can see, what you can do, and what you cannot do.
+
+00:16:53.836 --> 00:17:02.196
+And you should not see the runtime starts the session where
+the agent runs and it loads the memory and allows you to orchestrate.
+
+00:17:03.116 --> 00:17:06.316
+And then we have Bedrock with a set of models.
+
+00:17:06.756 --> 00:17:11.836
+And for our scenario, we used Claude 3.5
+because it was available in the Singapore region.
+
+00:17:13.316 --> 00:17:17.076
+The model reasons the intents and picks the right tool and the call.
+
+00:17:17.916 --> 00:17:25.316
+The gateway creates that tunnel, which exposes the tools
+as NCP and routes the calls and enforces the schema.
+
+00:17:26.076 --> 00:17:34.596
+The MCP server then takes that Json, converts it into SQL,
+and enacts it against the system, ensuring that it's deterministic.
+
+00:17:34.596 --> 00:17:40.236
+Right. And this happens against the centralized
+data that we brought in together, right?
+
+00:17:40.276 --> 00:17:43.596
+This is the power of data within an Agentic system.
+
+00:17:44.316 --> 00:17:49.076
+Now that you know that a system
+can accelerate you finding information,
+
+00:17:49.556 --> 00:17:53.276
+how do we ensure that the response is reliable and trustworthy?
+
+00:17:54.716 --> 00:17:56.676
+There's something called the trust loop.
+
+00:17:56.676 --> 00:18:00.196
+The Claude model doesn't really just answer on the first pass.
+
+00:18:00.356 --> 00:18:05.796
+What it does is it basically reasons against the AI agents
+definition, how you define the agent.
+
+00:18:06.356 --> 00:18:09.036
+The model is going to keep reasoning against it.
+
+00:18:09.036 --> 00:18:15.636
+The agent calls again and it loops until the answer is vetted,
+is grounded with real data, and it's fit for purpose.
+
+00:18:17.116 --> 00:18:24.036
+Now, the reason why we do that is that every intermediate
+thought is really grounded in real data and never with assumptions.
+
+00:18:25.396 --> 00:18:33.316
+So now that we know that the result,
+the response is reliable, but how do we actually make sure it's safe?
+
+00:18:33.316 --> 00:18:38.716
+So when Jagadeesh received it on his Slack,
+there's things that we do, right, which is the final check.
+
+00:18:39.676 --> 00:18:44.036
+So the AgentCore policy, which sets the Guardrails is not a one way.
+
+00:18:44.036 --> 00:18:48.756
+It's bidirectional. So every answer
+also passes through the same Guardrails,
+
+00:18:48.756 --> 00:18:54.396
+ensuring that PII data or secrets or denied
+topics that Jagadeesh cannot see.
+
+00:18:55.076 --> 00:19:05.036
+So these things are stripped. So what reaches Slack is being cleared,
+not just generated by the model, only the data that is allowed.
+
+00:19:05.596 --> 00:19:08.196
+That the user is allowed to see passes through.
+
+00:19:09.156 --> 00:19:12.996
+And that's how every question, every answer earns your trust.
+
+00:19:14.756 --> 00:19:21.996
+The takeaways that we took, that we learned
+with MoE is that an agent without data is just a chatbot.
+
+00:19:22.036 --> 00:19:24.516
+Actually, there's no data, there is no agent.
+
+00:19:25.076 --> 00:19:27.716
+And data is the foundation, as you saw.
+
+00:19:28.076 --> 00:19:36.076
+And that's what we fixed. We ensured that the system is secure
+and the agents are trustable by having proper guardrails in place.
+
+00:19:36.796 --> 00:19:41.156
+And we always started small.
+We did small MVPs. We made a lot of mistakes.
+
+00:19:41.476 --> 00:19:46.356
+But then we learned when we make mistakes,
+we reiterate, deploy, learn.
+
+00:19:46.396 --> 00:19:50.276
+The most important thing is we standardize
+on every iteration that we do.
+
+00:19:50.276 --> 00:19:56.276
+This allows us to enhance. Right.
+And that's exactly what you saw the Ministry of Education built.
+
+00:19:59.356 --> 00:20:00.000
+The system was grounded in data. It was traceable end to end.
+

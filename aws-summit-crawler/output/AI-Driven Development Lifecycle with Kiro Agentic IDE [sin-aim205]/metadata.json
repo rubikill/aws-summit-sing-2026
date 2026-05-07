@@ -1,0 +1,41 @@
+{
+  "sessionEventId": "sin-aim205",
+  "eventtitle": "AI-Driven Development Lifecycle with Kiro Agentic IDE",
+  "description": "In this session, learn how Kiro is helping you go from idea to production faster with spec-driven development. Learn how to delegate and automate development tasks using Kiro's agent hooks, multimodal agent chat and MCP support. We'll show you how Kiro's agents challenge you to think beyond the code and work alongside you to solve hard engineering problems with confidence.",
+  "customCategory": "AWS Summit Singapore - AI for Everyone",
+  "eventdate": "6 May 2026",
+  "eventtime": "1:30 PM - 02:00 PM",
+  "eventStart": "2026-05-06T13:30+08:00",
+  "eventEnd": "2026-05-06T14:00+08:00",
+  "filterTags": "Industry:Retail & Consumer Goods,Level:200 - Intermediate,Location:Singapore,Topic:Artificial Intelligence,Topic:Developer Tools",
+  "image": "https://d1o4t9h6a8fm0w.cloudfront.net/media/aws-summitsapj26/assets/images/Artificial Itelligence 200.png",
+  "speakers": [
+    {
+      "title": "Assc. Specialist SA, Serverless, AWS",
+      "name": "Fabrianne Effendi",
+      "portraitUrl": "https://d1o4t9h6a8fm0w.cloudfront.net/media/aws-summitsapj26/assets/images/Speaker Bio Gradient (v70).png",
+      "bio": ""
+    },
+    {
+      "title": "DevAx Solutions Architect, AWS",
+      "name": "Derick Chen ",
+      "portraitUrl": "https://d1o4t9h6a8fm0w.cloudfront.net/media/aws-summitsapj26/assets/images/Speaker Bio Gradient (v70).png",
+      "bio": ""
+    },
+    {
+      "title": "Vice President, IT & Operations, Castlery",
+      "name": "Zhang Yao",
+      "portraitUrl": "https://d1o4t9h6a8fm0w.cloudfront.net/media/aws-summitsapj26/assets/images/Speaker Bio Gradient (v70).png",
+      "bio": ""
+    }
+  ],
+  "vod_m3u8_url": "https://dz2ooo85w8eqv.cloudfront.net/aws-summitsgp26/outputs/sin-aim205/hls/v2/index.m3u8",
+  "caption_urls": [
+    "https://dz2ooo85w8eqv.cloudfront.net/aws-summitsgp26/outputs/sin-aim205/hls/v2/index_captions_EN_20260506T073604_00001.vtt",
+    "https://dz2ooo85w8eqv.cloudfront.net/aws-summitsgp26/outputs/sin-aim205/hls/v2/index_captions_EN_20260506T073657_00002.vtt",
+    "https://dz2ooo85w8eqv.cloudfront.net/aws-summitsgp26/outputs/sin-aim205/hls/v2/index_captions_EN_20260506T073746_00003.vtt",
+    "https://dz2ooo85w8eqv.cloudfront.net/aws-summitsgp26/outputs/sin-aim205/hls/v2/index_captions_EN_20260506T073832_00004.vtt",
+    "https://dz2ooo85w8eqv.cloudfront.net/aws-summitsgp26/outputs/sin-aim205/hls/v2/index_captions_EN_20260506T073921_00005.vtt",
+    "https://dz2ooo85w8eqv.cloudfront.net/aws-summitsgp26/outputs/sin-aim205/hls/v2/index_captions_EN_20260506T074009_00006.vtt"
+  ]
+}

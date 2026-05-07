@@ -1,0 +1,195 @@
+WEBVTT	#Elemental Media Engine(TM) 2.18.0.0
+X-TIMESTAMP-MAP=LOCAL:00:00:00.000,MPEGTS:187200
+
+01:10:00.116 --> 01:10:05.116
+And we were still carrying over $800 million
+in losses in that year just
+
+01:10:05.116 --> 01:10:09.436
+because we were spending a lot of money
+scaling up our food delivery business.
+
+01:10:10.076 --> 01:10:15.756
+What was challenging was this required us to forecast
+not just when we would get out of Covid,
+
+01:10:16.116 --> 01:10:23.796
+but also the pace of recovery in terms of both the domestic
+mobility business as well as travel inflows back into Southeast Asia.
+
+01:10:24.916 --> 01:10:31.956
+Here's a here's a context. Ho Chi Minh City Back
+in 2021, Covid had absolutely devastated the region.
+
+01:10:32.356 --> 01:10:39.916
+Our ride hailing business, the cash cow for Grab,
+had seen bookings collapse nearly 80% in some of our markets.
+
+01:10:40.516 --> 01:10:46.636
+Food delivery was surging, but scaling it at the pace
+we were doing required considerable funding.
+
+01:10:47.636 --> 01:10:53.636
+Governments across eight countries were reopening
+at different speeds with different rules,
+
+01:10:53.636 --> 01:10:56.476
+and no one could tell us when it would all end.
+
+01:10:56.476 --> 01:11:02.876
+Worst of all, our finance data infrastructure at that time was trying
+to keep up with the pace of new product developments,
+
+01:11:02.876 --> 01:11:05.396
+which led to this explosive deliveries growth.
+
+01:11:06.876 --> 01:11:09.516
+What did our scenario planning look like back then?
+
+01:11:09.516 --> 01:11:15.796
+I sat in a room with my team and just getting
+accurate data alone required verification as well
+
+01:11:15.796 --> 01:11:18.876
+as manual reconciliation of our finances.
+
+01:11:19.196 --> 01:11:26.196
+We spent weeks doing research, interviewing experts,
+speaking to government advisories, studying epidemiological data,
+
+01:11:26.476 --> 01:11:29.836
+and every time I went back to leadership, they came back and said,
+
+01:11:29.836 --> 01:11:34.716
+now show me what happens if the lockdown lasts
+for another six months, not just three.
+
+01:11:34.716 --> 01:11:36.596
+And we were back at square one.
+
+01:11:39.516 --> 01:11:43.876
+We were making existential decisions for the company,
+serving millions of people.
+
+01:11:44.356 --> 01:11:47.796
+And our best tool was a spreadsheet with 47 tabs.
+
+01:11:48.756 --> 01:11:55.076
+The infrastructure behind those numbers was not where it needed to be,
+and that experience left a mark on me.
+
+01:11:55.476 --> 01:12:01.756
+Not just the stress of it, but the conviction that we had
+to fundamentally change how Grab finance function operated.
+
+01:12:03.476 --> 01:12:11.156
+This is when we made a pivotal decision to rebuild our entire
+data foundation on AWS as Grab's preferred cloud provider.
+
+01:12:12.036 --> 01:12:19.116
+Grab today runs dozens of enterprise systems,
+including different SaaS platforms and our own analytics warehouse.
+
+01:12:19.636 --> 01:12:26.836
+For years, these systems did not talk to each other,
+making it difficult to access and use for machine learning and AI.
+
+01:12:27.356 --> 01:12:29.236
+Finance pulls numbers from one source.
+
+01:12:29.236 --> 01:12:32.636
+Operations from another, and we spend days reconciling the gap.
+
+01:12:33.516 --> 01:12:37.316
+We fixed this with an in-house program called Grab House.
+
+01:12:37.316 --> 01:12:44.156
+Now scaling into what we call Project Nucleus,
+using Amazon S3 as our storage Foundation.
+
+01:12:44.196 --> 01:12:48.756
+Apache iceberg for Open Table Formats
+and a medallion data architecture.
+
+01:12:48.756 --> 01:12:55.516
+We built a governance centralized data lake that serves
+as a single source of truth for the entire company.
+
+01:12:57.396 --> 01:13:00.236
+The modernization impact has been tangible.
+
+01:13:00.236 --> 01:13:07.236
+By modernizing on AWS, Grab has established a single
+reliable source of truth across the organization,
+
+01:13:07.236 --> 01:13:14.716
+eliminating data inconsistencies, reducing reconciliation overhead,
+and giving every team confidence to act on their data.
+
+01:13:15.276 --> 01:13:23.116
+Take support costs, for example. Before this, when we had to figure
+out how to allocate the cost of running our support operations,
+
+01:13:23.116 --> 01:13:28.916
+we used to allocate this to each of our business
+as a rough proxy with Grab house.
+
+01:13:29.316 --> 01:13:33.716
+We can now allocate to the level of the individual agent and ticket.
+
+01:13:34.156 --> 01:13:38.236
+And when we did that, we enhanced
+our allocation process significantly,
+
+01:13:38.236 --> 01:13:43.796
+and it allowed our business leaders to make
+much better informed decisions as a company.
+
+01:13:44.356 --> 01:13:46.156
+And that is not just a rounding error.
+
+01:13:46.436 --> 01:13:53.436
+It is how you access unit economics and how you set budgets
+and how you allocate capital in what is an industry that is,
+
+01:13:53.476 --> 01:13:55.756
+you know, every cent or every penny counts.
+
+01:13:57.956 --> 01:14:01.196
+We know you cannot run a profitable company on inaccurate data,
+
+01:14:01.196 --> 01:14:06.996
+and building Grab House has allowed us
+to drop manual reconciliation by up to 60%.
+
+01:14:07.676 --> 01:14:11.316
+Now, reporting cycles that took a month are happening in real time,
+
+01:14:11.516 --> 01:14:16.796
+and we have moved 14 of our most
+critical finance reports onto the data lake.
+
+01:14:17.196 --> 01:14:19.956
+So month end close no longer feels like a fight.
+
+01:14:20.396 --> 01:14:24.796
+And and with daily resource daily operations for system resources.
+
+01:14:26.436 --> 01:14:33.396
+In 2025, Grab reported its first full year of net profit $200 million,
+
+01:14:33.436 --> 01:14:40.756
+while completing over 500 million of monthly
+transactions and processing 300TB of data a day,
+
+01:14:41.316 --> 01:14:49.236
+and we are well on our path to achieving $1.5
+billion of EBITDA by 2028. This is not a turnaround story.
+
+01:14:49.236 --> 01:14:58.716
+This is a company that went from near in existence due to the existential
+crisis back in 2021 to now growing and accelerating,
+
+01:14:58.716 --> 01:15:00.000
+driving, accelerating profitable growth.
+

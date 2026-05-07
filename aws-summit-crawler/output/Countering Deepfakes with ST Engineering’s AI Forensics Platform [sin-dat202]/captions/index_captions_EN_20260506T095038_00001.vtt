@@ -1,0 +1,202 @@
+WEBVTT	#Elemental Media Engine(TM) 2.18.0.0
+X-TIMESTAMP-MAP=LOCAL:00:00:00.000,MPEGTS:187200
+
+00:00:13.716 --> 00:00:21.156
+Good afternoon everyone. Welcome back to AWS Singapore Summit
+2026. I hope you have a great refreshment earlier.
+
+00:00:21.436 --> 00:00:25.796
+My name is Dennis and with me I have Boon Leong
+here from S3 Engineering.
+
+00:00:25.996 --> 00:00:30.156
+Before we dive into the topic today,
+I would like to pick your brain a little.
+
+00:00:30.156 --> 00:00:35.156
+Tell us about the journey and how did
+the idea of your product came about,
+
+00:00:35.156 --> 00:00:39.916
+and what inspired you to take
+on the challenge of actually combating deep fakes?
+
+00:00:40.676 --> 00:00:43.756
+Okay. Thank you Dennis. I think this is a very good question.
+
+00:00:44.356 --> 00:00:47.156
+The original idea came about a few years ago.
+
+00:00:47.196 --> 00:00:50.436
+There were two events that actually triggered us to do this.
+
+00:00:50.476 --> 00:00:53.036
+The first event was actually the onset of Covid.
+
+00:00:53.476 --> 00:00:59.076
+If the audience back then, we will remember
+there is a lot of misinformation going on about vaccines,
+
+00:00:59.116 --> 00:01:05.236
+But I think the eureka moment for us
+will be the emergence of generative AI technology.
+
+00:01:05.276 --> 00:01:13.956
+The ChatGPT moment per se. What we realize in this particular
+event is that generative AI technology is highly proficient
+
+00:01:13.956 --> 00:01:20.996
+in generating synthetic content that is very hard
+to discern with a human eye. So what this means to us, right?
+
+00:01:21.036 --> 00:01:26.756
+If you think on the positive side,
+AI to be used for productivity is good to do summarization and all.
+
+00:01:26.796 --> 00:01:34.996
+But on the flip side, a malicious actor can exploit the same
+technology to generate deepfakes, to generate misinformation, content,
+
+00:01:35.276 --> 00:01:37.836
+etc.. So what we really set out to do,
+
+00:01:38.636 --> 00:01:43.876
+the problem statement we try to address is really
+to be able to survey the online space to look
+
+00:01:43.876 --> 00:01:47.556
+at generative AI content that is potentially malicious.
+
+00:01:47.876 --> 00:01:51.356
+And then we monitor the spread of this information online.
+
+00:01:51.356 --> 00:01:56.156
+And last but not least, what we have wanted
+to do is to be able to attribute the source.
+
+00:01:56.156 --> 00:01:58.396
+So source evaluation is key for us.
+
+00:01:58.756 --> 00:02:04.876
+For us, our point of view is to be able to identify
+the techniques that is used to generate the deepfake content.
+
+00:02:05.236 --> 00:02:08.916
+But more importantly, to be able to support these four areas.
+
+00:02:09.436 --> 00:02:16.756
+What's most important for us is to be able to customize models
+to be able to iterate fast, build fast, because tactics, techniques,
+
+00:02:16.756 --> 00:02:19.556
+and procedures are ever changing in this day and age.
+
+00:02:20.676 --> 00:02:24.676
+Thanks for your great insights.
+And this leads me to my next slide here.
+
+00:02:24.956 --> 00:02:31.076
+Spending growth per AI model type.
+A recent study by Gartner released in 2020 5th July,
+
+00:02:31.556 --> 00:02:39.076
+reveals that AI applications built with custom
+models is growing twice than those using foundational models.
+
+00:02:39.236 --> 00:02:46.476
+That said, the usage of foundational models dominates
+in absolute terms, but the key takeaway here is the trajectory.
+
+00:02:46.516 --> 00:02:46.876
+Here,
+
+00:02:48.036 --> 00:02:51.636
+the accelerating investment in custom models signals a clear shift.
+
+00:02:51.916 --> 00:02:59.836
+Organizations and teams are increasingly recognized that off
+the shelf models alone aren't enough to truly differentiate.
+
+00:03:00.076 --> 00:03:05.436
+Teams are tailoring custom models
+to their specific products, domains, and use cases.
+
+00:03:05.836 --> 00:03:07.916
+This trend underscores a critical point.
+
+00:03:08.316 --> 00:03:14.516
+Custom model development is becoming not just a nice to have,
+but a strategic competitive edge.
+
+00:03:15.036 --> 00:03:19.636
+Similarly, like what you mentioned,
+agile has their own custom model as well.
+
+00:03:21.356 --> 00:03:24.716
+You may ask me why. Why do we want to have custom AI models?
+
+00:03:25.356 --> 00:03:27.356
+I think the first and most obvious reason.
+
+00:03:27.356 --> 00:03:30.756
+Off the shelf models are general purpose use.
+
+00:03:30.916 --> 00:03:37.356
+They are designed to generate content,
+not to solve highly sophisticated problems like countering deep fakes.
+
+00:03:37.556 --> 00:03:44.236
+Even the most powerful out-of-the-box models may not
+deliver the precision and performance your use case demands.
+
+00:03:44.876 --> 00:03:49.356
+Second, cause when you are in the proof of concept stage,
+
+00:03:50.516 --> 00:03:53.556
+calling a foundational model may work.
+
+00:03:53.916 --> 00:03:58.756
+However, as you scale to production,
+the economic shifts off the shelf.
+
+00:03:58.756 --> 00:04:05.876
+Foundational models can be increasingly expensive to run at scale,
+and this is where a purpose custom built model shines.
+
+00:04:07.596 --> 00:04:15.076
+Third, imagine if you are in a highly regulated industries,
+for example, aerospace, defense, healthcare, or finance.
+
+00:04:15.396 --> 00:04:20.756
+You are likely faced with strict data residency requirements,
+privacy and compliance requirements.
+
+00:04:21.076 --> 00:04:25.716
+Relying solely on an external
+foundational model may not meet those standards.
+
+00:04:26.036 --> 00:04:31.436
+Custom models give you the capabilities
+to tailor to your end user requirements.
+
+00:04:33.076 --> 00:04:39.956
+Last but not least, here, imagine if your application is simply
+a wrapper around a publicly available foundational model.
+
+00:04:40.276 --> 00:04:43.716
+You are probably offering the same capability as everyone else.
+
+00:04:44.196 --> 00:04:48.396
+There is no mode here. Custom models give you the competitive edge,
+
+00:04:48.556 --> 00:04:54.516
+especially as you start building authentic solutions
+where the intelligence of the models directly translate
+
+00:04:54.516 --> 00:04:56.876
+to the value you ship to your customers.
+
+00:04:57.676 --> 00:05:00.000
+Now, a show of hands from the audience who is actually
+building and using custom models here.
+

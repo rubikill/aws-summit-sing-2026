@@ -1,0 +1,229 @@
+WEBVTT	#Elemental Media Engine(TM) 2.18.0.0
+X-TIMESTAMP-MAP=LOCAL:00:00:00.000,MPEGTS:187200
+
+00:10:00.000 --> 00:10:00.156
+And AgentCore Gateway and Agent registry allows us to do just that.
+
+00:10:00.156 --> 00:10:06.756
+And hence, it's a best practice to create a published
+repository of tools and agents which can be discovered.
+
+00:10:08.196 --> 00:10:10.396
+The fourth best practice is around memory.
+
+00:10:10.556 --> 00:10:13.476
+So there are two types of memory as we saw in the last session.
+
+00:10:13.476 --> 00:10:15.756
+There's a short term memory. There's a long term memory.
+
+00:10:15.756 --> 00:10:23.316
+Short term is raw conversation. Long term is basically
+what insights can be culled out from that conversation.
+
+00:10:23.316 --> 00:10:30.956
+And AgentCore is able to, you know, extract preferences
+and semantic facts out of the short term conversation.
+
+00:10:31.636 --> 00:10:32.036
+Now.
+
+00:10:34.476 --> 00:10:35.676
+Now suppose you.
+
+00:10:36.716 --> 00:10:39.556
+So let's take an example. So. So if there is an agent.
+
+00:10:39.636 --> 00:10:44.916
+If there is a user who's interacting with an agent
+and multiple agents in the enterprise,
+
+00:10:46.116 --> 00:10:49.556
+the. The user builds a persona. Persona of preferences.
+
+00:10:49.556 --> 00:10:56.916
+Persona of way of doing things which can then become a profile
+and it can automatically be extracted out by memory.
+
+00:10:56.916 --> 00:10:58.316
+So let's take an example.
+
+00:10:59.716 --> 00:11:01.956
+This is a travel agent and I ask it a question.
+
+00:11:01.956 --> 00:11:04.276
+Please plan a vacation for me and my family.
+
+00:11:04.756 --> 00:11:10.196
+And you know, the agent doesn't know anything about me,
+doesn't know what kind of vacation I like, where am I based,
+
+00:11:10.196 --> 00:11:17.996
+who's in my family? So it's asking me a bunch of questions now based
+on my previous conversations with this agent
+
+00:11:17.996 --> 00:11:20.716
+and with other agents in the organization.
+
+00:11:21.236 --> 00:11:27.276
+AgentCore Memory can actually extract all these preferences
+out and then make it seamlessly available to all the agents.
+
+00:11:27.836 --> 00:11:33.076
+So, so suppose you know these these semantic
+facts have been culled out already, right?
+
+00:11:33.116 --> 00:11:39.076
+So it knows what kind of vacation do I like,
+who's in my family, what kind of budget and all of those things.
+
+00:11:39.076 --> 00:11:45.476
+And now if this is provided to the agent,
+then the response is a lot very different.
+
+00:11:45.476 --> 00:11:53.596
+It is much more relevant. It is much more personalized, and the whole
+interaction becomes very, you know, productive and efficient.
+
+00:11:56.716 --> 00:11:57.276
+Right.
+
+00:11:58.196 --> 00:12:00.876
+The fifth best practice is around observability.
+
+00:12:01.356 --> 00:12:04.996
+Now, Agentic AI apps are complicated, right?
+
+00:12:05.036 --> 00:12:09.836
+Because what they do is not actually written
+in code, which you can review.
+
+00:12:09.956 --> 00:12:13.236
+It's based on reasoning of reasoning of LLMs.
+
+00:12:13.756 --> 00:12:16.876
+And so suppose you have to figure out if something goes wrong.
+
+00:12:16.876 --> 00:12:24.436
+How do you troubleshoot. Or suppose you have to, you know, prove
+to an A in a compliance audit that the agent followed the guideline.
+
+00:12:24.436 --> 00:12:27.836
+How do you do that? So the answer here is observability, right.
+
+00:12:27.876 --> 00:12:31.556
+And AgentCore Observability is open telemetry compliant.
+
+00:12:32.076 --> 00:12:37.196
+So let's take an example. This is a multi-agent
+application where, you know, I give an objective.
+
+00:12:37.236 --> 00:12:39.556
+We talked about an objective. We give an objective.
+
+00:12:39.556 --> 00:12:42.876
+Figure out the best vacation for a family of certain size
+
+00:12:42.876 --> 00:12:47.916
+in a certain part of the world under the constraints
+of some amount of days and a budget.
+
+00:12:47.916 --> 00:12:52.476
+And this objective is given to three agents,
+all powered by different models.
+
+00:12:52.876 --> 00:12:53.396
+And,
+
+00:12:54.756 --> 00:12:58.636
+and, you know, they can do their independent research,
+come back with a recommendation.
+
+00:12:58.636 --> 00:13:02.716
+And then there is a fourth agent
+which will drive consensus between them.
+
+00:13:02.716 --> 00:13:07.716
+So as this app is running, you can see,
+you know, a lot of events are being generated.
+
+00:13:08.036 --> 00:13:13.396
+And finally, you know, the, the agents will come back
+with the recommendation, there will be consensus.
+
+00:13:13.396 --> 00:13:19.996
+And finally they will come back with a,
+with a recommendation that, okay, you should now go to, you know,
+
+00:13:20.036 --> 00:13:22.836
+you know, that's the recommendation across.
+
+00:13:22.876 --> 00:13:26.476
+And those are the citations which support that recommendation.
+
+00:13:26.716 --> 00:13:34.796
+But suppose you have to deep dive and figure out what were
+those three disputed points and why were they not selected.
+
+00:13:35.196 --> 00:13:38.516
+Right. And suppose that has to be done then how do you do that again?
+
+00:13:38.516 --> 00:13:42.796
+The answer is observability.
+So we have captured all these events in Langfuse.
+
+00:13:42.796 --> 00:13:47.076
+Langfuse is an observability tool which supports open telemetry.
+
+00:13:47.396 --> 00:13:50.036
+And we'll deep dive into one of those four agents here.
+
+00:13:50.036 --> 00:13:58.036
+So what you can see here is the complete event loop of the agent
+is visible based on the traces which were captured, which tools,
+
+00:13:58.036 --> 00:14:00.516
+how many times it was called, what were the inputs,
+
+00:14:00.516 --> 00:14:05.316
+what were the outputs and what decisions the agent
+took in that whole event loop is visible.
+
+00:14:05.316 --> 00:14:07.676
+So now if you have to troubleshoot, you can do it.
+
+00:14:07.676 --> 00:14:12.036
+If you have to, you know, use this information for a compliance audit.
+
+00:14:12.036 --> 00:14:16.076
+You can do it. And you want to explain
+why an agent did something, you can do it.
+
+00:14:16.076 --> 00:14:20.476
+Hence observability is absolutely non-negotiable
+in any Agentic application.
+
+00:14:22.396 --> 00:14:27.276
+Lastly, but again, not the least, everybody has the same,
+
+00:14:28.396 --> 00:14:32.356
+you know, model. Everybody has access to the same frameworks.
+
+00:14:33.276 --> 00:14:38.676
+What differentiates you is the data you have and what
+you do with your data and these models, right?
+
+00:14:38.716 --> 00:14:46.356
+Hence, it's very critical to create a data foundation
+which can power your Agentic AI solutions.
+
+00:14:46.396 --> 00:14:51.156
+Now, I will not go deep into this because we'll see in the section
+
+00:14:51.596 --> 00:14:57.516
+because they've created an awesome platform called
+Keppel Data Exchange, which powers their Agentic AI solution.
+
+00:14:57.516 --> 00:15:00.000
+And I'll take this moment to welcome Brian and Carmel on the stage,
+

@@ -1,0 +1,172 @@
+WEBVTT	#Elemental Media Engine(TM) 2.18.0.0
+X-TIMESTAMP-MAP=LOCAL:00:00:00.000,MPEGTS:187200
+
+00:10:00.000 --> 00:10:04.396
+Data compliance, security, responsible AI, and access controls.
+
+00:10:05.156 --> 00:10:07.956
+Your data never leaves your control.
+
+00:10:08.316 --> 00:10:17.516
+It's never shared with model providers, never used for service
+improvement, your queries, your responses, your enterprise data.
+
+00:10:17.876 --> 00:10:27.116
+All of it stays as yours. Connectivity is brought by
+design quick supports up to 40 plus built in data connectors
+
+00:10:27.116 --> 00:10:33.236
+with access to over a thousand sources via open APIs and NCP servers.
+
+00:10:33.876 --> 00:10:38.796
+Third party AI agents from box, Canva, and PagerDuty,
+
+00:10:39.036 --> 00:10:45.276
+plus expanded built in actions for GitHub notion, HubSpot and more.
+
+00:10:46.356 --> 00:10:50.156
+This enables the users to work with specialized agents
+
+00:10:50.156 --> 00:10:55.596
+and enterprise tools from a single
+interface without switching between applications.
+
+00:10:56.236 --> 00:11:02.356
+Users can also upload their files through spaces,
+allowing them to curate a grounded,
+
+00:11:02.396 --> 00:11:07.236
+personalized data context for their agents and shared experiences.
+
+00:11:09.316 --> 00:11:12.716
+Now let's double down into two features within quick.
+
+00:11:13.036 --> 00:11:18.116
+And these are automation agents,
+which is really the heart of today's session.
+
+00:11:18.916 --> 00:11:25.076
+On one end, we have quick flows.
+So this is purpose built for business users
+
+00:11:25.396 --> 00:11:34.196
+who are providing a straightforward way to automate routine
+tasks and boost productivity at both the individual and team level.
+
+00:11:34.796 --> 00:11:38.196
+And on the other hand, we also have Quick automate.
+
+00:11:38.556 --> 00:11:44.916
+This is designed for technical teams who need
+to orchestrate more complex multi-agent workflows.
+
+00:11:45.636 --> 00:11:54.836
+And with Quick Automate, you can interweave AI agents
+with deterministic steps, pulling files from S3, SharePoint, and more.
+
+00:11:55.556 --> 00:12:04.316
+Think of it as a connectivity fabric that lets you stitch
+multiple agents together into a single, cohesive automation.
+
+00:12:05.556 --> 00:12:07.996
+Those agents can come from a few places.
+
+00:12:08.236 --> 00:12:12.076
+Some are built in and available out of the box with quick automate.
+
+00:12:12.356 --> 00:12:17.116
+Others may be agents your own developers have built on AgentCore,
+
+00:12:17.916 --> 00:12:23.636
+and some may be third party agents you
+bring in to handle specific parts of the workflow.
+
+00:12:24.436 --> 00:12:27.196
+The flexibility here is intentional.
+
+00:12:27.556 --> 00:12:31.636
+It's designed to meet you at where your stack already is.
+
+00:12:34.276 --> 00:12:40.236
+Most of us have used automation tools at some point,
+And they are genuinely useful,
+
+00:12:40.636 --> 00:12:44.596
+but they still depend on us to hold everything together.
+
+00:12:45.116 --> 00:12:53.756
+We are the ones jumping between applications, copying and pasting
+data from one system to another, writing up executive summaries,
+
+00:12:54.036 --> 00:12:57.276
+sending follow up notes after every single meeting.
+
+00:12:57.796 --> 00:13:05.836
+We became the integration layer. And somewhere
+in all those busy work, real productivity gets lost.
+
+00:13:07.236 --> 00:13:16.316
+And that's exactly where Quick Flows comes in. Quick
+flows is purpose built to automate routine tasks for individual
+
+00:13:16.316 --> 00:13:23.596
+and team productivity. And it's designed
+for every business user, not just your technical ones.
+
+00:13:24.356 --> 00:13:29.316
+You build in with natural language
+prompts and you are up and running in minutes.
+
+00:13:29.756 --> 00:13:33.156
+It comes with broad apps and data integrations.
+
+00:13:33.196 --> 00:13:39.356
+Out of the box. Flows are fully
+shareable and collaborative, fully managed,
+
+00:13:39.356 --> 00:13:45.436
+with no infrastructure and built
+with responsible AI principles throughout.
+
+00:13:47.676 --> 00:13:55.436
+The core mission of Quick flows is straightforward
+empower every business user to create, customize,
+
+00:13:55.436 --> 00:14:02.956
+and share purpose built flows on their own
+without needing to involve it or technical teams.
+
+00:14:03.676 --> 00:14:07.316
+But democratizing AI doesn't mean we are losing control.
+
+00:14:07.836 --> 00:14:13.076
+We hear the concern around shadow it,
+and to be fair, that's a valid one.
+
+00:14:13.836 --> 00:14:16.636
+Quick flows is designed with that in mind.
+
+00:14:17.316 --> 00:14:25.876
+IT teams retain full administrative controls and governance
+over how flows are used and what features are accessible.
+
+00:14:26.436 --> 00:14:31.876
+If an organization wants to put guardrails
+around how flows are shared in the Common library,
+
+00:14:32.316 --> 00:14:37.276
+they can require an approval review before anything gets published.
+
+00:14:38.076 --> 00:14:41.516
+Business users get the autonomy they need it.
+
+00:14:41.556 --> 00:14:46.356
+Team gets the oversight they require. Both can co-exist.
+
+00:14:47.876 --> 00:14:53.476
+To top it off, research Agent is also available directly within flows.
+
+00:14:54.036 --> 00:14:59.876
+That means you can trigger a full research
+agent call as a step inside your workflow.
+

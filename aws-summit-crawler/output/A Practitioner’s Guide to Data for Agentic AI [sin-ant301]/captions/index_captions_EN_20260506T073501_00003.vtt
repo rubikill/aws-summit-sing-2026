@@ -1,0 +1,200 @@
+WEBVTT	#Elemental Media Engine(TM) 2.18.0.0
+X-TIMESTAMP-MAP=LOCAL:00:00:00.000,MPEGTS:187200
+
+00:10:00.000 --> 00:10:05.716
+An external user need both read and write, but with Guardrails, right.
+
+00:10:05.956 --> 00:10:11.516
+The key insight is you need to know
+who are using the tool, how they are using it.
+
+00:10:12.636 --> 00:10:14.316
+Before you start to build them.
+
+00:10:16.796 --> 00:10:19.436
+We've talked about how the agent works.
+
+00:10:20.156 --> 00:10:21.636
+Remember the react loop,
+
+00:10:22.596 --> 00:10:25.276
+the short term and long term memories, right?
+
+00:10:25.316 --> 00:10:30.236
+And also you use the NCP servers to connect to your data store.
+
+00:10:30.716 --> 00:10:37.476
+But how do you move from a traditional app
+to an Agentic app and evolve your data store?
+
+00:10:38.396 --> 00:10:42.356
+Let's come back to the company insurance example, right?
+
+00:10:42.396 --> 00:10:44.876
+Who are the users really use this system?
+
+00:10:46.156 --> 00:10:49.756
+We have Terry. He's the external user, right.
+
+00:10:49.796 --> 00:10:54.196
+He wants to buy car insurance. And then we have NKI.
+
+00:10:54.516 --> 00:10:57.636
+She's internal. She's a claim investigator.
+
+00:10:57.836 --> 00:11:01.356
+She wants to know and verify the claims accuracy.
+
+00:11:02.596 --> 00:11:05.916
+And then we also have Jane. She's a data engineer.
+
+00:11:06.116 --> 00:11:09.276
+She builds data products that everyone else use.
+
+00:11:10.276 --> 00:11:18.596
+So you think about this. This is one company,
+one underlying data, but three very different needs.
+
+00:11:20.316 --> 00:11:26.876
+If we want to add Agentic layer into the picture,
+every one of them are going to be impacted.
+
+00:11:28.036 --> 00:11:28.836
+Let's see how.
+
+00:11:30.636 --> 00:11:34.836
+So here you see a very traditional web application, right?
+
+00:11:35.036 --> 00:11:38.716
+Terry goes to a web application. Click on something
+
+00:11:39.276 --> 00:11:45.156
+and the web application talks to the API's API
+connects to the data store.
+
+00:11:46.956 --> 00:11:52.276
+It works. It's straightforward.
+Now if you add Agentic AI layer into it,
+
+00:11:53.076 --> 00:11:58.436
+Terry now is talking to an AI
+assistant instead of clicking on the website,
+
+00:11:59.116 --> 00:12:03.116
+and that AI assistant connects to NCP servers.
+
+00:12:03.636 --> 00:12:08.396
+NCP servers then connect to the same APIs and data store.
+
+00:12:10.116 --> 00:12:12.596
+And here's the slide I want you to remember.
+
+00:12:12.636 --> 00:12:15.196
+If you take one thing from this talk, let's be.
+
+00:12:15.476 --> 00:12:21.956
+This building Agentic AI AI is not
+evolutionary. It's not revolutionary.
+
+00:12:22.396 --> 00:12:23.836
+It's evolutionary.
+
+00:12:25.196 --> 00:12:29.116
+Right? You see, we are using the same APIs.
+
+00:12:29.556 --> 00:12:32.036
+You are using the same data stores.
+
+00:12:33.236 --> 00:12:36.756
+Basically, you are introducing a new front door.
+
+00:12:37.276 --> 00:12:39.516
+Instead of rebuilding the whole house.
+
+00:12:41.636 --> 00:12:48.516
+Yeah. So the infrastructure stays.
+But there's one thing that becomes even more important
+
+00:12:48.716 --> 00:12:51.916
+when the agents are talking to your data.
+
+00:12:52.796 --> 00:12:57.316
+If a user clicks a button on your website, you have full control.
+
+00:12:57.796 --> 00:13:05.436
+But when the agent picks their own tools in their own order,
+governance becomes your safety net.
+
+00:13:07.636 --> 00:13:09.956
+Let's see how it works for Jane, for NKI.
+
+00:13:11.076 --> 00:13:14.996
+Remember, NKI is the claim investigator, right?
+
+00:13:15.036 --> 00:13:23.716
+Her case has three steps. She needs to find the right data
+product and retrieve data from the data product she needs,
+
+00:13:24.356 --> 00:13:25.996
+and then generate a report.
+
+00:13:27.116 --> 00:13:33.676
+So you see on the screen are the tools that can help
+Jane NKI complete his her task.
+
+00:13:34.076 --> 00:13:37.636
+But That the thing is flow.
+
+00:13:39.036 --> 00:13:44.236
+When NKI has to do is discover, access and analyze.
+
+00:13:45.956 --> 00:13:47.556
+So what's important to NKI?
+
+00:13:48.956 --> 00:13:52.516
+She needs to see the accuracy and quality of data.
+
+00:13:53.556 --> 00:13:56.396
+She wants to discover the right data product,
+
+00:13:57.596 --> 00:14:01.076
+and she wants to see only the data she's allowed to see.
+
+00:14:01.956 --> 00:14:04.636
+Right? And latency is very important.
+
+00:14:04.956 --> 00:14:09.076
+She doesn't want to wait
+for ten minutes before she can start analyzing.
+
+00:14:10.436 --> 00:14:16.556
+Now think about this. If you have an agent
+doing those things on behalf of NKI,
+
+00:14:17.716 --> 00:14:26.436
+all those things still matters. But maybe even more important,
+because the agent is going to move faster than NKI does,
+
+00:14:27.836 --> 00:14:30.076
+and your governance has to keep up.
+
+00:14:32.076 --> 00:14:36.956
+Now let's flip to Jane. She's the data engineer.
+
+00:14:37.556 --> 00:14:41.596
+Her world is different. So data comes from streaming.
+
+00:14:41.596 --> 00:14:48.356
+Ingest and Jane are building the pipelines
+to transform the data and clean it.
+
+00:14:48.676 --> 00:14:52.796
+And then she publishes the data products for everyone else to use.
+
+00:14:54.396 --> 00:14:58.596
+She's the one. Make sure the data exists and is trustworthy.
+
+00:14:59.596 --> 00:15:00.000
+So what does she care about? Of course,
+she cares about the quality, the accuracy of the data as well.
+

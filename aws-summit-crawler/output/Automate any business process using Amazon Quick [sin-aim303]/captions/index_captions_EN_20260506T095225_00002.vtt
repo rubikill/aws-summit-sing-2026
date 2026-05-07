@@ -1,0 +1,180 @@
+WEBVTT	#Elemental Media Engine(TM) 2.18.0.0
+X-TIMESTAMP-MAP=LOCAL:00:00:00.000,MPEGTS:187200
+
+00:05:00.000 --> 00:05:01.756
+Together with unstructured data from S3,
+
+00:05:02.036 --> 00:05:09.316
+OneDrive and SharePoint and other countless
+productivity tools where business context lives,
+
+00:05:09.876 --> 00:05:14.436
+all of it brought together in one place for you to use.
+
+00:05:15.156 --> 00:05:23.876
+With that foundation, QuIC accelerates the entire journey
+from an initial idea or hypothesis through information gathering,
+
+00:05:23.876 --> 00:05:30.556
+research and insight generation all
+the way to a decision and an action.
+
+00:05:31.396 --> 00:05:36.556
+QuIC isn't just a chat interface.
+It doesn't stop at answering your question.
+
+00:05:36.956 --> 00:05:46.916
+It helps you act on the answers, such as updating the data in another
+system, filing a support case, or resolving a customer issue.
+
+00:05:47.596 --> 00:05:52.516
+You're not just getting information,
+you're moving your business forward.
+
+00:05:54.596 --> 00:06:03.676
+At its heart, Amazon Quick is a unified workplace where
+AI teammates help you to do the research, uncover business insights,
+
+00:06:03.796 --> 00:06:06.116
+and automate key processes.
+
+00:06:07.236 --> 00:06:12.116
+We have built in agents that work alongside
+with you to get those things done.
+
+00:06:12.636 --> 00:06:15.876
+And once again, the goal is really straightforward,
+
+00:06:15.876 --> 00:06:23.516
+which is to help every employee make better
+decisions faster and actually act on them.
+
+00:06:24.316 --> 00:06:30.876
+And we know that for most enterprise organizations,
+that only works if the foundation is solid.
+
+00:06:31.396 --> 00:06:36.996
+Quick is built with security, governance, compliance, and monitoring.
+
+00:06:37.356 --> 00:06:43.756
+Everything your organization needs to feel
+confident rolling out Agentic AI at scale.
+
+00:06:44.716 --> 00:06:51.276
+We genuinely believe that quick can be transformative
+for every single employee in your company,
+
+00:06:51.476 --> 00:06:59.676
+regardless of their technical background or how much
+experience they have with AI enterprise reliability
+
+00:06:59.876 --> 00:07:03.076
+and security aren't an afterthought at AWS.
+
+00:07:03.556 --> 00:07:07.436
+In fact, they are central to the whole of our mission.
+
+00:07:09.916 --> 00:07:13.076
+So let's take a quick look at how quick is right.
+
+00:07:13.116 --> 00:07:15.876
+So quick sits at the top of the layer.
+
+00:07:16.396 --> 00:07:21.996
+There are built in agents that are organized
+around the three pillars that we have discussed earlier,
+
+00:07:22.556 --> 00:07:25.396
+starting on the left with insight gathering.
+
+00:07:25.676 --> 00:07:30.676
+There's also a default chat agent ready to go out of the box.
+
+00:07:31.196 --> 00:07:39.276
+But you can also define your own custom agents and ground
+them in specific knowledge that are relevant to your team,
+
+00:07:39.596 --> 00:07:48.836
+project or use case. We also have a research agent
+that goes deep by pulling from your internal data
+
+00:07:49.156 --> 00:07:54.476
+as well as internet sources, trusted third party providers and more.
+
+00:07:55.436 --> 00:07:58.956
+This agent runs recursively verifying
+
+00:07:59.196 --> 00:08:07.916
+and validating information before producing a comprehensive
+research report across virtually any domain
+
+00:08:09.036 --> 00:08:13.756
+in the middle layer. We have business intelligence and analytics.
+
+00:08:14.356 --> 00:08:17.796
+We have significantly enhanced our capabilities,
+
+00:08:17.956 --> 00:08:25.476
+so you can ask questions across both your structured
+and unstructured data together in practice.
+
+00:08:25.516 --> 00:08:30.436
+When you open a dashboard in quick,
+you are not limited to what's on your screen.
+
+00:08:30.836 --> 00:08:40.516
+The agents perform Agentic Q and A over the underlying data sets,
+running dynamic SQL queries to surface the insights that you need.
+
+00:08:40.636 --> 00:08:45.156
+Even if a particular column was never added to that dashboard.
+
+00:08:45.756 --> 00:08:53.276
+But let's be honest here, it still remains the case
+that your users permissions are fully respected throughout.
+
+00:08:53.636 --> 00:08:58.276
+So you only ever get to see the data
+that you are being authorized to access.
+
+00:08:59.516 --> 00:09:05.796
+Moving on, the BI agent also has code
+skills and a built in code interpreter.
+
+00:09:06.396 --> 00:09:09.996
+Since language models aren't inherently reliable at math,
+
+00:09:10.356 --> 00:09:16.556
+the agent generates just in time
+code and handle numerical calculations,
+
+00:09:16.556 --> 00:09:21.916
+producing results that are mathematically verifiable and provable.
+
+00:09:22.796 --> 00:09:25.716
+All of these experiences are embeddable.
+
+00:09:26.036 --> 00:09:32.236
+You can embed dashboards and chat agents
+directly into your internal portals and wikis,
+
+00:09:32.396 --> 00:09:39.556
+so your users get the full benefit of quick without
+ever having to leave the tools they are already working
+
+00:09:39.556 --> 00:09:43.636
+in. Underpinning all of this is AgentCore.
+
+00:09:43.916 --> 00:09:47.196
+It selects the right model for you for each task,
+
+00:09:47.236 --> 00:09:52.636
+automatically optimizing for accuracy and experience out of the box
+
+00:09:53.236 --> 00:09:58.676
+and running through everything is a strong
+governance layer that is fully compliant.
+
+00:09:58.716 --> 00:10:00.000
+Data compliance, security, responsible AI, and access controls.
+

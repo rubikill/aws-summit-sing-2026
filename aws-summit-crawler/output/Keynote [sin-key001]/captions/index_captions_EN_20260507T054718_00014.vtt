@@ -1,0 +1,165 @@
+WEBVTT	#Elemental Media Engine(TM) 2.18.0.0
+X-TIMESTAMP-MAP=LOCAL:00:00:00.000,MPEGTS:187200
+
+01:04:59.956 --> 01:05:05.716
+and discovery and processing across
+multi-cloud and hybrid environments.
+
+01:05:06.196 --> 01:05:14.956
+You can achieve this flexibility through federated querying,
+data integration, secure data movement,
+
+01:05:14.956 --> 01:05:24.036
+and compatibility with open standards, allowing you to gain
+insights from all of your data, regardless of where it resides.
+
+01:05:24.436 --> 01:05:34.316
+And with Amazon SageMaker Unified Studio, it all comes
+together in one single place so your teams can discover, access,
+
+01:05:34.476 --> 01:05:40.956
+and act on all of your data, across analytics,
+across machine learning, and generative AI.
+
+01:05:41.876 --> 01:05:44.916
+Now, here's why this matters. Right now,
+
+01:05:45.996 --> 01:05:54.156
+fewer than 20% of enterprise decision makers use BI tools today.
+
+01:05:55.516 --> 01:06:04.396
+That’s 80, eight-zero per cent of your
+organization making business decisions.
+
+01:06:04.396 --> 01:06:09.436
+Investment decisions without the insights you need.
+
+01:06:10.276 --> 01:06:15.436
+Data driven enterprises are more likely to outperform competitors.
+
+01:06:15.996 --> 01:06:25.316
+Yet only one third of all organizations
+can actually turn their data into business value,
+
+01:06:26.556 --> 01:06:32.516
+into decision making. Our services is what's
+enabling you to close that gap.
+
+01:06:32.956 --> 01:06:41.156
+The scale is already here. We have over 100 000 customers using
+AWS Data Integration Services monthly.
+
+01:06:41.716 --> 01:06:50.796
+We have 10 billion plus glue data catalog
+requests a week and a billion Athena queries weekly.
+
+01:06:51.396 --> 01:06:55.596
+So let me show you how this plays in the real world.
+
+01:06:56.116 --> 01:07:01.636
+StarHub that I’m sure all of you know,
+is one of Singapore’s leading telcos.
+
+01:07:02.076 --> 01:07:04.716
+But they didn't just want cell connectivity.
+
+01:07:05.276 --> 01:07:09.756
+They wanted to become a data driven enterprise platform.
+
+01:07:10.156 --> 01:07:13.996
+The problem? They had no way to combine their telco data
+
+01:07:14.196 --> 01:07:20.476
+with their client's first party data securely
+at scale and at near real time.
+
+01:07:20.716 --> 01:07:27.196
+So they built a smart retail and AI
+driven SaaS analytics platform on AWS.
+
+01:07:27.796 --> 01:07:35.956
+It uses Amazon Bedrock for natural language querying,
+QuickSight for visualisation, Redshift for scale,
+
+01:07:36.356 --> 01:07:41.196
+and AWS clean room for secure multi-party data collaboration.
+
+01:07:41.476 --> 01:07:43.796
+They actually even added a chatbot.
+
+01:07:43.956 --> 01:07:48.316
+So in store, teams can get instant insights on the floor.
+
+01:07:48.876 --> 01:07:53.316
+Data latency drop from five minutes to less than two.
+
+01:07:53.796 --> 01:08:00.036
+But here's the bigger story.
+The StarHub created an entirely new revenue stream.
+
+01:08:00.396 --> 01:08:07.916
+They are now selling catchment analysis, customer profiling,
+and competition intelligence to enterprise clients.
+
+01:08:08.236 --> 01:08:12.796
+The kind of insights the standard
+analytics would not be able to deliver.
+
+01:08:13.116 --> 01:08:16.476
+And it is very fast scaling across the region.
+
+01:08:17.676 --> 01:08:26.276
+That's the power of data. Now I want to introduce
+another powerful customer example that will show us when
+
+01:08:26.276 --> 01:08:34.236
+when possible, when you combine bold ideas with the right data,
+foundation and infrastructure on AWS.
+
+01:08:34.236 --> 01:08:42.916
+Please welcome Grab Managing Director,
+Head of Strategic Finance and Investor Relations, Ken Lek.
+
+01:08:43.156 --> 01:08:43.996
+Welcome again.
+
+01:08:59.876 --> 01:09:04.796
+Thank you. Good morning everyone.
+Before I begin, I'd like to make a quick disclaimer.
+
+01:09:04.796 --> 01:09:09.196
+I don't come with any robots,
+so don't expect a robot coming onto stage.
+
+01:09:09.316 --> 01:09:14.676
+But I promise you, we do have our autonomous
+vehicles live in a district called Punggol,
+
+01:09:15.156 --> 01:09:18.436
+and it has recently commenced public operations as of April.
+
+01:09:18.836 --> 01:09:19.276
+Okay.
+
+01:09:24.116 --> 01:09:32.676
+So the year is 2021. I had just turned 30 and I had just been
+appointed as to to lead strategic financing, Grab and Grab.
+
+01:09:32.676 --> 01:09:35.956
+We made one of our most important decisions in our history then,
+
+01:09:36.276 --> 01:09:42.916
+which was to go public on Nasdaq in what would be the largest
+US listing by a Southeast Asian company.
+
+01:09:43.916 --> 01:09:47.316
+My job was to build the scenario plans,
+
+01:09:47.596 --> 01:09:54.236
+the operating models and investor relations
+narrative that would convince investors to back a company
+
+01:09:54.236 --> 01:09:59.476
+on its future prospects despite not
+seeing full recovery from Covid just yet.
+

@@ -1,0 +1,65 @@
+{
+  "sessionEventId": "sin-key001",
+  "eventtitle": "Keynote",
+  "description": "",
+  "customCategory": "AWS Summit Singapore - Keynote",
+  "eventdate": "6 May 2026",
+  "eventtime": "9:30 AM - 10:55 AM",
+  "eventStart": "2026-05-06T09:30+08:00",
+  "eventEnd": "2026-05-06T10:55+08:00",
+  "filterTags": "Level:100 - Foundational,Location:Singapore",
+  "image": "https://d1o4t9h6a8fm0w.cloudfront.net/media/aws-summitsapj26/assets/images/Keynote Singapore (v2).png",
+  "speakers": [
+    {
+      "title": "Managing Director, Singapore, AWS",
+      "name": "Priscilla Chong",
+      "portraitUrl": "https://d1o4t9h6a8fm0w.cloudfront.net/media/aws-summitsapj26/assets/images/Q12026-SGSummit-Headshot-Priscilla.5db8984b130be7d2d731a40346f9d46b69bd2dfe.jpg",
+      "bio": ""
+    },
+    {
+      "title": "Vice President & Managing Director APJC, AWS",
+      "name": "Jaime Vallés",
+      "portraitUrl": "https://d1o4t9h6a8fm0w.cloudfront.net/media/aws-summitsapj26/assets/images/Q12026-SGSummit-Headshot-JaimeValles.6d1f61aa7fba11b37040e9192cf7d67597c8a133.jpg",
+      "bio": ""
+    },
+    {
+      "title": "President & Group CEO, Certis",
+      "name": "Ng Tian Beng",
+      "portraitUrl": "https://d1o4t9h6a8fm0w.cloudfront.net/media/aws-summitsapj26/assets/images/Q12026-SGSummit-Headshot-TianBeng.e9835f9c582200797aa6fcfc2f697a6863f716e3.jpg",
+      "bio": ""
+    },
+    {
+      "title": "Managing Director, Head of Strategic Finance & Investor Relations, Grab",
+      "name": "Ken Lek",
+      "portraitUrl": "https://d1o4t9h6a8fm0w.cloudfront.net/media/aws-summitsapj26/assets/images/Ken Lek.png",
+      "bio": ""
+    },
+    {
+      "title": "Senior Minister of State, Prime Ministers Office / Deputy Secretary-General NTUC",
+      "name": "Desmond Tan",
+      "portraitUrl": "https://d1o4t9h6a8fm0w.cloudfront.net/media/aws-summitsapj26/assets/images/NTUC Deputy Secretary-General Desmond Tan_crop.jpg",
+      "bio": ""
+    }
+  ],
+  "vod_m3u8_url": "https://dz2ooo85w8eqv.cloudfront.net/aws-summitsgp26/outputs/sin-key001/hls/v2/index.m3u8",
+  "caption_urls": [
+    "https://dz2ooo85w8eqv.cloudfront.net/aws-summitsgp26/outputs/sin-key001/hls/v2/index_captions_EN_20260507T053628_00001.vtt",
+    "https://dz2ooo85w8eqv.cloudfront.net/aws-summitsgp26/outputs/sin-key001/hls/v2/index_captions_EN_20260507T053724_00002.vtt",
+    "https://dz2ooo85w8eqv.cloudfront.net/aws-summitsgp26/outputs/sin-key001/hls/v2/index_captions_EN_20260507T053814_00003.vtt",
+    "https://dz2ooo85w8eqv.cloudfront.net/aws-summitsgp26/outputs/sin-key001/hls/v2/index_captions_EN_20260507T053902_00004.vtt",
+    "https://dz2ooo85w8eqv.cloudfront.net/aws-summitsgp26/outputs/sin-key001/hls/v2/index_captions_EN_20260507T053950_00005.vtt",
+    "https://dz2ooo85w8eqv.cloudfront.net/aws-summitsgp26/outputs/sin-key001/hls/v2/index_captions_EN_20260507T054037_00006.vtt",
+    "https://dz2ooo85w8eqv.cloudfront.net/aws-summitsgp26/outputs/sin-key001/hls/v2/index_captions_EN_20260507T054127_00007.vtt",
+    "https://dz2ooo85w8eqv.cloudfront.net/aws-summitsgp26/outputs/sin-key001/hls/v2/index_captions_EN_20260507T054217_00008.vtt",
+    "https://dz2ooo85w8eqv.cloudfront.net/aws-summitsgp26/outputs/sin-key001/hls/v2/index_captions_EN_20260507T054307_00009.vtt",
+    "https://dz2ooo85w8eqv.cloudfront.net/aws-summitsgp26/outputs/sin-key001/hls/v2/index_captions_EN_20260507T054357_00010.vtt",
+    "https://dz2ooo85w8eqv.cloudfront.net/aws-summitsgp26/outputs/sin-key001/hls/v2/index_captions_EN_20260507T054448_00011.vtt",
+    "https://dz2ooo85w8eqv.cloudfront.net/aws-summitsgp26/outputs/sin-key001/hls/v2/index_captions_EN_20260507T054537_00012.vtt",
+    "https://dz2ooo85w8eqv.cloudfront.net/aws-summitsgp26/outputs/sin-key001/hls/v2/index_captions_EN_20260507T054629_00013.vtt",
+    "https://dz2ooo85w8eqv.cloudfront.net/aws-summitsgp26/outputs/sin-key001/hls/v2/index_captions_EN_20260507T054718_00014.vtt",
+    "https://dz2ooo85w8eqv.cloudfront.net/aws-summitsgp26/outputs/sin-key001/hls/v2/index_captions_EN_20260507T054810_00015.vtt",
+    "https://dz2ooo85w8eqv.cloudfront.net/aws-summitsgp26/outputs/sin-key001/hls/v2/index_captions_EN_20260507T054859_00016.vtt",
+    "https://dz2ooo85w8eqv.cloudfront.net/aws-summitsgp26/outputs/sin-key001/hls/v2/index_captions_EN_20260507T054949_00017.vtt",
+    "https://dz2ooo85w8eqv.cloudfront.net/aws-summitsgp26/outputs/sin-key001/hls/v2/index_captions_EN_20260507T055039_00018.vtt"
+  ]
+}

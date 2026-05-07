@@ -1,0 +1,197 @@
+WEBVTT	#Elemental Media Engine(TM) 2.18.0.0
+X-TIMESTAMP-MAP=LOCAL:00:00:00.000,MPEGTS:187200
+
+00:05:00.000 --> 00:05:01.556
+This is currently in development.
+The key insight here is that each phase builds on the last.
+
+00:05:02.036 --> 00:05:08.116
+You can build a great agent without great search and you
+can improve search without a great data foundation.
+
+00:05:08.796 --> 00:05:10.716
+So let's dive into each one.
+
+00:05:13.076 --> 00:05:22.716
+Let's dive deeper into legal search, which is already
+in production in.com. At its core, this is a Q&A legal search system.
+
+00:05:23.196 --> 00:05:25.756
+A lawyer can type any natural language question.
+
+00:05:25.756 --> 00:05:30.196
+For example, what are the elements of Singapore
+of negligence in Singapore law?
+
+00:05:30.636 --> 00:05:38.116
+And the system returns an AI generated answer with legal citations,
+plus a ranked list of retrieved source documents.
+
+00:05:38.796 --> 00:05:41.636
+The key capabilities are natural language queries.
+
+00:05:41.876 --> 00:05:45.156
+So no more Boolean search strings. Cited answers.
+
+00:05:45.316 --> 00:05:50.156
+So every claim is traceable back to a source
+and full source document retrieval.
+
+00:05:50.596 --> 00:05:52.676
+So users can verify and go deeper.
+
+00:05:53.796 --> 00:05:58.436
+One thing I want you to highlight or want
+to highlight is our users controls.
+
+00:05:59.396 --> 00:06:03.476
+We implement rate limiting five queries per five minutes per user.
+
+00:06:04.036 --> 00:06:07.476
+This isn't just about cost management in the legal domain.
+
+00:06:07.476 --> 00:06:15.996
+Responsible usage matters. So we want lawyers to use
+this as a research aid and not a replacement for legal judgment.
+
+00:06:16.436 --> 00:06:18.916
+It's about building trust with the profession.
+
+00:06:20.596 --> 00:06:23.916
+Here is what the experience actually looks like for our users.
+
+00:06:24.236 --> 00:06:27.356
+You can see the familiar search bar at the top.
+
+00:06:27.796 --> 00:06:35.876
+Users can toggle between classic search, the traditional keyword
+based search, and lon et ai, which is our new AI powered search.
+
+00:06:36.596 --> 00:06:40.636
+When a user submits a query, they get an AI generated answer,
+
+00:06:40.636 --> 00:06:48.516
+citing the paragraph across cases and legislation to help lawyers
+quickly assess whether a judgment is relevant to their research.
+
+00:06:49.556 --> 00:06:55.916
+This combination of AI generated answers
+with citations to sources has been critical for adoption.
+
+00:06:56.836 --> 00:07:01.596
+Lawyers don't just want answers,
+they want to know why they should trust those answers.
+
+00:07:04.476 --> 00:07:07.596
+Here you see the architecture that powers all of this.
+
+00:07:07.596 --> 00:07:14.476
+There are many services used for storage,
+catching, and API, but I would like to highlight three of them.
+
+00:07:16.196 --> 00:07:25.956
+First, in the middle layer, we have X hosted models for embedding
+and inference and natural language processing service,
+
+00:07:25.956 --> 00:07:30.956
+and the Q&A backend that orchestrates
+the search and answer generation pipelines.
+
+00:07:30.956 --> 00:07:34.596
+We host the GPT models that we co-developed with Lambda
+
+00:07:35.076 --> 00:07:40.636
+and the natural language processing models
+on accelerated compute instances in X containers.
+
+00:07:42.516 --> 00:07:47.436
+Next, we use Amazon Bedrock Guardrails for responsible AI checks
+
+00:07:49.316 --> 00:07:56.196
+and at the heart of the search Amazon OpenSearch
+service for both full text and vector search.
+
+00:07:58.396 --> 00:08:01.516
+The key design principle here is separation of concerns.
+
+00:08:02.076 --> 00:08:07.436
+Each component does one thing well,
+and they communicate through well-defined interfaces.
+
+00:08:08.076 --> 00:08:12.116
+This makes the system easy to maintain, scale, and evolve.
+
+00:08:12.596 --> 00:08:17.476
+This, which becomes critical when
+we get to the Agentic AI phase later.
+
+00:08:19.916 --> 00:08:22.236
+Now for the search and ingestion workflow.
+
+00:08:22.236 --> 00:08:24.796
+Starting at the bottom with the document ingestion.
+
+00:08:24.796 --> 00:08:31.596
+When a new legal document judgment or legislation arrives,
+it goes through text and metadata extraction.
+
+00:08:32.036 --> 00:08:38.036
+Then judgment the duplication because the same case
+can have different citation across their life cycle,
+
+00:08:38.396 --> 00:08:41.756
+from a reported judgment to Singapore Law report, or SLR.
+
+00:08:43.236 --> 00:08:49.276
+Then the extracted data goes through an enrichment
+pipeline where we normalize legislation and case citations,
+
+00:08:49.756 --> 00:08:54.956
+then generate embeddings using our fine
+tuned model and extract reference trace metadata.
+
+00:08:55.716 --> 00:09:00.276
+The output is stored in both a vector
+database and a reference database.
+
+00:09:01.876 --> 00:09:03.876
+Now for the query workflow at the top.
+
+00:09:03.876 --> 00:09:08.716
+When a user submits a question,
+it first goes through a query preprocessing.
+
+00:09:08.996 --> 00:09:13.916
+This means from validation entity extraction and entity normalization.
+
+00:09:14.476 --> 00:09:18.356
+This produces a query that captures the legal intent.
+
+00:09:19.436 --> 00:09:23.076
+That query fits into our enhanced search phase.
+
+00:09:23.756 --> 00:09:26.436
+Hybrid search execution followed by Reranking.
+
+00:09:27.156 --> 00:09:32.076
+The top results. Then go to the inference
+phase where we generate the answer with context,
+
+00:09:32.436 --> 00:09:37.956
+then apply Guardrails and return the answer with citations,
+plus a list of retrieved cases.
+
+00:09:39.276 --> 00:09:41.436
+What I want you to notice is a symmetry.
+
+00:09:42.036 --> 00:09:48.676
+The same entities we extract and normalize
+during ingestion are the ones that we extract from queries.
+
+00:09:49.396 --> 00:09:52.516
+This alignment is what makes the search accurate.
+
+00:09:55.916 --> 00:10:00.000
+Let me go deeper on the surface layer,
+because this is where a lot of the magic happens.
+

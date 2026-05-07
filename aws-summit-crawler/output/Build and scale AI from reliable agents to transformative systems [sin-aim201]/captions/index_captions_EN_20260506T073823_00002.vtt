@@ -1,0 +1,182 @@
+WEBVTT	#Elemental Media Engine(TM) 2.18.0.0
+X-TIMESTAMP-MAP=LOCAL:00:00:00.000,MPEGTS:187200
+
+00:05:00.000 --> 00:05:02.236
+This is Amazon Bedrock AgentCore. It's the foundation for building
+agents that you can trust and scale at enterprise level.
+
+00:05:02.876 --> 00:05:05.476
+There are seven services. One foundation.
+
+00:05:05.876 --> 00:05:09.316
+Everything you need to run agents in production, right.
+
+00:05:09.796 --> 00:05:13.996
+So you have runtime to execute.
+You have memory to give them the context.
+
+00:05:14.596 --> 00:05:18.076
+You have identity that gives you the accountability for an agent.
+
+00:05:18.076 --> 00:05:21.236
+And then you have gateway that connects them to your tools.
+
+00:05:21.236 --> 00:05:26.916
+The code interpreter and browser allows you allows agent
+to act on behalf of you within the system.
+
+00:05:27.556 --> 00:05:30.516
+And you have an observability which is overseeing.
+
+00:05:30.516 --> 00:05:33.636
+So you always know what they did and why they did that.
+
+00:05:34.156 --> 00:05:36.996
+And every one of these was built for a single purpose.
+
+00:05:37.156 --> 00:05:40.076
+So you can trust your agents in production from day one.
+
+00:05:41.796 --> 00:05:47.036
+But all of this, right? Every service,
+every pillar means nothing without one thing,
+
+00:05:48.516 --> 00:05:53.956
+which is data, right? The truth is,
+an agent is only as good as the data it runs on.
+
+00:05:54.716 --> 00:05:56.916
+You have wrong data. You have wrong action.
+
+00:05:57.276 --> 00:06:03.036
+And that's why every real agent story doesn't begin with a model,
+it actually begins with the data.
+
+00:06:03.596 --> 00:06:07.836
+And that's exactly where the journey
+at the Ministry of Education began.
+
+00:06:08.436 --> 00:06:15.036
+Please welcome the deputy CIO of Ministry of Education,
+Miss Karen Chiah, to share their story where it all started with data.
+
+00:06:18.276 --> 00:06:19.036
+Thank you.
+
+00:06:19.916 --> 00:06:20.796
+Thank you.
+
+00:06:23.956 --> 00:06:27.996
+Good afternoon everyone. It is an honor to be here at the AWS summit.
+
+00:06:28.636 --> 00:06:32.396
+Today, I'll share how the Ministry of Education is harnessing AI
+
+00:06:32.796 --> 00:06:38.556
+and cloud technologies to drive operational excellence
+in Singapore's education system.
+
+00:06:41.636 --> 00:06:48.316
+At MoE, our division is known
+as DxD Digital Excellence and Products Division.
+
+00:06:49.276 --> 00:06:52.756
+We see ourselves as digital leaders and agile innovators.
+
+00:06:53.476 --> 00:07:01.636
+We embrace, change, experiment boldly and learn continuously
+to stay ahead in a rapidly evolving landscape.
+
+00:07:02.796 --> 00:07:10.316
+We aim to solve real problems and transform experiences not just
+for efficiency, but for meaningful impact.
+
+00:07:11.436 --> 00:07:17.996
+We believe that these are the qualities that will position us
+to lead the transformation in education technology.
+
+00:07:21.116 --> 00:07:29.156
+Our ecosystem is vast. 500,000 students,
+36,000 educators, and 350 schools.
+
+00:07:30.036 --> 00:07:34.276
+Add to that 400,000 parents and 46,000 staff.
+
+00:07:35.396 --> 00:07:42.116
+Each group has unique needs from learning effectively
+to accessing information seamlessly.
+
+00:07:43.196 --> 00:07:51.516
+Our systems have to cater to all of them at scale,
+and technology enables us to meet these diverse demands.
+
+00:07:54.236 --> 00:08:01.156
+Before I continue further, let me show a short video to better
+illustrate the reality faced by the team in our work.
+
+00:08:03.076 --> 00:08:11.756
+Meet Mr. Wong Engineering Manager at Singapore's Ministry
+of Education, responsible for 130 AWS accounts.
+
+00:08:12.476 --> 00:08:17.836
+Every day, his team drowns in consoles,
+dashboards that don't talk to each other.
+
+00:08:17.916 --> 00:08:26.396
+Everyone looking at a different screen, 130 accounts,
+each with its own costs, its own alerts, its own security posture.
+
+00:08:26.396 --> 00:08:36.156
+No single view weeks consumed by manual work, copying numbers into
+spreadsheets, rebuilding the same report from scratch every month.
+
+00:08:36.756 --> 00:08:39.916
+Leadership needs answers, real time answers.
+
+00:08:40.396 --> 00:08:44.476
+But the data isn't there. Every screen tells a different story.
+
+00:08:44.676 --> 00:08:46.796
+None of them tells the full picture.
+
+00:08:47.156 --> 00:08:51.036
+Security alerts. Fire in the dark. Late nights become routine.
+
+00:08:51.396 --> 00:09:00.596
+There is no automation, no relief. One evening, staring at a
+whiteboard covered in broken connections,
+
+00:09:00.956 --> 00:09:02.596
+Mr. Wong made a decision, this had to change.
+
+00:09:07.356 --> 00:09:15.036
+As our systems grow in complexity across microservices,
+cloud infrastructure, and third party integrations.
+
+00:09:15.556 --> 00:09:25.076
+The silo approach caused inefficiencies, limits centralized oversight,
+and hinders teamwork, decision making, and optimization.
+
+00:09:25.956 --> 00:09:31.756
+Rising cloud costs and emerging security
+threats demands for innovative solutions.
+
+00:09:32.396 --> 00:09:39.436
+Our focus is to simplify operations and enhance
+security while meeting these growing demands.
+
+00:09:43.716 --> 00:09:45.836
+So how did we overcome these challenges?
+
+00:09:46.596 --> 00:09:52.556
+We knew we couldn't do this alone.
+Creating the right partnership was absolutely critical.
+
+00:09:52.996 --> 00:09:58.156
+And I want to emphasize these were true
+partnerships, not vendor relationships.
+
+00:09:58.996 --> 00:10:00.000
+We partnered with AWS for two things the infrastructure
+to run this reliably for millions of interactions,
+

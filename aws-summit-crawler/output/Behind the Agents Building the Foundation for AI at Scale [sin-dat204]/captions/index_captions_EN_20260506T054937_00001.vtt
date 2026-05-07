@@ -1,0 +1,175 @@
+WEBVTT	#Elemental Media Engine(TM) 2.18.0.0
+X-TIMESTAMP-MAP=LOCAL:00:00:00.000,MPEGTS:187200
+
+00:00:07.636 --> 00:00:13.876
+It's my privilege to welcome you to AWS Summit Singapore 2026
+
+00:00:14.636 --> 00:00:21.236
+and to the harnessing AI through
+Data Foundation's track here at Marina Bay Sands.
+
+00:00:22.596 --> 00:00:26.436
+Without further ado, let's begin with the first session.
+
+00:00:27.596 --> 00:00:35.116
+Please put our hands together to welcome Jen Tan,
+principal solutions architect, Amazon Web Services,
+
+00:00:36.076 --> 00:00:43.356
+and Agrawal, Head of Analytics,
+data architecture and Enterprise Data Warehouse.
+
+00:00:43.396 --> 00:00:51.716
+Grab, who will be leading us through their session
+behind the Agents Building the Foundation for AI at scale.
+
+00:00:52.396 --> 00:00:54.276
+Please welcome them on stage.
+
+00:01:02.556 --> 00:01:09.316
+Hello folks. Good morning. Welcome
+to AWS Summit Singapore 2026. My name is Jan.
+
+00:01:09.356 --> 00:01:11.956
+I am a Principal solutions architect with AWS.
+
+00:01:12.316 --> 00:01:20.796
+Joined with me to today is Sneh Agrawal Head of Analytics,
+Data Architecture and Enterprise Data Warehouse for Grab.
+
+00:01:21.196 --> 00:01:25.956
+So in the keynote earlier, Ken shared something really interesting.
+
+00:01:26.236 --> 00:01:31.916
+So he shared how Grab consolidated multiple
+enterprise systems into a single governed data lake.
+
+00:01:32.476 --> 00:01:34.836
+This enabled Grab to cut.
+
+00:01:37.196 --> 00:01:44.396
+To cut manual reconciliation by up to 60%
+turning month long reporting cycle into near real time.
+
+00:01:44.396 --> 00:01:52.556
+So this same data foundation is now enabling Grab
+to run AI agents at scale.
+
+00:01:53.476 --> 00:01:57.236
+So now in this session, we're going to be looking at two things here.
+
+00:01:57.236 --> 00:02:01.596
+First, I'm going to take you to Y. Data foundation is critical,
+
+00:02:01.596 --> 00:02:05.836
+especially critical right now as everybody
+goes through the AI journey.
+
+00:02:06.396 --> 00:02:13.076
+It's not only the Y, but I'm also going to explain some of the key
+design principles on when you're designing your data foundation,
+
+00:02:13.076 --> 00:02:16.196
+what are some of the key considerations that you should be having,
+
+00:02:16.196 --> 00:02:22.156
+and you should be designing in your systems
+to ensure success of not only your data foundation, but,
+
+00:02:22.196 --> 00:02:25.396
+but as you build on top of those, that foundation
+
+00:02:25.476 --> 00:02:31.596
+and then from Grab will take you deeper into the platforms
+powering their AI agents in production.
+
+00:02:33.076 --> 00:02:38.556
+So I'm sure a lot of the, a lot of you
+folks in the audience right now are familiar.
+
+00:02:44.076 --> 00:02:49.556
+The reason for that is because I'm sure a lot
+of you have played around with consumer AI.
+
+00:02:50.316 --> 00:02:59.316
+You maybe, you know, those generic LMS, they provide robust
+reasoning capabilities, but they are trained on public data.
+
+00:02:59.756 --> 00:03:06.796
+They have access to public information via tools like web search,
+for example, and they have access to, you know,
+
+00:03:07.036 --> 00:03:13.516
+information that is out there in the public,
+but they do not know about your organization's data.
+
+00:03:13.796 --> 00:03:18.396
+They are not aware about acronyms in your business,
+in your lines of business.
+
+00:03:18.596 --> 00:03:25.356
+They are not aware about the processes in your business,
+the industry, and more importantly,
+
+00:03:25.556 --> 00:03:30.596
+the regulatory environment that your companies operate in. So
+
+00:03:30.596 --> 00:03:38.796
+when we start looking at what a modern data architecture
+stack looks like when we are catering for both humans and AI.
+
+00:03:39.596 --> 00:03:40.756
+So layer one,
+
+00:03:41.996 --> 00:03:50.196
+these are your applications. The primary point of entry, the primary
+integration point you have your MCP servers, microservices,
+
+00:03:50.236 --> 00:03:53.036
+etc., etc.. Right. Layer two.
+
+00:03:54.076 --> 00:04:01.636
+This is where the catalog sits. This is a very important
+layer because this serves as a bridge between layer one
+
+00:04:02.316 --> 00:04:05.396
+and the layers below it, layer three and layer four.
+
+00:04:05.996 --> 00:04:08.996
+So catalog for the data engineers in the room.
+
+00:04:08.996 --> 00:04:11.276
+I'm sure you all are familiar with catalogs.
+
+00:04:11.276 --> 00:04:13.556
+So they tell you where your data is.
+
+00:04:13.556 --> 00:04:16.916
+It tells you what the data is. In my data lake.
+
+00:04:17.476 --> 00:04:26.076
+What are the databases, tables, columns, data types, what's
+the partitioning scheme, serialization, deserialization data format,
+
+00:04:26.356 --> 00:04:32.436
+and any other metadata that you need in order to,
+to have that to be able to query that data.
+
+00:04:33.916 --> 00:04:39.396
+But as humans and even AI, we can't really, we don't.
+
+00:04:39.396 --> 00:04:45.356
+Looking at the technical Meta technical catalog,
+we don't really know what the data, what is inside those tables.
+
+00:04:46.076 --> 00:04:49.836
+We might say, okay, I can create a very descriptive table name.
+
+00:04:49.836 --> 00:04:53.236
+I can create a very descriptive column name,
+but that's not always the case.
+
+00:04:53.236 --> 00:05:00.000
+It's a technical a catalog. So that's where semantics come
+in. So semantics give you the idea of what the data means.
+

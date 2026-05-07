@@ -1,0 +1,216 @@
+WEBVTT	#Elemental Media Engine(TM) 2.18.0.0
+X-TIMESTAMP-MAP=LOCAL:00:00:00.000,MPEGTS:187200
+
+00:20:00.000 --> 00:20:01.676
+So knowledge items are automatically extracted.
+
+00:20:01.676 --> 00:20:06.596
+Learnings that improve the accuracy and effectiveness
+of future code transformations.
+
+00:20:07.036 --> 00:20:12.836
+So as a human reviewer, you can inspect these knowledge items,
+determine which are broadly applicable,
+
+00:20:12.836 --> 00:20:18.476
+and enabling them for future runs,
+thus making your agent measurably smarter over time.
+
+00:20:19.356 --> 00:20:27.596
+And lastly, you can also extend capabilities at every stage by
+integrating with external systems through model context protocols.
+
+00:20:28.676 --> 00:20:32.636
+All right, so now let's see how AWS Transform custom works in action.
+
+00:20:32.956 --> 00:20:35.996
+I have a series of demo scenarios. And for the first one,
+
+00:20:35.996 --> 00:20:43.276
+I'll show you how you can upgrade a Java eight project
+to Java 21 using AWS Managed transformation definitions.
+
+00:20:43.436 --> 00:20:48.396
+So I'll be using the command line interface
+to list all of AWS managed Transformations.
+
+00:20:48.436 --> 00:20:50.556
+Review the Java upgrade transformation.
+
+00:20:51.076 --> 00:20:58.156
+Apply this project on a sample Java eight project, and then we'll
+review the transformation plan as well as the validation process.
+
+00:20:59.796 --> 00:21:03.036
+All right so for this particular
+demo I have my Visual Studio code open.
+
+00:21:03.036 --> 00:21:06.196
+And I'm going to upgrade a Java eight to Java 21 project.
+
+00:21:06.316 --> 00:21:11.916
+So our first run ADX custom dev list
+to list all of the AWS managed definitions.
+
+00:21:12.076 --> 00:21:16.596
+And these definitions are stored in a registry
+that's applicable only to your account.
+
+00:21:16.836 --> 00:21:22.316
+So if you take a look over here, Java version
+upgrade is one of the transformation definitions available.
+
+00:21:23.196 --> 00:21:29.196
+Next, I run ADX Custom dev exec to execute
+the Java version upgrade transformation.
+
+00:21:29.316 --> 00:21:33.156
+So if you take a look over here
+we'll also specify a configuration file.
+
+00:21:33.156 --> 00:21:40.996
+Things like the repository path transformation name build
+command validation command as well as additional plan context.
+
+00:21:41.396 --> 00:21:46.516
+Additional plan context is just a natural
+language way of giving additional instructions.
+
+00:21:46.596 --> 00:21:52.676
+So for this particular example, I will say this is a Java
+8 to 21 transformation and use a specific version
+
+00:21:52.676 --> 00:21:57.756
+when upgrading spring boot. So the next
+thing I'll do is I'll execute the transformation.
+
+00:21:57.956 --> 00:22:03.796
+And what happens is that AWS Transform
+custom will first review the project and create a plan.
+
+00:22:04.196 --> 00:22:08.396
+A plan is a definition of how the transformation
+will be applied to your project.
+
+00:22:08.396 --> 00:22:15.916
+So in this example it's going to do Gradle wrapper upgrade and then
+Spring Boot upgrade as well as deprecated API remediation.
+
+00:22:16.396 --> 00:22:21.956
+So you can then review and approve the plan
+and then let the execution agent take over.
+
+00:22:22.316 --> 00:22:26.436
+So what is going to happen is that the execution
+agent will start making the changes.
+
+00:22:26.436 --> 00:22:32.196
+And after it's completed, you will see a final
+validation summary to confirm a successful build.
+
+00:22:32.516 --> 00:22:37.836
+It will also list down everything that has been done,
+as well as the exit criteria that are being met.
+
+00:22:39.756 --> 00:22:45.876
+All right, so for the next demo, I'll show you how you can create
+a custom transformation for your own specific scenario.
+
+00:22:45.876 --> 00:22:49.636
+So the previous demo was using out
+of the box available transformations.
+
+00:22:49.636 --> 00:22:52.956
+But for now we'll see how you can create your custom transformation,
+
+00:22:52.956 --> 00:22:55.716
+publish your custom transformation to your registry
+
+00:22:55.716 --> 00:23:00.636
+so that other users can use that same definition
+for their projects with similar use cases.
+
+00:23:01.316 --> 00:23:05.156
+We'll also apply this transformation on a Java 21 project.
+
+00:23:05.356 --> 00:23:08.836
+Review the transformation plan as well as the validation steps.
+
+00:23:10.916 --> 00:23:14.316
+All right, so for this demo the project is ready on Java 21.
+
+00:23:14.316 --> 00:23:21.956
+But now I'll modernize it to adopt newer performance improvements
+for Java 21 and also update the Docker images to use newer ones.
+
+00:23:22.916 --> 00:23:28.436
+So I'll first open up AWS Transform
+custom interactive mode and I'll say create a new transformation.
+
+00:23:29.076 --> 00:23:32.236
+Then I'll specify it to create a new transformation.
+
+00:23:32.556 --> 00:23:38.276
+And I'll say, I want you to modernize
+this Java 21 project to use Java 21 features
+
+00:23:38.276 --> 00:23:43.276
+and also update container related files to use Java 21 images.
+
+00:23:43.796 --> 00:23:49.316
+So what happens is that AWS transform custom searches
+for existing transformation definition,
+
+00:23:49.516 --> 00:23:53.436
+and you will find that none of it
+specifically focused on my requirements.
+
+00:23:53.436 --> 00:23:56.196
+So then are prompted to create a new transformation.
+
+00:23:56.676 --> 00:24:01.276
+So you then ask if there's any specific
+context or documentation I want to give it to.
+
+00:24:01.276 --> 00:24:04.956
+So I'll say use best practices for Java 21 modernization.
+
+00:24:05.796 --> 00:24:12.676
+So what happens is that a transformation definition
+will be generated including clear objective entry criteria,
+
+00:24:12.916 --> 00:24:16.156
+step by step instructions as well as validation criteria.
+
+00:24:16.676 --> 00:24:19.276
+So essentially based on your requirements,
+
+00:24:19.476 --> 00:24:26.516
+AWS Transform custom actually creates for you your transformation
+definition or the recipe that you can apply for multiple projects.
+
+00:24:27.276 --> 00:24:34.356
+Next, I'll also publish this transformation definition
+to my account registry so that other users can also access this.
+
+00:24:35.276 --> 00:24:39.356
+And after publishing it, I will apply
+this transformation onto my project.
+
+00:24:39.836 --> 00:24:43.276
+And the transformation agent will generate a step by step plan.
+
+00:24:43.516 --> 00:24:50.516
+So if you take a look over here, the plan includes things like
+records, conversion, textbox modernization, Docker modernization,
+
+00:24:50.516 --> 00:24:54.356
+so on and so forth. It will also tell you what is not applicable.
+
+00:24:54.356 --> 00:24:58.476
+So for this particular project,
+for example, virtual threads is not applicable.
+
+00:24:58.476 --> 00:25:00.000
+So you can review this. So I'll say looks good.
+

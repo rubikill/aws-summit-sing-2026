@@ -1,0 +1,200 @@
+WEBVTT	#Elemental Media Engine(TM) 2.18.0.0
+X-TIMESTAMP-MAP=LOCAL:00:00:00.000,MPEGTS:187200
+
+00:00:09.116 --> 00:00:12.836
+Thank you all. And thank you, Sid, for the introduction.
+
+00:00:12.836 --> 00:00:20.396
+So today we’re here to talk about how
+we scale the AI, Agentic AI in production.
+
+00:00:20.716 --> 00:00:25.876
+And so here's how we'll spend the next 30 minutes together.
+
+00:00:27.756 --> 00:00:35.516
+So we'll first unpack what it takes to build reliable agents,
+which is to do with the four pillars of the Trust Foundation.
+
+00:00:35.916 --> 00:00:38.196
+And then Miss Karen Chiah will take the stage
+
+00:00:38.196 --> 00:00:45.756
+and share how the Ministry of Education is harnessing AI
+for operational excellence today.
+
+00:00:46.116 --> 00:00:48.716
+And this is a real story in production today.
+
+00:00:48.716 --> 00:00:53.516
+I will then explain how we built and scaled and what we learn.
+
+00:00:53.516 --> 00:00:57.796
+So you can take this back and scale in your own system.
+
+00:00:57.996 --> 00:01:06.436
+So let's begin. I hope you walked in here with a question
+or a challenge in mind, and maybe it's one of these three, right?
+
+00:01:06.436 --> 00:01:09.076
+What problems can I solve with AI agents?
+
+00:01:09.436 --> 00:01:11.156
+How do I know if I can trust them?
+
+00:01:12.356 --> 00:01:13.716
+Or where do I even start?
+
+00:01:15.076 --> 00:01:18.076
+Whatever brought you here today, it comes back to one word.
+
+00:01:19.036 --> 00:01:23.436
+Just trust. We are all here today building something new.
+
+00:01:24.396 --> 00:01:26.796
+But here's the truth that doesn't change, right?
+
+00:01:26.836 --> 00:01:30.516
+The systems people rely on are the ones that they trust.
+
+00:01:31.356 --> 00:01:35.756
+And so how do we know that AI agents are worth that trust, right?
+
+00:01:36.236 --> 00:01:38.836
+And trust isn't really new for AWS.
+
+00:01:39.036 --> 00:01:40.556
+Let me show you what I mean.
+
+00:01:42.316 --> 00:01:47.196
+For the last 20 years, every leap
+forward at AWS has been powered by one thing.
+
+00:01:47.236 --> 00:01:55.116
+Is your trust in us. With every chapter, we've worked to earn
+it back by turning your trust into the invention that moves.
+
+00:01:55.596 --> 00:02:02.756
+So it could be from scaling with EC2 serverless
+with Lambda SageMaker, AI and machine learning,
+
+00:02:03.276 --> 00:02:06.596
+and also Bedrock, giving you the choice of models.
+
+00:02:07.716 --> 00:02:10.476
+Which brings us back to the biggest leap yet, right?
+
+00:02:11.596 --> 00:02:17.196
+Just Agentic AI. Right. So we're moving
+from an AI that answers to an AI that acts.
+
+00:02:17.916 --> 00:02:21.316
+At this point, it isn't about building smarter models.
+
+00:02:21.316 --> 00:02:29.556
+It's scaling AI agents into real
+production where they run every day and every time.
+
+00:02:30.116 --> 00:02:35.516
+But here's the thing that scaling
+AI agents isn't like scaling a model or a service,
+
+00:02:36.076 --> 00:02:41.956
+because building agents that you can actually
+trust is pretty hard because an agent isn't really a model.
+
+00:02:42.596 --> 00:02:50.596
+It's actually a system, right? It reaches into your databases,
+it reaches into your local files, your APIs, your sensors.
+
+00:02:50.596 --> 00:02:57.436
+It's basically impersonating you within a system and writing
+back to the systems that runs your own business.
+
+00:02:58.516 --> 00:03:01.676
+Every one of these errors that you see is something.
+
+00:03:01.756 --> 00:03:04.276
+There are places where something can go wrong.
+
+00:03:04.276 --> 00:03:06.956
+If you have wrong data, you have wrong action.
+
+00:03:07.116 --> 00:03:10.476
+If you have a wrong permission, it's a wrong outcome.
+
+00:03:10.476 --> 00:03:16.116
+And when agent acts autonomously,
+a small mistake doesn't really give a bad answer.
+
+00:03:16.476 --> 00:03:18.996
+It actually ends up taking a bad action.
+
+00:03:18.996 --> 00:03:21.956
+So the question is not that can we build agents?
+
+00:03:21.956 --> 00:03:26.716
+The question is more around how do you
+build agents that you can run in production?
+
+00:03:27.836 --> 00:03:30.076
+Which comes back to the four pillars, right.
+
+00:03:30.516 --> 00:03:33.316
+And there's four questions that you need to ask yourself.
+
+00:03:33.316 --> 00:03:37.996
+Are they reliable? Is it transparent? Are they safe?
+
+00:03:38.636 --> 00:03:44.236
+And is it easy? It could be easy to build
+or it could be easy for the consumer to consume.
+
+00:03:44.236 --> 00:03:50.116
+And getting these four things right,
+trust becomes trust is no more a blocker.
+
+00:03:50.116 --> 00:03:52.076
+It actually becomes your advantage.
+
+00:03:53.436 --> 00:03:57.396
+And you might wonder what makes an agent that you can trust.
+
+00:03:59.076 --> 00:04:01.076
+It actually brings down to four layers,
+
+00:04:02.236 --> 00:04:09.156
+the first layer being a reliable and scalable cloud,
+which allows you to provide the foundation that powers it all.
+
+00:04:09.996 --> 00:04:13.676
+The next layer would be your data, which is the most critical one,
+
+00:04:13.676 --> 00:04:18.156
+which should be consolidated and accessible
+and not scattered across silos.
+
+00:04:19.516 --> 00:04:28.236
+Following by the integration, which is your APIs and connectors,
+and that link your agent to the data and the different systems.
+
+00:04:28.956 --> 00:04:33.716
+Last but not least is a security compliance and access control.
+
+00:04:33.996 --> 00:04:41.396
+So your agents can operate safely and also
+ensure that the data is being handled securely.
+
+00:04:42.556 --> 00:04:47.516
+Getting these four things right,
+the agent goes into production getting them wrong.
+
+00:04:47.516 --> 00:04:50.116
+It actually ends up stuck in the pilot.
+
+00:04:51.476 --> 00:04:54.516
+So that's actually a lot to build. So we built it for you.
+
+00:04:54.516 --> 00:05:00.000
+This is Amazon Bedrock AgentCore. It's the foundation for building
+agents that you can trust and scale at enterprise level.
+

@@ -1,0 +1,193 @@
+WEBVTT	#Elemental Media Engine(TM) 2.18.0.0
+X-TIMESTAMP-MAP=LOCAL:00:00:00.000,MPEGTS:187200
+
+00:15:00.000 --> 00:15:01.676
+This is our unified catalog for models and tools.
+
+00:15:01.676 --> 00:15:09.316
+So it's a place where you can register,
+you can search and you can control through our, through the,
+
+00:15:09.556 --> 00:15:14.876
+their whole lifecycle agents and tools in your organization.
+
+00:15:15.316 --> 00:15:18.276
+With that, it's time to hear from one of our customers.
+
+00:15:18.516 --> 00:15:25.036
+And I will invite Henry from BIPO to tell us more about
+how they implemented some of these things that we discussed.
+
+00:15:36.036 --> 00:15:41.836
+Thanks for having me. I'm Henry.
+I look after the data science and analytics team in BIPO.
+
+00:15:42.036 --> 00:15:43.676
+That's how you pronounce the company,
+
+00:15:43.676 --> 00:15:51.916
+not BIPO certainly don't need to pronounce the whole four words
+BIPO BIPO is a relatively young company,
+
+00:15:51.956 --> 00:15:54.676
+and we're doing something very, very important.
+
+00:15:54.956 --> 00:15:58.236
+We calculate your pay. We make sure that you are paid on time.
+
+00:15:58.236 --> 00:16:02.356
+I guess most of you will agree with me,
+especially those who are interested to stay married.
+
+00:16:02.356 --> 00:16:10.556
+You need to get your pay on time. You will see that we have a lot
+of customers that we serve with 1000 employees
+
+00:16:11.636 --> 00:16:15.036
+in Asia Pacific, in Asia Pacific, especially in Asia Pacific.
+
+00:16:15.716 --> 00:16:21.196
+You will also see that we as a company have served 5600 customers.
+
+00:16:21.716 --> 00:16:28.956
+It is not a trivial task. We serve them not only
+in payroll but also in HR, management systems, services,
+
+00:16:29.116 --> 00:16:32.556
+workforce management services. But today we talk about payroll.
+
+00:16:33.796 --> 00:16:39.076
+So what's so important for an autonomous
+autonomous agents role in payroll?
+
+00:16:40.076 --> 00:16:43.196
+This is an upgrade for our traditional BI two.
+
+00:16:43.316 --> 00:16:46.996
+Later you will see a demo of it. Why do I use the word traditional?
+
+00:16:47.356 --> 00:16:50.156
+Because the user interface is fixed.
+
+00:16:50.956 --> 00:16:59.356
+This user fixed user interface. I would say increasingly it's going
+to be challenging to answer to your customers
+
+00:16:59.356 --> 00:17:02.916
+who are increasingly going to be more than just humans.
+
+00:17:03.356 --> 00:17:07.796
+They are going to be machine customers
+who are interested in not just pixels.
+
+00:17:07.796 --> 00:17:13.036
+They are interested in getting data from you,
+sometimes through natural language, talking to your agents.
+
+00:17:13.036 --> 00:17:21.476
+And very importantly, they cannot tolerate
+any wrong answers in our very strict use case.
+
+00:17:22.116 --> 00:17:25.196
+So how do we. The first thing. First thing first,
+
+00:17:25.236 --> 00:17:31.996
+it has to look at the autonomy of an agent
+that is distilled to its basic intelligence
+
+00:17:31.996 --> 00:17:36.276
+and not allowed to use its own base training information.
+
+00:17:36.476 --> 00:17:41.876
+So we force the agent to use a calculator to answer any questions.
+
+00:17:41.876 --> 00:17:44.196
+That's quantitative, that uses statistics.
+
+00:17:45.116 --> 00:17:53.076
+We must answer from our tools that serve out master data
+from the employees, the payroll data from the employees.
+
+00:17:55.436 --> 00:18:00.836
+Now I'm going to show you through a demo
+how it works and how it serves our client.
+
+00:18:03.596 --> 00:18:06.836
+You know, we serve HR heads. They look at resignation rates.
+
+00:18:06.836 --> 00:18:08.916
+It's a thing of a calculation. You know,
+
+00:18:08.916 --> 00:18:11.316
+it's very hard to decide what is the best way
+
+00:18:11.316 --> 00:18:18.676
+and explain how to calculate without putting
+important time spent understanding the calculation.
+
+00:18:18.716 --> 00:18:21.396
+Now you can ask the agent how it's calculated.
+
+00:18:21.836 --> 00:18:27.316
+And you can also importantly serve out beyond text,
+beyond the figures of a fixed UI.
+
+00:18:28.036 --> 00:18:32.396
+Putting all these that the customer wants to redefine in data
+
+00:18:32.396 --> 00:18:38.916
+into files. PowerPoint. Excel word documents.
+
+00:18:39.716 --> 00:18:43.796
+These charts, designed to their liking
+are served into all these files.
+
+00:18:43.836 --> 00:18:45.076
+This is the next wave.
+
+00:18:47.036 --> 00:18:54.476
+Of course, we are looking at a human customer at this point
+where they prefer PPT, but most customers prefer data in Json.
+
+00:18:55.476 --> 00:18:59.036
+This also should give them the data they need.
+
+00:19:01.796 --> 00:19:10.116
+All in all, we are expecting that they can do their transformation
+of the raw data through language natural language.
+
+00:19:10.156 --> 00:19:18.076
+Talking to the AI, say for example, I want a different way
+to calculate and you give me a PPT based on this way of calculating,
+
+00:19:18.596 --> 00:19:24.836
+you know, headcount, sampling the data in different ways,
+in different frequency of time and getting the final outcome.
+
+00:19:25.916 --> 00:19:28.916
+Of course, context limit control is the important part.
+
+00:19:29.236 --> 00:19:31.196
+You need to make sure that different models,
+
+00:19:31.196 --> 00:19:39.356
+you understand how different models behave in different ways
+and sometimes recommend that the user scope down the request.
+
+00:19:39.396 --> 00:19:47.076
+Otherwise, you may not want the desired behavior of getting
+into mistakes as the context window balloons.
+
+00:19:50.236 --> 00:19:54.196
+All in all, technically speaking, we need a safe and stable base.
+
+00:19:54.716 --> 00:19:57.076
+A safe and stable base means you need to know.
+
+00:19:57.156 --> 00:19:59.916
+You need to visualize what is happening.
+
+00:19:59.916 --> 00:20:00.000
+That is correct. We need a regression test set.
+You can call it a golden test set.
+

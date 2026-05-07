@@ -1,0 +1,200 @@
+WEBVTT	#Elemental Media Engine(TM) 2.18.0.0
+X-TIMESTAMP-MAP=LOCAL:00:00:00.000,MPEGTS:187200
+
+00:05:00.000 --> 00:05:07.756
+Patching slows and vulnerabilities stay open longer, pulling
+developers into defensive work instead of building new value across.
+
+00:05:08.516 --> 00:05:11.116
+This was affecting our entire portfolio, and it was becoming
+
+00:05:11.116 --> 00:05:16.796
+unsustainable and a direct drag on what
+the team was trying to deliver.
+
+00:05:18.516 --> 00:05:23.636
+So that was the three challenges.
+Let me just go on to some of our roadmap.
+
+00:05:23.676 --> 00:05:30.116
+Right. So you'll notice that this is actually
+broken up into two streams across the bottom.
+
+00:05:30.116 --> 00:05:34.116
+You have our efforts for Java and net conversion.
+
+00:05:34.436 --> 00:05:39.476
+And across the top you actually have new
+capabilities that we're looking to deliver.
+
+00:05:40.036 --> 00:05:43.676
+Now I've been leading any IT organization for a little while.
+
+00:05:44.036 --> 00:05:52.676
+And traditionally before AI coding, you would have said, maybe
+we will tackle one of these, do the legacy conversion at the bottom,
+
+00:05:52.676 --> 00:05:55.596
+perhaps maybe one key product at the top.
+
+00:05:56.076 --> 00:05:58.396
+But what we're actually doing is, is,
+
+00:05:58.436 --> 00:06:02.676
+is transforming some of the legacy code stacks
+
+00:06:03.636 --> 00:06:08.556
+and delivering new capability to the institute at the very same time.
+
+00:06:09.276 --> 00:06:12.876
+Across the top, you'll see the intelligent launchpad, right?
+
+00:06:12.916 --> 00:06:14.876
+We delivered this for our students.
+
+00:06:14.876 --> 00:06:18.116
+This is capability that was delivered earlier this year.
+
+00:06:18.916 --> 00:06:22.436
+And then we're following that with a sister product for our staff.
+
+00:06:23.276 --> 00:06:28.476
+This provides capabilities for the staff
+to get access to the information that they need.
+
+00:06:28.476 --> 00:06:31.156
+We're currently building a new admissions portal.
+
+00:06:31.556 --> 00:06:39.836
+Okay. So this offers our students a faster turnaround time
+in terms of academic sorry, their admissions applications.
+
+00:06:40.916 --> 00:06:49.796
+And then eventually down the bottom there, as I said, that's going
+on at the same time that we're doing the net and Java conversion.
+
+00:06:49.796 --> 00:06:54.116
+And at the bottom, we're also looking
+at moving out of low code platforms.
+
+00:06:54.796 --> 00:06:59.796
+So all of this is made possible
+because of the advent of AI assisted coding,
+
+00:07:00.316 --> 00:07:04.796
+and obviously the capabilities and the tooling that AWS provides.
+
+00:07:05.476 --> 00:07:10.396
+So that gives you a little bit of an overview
+of our roadmap, who we are as an institute.
+
+00:07:10.396 --> 00:07:13.676
+I'm going to hand over to Benny to go into a little bit more detail.
+
+00:07:13.676 --> 00:07:14.796
+Thanks, Benny.
+
+00:07:23.996 --> 00:07:28.116
+Hi, everyone. My name is Benny Benny Lam from NIE.
+
+00:07:28.156 --> 00:07:31.396
+I lead the application development team in NIE.
+
+00:07:31.756 --> 00:07:37.596
+So okay, that was a very ambitious roadmap shown by Chris.
+
+00:07:37.636 --> 00:07:43.636
+We want to get rid of everything by
+2027. Last year, less than two years.
+
+00:07:43.676 --> 00:07:47.796
+Okay. So in a way we have to see what we are dealing with.
+
+00:07:47.956 --> 00:07:52.716
+Okay. So on the slide you can see are those technical debt.
+
+00:07:52.756 --> 00:07:58.076
+I would say if you are developer like me,
+you will know what exactly we are dealing with.
+
+00:07:58.436 --> 00:08:02.756
+Okay, so technical debt are things that that that really is legacy.
+
+00:08:03.196 --> 00:08:06.156
+So like the first one Java version eight.
+
+00:08:06.196 --> 00:08:10.956
+Last I checked, okay, the latest version is version 26. Okay.
+
+00:08:10.996 --> 00:08:14.716
+That's okay. I yeah, many, many versions behind.
+
+00:08:15.036 --> 00:08:20.196
+So some of these systems have been around for 20 years,
+so we need to get rid of them.
+
+00:08:20.196 --> 00:08:27.596
+And for Java is notoriously bad because every different layer you
+have things in the Tomcat, you have different things in the log.
+
+00:08:27.596 --> 00:08:30.996
+For J you have things in Apache, so everything needs patching.
+
+00:08:30.996 --> 00:08:40.396
+So we need to get rid of that. We have.net 4.74.7 is not
+your Dockerized version is the part where you need to deal
+
+00:08:40.396 --> 00:08:43.436
+with windows servers doing load balancing and all that.
+
+00:08:43.596 --> 00:08:52.316
+So we need to deal with that. Agility is a bit impaired
+by this because we can't until ATX got launched, right?
+
+00:08:52.556 --> 00:08:58.276
+AWS ATX we couldn't really Convert some of these to the net.
+
+00:08:58.276 --> 00:09:02.516
+10 or 11. Okay. Next. SharePoint. Okay.
+
+00:09:02.556 --> 00:09:08.356
+SharePoint on prem is a problem
+because the SharePoint designer doesn't work.
+
+00:09:08.396 --> 00:09:12.396
+Okay. I can't change the template.
+Some of you are laughing, so yeah, you can share.
+
+00:09:12.396 --> 00:09:18.636
+Share my pain. Okay. Last thing,
+maybe not so bad, but we got low code platform.
+
+00:09:18.996 --> 00:09:22.916
+So from low code you go to no code and now it's lots of code.
+
+00:09:23.356 --> 00:09:30.556
+Okay. So yeah, we we, we, I think we are thinking
+of how to get out of that because of cost optimization
+
+00:09:30.836 --> 00:09:37.756
+and to continue to improve our Agility with the latest tools from AWS.
+
+00:09:37.996 --> 00:09:38.396
+Okay.
+
+00:09:39.796 --> 00:09:43.556
+Okay. Next slide. Talks about our AIDLC.
+
+00:09:43.836 --> 00:09:46.396
+AIDLC was mentioned many, many times today.
+
+00:09:47.156 --> 00:09:53.156
+Okay. So last I checked, AIDLC was terminology in 1970s.
+
+00:09:53.676 --> 00:09:59.156
+Okay, so AIDLC was last year July by AWS.
+
+00:09:59.516 --> 00:10:00.000
+Okay. So we needed something to translate software
+using AI because AI does things at a different speed now.
+

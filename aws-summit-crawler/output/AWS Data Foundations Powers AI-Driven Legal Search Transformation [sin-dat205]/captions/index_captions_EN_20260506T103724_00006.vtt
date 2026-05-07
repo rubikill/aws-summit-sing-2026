@@ -1,0 +1,200 @@
+WEBVTT	#Elemental Media Engine(TM) 2.18.0.0
+X-TIMESTAMP-MAP=LOCAL:00:00:00.000,MPEGTS:187200
+
+00:25:00.000 --> 00:25:04.756
+And what we build can be shared with other targeted users
+for testing and iteratively improved upon all.
+
+00:25:04.756 --> 00:25:07.076
+Within SageMaker Unified Studio,
+
+00:25:08.796 --> 00:25:12.116
+the capability to build and test agents is the bridge
+
+00:25:12.116 --> 00:25:20.156
+to our third phase the legal research agent.
+Let me quickly recap where we are.
+
+00:25:21.596 --> 00:25:29.156
+We have a production legal search on launch.com, a conversational
+Q&A over judgments and legislation with responsible usage controls.
+
+00:25:30.076 --> 00:25:35.396
+We then use data available from the usage of the system
+to see what areas could be improved upon.
+
+00:25:36.356 --> 00:25:44.556
+This involves analyzing the top areas of law, intents of legal
+research, and experimenting on knowledge bases as inputs to an agent.
+
+00:25:44.716 --> 00:25:49.516
+And we were convinced and have enough evidence
+to back building a system that conducts legal research
+
+00:25:49.516 --> 00:25:55.116
+the way a junior lawyer would searching,
+reading, summarizing and synthesizing across multiple sources.
+
+00:25:55.716 --> 00:25:59.156
+Which brings us from legal search to legal research.
+
+00:25:59.636 --> 00:26:02.156
+And in the form of a legal research agent.
+
+00:26:07.116 --> 00:26:11.556
+This legal research agent is a conversational
+AI system powered by Agentic AI.
+
+00:26:11.716 --> 00:26:13.916
+And this is where everything comes together.
+
+00:26:15.236 --> 00:26:18.436
+The key innovation is that it doesn't reinvent the wheel.
+
+00:26:18.436 --> 00:26:21.476
+Instead, it orchestrates existing products.
+
+00:26:21.916 --> 00:26:24.316
+The legal search that Alvaro talked about earlier,
+
+00:26:24.316 --> 00:26:29.396
+our summarization service and our legal
+principle extraction tool all as agent tools.
+
+00:26:30.556 --> 00:26:36.756
+The agent decides which tools to use and in what order based
+on the user's research question.
+
+00:26:37.076 --> 00:26:45.956
+For example, a lawyer might ask, find me recent cases on breach
+of fiduciary duty in the context of company directors
+
+00:26:45.956 --> 00:26:53.476
+and summarize the key principles the agent would first search
+for relevant cases, summarize each one,
+
+00:26:53.996 --> 00:26:57.516
+then extract and synthesize the legal principles across all of them.
+
+00:26:59.156 --> 00:27:03.396
+Lawnet has built a proof of concept and is currently
+reviewing evaluation frameworks
+
+00:27:03.396 --> 00:27:06.836
+and agent workflows before opening it up for business user testing.
+
+00:27:08.316 --> 00:27:10.236
+The value proposition is composable.
+
+00:27:10.236 --> 00:27:17.916
+AI. Build each capability once, test it thoroughly,
+and then reuse it as a tool in an agent framework.
+
+00:27:18.036 --> 00:27:21.836
+This dramatically accelerates development and ensures quality.
+
+00:27:25.396 --> 00:27:27.916
+Here's what the research agent looks like in practice.
+
+00:27:27.916 --> 00:27:30.636
+The agent introduces itself and explains what it can do.
+
+00:27:30.636 --> 00:27:35.676
+Search cases within a repository generate clear headnotes,
+summarizing the key legal principles,
+
+00:27:35.676 --> 00:27:39.156
+and help lawyers focus on analysis rather than manual review.
+
+00:27:39.156 --> 00:27:43.676
+Earlier, you saw the quick action buttons at the bottom.
+Q and A search and summarization,
+
+00:27:43.676 --> 00:27:47.036
+which lets users invoke specific tools directly if they want to.
+
+00:27:47.876 --> 00:27:54.916
+But the real power is in the free form conversation, where
+the agent autonomously decides which tools to use and in what order.
+
+00:27:56.276 --> 00:27:59.076
+The design philosophy is to augment, not to replace.
+
+00:27:59.116 --> 00:28:02.236
+We want lawyers spending their time on legal reasoning and strategy,
+
+00:28:02.236 --> 00:28:06.476
+not on the mechanical work of finding
+and reading through tons of documents.
+
+00:28:11.116 --> 00:28:15.036
+Let me walk you through the technical
+architecture of the research agent.
+
+00:28:15.836 --> 00:28:18.636
+On the left, we have the client a react application.
+
+00:28:19.596 --> 00:28:25.276
+This communicates with Amazon API gateway,
+which handles authentication via Amazon Cognito.
+
+00:28:25.676 --> 00:28:31.956
+We use server sent events streaming so that the user
+can see the agent's thinking and responses in real time.
+
+00:28:33.876 --> 00:28:40.076
+The API gateway connects to the AgentCore runtime,
+which hosts our agent backed by Amazon Bedrock.
+
+00:28:40.116 --> 00:28:46.676
+This is the brain. It interprets the user's requests
+plans which tools to use and orchestrates the workflow.
+
+00:28:48.956 --> 00:28:53.756
+The agent communicates with the AgentCore gateway,
+which hosts our MCP server.
+
+00:28:53.756 --> 00:28:56.716
+The MCP server handles tool search and tool routing.
+
+00:28:56.716 --> 00:29:00.236
+It knows which tools are available and how to invoke them.
+
+00:29:03.076 --> 00:29:08.876
+Each tool is implemented as a Lambda function behind the gateway,
+and when the agent decides to perform a search,
+
+00:29:08.876 --> 00:29:11.596
+the Lambda invokes our existing search workflow.
+
+00:29:11.636 --> 00:29:16.236
+The same query preprocessing,
+enhanced search, and inference pipeline we showed earlier.
+
+00:29:17.356 --> 00:29:19.196
+There are two things I want to highlight.
+
+00:29:19.196 --> 00:29:25.516
+First, in the middle of the screen filter injection,
+we inject user specific filters at the gateway level,
+
+00:29:25.516 --> 00:29:29.356
+so access controls are enforced regardless of what the agent requests.
+
+00:29:30.476 --> 00:29:33.996
+Second, the reuse of existing infrastructure.
+
+00:29:34.036 --> 00:29:42.276
+The search workflow the agent uses is the exact same one that powers
+the production search on lawnet.com. We didn't rebuild anything,
+
+00:29:42.516 --> 00:29:44.796
+we just made it accessible as a tool.
+
+00:29:51.956 --> 00:29:55.556
+Looking ahead, there are four key initiatives on our roadmap.
+
+00:29:55.556 --> 00:30:00.000
+First, a search relevance workbench,
+a systematic framework for evaluating and tuning search relevance.
+

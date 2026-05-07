@@ -1,0 +1,213 @@
+WEBVTT	#Elemental Media Engine(TM) 2.18.0.0
+X-TIMESTAMP-MAP=LOCAL:00:00:00.000,MPEGTS:187200
+
+00:25:00.000 --> 00:25:00.756
+So you can review this. So I'll say looks good.
+
+00:25:00.756 --> 00:25:07.396
+Proceed. And what happens is that AWS Transform
+custom will make all the necessary changes to my code files.
+
+00:25:07.556 --> 00:25:11.796
+So for example, it's going to convert
+my configuration key to Java 21 record.
+
+00:25:12.236 --> 00:25:16.836
+And it will also do validation to make
+sure all of the exit criteria are met.
+
+00:25:16.996 --> 00:25:20.476
+So it gives you a summary of all the changes that have been made.
+
+00:25:22.276 --> 00:25:28.356
+All right. So now we've seen how you can perform
+version upgrades and modernizations with AWS Transform custom.
+
+00:25:28.716 --> 00:25:34.916
+But how do you scale? Right. So after creating a custom
+transformation and applying it to one particular project,
+
+00:25:34.916 --> 00:25:39.556
+how then do you apply that transformation
+to multiple thousands of different projects?
+
+00:25:39.556 --> 00:25:45.516
+Now, since AWS Transform custom is a command line interface based,
+you can wrap it up in a batch script,
+
+00:25:45.516 --> 00:25:51.396
+and all you need is a shell to run transformations
+in batch mode and scale it across your enterprise.
+
+00:25:51.396 --> 00:25:52.876
+So let's see this in action.
+
+00:25:54.396 --> 00:25:58.196
+Over here I have a batch script that's called Batch Launcher.
+
+00:25:58.196 --> 00:26:03.236
+It's a wrapper around AWS Transform
+custom to execute transformations in parallel.
+
+00:26:04.236 --> 00:26:10.276
+So if you take a look at the script, it takes
+in a CSV file as input that contains information about my repository.
+
+00:26:10.676 --> 00:26:18.636
+And I've also configured options such as the number of maximum
+parallel jobs, the output directory, the build commands,
+
+00:26:18.676 --> 00:26:25.356
+so on and so forth. And the next thing I'm going to do is I'll open up
+my CSV file so that you can take a look
+
+00:26:25.396 --> 00:26:32.756
+and you'll see that it consists a bunch of GitHub repositories
+and things like the repository path build command transformation,
+
+00:26:32.756 --> 00:26:36.356
+name validation commands, as well as additional plan contexts.
+
+00:26:37.076 --> 00:26:45.036
+I'll then run open up my run Gradle upgrade script that will run
+my batch launcher script, and it's taking in my CSV file as input,
+
+00:26:45.356 --> 00:26:49.876
+I will specify a maximum number of ten
+transformation jobs to run in parallel.
+
+00:26:50.516 --> 00:26:53.596
+And what I'll do next is I'll run that Gradle upgrade script.
+
+00:26:53.836 --> 00:27:00.916
+And what happens is that there will be ten transformation jobs
+running at the same time all through AWS Transform Customer AI.
+
+00:27:00.916 --> 00:27:03.956
+It will then generate a summary of all the transformations.
+
+00:27:04.196 --> 00:27:10.156
+And similar to the first demo, it's actually using out
+of the box transformation definition that AWS provided.
+
+00:27:10.156 --> 00:27:14.556
+So if you look over here, you will see the summary
+as well as the detailed results.
+
+00:27:17.156 --> 00:27:22.996
+All right. So now we've seen how you can perform out of the box
+transformations, create your own custom transformations.
+
+00:27:22.996 --> 00:27:28.596
+And we have also seen how you can scale these transformations
+all through AWS Transform custom.
+
+00:27:29.596 --> 00:27:31.236
+Now let's talk about the last part.
+
+00:27:31.236 --> 00:27:36.276
+Continual learning. How does
+AWS Transform custom agent become smarter over time?
+
+00:27:36.636 --> 00:27:42.236
+So for this particular demo, I'll show you how you
+can capture knowledge items, list them, review them,
+
+00:27:42.676 --> 00:27:48.396
+and enable them for future runs so that your AWS Transform
+custom agent can become smarter over time.
+
+00:27:51.036 --> 00:27:55.916
+All right, so for this demo, I'll be using
+the same demo environment as the previous ones.
+
+00:27:56.196 --> 00:28:03.636
+And what I'll do is I'll run ATX dev exec to execute
+the Java version upgrade for multiple different projects.
+
+00:28:05.236 --> 00:28:08.956
+And now you can also assume that all
+these transformations have been completed.
+
+00:28:08.956 --> 00:28:12.356
+And the next thing I'll do is I'll run ATX custom dev list key.
+
+00:28:12.716 --> 00:28:19.396
+So key stands for Knowledge Items. To list all of the knowledge
+items that were captured during agent execution.
+
+00:28:19.396 --> 00:28:25.596
+So some of these knowledge items could actually improve
+your future code transformations across your organizations.
+
+00:28:25.596 --> 00:28:31.196
+So if you look over here, for example,
+SolarWinds API should use a specific query path.
+
+00:28:31.236 --> 00:28:35.156
+Gradle shadow plugin outputs should output
+the artifacts to a specific path.
+
+00:28:35.156 --> 00:28:42.236
+So on and so forth. And what I'm going to do next is I'm going
+to pick up some of this generic knowledge items and I'll enable it.
+
+00:28:42.236 --> 00:28:46.516
+Right? So what this means is that the next time I run
+AWS Transform custom agent,
+
+00:28:46.756 --> 00:28:50.676
+this knowledge items will become part
+of the transformations knowledge base.
+
+00:28:50.676 --> 00:28:57.796
+And this makes your future transformations more accurate
+and aligned to your organization's specific rules and standards.
+
+00:29:01.116 --> 00:29:06.396
+All right, so to wrap this up, let me just
+highlight a key features of AWS Transform custom.
+
+00:29:06.796 --> 00:29:09.476
+So firstly, continual learning capability.
+
+00:29:09.716 --> 00:29:15.116
+AWS Transform custom automatically captures
+and applies both explicit developer feedback
+
+00:29:15.276 --> 00:29:19.356
+and implicit feedback through agent
+execution to become smarter over time.
+
+00:29:20.036 --> 00:29:23.356
+Secondly, guided transformation definition creation.
+
+00:29:23.516 --> 00:29:26.996
+When you're creating your transformation
+definition for the first time,
+
+00:29:26.996 --> 00:29:31.876
+AWS Transform custom uses built
+in feedback loops to detect missing contexts.
+
+00:29:32.036 --> 00:29:38.716
+If there's any ambiguity, it proactively prompts you for additional
+instructions so that your definitions are complete.
+
+00:29:39.436 --> 00:29:42.836
+Thirdly, the concept of learn once transform everywhere.
+
+00:29:43.396 --> 00:29:48.596
+Your developers shouldn't be spending duplicative
+efforts building the same transformation definitions over
+
+00:29:48.596 --> 00:29:51.636
+and over again with AWS Transform customers.
+
+00:29:51.756 --> 00:29:57.436
+You create your transformation definition once vetted once,
+and publish it to your internal registry,
+
+00:29:57.596 --> 00:30:00.000
+making it available across your entire organization instantly.
+

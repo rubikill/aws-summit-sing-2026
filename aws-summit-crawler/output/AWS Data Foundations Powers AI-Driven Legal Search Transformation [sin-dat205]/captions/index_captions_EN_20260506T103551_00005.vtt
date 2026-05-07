@@ -1,0 +1,210 @@
+WEBVTT	#Elemental Media Engine(TM) 2.18.0.0
+X-TIMESTAMP-MAP=LOCAL:00:00:00.000,MPEGTS:187200
+
+00:20:00.000 --> 00:20:02.836
+we can answer questions like how many clicks did
+it take to get the answer based on each intent?
+
+00:20:03.836 --> 00:20:08.436
+What are the trending areas of law in questions
+asked by users in the past three months?
+
+00:20:13.116 --> 00:20:18.276
+Once we prepared and validated our data,
+the next step is to publish it as data assets in the catalog.
+
+00:20:18.276 --> 00:20:20.476
+Publishing does three important things.
+
+00:20:20.716 --> 00:20:24.636
+First, it makes the data discoverable so that other teams can find it.
+
+00:20:24.636 --> 00:20:31.636
+Second, it provides business metadata, descriptions, tags,
+and contacts that help people understand what the data represents.
+
+00:20:31.636 --> 00:20:39.276
+Third includes data quality and data lineage information so consumers
+know whether it meets quality standards, how fresh the data is,
+
+00:20:39.316 --> 00:20:45.516
+and where it came from. In our case,
+we publish query history and market segment data as data assets.
+
+00:20:46.116 --> 00:20:48.356
+This means the product team, the legal content team,
+
+00:20:48.356 --> 00:20:55.996
+and the AI team can all access the same governance data to make
+decisions without duplicating data or creating shadow copies.
+
+00:20:57.516 --> 00:21:02.396
+We can provide a meaningful name for the data
+set that enables others to infer what it contains,
+
+00:21:02.996 --> 00:21:05.796
+and we can also generate business metadata using AI.
+
+00:21:07.076 --> 00:21:12.836
+The information provided should help to answer three
+fundamental questions that every data consumer has.
+
+00:21:14.236 --> 00:21:18.236
+What data is available? Do I need this data set?
+
+00:21:18.636 --> 00:21:21.436
+And if so, which parts do I need?
+
+00:21:25.196 --> 00:21:28.436
+On the consumer side, the experience is equally streamlined.
+
+00:21:28.596 --> 00:21:32.676
+Here, a data analyst from the product team searches
+for available data sets in the catalog related
+
+00:21:32.676 --> 00:21:37.716
+to query history reviews the business and technical metadata,
+including business descriptions, data quality,
+
+00:21:37.716 --> 00:21:41.116
+and lineage to assess whether the data meets their needs.
+
+00:21:42.516 --> 00:21:46.156
+So he then subscribes to the data set
+through a streamlined approval process,
+
+00:21:46.156 --> 00:21:53.116
+providing justification for accessing the data and indicating
+that he only needs data on searches related to criminal law.
+
+00:21:54.276 --> 00:21:59.436
+The data steward from the marketing team then
+can approve the access to either the full data set
+
+00:21:59.436 --> 00:22:02.796
+or a specific subset restricted by columns or by value in a row.
+
+00:22:03.236 --> 00:22:09.596
+As only data related to criminal law was requested,
+he creates a row filter for areas of law related to criminal law,
+
+00:22:09.596 --> 00:22:12.196
+for which there are five categories in the data set.
+
+00:22:13.396 --> 00:22:17.396
+This gives users fine grained access
+control without creating bottlenecks.
+
+00:22:17.396 --> 00:22:23.116
+The data steward then proceeds to approve access
+to that subset of data requested by the team using that filter.
+
+00:22:23.716 --> 00:22:30.316
+This publish subscribe model is what turns a collection of data
+into a true data mesh, where data is treated as a product.
+
+00:22:30.316 --> 00:22:35.316
+The product team then receives a notification that the subscription
+was approved, and sees the filter conditions applied
+
+00:22:35.316 --> 00:22:42.476
+for the row values, and upon querying the data,
+he will only see data for those five categories in the data set.
+
+00:22:43.996 --> 00:22:49.956
+With this subscription approved, that filtered data on query
+history is now available to members of that project,
+
+00:22:49.956 --> 00:22:53.996
+whether they are data engineers,
+data scientists, or business analysts.
+
+00:22:54.676 --> 00:23:00.636
+Let's next take a look at some features of SageMaker
+studio that cater to these different groups of users.
+
+00:23:04.116 --> 00:23:07.396
+For the High court work done by data engineers and data scientists,
+
+00:23:07.396 --> 00:23:12.116
+SageMaker studio provides Jupyter notebooks
+with full support for Popular data frameworks.
+
+00:23:12.956 --> 00:23:18.396
+What makes this particularly powerful is the built
+in data agent and TIM Reddit plugins for some.
+
+00:23:18.436 --> 00:23:22.796
+For example, you can right click on a data set and ask
+to load the data into a pandas data frame.
+
+00:23:22.796 --> 00:23:25.196
+It will generate the code which can run.
+
+00:23:25.196 --> 00:23:28.476
+As the data engineer or scientist from the product team writes code.
+
+00:23:28.476 --> 00:23:31.836
+The data agent suggests code completions, troubleshoots errors,
+
+00:23:31.836 --> 00:23:36.396
+and even generates entire analysis scripts
+from natural language descriptions like right now,
+
+00:23:36.396 --> 00:23:41.796
+where the member generates visualizations on the top areas of law,
+and top query intents on the data set.
+
+00:23:42.596 --> 00:23:49.676
+SageMaker studio is also integrated with Amazon Quick, so from
+the data set, a data analyst can opt to visualize the data in quick,
+
+00:23:49.676 --> 00:23:53.196
+where they can create visuals and dashboards using natural language
+
+00:23:53.196 --> 00:23:57.596
+and topics to enable quick
+to provide answers to natural language questions.
+
+00:23:57.596 --> 00:24:01.316
+These dashboards can be shared with business users or management,
+
+00:24:01.516 --> 00:24:06.396
+who can then ask questions on the data and be presented
+with clear visuals of the results.
+
+00:24:06.596 --> 00:24:08.796
+That answers the question succinctly
+
+00:24:08.796 --> 00:24:18.196
+and precisely. Here is where we bridge our data.
+
+00:24:18.196 --> 00:24:25.836
+Foundation work with the Agentic AI future SageMaker Unified Studio
+also includes a chat playground and knowledge based capabilities.
+
+00:24:26.036 --> 00:24:34.196
+We use these to rapidly prototype and test AI tools things like
+summarization, legal principle extraction, and question answering.
+
+00:24:35.156 --> 00:24:38.236
+The critical concept here is composability.
+
+00:24:38.596 --> 00:24:43.996
+Each tool we develop and test in the playground
+can be exposed as an MPP server endpoint,
+
+00:24:43.996 --> 00:24:47.876
+which means it becomes a tool that an AI agent can invoke.
+
+00:24:49.116 --> 00:24:51.196
+We're not building monolithic AI systems.
+
+00:24:51.196 --> 00:24:57.836
+We're building a library of specialized, reusable AI
+capabilities that can be composed into more complex workflows.
+
+00:24:58.196 --> 00:25:00.000
+And what we build can be shared with other targeted users
+for testing and iteratively improved upon all.
+

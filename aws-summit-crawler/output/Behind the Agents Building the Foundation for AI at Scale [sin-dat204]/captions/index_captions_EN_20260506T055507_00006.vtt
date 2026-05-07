@@ -1,0 +1,187 @@
+WEBVTT	#Elemental Media Engine(TM) 2.18.0.0
+X-TIMESTAMP-MAP=LOCAL:00:00:00.000,MPEGTS:187200
+
+00:25:00.000 --> 00:25:01.356
+They see all the applications. They can search for.
+
+00:25:01.356 --> 00:25:08.436
+An application insights lab is our workbench of sorts,
+where every user can actually play around and create their own agents.
+
+00:25:08.716 --> 00:25:12.796
+You can set the temperature for the model.
+You can select the model itself.
+
+00:25:14.916 --> 00:25:21.596
+You can select the NCP servers, change the order, select the tools
+within the NCP servers that you want to use for your agent.
+
+00:25:23.116 --> 00:25:25.556
+You can set your own user rules. Change your language.
+
+00:25:25.556 --> 00:25:29.996
+For instance, you can set your own
+context by applying like uploading files.
+
+00:25:30.236 --> 00:25:33.476
+Or you can set your own system prompt
+and this is only applicable for you.
+
+00:25:33.476 --> 00:25:35.236
+Or you could go to a specialized agent.
+
+00:25:35.236 --> 00:25:41.916
+And in this case, which is your Indonesia cities specialist,
+where the admin has already locked down the configurations,
+
+00:25:41.916 --> 00:25:44.436
+the model, the M.c.p.s. The system prompts.
+
+00:25:44.676 --> 00:25:50.236
+All of that is already locked down. I can view it, but I can't
+change it. So everybody in Indonesia gets to see the same answers.
+
+00:25:51.476 --> 00:25:55.076
+Lastly, we have a front end UI here for analytics,
+which is a funnel analysis tool,
+
+00:25:55.076 --> 00:25:58.476
+custom UI built by somebody an analyst just hosted on bricks.
+
+00:26:00.116 --> 00:26:06.996
+Let's see how it works. So you ask a question. Give me transport
+rates for 2025. It would go and try to find the best table possible.
+
+00:26:06.996 --> 00:26:11.076
+Remember certification. It finds a table
+which is certified confirms it is.
+
+00:26:11.076 --> 00:26:12.996
+Then it goes through creates the plan.
+
+00:26:13.276 --> 00:26:16.396
+Asks the user for a confirmation whether or not this is what you want.
+
+00:26:16.396 --> 00:26:22.596
+Once you say yes, it would go in, run a Presto query
+and provide the results that the user was asking for.
+
+00:26:23.316 --> 00:26:24.276
+As easy as that.
+
+00:26:28.356 --> 00:26:32.476
+Not only that, you can actually share
+these results or this entire chat with somebody.
+
+00:26:32.476 --> 00:26:35.636
+The user can then who you shared it with, open it up, view it,
+
+00:26:35.636 --> 00:26:40.676
+or can clone it into their own conversation
+history and continue the chat where you left it at.
+
+00:26:43.476 --> 00:26:45.396
+Briefly going over the back end architecture here.
+
+00:26:45.396 --> 00:26:51.236
+So the user logs into the front end, which is the Next.js front end,
+selects the brick that they want to play around with.
+
+00:26:51.236 --> 00:26:54.916
+All the configurations kick in from our back end,
+which is the fast API back end.
+
+00:26:54.916 --> 00:27:00.716
+The requests are then sent to LangGraph, which goes
+to the respective bricks and then connects to the NCP servers.
+
+00:27:00.716 --> 00:27:05.916
+Sends the response back all the way
+to fast API back to Next.js for the user to then consume.
+
+00:27:07.916 --> 00:27:14.556
+And we're seeing the results. Tasks which used to take 2
+to 15 days are down to roughly one hour, sometimes even minutes.
+
+00:27:16.156 --> 00:27:18.716
+Are there any learnings? Absolutely.
+
+00:27:18.716 --> 00:27:19.676
+There are.
+
+00:27:20.636 --> 00:27:24.996
+So in our experience, focused use cases work better with agents.
+
+00:27:24.996 --> 00:27:27.276
+You have the power of creating as many of them.
+
+00:27:27.276 --> 00:27:30.796
+So the more focused it is, the chances are it will work better.
+
+00:27:30.796 --> 00:27:35.436
+Second is adoption does take time, so don't wait for perfection.
+
+00:27:35.596 --> 00:27:39.676
+Build, ship, iterate, build, ship, iterate,
+and just improve over time.
+
+00:27:40.396 --> 00:27:45.036
+And lastly, do build out evals because
+then only then you can rest easy with that.
+
+00:27:45.036 --> 00:27:47.996
+Your consumers are using whatever they should be consuming.
+
+00:27:48.996 --> 00:27:54.836
+Also, be prepared for some chaos. Your agents will go haywire
+at times. Things will not work as expected.
+
+00:27:55.676 --> 00:27:56.396
+Deal with it.
+
+00:27:57.716 --> 00:28:00.596
+You will eventually get out of the valley of despair.
+
+00:28:00.996 --> 00:28:06.716
+Apply your learnings over time and gain the performance
+that you desire out of your agents.
+
+00:28:08.996 --> 00:28:10.956
+Thanks. So with this, I'll pass it back to Jan.
+
+00:28:10.956 --> 00:28:13.316
+Thanks for listening in to close out the session.
+
+00:28:15.636 --> 00:28:21.916
+Thank you sne. Always cool to see the innovative
+work that the grabbers are doing.
+
+00:28:22.556 --> 00:28:25.996
+Just want to quickly wrap up just some key takeaways.
+
+00:28:26.676 --> 00:28:34.156
+Your data foundation is absolutely critical
+for you to be successful with adopting or implementing AI agents.
+
+00:28:34.196 --> 00:28:37.156
+As mentioned, build out your evals first.
+
+00:28:37.156 --> 00:28:42.156
+So as you iterate over your use cases,
+you're taking a data driven approach.
+
+00:28:42.556 --> 00:28:47.796
+And lastly, you've seen the build out
+of different platforms within Grab over time.
+
+00:28:47.796 --> 00:28:54.316
+This allowed them to accelerate and adopt and implement
+AI agents in a safe and scalable manner.
+
+00:28:54.676 --> 00:29:01.756
+So for those watching online, thank you very much
+for watching and for folks here, please share with us.
+
+00:29:01.756 --> 00:29:06.116
+Your feedback helps us improve the sessions in the future. Thank you.
+

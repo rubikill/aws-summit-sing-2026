@@ -1,0 +1,189 @@
+WEBVTT	#Elemental Media Engine(TM) 2.18.0.0
+X-TIMESTAMP-MAP=LOCAL:00:00:00.000,MPEGTS:187200
+
+00:15:00.356 --> 00:15:07.156
+a minimum viable product that we have launched
+in 2024. Since then, because it is a product, right?
+
+00:15:07.356 --> 00:15:10.476
+Naturally, it cannot be a one and done build and forget.
+
+00:15:11.116 --> 00:15:18.156
+There's always a continuous development journey to continuously
+upgrade the product with the latest capability.
+
+00:15:19.636 --> 00:15:26.436
+So what you see right now, right, is the solution
+that we have implemented, which is a multimodal AI platform.
+
+00:15:26.436 --> 00:15:34.236
+Why I emphasize on multimodal because in this day and age,
+deepfakes misinformation content are highly curated.
+
+00:15:34.436 --> 00:15:38.036
+It is not about synthetically generating just a piece of video.
+
+00:15:38.356 --> 00:15:47.156
+You will need a skill, or you will need additional techniques
+to manipulate the facial features to do a sync with the audio,
+
+00:15:47.436 --> 00:15:55.636
+so on and so forth. So that's why multimodal is essential,
+is essential for us to tackle the the issue of misinformation.
+
+00:15:56.236 --> 00:16:03.916
+So when we started out planning for the product,
+right from the get go, we decided that it has to be cloud native,
+
+00:16:03.956 --> 00:16:08.876
+it has to be on the cloud because a lot
+of this content is circulating online.
+
+00:16:09.836 --> 00:16:14.076
+So how so how we even decided to be on the cloud, right?
+
+00:16:14.116 --> 00:16:18.036
+It's an evolution of our partnership with AWS.
+
+00:16:18.796 --> 00:16:22.556
+S3 engineering in itself is a solution is a systems integrator.
+
+00:16:22.756 --> 00:16:31.196
+We implement platforms and solutions
+on AWS for our customers in the public sector and commercial sector.
+
+00:16:31.356 --> 00:16:36.916
+So naturally, to extend our partnership,
+we also build our applications on top of it.
+
+00:16:36.916 --> 00:16:45.316
+So we will leverage on the scalable cloud infrastructure that AWS has,
+has and also put in the best in class models.
+
+00:16:45.316 --> 00:16:49.636
+The best in class models doesn't
+come necessarily from the team itself.
+
+00:16:49.636 --> 00:16:53.196
+We also do work with institutions, research institutions,
+
+00:16:53.196 --> 00:16:58.756
+as well as partners all over the world to develop
+the best possible models to come on board our platform.
+
+00:16:58.756 --> 00:17:03.836
+More importantly, this implementing AI
+solutions is about governance and safety also.
+
+00:17:03.836 --> 00:17:08.036
+So we also put in a lot of emphasis
+on deploying it in a responsible manner.
+
+00:17:09.516 --> 00:17:13.116
+So being a techie, right, I'm very big on technology stack.
+
+00:17:13.396 --> 00:17:19.476
+So this is really a multi-layered view of how
+we actually implement the actual trust software from
+
+00:17:19.476 --> 00:17:22.156
+infrastructure to intelligence end to end.
+
+00:17:22.156 --> 00:17:26.076
+So right at the top is the application as you trust in itself.
+
+00:17:26.436 --> 00:17:30.156
+So underpinning this application is a process.
+
+00:17:30.436 --> 00:17:36.756
+We have a DevOps process to continuously build,
+test and ship software modules rapidly,
+
+00:17:36.996 --> 00:17:42.396
+and to be able to monitor the performance
+of these models and the application in real time.
+
+00:17:43.836 --> 00:17:46.036
+Then the other aspect is on data fabric.
+
+00:17:46.236 --> 00:17:50.876
+We collect data from multiple sources uploaded by the users.
+
+00:17:51.116 --> 00:18:00.116
+So it can be multimodal. It could be images, static images,
+videos, unstructured text or news articles that needs to be verified.
+
+00:18:00.236 --> 00:18:08.596
+So we actually leverage on multiple data sources and data
+database backends to collect and process this information.
+
+00:18:09.196 --> 00:18:13.156
+And last but not least will be about the intelligence layer.
+
+00:18:13.316 --> 00:18:18.476
+So we leverage on AWS native services
+to quickly build and iterate models.
+
+00:18:18.476 --> 00:18:22.476
+But more importantly are the three
+icons that you see in the white box.
+
+00:18:22.636 --> 00:18:31.116
+These are the custom models that we have built to address different
+challenges that we see looking at deepfakes and misinformation,
+
+00:18:32.236 --> 00:18:34.756
+more importantly, because it is on the cloud.
+
+00:18:34.796 --> 00:18:36.556
+It can be accessible on the internet.
+
+00:18:36.556 --> 00:18:43.316
+We also spend a lot of effort trying
+to put in a multi-layered security to secure our application.
+
+00:18:44.596 --> 00:18:49.196
+So last I look, we actually have more
+than 44 integrations with AWS native services.
+
+00:18:49.196 --> 00:18:57.236
+It's a complex applications, but being able to leverage on these
+native services has also reduced our integration manpower effort,
+
+00:18:57.596 --> 00:19:04.036
+where we can spend less on trying
+to integrate components and more time to customize our models.
+
+00:19:06.516 --> 00:19:12.596
+So I want to highlight to the team here or to the audience
+here a bit more about what we have actually in the back end,
+
+00:19:12.596 --> 00:19:15.676
+which is a AI testbed for rapid iteration.
+
+00:19:15.676 --> 00:19:17.916
+This is done entirely on SageMaker.
+
+00:19:17.956 --> 00:19:26.756
+This is particularly important to us because on a day to day basis,
+we evaluate a lot of models every month, new models come out.
+
+00:19:26.796 --> 00:19:29.876
+We were onboard to the platform and evaluate them.
+
+00:19:29.876 --> 00:19:38.196
+So starting from first the storage
+backbone it is about model equals data plus code.
+
+00:19:39.036 --> 00:19:44.596
+We store model artifacts as well
+as the training data all in one place on S3 buckets.
+
+00:19:45.316 --> 00:19:53.276
+We then put them into a notebook environment
+to be able to run continuously benchmarks
+
+00:19:53.476 --> 00:20:00.000
+and evaluation tests to compare it against existing models,
+and also new ones that we are interested to onboard.
+

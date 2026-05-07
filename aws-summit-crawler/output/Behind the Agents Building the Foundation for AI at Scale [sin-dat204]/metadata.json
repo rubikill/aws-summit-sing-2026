@@ -1,0 +1,35 @@
+{
+  "sessionEventId": "sin-dat204",
+  "eventtitle": "Behind the Agents: Building the Foundation for AI at Scale",
+  "description": "This session explores Grab’s evolving data journey on AWS and the architecture behind its next-generation data and AI platform. Learn how Grab built a unified, governed enterprise data foundation using AWS-native services to support cross-functional reporting, simplify data management across systems, and power internally developed analytics and AI applications. Grab’s Head of Analytics will share key architectural decisions and lessons learned in building a scalable platform that enables real-time insights and supports innovation across the organization.",
+  "customCategory": "AWS Summit Singapore - Harnessing AI through Data Foundations",
+  "eventdate": "6 May 2026",
+  "eventtime": "11:30 AM - 12:01 PM",
+  "eventStart": "2026-05-06T11:30+08:00",
+  "eventEnd": "2026-05-06T12:01+08:00",
+  "filterTags": "Industry:Automotive,Industry:Retail & Consumer Goods,Industry:Travel & Hospitality,Level:200 - Intermediate,Location:Singapore,Topic:Analytics,Topic:Artificial Intelligence",
+  "image": "https://d1o4t9h6a8fm0w.cloudfront.net/media/aws-summitsapj26/assets/images/DB 200.png",
+  "speakers": [
+    {
+      "title": "Principal Solutions Architect, AWS",
+      "name": "Jan Michael Go Tan",
+      "portraitUrl": "https://d1o4t9h6a8fm0w.cloudfront.net/media/aws-summitsapj26/assets/images/Speaker Bio Gradient (v70).png",
+      "bio": ""
+    },
+    {
+      "title": "Head of Analytics - Data Architecture and EDW, Grab",
+      "name": "Sneh Agrawal",
+      "portraitUrl": "https://d1o4t9h6a8fm0w.cloudfront.net/media/aws-summitsapj26/assets/images/Speaker Bio Gradient (v70).png",
+      "bio": ""
+    }
+  ],
+  "vod_m3u8_url": "https://dz2ooo85w8eqv.cloudfront.net/aws-summitsgp26/outputs/sin-dat204/hls/v2/index.m3u8",
+  "caption_urls": [
+    "https://dz2ooo85w8eqv.cloudfront.net/aws-summitsgp26/outputs/sin-dat204/hls/v2/index_captions_EN_20260506T054937_00001.vtt",
+    "https://dz2ooo85w8eqv.cloudfront.net/aws-summitsgp26/outputs/sin-dat204/hls/v2/index_captions_EN_20260506T055049_00002.vtt",
+    "https://dz2ooo85w8eqv.cloudfront.net/aws-summitsgp26/outputs/sin-dat204/hls/v2/index_captions_EN_20260506T055155_00003.vtt",
+    "https://dz2ooo85w8eqv.cloudfront.net/aws-summitsgp26/outputs/sin-dat204/hls/v2/index_captions_EN_20260506T055301_00004.vtt",
+    "https://dz2ooo85w8eqv.cloudfront.net/aws-summitsgp26/outputs/sin-dat204/hls/v2/index_captions_EN_20260506T055405_00005.vtt",
+    "https://dz2ooo85w8eqv.cloudfront.net/aws-summitsgp26/outputs/sin-dat204/hls/v2/index_captions_EN_20260506T055507_00006.vtt"
+  ]
+}

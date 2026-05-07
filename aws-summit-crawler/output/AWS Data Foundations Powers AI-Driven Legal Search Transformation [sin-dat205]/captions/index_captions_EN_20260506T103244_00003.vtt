@@ -1,0 +1,195 @@
+WEBVTT	#Elemental Media Engine(TM) 2.18.0.0
+X-TIMESTAMP-MAP=LOCAL:00:00:00.000,MPEGTS:187200
+
+00:10:00.000 --> 00:10:00.916
+Let me go deeper on the surface layer,
+because this is where a lot of the magic happens.
+
+00:10:00.916 --> 00:10:06.916
+We maintain two OpenSearch indexes,
+one for full text search and one for vector search.
+
+00:10:07.556 --> 00:10:15.836
+The vector index uses our GPT legal embedding model, which we fine
+tuned specifically on Singapore judgments and legislation.
+
+00:10:16.396 --> 00:10:21.156
+This is important because general purpose
+embeddings don't capture legal nuance well.
+
+00:10:21.636 --> 00:10:25.636
+Terms like consideration or relief have very specific meaning in law.
+
+00:10:27.036 --> 00:10:32.516
+Our research combines both approaches with a 6040
+weighting between vector and full text.
+
+00:10:33.716 --> 00:10:40.476
+Why? Because semantic search is great for understanding intent,
+but in law, extract terminology matters.
+
+00:10:40.836 --> 00:10:45.396
+If a lawyer searches for a specific section
+of the penal code, you need exact matching.
+
+00:10:46.036 --> 00:10:48.836
+The hybrid approach gives us the best of both worlds.
+
+00:10:50.276 --> 00:10:52.676
+On top of that, we have a custom reranker.
+
+00:10:53.636 --> 00:10:56.476
+This goes beyond basic, relevant scoring.
+
+00:10:57.236 --> 00:11:04.876
+It's a covert based model that fuses multiple signals,
+reflecting how legal professionals actually assess relevance.
+
+00:11:07.676 --> 00:11:15.076
+Now, this slide is arguably the most important one for our use case
+in legal AI responsible AI isn't a nice to have feature.
+
+00:11:15.316 --> 00:11:20.916
+It is a hard requirement. We use
+Amazon Bedrock Guardrails with two key metrics.
+
+00:11:21.436 --> 00:11:26.836
+First answer relevancy that the generated
+answer actually address what the user asks,
+
+00:11:28.116 --> 00:11:32.876
+and second, grounding is the answer
+supported by the retrieved source document.
+
+00:11:34.036 --> 00:11:40.236
+Why this matters so much? Because legal
+professionals need verifiable, citation backed answers,
+
+00:11:40.916 --> 00:11:46.356
+and hallucinated case reference could lead a lawyer
+to cite a nonexistent precedent in court.
+
+00:11:47.196 --> 00:11:50.156
+So hallucinations are simply unacceptable in this domain.
+
+00:11:51.196 --> 00:11:56.396
+Our implementation integrates
+Bedrock Guardrails directly into the generation pipeline.
+
+00:11:57.036 --> 00:12:02.516
+Every answer is scored, and only answers
+that pass our threshold are presented to the user.
+
+00:12:03.276 --> 00:12:06.476
+If the system isn't confident enough, it tells the user.
+
+00:12:06.516 --> 00:12:09.716
+Rather than guessing this, I don't know.
+
+00:12:09.716 --> 00:12:14.836
+Capability has been actually one of the biggest
+trust builders with our legal community.
+
+00:12:17.316 --> 00:12:21.356
+So now we have a production system that lawyers are using every day.
+
+00:12:22.116 --> 00:12:23.916
+And that raises a natural question.
+
+00:12:24.676 --> 00:12:31.156
+What if we could find and analyze data on how
+the solution is being used and delight our users with new features?
+
+00:12:31.156 --> 00:12:38.796
+This is a transition from building AI products to building data
+driven AI products, and that requires a proper data foundation.
+
+00:12:39.596 --> 00:12:46.116
+I'll now hand over the time to Farid to talk about how
+we use analytics services on AWS to improve our product.
+
+00:12:46.956 --> 00:12:47.436
+Thanks.
+
+00:12:53.636 --> 00:12:54.636
+Thank you Alvaro.
+
+00:12:58.636 --> 00:13:06.196
+So like any well designed product, the legal search solution that
+Alvaro just went through on Lawnet collects usage information such
+
+00:13:06.196 --> 00:13:12.036
+as queries submitted and interactions
+information which lets us know how it is being used.
+
+00:13:13.196 --> 00:13:17.156
+This presents an opportunity to discover where we can do better.
+
+00:13:17.836 --> 00:13:25.476
+We built a data foundation using SageMaker Unified Studio
+to measure the quality of this data, run analytics on it,
+
+00:13:25.476 --> 00:13:26.876
+and iterate on the product.
+
+00:13:30.276 --> 00:13:34.076
+Success in any AI project depends
+on getting the data foundation right.
+
+00:13:34.236 --> 00:13:38.556
+So allow me now to quickly walk you through
+Data Foundation for AI on AWS.
+
+00:13:39.956 --> 00:13:43.476
+At the base, we have Amazon S3 as our data substrate.
+
+00:13:44.116 --> 00:13:48.396
+S3 stores all types of data.
+Unstructured objects like legal documents,
+
+00:13:48.676 --> 00:13:54.036
+structured tabular data from our analytics
+vector data for AI and metadata.
+
+00:13:54.316 --> 00:13:58.076
+S3 is the gravity well that everything flows into.
+
+00:13:59.476 --> 00:14:05.356
+Above that is the processing layer with four pillars
+analytics services like glue, redshift, and Athena.
+
+00:14:05.356 --> 00:14:12.396
+For batch and interactive queries, OLTP databases like Aurora,
+DynamoDB, and ElastiCache for operational data,
+
+00:14:12.956 --> 00:14:19.956
+SageMaker AI for machine learning workloads and streaming
+services like Kafka, Flink, and Kinesis for real time data.
+
+00:14:21.396 --> 00:14:24.876
+Then we have the catalog layer. This is the connective tissue.
+
+00:14:25.356 --> 00:14:34.956
+It provides catalog semantics and memory, so every data
+set is discoverable, has business context, and maintains lineage.
+
+00:14:36.076 --> 00:14:39.116
+At the top are the data producers and consumers.
+
+00:14:39.116 --> 00:14:45.316
+Our applications Bedrock for generative AI,
+QuickSight for visualisation, SageMaker for ML and MCP,
+
+00:14:45.316 --> 00:14:47.556
+and other services for agent tooling.
+
+00:14:48.836 --> 00:14:55.116
+This foundation serves both humans and AI agents
+the same governance catalog data that a data analyst
+
+00:14:55.156 --> 00:14:59.276
+queries is the data that an AI agent uses to make decisions.
+
+00:14:59.276 --> 00:15:00.000
+That's what makes this a true foundation for both humans and AI.
+

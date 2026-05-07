@@ -1,0 +1,25 @@
+2026-05-07 23:36:07,986 INFO Singapore sessions to process: 1
+2026-05-07 23:36:07,986 INFO [1/1] Behind the Agents: Building the Foundation for AI at Scale (sin-dat204)
+2026-05-07 23:36:09,002 INFO Running ffmpeg for https://dz2ooo85w8eqv.cloudfront.net/aws-summitsgp26/outputs/sin-dat204/hls/v2/index.m3u8 -> /Users/toan/workspace/ama/aws-summit-sing-2026/aws-summit-crawler/output/Behind the Agents Building the Foundation for AI at Scale [sin-dat204]/video.mp4
+2026-05-07 23:47:21,967 INFO Done.
+2026-05-07 23:48:01,133 INFO Singapore sessions to process: 13
+2026-05-07 23:48:01,134 INFO [1/13] Build and scale AI: from reliable agents to transformative systems (sin-aim201)
+2026-05-07 23:48:02,283 INFO Running ffmpeg for https://dz2ooo85w8eqv.cloudfront.net/aws-summitsgp26/outputs/sin-aim201/hls/v2/index.m3u8 -> /Users/toan/workspace/ama/aws-summit-sing-2026/aws-summit-crawler/output/Build and scale AI from reliable agents to transformative systems [sin-aim201]/video.mp4
+2026-05-07 23:53:33,672 INFO Singapore sessions to process: 13
+2026-05-07 23:53:33,675 INFO [1/13] Build and scale AI: from reliable agents to transformative systems (sin-aim201)
+2026-05-07 23:53:34,662 INFO Skipping complete session folder: Build and scale AI from reliable agents to transformative systems [sin-aim201]
+2026-05-07 23:53:36,164 INFO [2/13] A Practitioner’s Guide to Data for Agentic AI (sin-ant301)
+2026-05-07 23:53:40,383 INFO [3/13] Behind the Agents: Building the Foundation for AI at Scale (sin-dat204)
+2026-05-07 23:53:40,747 INFO Skipping complete session folder: Behind the Agents Building the Foundation for AI at Scale [sin-dat204]
+2026-05-07 23:53:42,252 INFO [4/13] Breaking the legacy barrier: How AI is revolutionizing modernization (sin-aim202)
+2026-05-07 23:53:45,590 INFO [5/13] Building autonomous AI at scale with Amazon Bedrock (sin-aim302)
+2026-05-07 23:53:50,242 INFO [6/13] Countering Deepfakes with ST Engineering’s AI Forensics Platform (sin-dat202)
+2026-05-07 23:53:54,595 INFO [7/13] AI-Driven Development Lifecycle with Kiro Agentic IDE (sin-aim205)
+2026-05-07 23:53:58,005 INFO [8/13] Automate any business process using Amazon Quick  (sin-aim303)
+2026-05-07 23:54:02,154 INFO [9/13] AgentCore Best Practices: Learnings from KAI, Keppel’s AI Platform (sin-dat302)
+2026-05-07 23:54:05,361 INFO [10/13] From demo to deployment: solving agentic AI's toughest challenges (sin-aim204)
+2026-05-07 23:54:09,182 INFO [11/13] Legacy to Intelligence: Popular's GenBI Journey on AWS (sin-dat203)
+2026-05-07 23:54:13,501 INFO [12/13] AWS Data Foundations Powers AI-Driven Legal Search Transformation (sin-dat205)
+2026-05-07 23:54:20,722 INFO [13/13] Keynote (sin-key001)
+2026-05-07 23:54:25,518 INFO Done.
+2026-05-07 23:55:05,191 WARNING ffmpeg failed (ffmpeg failed (-9): ), retrying in 2.0s (attempt 1/3)

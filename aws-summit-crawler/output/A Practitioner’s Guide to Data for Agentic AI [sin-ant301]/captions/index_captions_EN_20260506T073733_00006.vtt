@@ -1,0 +1,141 @@
+WEBVTT	#Elemental Media Engine(TM) 2.18.0.0
+X-TIMESTAMP-MAP=LOCAL:00:00:00.000,MPEGTS:187200
+
+00:25:00.000 --> 00:25:00.756
+those things are different and they require
+different NCP server, different memory state,
+
+00:25:01.116 --> 00:25:03.876
+long term memory, short term memory.
+
+00:25:03.916 --> 00:25:07.676
+Those agents have its own memories to access.
+
+00:25:12.516 --> 00:25:14.316
+And finally, finally trust.
+
+00:25:15.436 --> 00:25:21.316
+We don't want. We cannot afford
+to return incorrect data to our customers.
+
+00:25:21.836 --> 00:25:29.676
+We cannot allow the chatbot to be hijacked
+and do things which it never was designed to do.
+
+00:25:30.156 --> 00:25:36.316
+So even though adding Guardrails adds some latency
+
+00:25:36.436 --> 00:25:44.436
+because if you want to validate the inputs and outputs,
+that's of course going to add latency.
+
+00:25:45.556 --> 00:25:47.676
+But we cannot afford not doing that.
+
+00:25:47.676 --> 00:25:51.596
+And this is not a checkbox for us. It's just a requirement.
+
+00:25:52.356 --> 00:25:57.756
+Coming back to the trust that we want
+to build into the data we're serving to our consumers.
+
+00:25:59.476 --> 00:26:07.556
+And yes, ultimately IT consumer is going to get
+it and be able to make a decision moving forward.
+
+00:26:10.156 --> 00:26:13.716
+Now doesn't look very complex, right?
+
+00:26:14.236 --> 00:26:17.836
+It's very easy to show something like this.
+
+00:26:18.276 --> 00:26:26.436
+But my big question to our team and to every one
+of you is how do we test not deterministic system?
+
+00:26:27.356 --> 00:26:32.716
+We cannot eyeball things. There are too many different
+queries. We cannot eyeball the outcomes.
+
+00:26:33.276 --> 00:26:39.276
+There are too many responses, and they can vary based
+on the state of the listing and how many of them they are.
+
+00:26:39.796 --> 00:26:45.716
+And you cannot verify by just eyeballing
+and manually testing any changes to prompt,
+
+00:26:45.836 --> 00:26:50.956
+to data, to embeddings to model itself.
+
+00:26:50.996 --> 00:26:55.436
+Right? Because we want to have to be able to validate things.
+
+00:26:55.436 --> 00:27:04.396
+So we came up with this not revolutionary
+idea of creating a multiple inputs as tests
+
+00:27:04.396 --> 00:27:07.836
+and what we expect from the model to return to us.
+
+00:27:09.036 --> 00:27:15.676
+And we thought, yeah, like every reasonable team,
+we decided to fight fire with fire.
+
+00:27:15.716 --> 00:27:18.596
+Let's use LM to validate the LM.
+
+00:27:19.996 --> 00:27:24.836
+Luckily, last month, AWS released evals in AgentCore.
+
+00:27:24.876 --> 00:27:29.076
+That's definitely something
+to look at and it's potentially very helpful.
+
+00:27:29.076 --> 00:27:30.556
+So go and check it out.
+
+00:27:31.676 --> 00:27:38.636
+In our case, we are having this already in place
+
+00:27:39.316 --> 00:27:45.676
+and we have higher confidence that the quality is in place.
+
+00:27:45.676 --> 00:27:48.716
+If there is one thing I want you to remember from this,
+
+00:27:49.396 --> 00:27:57.836
+my presentation is your chatbot is only
+as good as your ability to measure it,
+
+00:27:59.836 --> 00:28:07.916
+and only then when you can easily and quickly
+validate your changes and how you design the Agent.
+
+00:28:08.156 --> 00:28:11.796
+Only then you can say your chatbot is trustworthy.
+
+00:28:11.836 --> 00:28:14.036
+Your Agentic AI is trustworthy.
+
+00:28:17.636 --> 00:28:21.556
+With that, I'm going to conclude and to repeat.
+
+00:28:21.556 --> 00:28:29.876
+Our team is working very hard to get this done properly and deliver it
+to our consumers in Singapore and other markets.
+
+00:28:30.476 --> 00:28:39.316
+I hope you're going to hear from us soon, but only
+after it goes through a scrutiny of the entire engineering team,
+
+00:28:39.436 --> 00:28:43.636
+entire PropertyGuru team. When we're ready, we're going to release it.
+
+00:28:44.316 --> 00:28:46.836
+Kudos to the team for getting all this done.
+
+00:28:46.876 --> 00:28:52.796
+Thank you for your attention and enjoy
+the rest of the summit. Back to you, Andrew. Oh.
+

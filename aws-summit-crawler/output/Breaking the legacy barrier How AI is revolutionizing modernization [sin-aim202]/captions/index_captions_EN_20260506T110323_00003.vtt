@@ -1,0 +1,190 @@
+WEBVTT	#Elemental Media Engine(TM) 2.18.0.0
+X-TIMESTAMP-MAP=LOCAL:00:00:00.000,MPEGTS:187200
+
+00:10:00.000 --> 00:10:07.356
+Okay. So we needed something to translate software
+using AI because AI does things at a different speed now.
+
+00:10:07.756 --> 00:10:10.916
+So we got to make it, make sure that it's done efficiently.
+
+00:10:10.916 --> 00:10:20.636
+So something like what AWS introduced
+at three phases inception, construction and operations.
+
+00:10:20.836 --> 00:10:28.556
+So inception in fact is the most heavy lifting and labor
+intensive we found after we went through one of these,
+
+00:10:28.596 --> 00:10:31.556
+we find that actually inception is really heavy lifting.
+
+00:10:31.796 --> 00:10:35.796
+The business really have to go into rooms and get locked up for weeks.
+
+00:10:35.796 --> 00:10:41.596
+Okay. So in fact, the focus is on turning abstract ideas
+into concrete technical specs.
+
+00:10:41.756 --> 00:10:46.436
+So the BPR part is the most intensive in this case.
+
+00:10:46.676 --> 00:10:54.076
+Well the second phase two construction
+in fact construction after you are really conversant with the tools,
+
+00:10:54.476 --> 00:10:58.156
+I think is probably the most easygoing one, you know?
+
+00:10:58.236 --> 00:11:01.236
+So basically where you generate artifacts and you generate code.
+
+00:11:01.236 --> 00:11:05.396
+So what we're trying to do here
+in phase two is to create a living system.
+
+00:11:05.956 --> 00:11:13.276
+Okay. So whereby users can see their system growing
+with the expectation growing with the specs.
+
+00:11:13.716 --> 00:11:18.556
+Yeah. So in fact, there's a, there's an iterative
+cadence between phase one and phase two.
+
+00:11:18.796 --> 00:11:28.516
+So in NIE, we do a phase one loop in phase two and back into phase
+one until the sprints are mature and we finally go into UAT.
+
+00:11:28.996 --> 00:11:32.796
+All right. So that's very, very high level of what we do.
+
+00:11:33.196 --> 00:11:35.796
+Okay. Then the phase three is talking about operations.
+
+00:11:35.796 --> 00:11:42.556
+Operations are automations. I would say validation maintenance.
+
+00:11:42.556 --> 00:11:50.396
+We try to standardize. And the important
+thing here is the IAC and your DevSecOps.
+
+00:11:50.876 --> 00:11:55.116
+Yeah. So I think that already mentioned a lot by AWS.
+
+00:11:55.676 --> 00:11:56.156
+Okay.
+
+00:11:57.236 --> 00:12:03.476
+Well, the key outcomes are this is the measure of success.
+
+00:12:03.476 --> 00:12:05.916
+So what does what what does good mean?
+
+00:12:06.316 --> 00:12:09.356
+You know, so we're trying to do three things.
+
+00:12:09.796 --> 00:12:15.316
+Accelerated transformation really is no longer converting the apps.
+
+00:12:15.556 --> 00:12:18.836
+We're thinking of making apps better with putting in AI.
+
+00:12:19.516 --> 00:12:22.556
+We're trying to make our users. Wow.
+
+00:12:22.596 --> 00:12:28.956
+Okay. So rethinking the BPR is really revamping
+
+00:12:28.956 --> 00:12:33.516
+and improving them to drive through process evolution.
+
+00:12:34.436 --> 00:12:38.476
+Okay. So in fact, now we're moving at unprecedented speed.
+
+00:12:39.916 --> 00:12:48.156
+I just got off a meeting and they say they don't envy my position
+because I have to, you know, get rid of all the apps and, you know,
+
+00:12:48.196 --> 00:12:54.476
+refresh all of them. So in fact,
+now releases are supposed to take days, intakes or weeks.
+
+00:12:54.956 --> 00:12:57.716
+So there's a long queue waiting for deployment.
+
+00:12:57.996 --> 00:13:05.796
+There are things waiting for security scan, etc. etc.,
+etc. so these are we have to think of ways to make to run them faster.
+
+00:13:06.556 --> 00:13:08.836
+Okay. Second point. There has to be cost savings.
+
+00:13:08.836 --> 00:13:11.876
+In fact, the cost saving is non-trivial.
+
+00:13:12.476 --> 00:13:19.916
+I would say that in fact users participation may be more intense,
+
+00:13:19.916 --> 00:13:24.156
+but in fact the coding went down by at least half that.
+
+00:13:24.156 --> 00:13:31.796
+That is true if you if things are really done using
+spec based programming and whatever it was mentioned today.
+
+00:13:32.956 --> 00:13:38.716
+So cost savings are substantial last to me as a software developer.
+
+00:13:38.876 --> 00:13:45.236
+Important thing is it has to be good performance and reliable.
+
+00:13:45.236 --> 00:13:53.956
+So in fact, when when we discover when we use AI to code,
+there's more consistency to what AI actually gives And performance,
+
+00:13:53.956 --> 00:13:56.756
+in fact become something of a directive.
+
+00:13:56.796 --> 00:14:01.516
+You can put it as a steering file
+thing and security can be shift left.
+
+00:14:01.556 --> 00:14:03.716
+You can put it into the steering file as well.
+
+00:14:03.716 --> 00:14:08.396
+So you find that there's massive gains
+in security and reliability in this case.
+
+00:14:09.116 --> 00:14:11.156
+Okay. Next we talk about the matrices.
+
+00:14:11.236 --> 00:14:15.316
+So matrices are longer term. Or how do we measure that.
+
+00:14:15.516 --> 00:14:20.996
+We continue our two year plan and keep us on course.
+
+00:14:21.996 --> 00:14:27.876
+First we want to make sure
+that we're 50% faster in future rolling out.
+
+00:14:28.236 --> 00:14:32.796
+So instead of weeks now we're talking about days in fact.
+
+00:14:34.236 --> 00:14:40.556
+Second, we want to revamp all the 30 plus apps.
+
+00:14:40.836 --> 00:14:43.196
+That's why my position not very enviable.
+
+00:14:43.356 --> 00:14:50.116
+Okay. Yeah. So but however, this is something we need to do
+because we want to move forward. We want to put in more AI.
+
+00:14:50.156 --> 00:14:53.876
+We want to give If our student. The best digital experience.
+
+00:14:54.716 --> 00:15:00.000
+Third, we felt we should have all applications be portable.
+

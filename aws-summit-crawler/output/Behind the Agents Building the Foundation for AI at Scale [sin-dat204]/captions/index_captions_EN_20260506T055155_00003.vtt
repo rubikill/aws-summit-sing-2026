@@ -1,0 +1,193 @@
+WEBVTT	#Elemental Media Engine(TM) 2.18.0.0
+X-TIMESTAMP-MAP=LOCAL:00:00:00.000,MPEGTS:187200
+
+00:10:00.000 --> 00:10:00.756
+or data storage system that supports that.
+
+00:10:00.756 --> 00:10:06.876
+So that's, you know, baked right in. So I
+mentioned earlier that, you know,
+
+00:10:06.916 --> 00:10:13.596
+AI agents introduce a level of unpredictability and spikiness
+in your foundational architecture.
+
+00:10:13.956 --> 00:10:16.236
+Now think about it a little bit deeper.
+
+00:10:16.236 --> 00:10:18.716
+So you have an AI agent underneath that.
+
+00:10:18.716 --> 00:10:23.396
+You might have M.c.p.s. You
+have tools integrating various internal systems.
+
+00:10:24.116 --> 00:10:29.836
+So those internal systems, they need to accommodate
+not just the load from the primary application,
+
+00:10:29.836 --> 00:10:33.356
+but they also need to accommodate the load coming from your AI agents.
+
+00:10:33.356 --> 00:10:39.236
+So this begs the question, how does your foundational
+infrastructure handle those additional load?
+
+00:10:39.756 --> 00:10:45.276
+So the QR code in the lower right
+hand corner takes you to a specific blog.
+
+00:10:46.076 --> 00:10:51.076
+It. Every year we publish a blog about Prime Day.
+
+00:10:51.796 --> 00:10:59.076
+Not so much as, you know, the sales on Prime Day,
+but the technical perspective of how Amazon handles Prime Day.
+
+00:10:59.956 --> 00:11:07.476
+So when you think about scalability,
+reliability, I see Prime Day as a way to battle test the services.
+
+00:11:07.956 --> 00:11:10.596
+So there's a few services that stood out for me.
+
+00:11:10.876 --> 00:11:14.076
+Number one SageMaker AI. During Prime Day,
+
+00:11:14.396 --> 00:11:21.476
+they process over 620 billion inference requests during that day.
+
+00:11:22.396 --> 00:11:29.556
+Amazon Aurora 500 billion transactions stored four petabytes of data
+
+00:11:30.116 --> 00:11:34.396
+and egress 999TB of data during Prime Day.
+
+00:11:35.316 --> 00:11:43.796
+DynamoDB provides single digit response time latencies,
+and at the height at the peak of Prime Day,
+
+00:11:44.396 --> 00:11:49.036
+151 511,000,000 requests per second.
+
+00:11:49.916 --> 00:11:52.436
+So these services are battle tested.
+
+00:11:52.996 --> 00:11:57.836
+And more importantly, if you look at like
+properties of DynamoDB, for example,
+
+00:11:58.916 --> 00:12:04.436
+they are serverless. So that means from, from, from an operational
+perspective, it's not something that you think about.
+
+00:12:04.436 --> 00:12:08.396
+You don't have to think about patching,
+maintenance or anything of that sort.
+
+00:12:08.396 --> 00:12:14.716
+Another example that I'd like to share is last
+year OpenSearch release GPU-acceleration.
+
+00:12:15.116 --> 00:12:21.236
+This allowed for folks that are building AI applications,
+you generally, as part of that development,
+
+00:12:21.236 --> 00:12:23.196
+you need some sort of vector database, right?
+
+00:12:23.196 --> 00:12:25.516
+So you need to build vector indexes.
+
+00:12:25.876 --> 00:12:33.116
+This GPU acceleration capability allows you to build
+vector databases up to ten times faster at a quarter of a cost.
+
+00:12:33.876 --> 00:12:41.196
+But that doesn't mean that I'm sitting here waiting,
+running a GPU instance, waiting for it to receive a build request.
+
+00:12:42.236 --> 00:12:44.236
+That configuration is a check box,
+
+00:12:45.276 --> 00:12:52.916
+And basically it you're only built when you're actually
+building a vector index and the GPU acceleration is running.
+
+00:12:53.236 --> 00:12:55.516
+So that is an example of price performance.
+
+00:12:55.516 --> 00:13:02.836
+And lastly, automated workflows allows you to offload a lot
+of the management overhead to AWS services like S3 tables,
+
+00:13:02.836 --> 00:13:05.996
+which provides a fully managed iceberg capability.
+
+00:13:05.996 --> 00:13:10.716
+And it does auto compaction, auto query optimizations, and so on.
+
+00:13:11.636 --> 00:13:20.516
+Redshift, for example, has Autonomics, which auto optimizes
+tables based on how you run queries in the data warehouse.
+
+00:13:22.356 --> 00:13:26.116
+The last pillar is governance and security.
+
+00:13:26.596 --> 00:13:31.796
+As you incorporate more of your data with your AI agents,
+data quality becomes much more important.
+
+00:13:31.796 --> 00:13:34.236
+So how do you measure the data quality?
+
+00:13:34.636 --> 00:13:41.076
+How do you define rules to ensure
+that the data quality requirements is being met?
+
+00:13:41.556 --> 00:13:43.956
+And lastly more importantly data lineage.
+
+00:13:43.956 --> 00:13:45.956
+So if you have any issues with your data quality,
+
+00:13:45.956 --> 00:13:50.236
+how you trace back from the data source up to where your data is
+
+00:13:50.516 --> 00:13:54.756
+and all the processing steps
+in between to identify where the gaps are.
+
+00:13:55.796 --> 00:14:03.996
+Access control is part of governance, row level, security, column
+level, security, table level, security all come in to the picture.
+
+00:14:04.636 --> 00:14:08.436
+Observability allows you to monitor the the performance of your models
+
+00:14:08.436 --> 00:14:12.596
+and your agents to ensure that they're doing
+what they're supposed to be doing the tools
+
+00:14:12.596 --> 00:14:15.276
+and be able to evaluate the performance of the LM.
+
+00:14:16.156 --> 00:14:22.396
+And lastly, we shouldn't forget this is not specific
+to data foundations, but across your AWS estate,
+
+00:14:23.116 --> 00:14:29.676
+IAM least privileged principles, encryption at rest, encryption
+in transit, as well as being able to audit your infrastructure,
+
+00:14:29.676 --> 00:14:33.796
+is a key pillar to ensure the security of your architecture.
+
+00:14:34.276 --> 00:14:43.076
+And with that, I'd like to pass over to Sneh for to dive deeper
+into the platforms that power grabs agents in production.
+
+00:14:55.196 --> 00:15:00.000
+Thanks, Jan. Hi everyone. My name is Ney and I lead the enterprise
+data warehouse and data architecture teams at Grab.
+

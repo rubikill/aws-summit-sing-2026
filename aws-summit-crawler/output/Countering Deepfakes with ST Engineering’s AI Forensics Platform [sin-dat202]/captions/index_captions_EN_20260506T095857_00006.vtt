@@ -1,0 +1,124 @@
+WEBVTT	#Elemental Media Engine(TM) 2.18.0.0
+X-TIMESTAMP-MAP=LOCAL:00:00:00.000,MPEGTS:187200
+
+00:25:00.876 --> 00:25:03.756
+We can also do that for videos as well.
+
+00:25:03.756 --> 00:25:09.316
+So for videos, it's a little bit more
+complex where we will transcribe speech
+
+00:25:09.316 --> 00:25:17.276
+to text we will identify pieces of information
+where we think it's interesting to do fact checking.
+
+00:25:17.356 --> 00:25:23.236
+We will also do a narrative assessment
+on the transcripts and also the verbal TIM
+
+00:25:23.276 --> 00:25:27.556
+or communications being said in the video.
+
+00:25:28.916 --> 00:25:32.636
+So the last scenario will be something a bit more localized.
+
+00:25:33.596 --> 00:25:38.036
+It's a it's a piece of misinformation content that we we see online.
+
+00:25:38.676 --> 00:25:46.396
+So in this, because there's a video and also audio,
+we can, we are able to do the assessments to say that it's a deepfake.
+
+00:25:46.916 --> 00:25:55.196
+But what is interesting on this particular
+content is it is seemingly pieces of AI generated content,
+
+00:25:55.196 --> 00:25:59.236
+and they stitch it into a video with with a voiceover.
+
+00:25:59.276 --> 00:26:02.756
+But of course, you can't hear the voice over the we in the back end.
+
+00:26:02.756 --> 00:26:05.436
+We actually synthesize it and generate the assessments.
+
+00:26:05.436 --> 00:26:11.836
+So this is the whole comprehensive analysis that the system
+can do apart from just telling you that it's a deepfake,
+
+00:26:11.836 --> 00:26:14.236
+it's not deepfake, it's a deepfake video is a deepfake audio.
+
+00:26:14.236 --> 00:26:17.076
+But we also focus a lot on the sentiments as well.
+
+00:26:17.596 --> 00:26:21.036
+And also the stance. What is the entity supporting?
+
+00:26:21.076 --> 00:26:22.956
+What is it? What is the entity supporting?
+
+00:26:22.956 --> 00:26:31.916
+What is the entity not supporting? So I hope this gives
+the audience here a quick overview of how the system will work.
+
+00:26:32.396 --> 00:26:36.116
+So I will let Dennis do the wrap up for our session.
+
+00:26:40.356 --> 00:26:44.156
+Hey, thanks for sharing his secret sauce to combating deepfakes.
+
+00:26:44.556 --> 00:26:48.916
+Yeah, we are now at an inflection
+point where AI is becoming a commodity.
+
+00:26:49.156 --> 00:26:52.236
+The same models and capabilities are available to everyone.
+
+00:26:52.476 --> 00:26:58.076
+Everyone has the same tools, but the real
+differentiator is how we actually make use of them.
+
+00:26:58.516 --> 00:27:00.356
+The key is to evolve, differentiate,
+
+00:27:00.356 --> 00:27:06.356
+and build mode for your business applications or products
+through custom models like what Bryan Ong has done here.
+
+00:27:06.756 --> 00:27:10.156
+The faster we iterate, the better our models get.
+
+00:27:11.116 --> 00:27:15.756
+So three key takeaways. I would like the audience
+to get away from our session here.
+
+00:27:15.996 --> 00:27:23.196
+Establish a clear Northstar. Understand and know what your success
+looks like at the start before you start building anything.
+
+00:27:24.436 --> 00:27:29.956
+Data foundation is key. Great data generates great models.
+
+00:27:30.196 --> 00:27:33.956
+Invest in quality and governance and accessibility from day one.
+
+00:27:35.716 --> 00:27:38.396
+Model customization is not a one off process.
+
+00:27:38.596 --> 00:27:42.596
+It's a continuous cycle of testing, learning, and refining.
+
+00:27:43.156 --> 00:27:45.596
+Iterate, iterate, and iterate.
+
+00:27:47.716 --> 00:27:51.116
+And with that, these are eight principles to just combating deepfakes,
+
+00:27:51.116 --> 00:27:57.796
+but hopefully a journey for you to actually apply when you embark
+on your journey to build a customized model.
+
+00:27:58.756 --> 00:28:00.276
+Thank you for watching online.
+

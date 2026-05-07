@@ -1,0 +1,216 @@
+WEBVTT	#Elemental Media Engine(TM) 2.18.0.0
+X-TIMESTAMP-MAP=LOCAL:00:00:00.000,MPEGTS:187200
+
+00:05:00.716 --> 00:05:05.036
+apply declaratively using AgentCore Policy. Many times the agent
+needs to take make some browser actions because the
+
+00:05:05.716 --> 00:05:08.916
+app it is trying to integrate with doesn’t have any API’s.
+
+00:05:09.156 --> 00:05:11.596
+So that is managed by AgentCore browser.
+
+00:05:12.236 --> 00:05:18.796
+Many times the agent needs to generate code because it needs
+to do some calculation, or it needs to do some data processing.
+
+00:05:19.316 --> 00:05:21.996
+So that is managed by AgentCore code interpreter.
+
+00:05:22.476 --> 00:05:29.396
+All of this needs to be observable which is provided by
+AgentCore Observability which is open telemetry compliant.
+
+00:05:30.196 --> 00:05:34.676
+When you have your agent running in production,
+it needs to be monitored in real time.
+
+00:05:34.676 --> 00:05:39.556
+So we have AgentCore Evaluations
+which which has 13 inbuilt evaluators.
+
+00:05:39.556 --> 00:05:45.276
+And you can create your custom ones as well so that when
+the agent deviates from the path, you get alerts.
+
+00:05:45.276 --> 00:05:48.556
+And lastly we have agent registry, which allows us to,
+
+00:05:50.196 --> 00:05:57.236
+you know, publish your agents and tools to the enterprise so
+that they are discoverable and then they are, you know, searchable.
+
+00:05:57.236 --> 00:05:59.156
+Now let's look at some best practices.
+
+00:05:59.876 --> 00:06:08.276
+The first best practice, which I'd like to mention, is that take
+a very conscious call that whether you even need an agent or not.
+
+00:06:08.796 --> 00:06:13.756
+Now, generative AI is a hype.
+And, you know, it's a, it's a, it's an in thing.
+
+00:06:13.796 --> 00:06:15.916
+A lot of people wants to use it. Right?
+
+00:06:15.956 --> 00:06:20.636
+So but for your specific scenario, it may not be the right answer.
+
+00:06:20.676 --> 00:06:22.836
+Generative AI is non-deterministic.
+
+00:06:23.196 --> 00:06:26.556
+The output is probabilistic. Hence it's not always the same.
+
+00:06:26.556 --> 00:06:31.756
+And if you need determinism, just plain old
+simple code may be faster, cheaper and better.
+
+00:06:32.156 --> 00:06:38.556
+Let's look at two scenarios. Suppose we are creating
+a travel agent and we have given it a bunch of tools.
+
+00:06:38.916 --> 00:06:41.276
+We have you know which it can search for flights.
+
+00:06:41.276 --> 00:06:45.516
+It can it can do booking management, it can do itinerary management.
+
+00:06:45.516 --> 00:06:52.036
+It can send out notifications. Now, which tools are used is based
+on the conversation you have with the agent.
+
+00:06:52.476 --> 00:06:54.796
+This has all those three traits we talked about.
+
+00:06:54.796 --> 00:06:57.276
+So it can be a viable Agentic application.
+
+00:06:57.596 --> 00:07:00.596
+Now let's look at another use case from the same domain.
+
+00:07:00.916 --> 00:07:06.796
+Few hours before the flight, the airline needs
+to auto check in passengers who have not checked in themselves.
+
+00:07:06.796 --> 00:07:12.956
+So again, a bunch of tools you have to retrieve all the bookings,
+validate if the data is complete,
+
+00:07:13.556 --> 00:07:18.716
+assign seats based on certain rules,
+and then send out notifications for seat allocations.
+
+00:07:19.036 --> 00:07:24.316
+Right. But the steps are always the same
+irrespective of which flight it is.
+
+00:07:24.596 --> 00:07:26.636
+Right? So there's not a lot of reasoning required.
+
+00:07:26.636 --> 00:07:34.236
+And hence in this scenario it can also be implemented
+using non Agentic methods or or just code based automation.
+
+00:07:34.836 --> 00:07:42.236
+So that's the first best practice.
+The second is it's also a big topic of debate
+
+00:07:42.236 --> 00:07:50.756
+in many teams is that should they use single agent or should they use
+multiple agents or how many tools they should use?
+
+00:07:50.996 --> 00:07:56.476
+Now there's no right answer in this,
+but this is a very good starting point, right?
+
+00:07:56.516 --> 00:08:05.756
+So if your agent has the steps which the agent
+has to take are singular activities, then those can be done by tools.
+
+00:08:06.036 --> 00:08:11.956
+But if the agent has to has to take steps which are high level steps,
+which can further be broken down into other steps,
+
+00:08:11.956 --> 00:08:15.676
+then you may have a case with for a, for a multi-agent scenario.
+
+00:08:15.836 --> 00:08:23.796
+But we should always keep in mind that the more agents we chain,
+the more react loops we embed, which Andrew talked about.
+
+00:08:24.476 --> 00:08:32.236
+That results in more tokens. It results in more latency,
+and it also results in more cost. And the same goes for tools.
+
+00:08:32.236 --> 00:08:36.756
+The more tools you give an agent,
+all that information becomes part of every prompt.
+
+00:08:37.156 --> 00:08:40.396
+Again, more tokens, more latency, and more cost.
+
+00:08:41.276 --> 00:08:44.276
+So let's look at two scenarios again.
+
+00:08:44.316 --> 00:08:47.956
+We just spoke about this very clear case. One agent multiple tools.
+
+00:08:49.916 --> 00:08:57.076
+Let's take a much more complicated example where the agent
+has to advise us whether we should invest in a target or not.
+
+00:08:57.156 --> 00:08:59.516
+So for this, this is a complicated problem.
+
+00:08:59.516 --> 00:09:02.636
+The agent has to research the target. That's a bunch of steps.
+
+00:09:02.636 --> 00:09:06.796
+It has to research, figure out the targets,
+peers and research those peers.
+
+00:09:06.796 --> 00:09:12.436
+That's another bunch of steps. It has to then research
+the industry to figure out the macroeconomic situations
+
+00:09:12.436 --> 00:09:16.236
+and how does it impact them. So that's also a separate bunch of steps.
+
+00:09:16.236 --> 00:09:18.716
+And then based on that, give a recommendation.
+
+00:09:18.716 --> 00:09:25.956
+This since it's a complicated problem with many unknowns,
+it can benefit from multi-agent scenarios.
+
+00:09:25.956 --> 00:09:30.956
+But again, you know, bottom line,
+choose the simplest approach which works works for you.
+
+00:09:32.076 --> 00:09:37.596
+The third is to create an enterprise
+wide registry for agents and tools.
+
+00:09:37.836 --> 00:09:40.836
+So take an example. Suppose you
+have an application enterprise application.
+
+00:09:40.836 --> 00:09:44.276
+A lot of companies have is like for example SAP or something else.
+
+00:09:44.276 --> 00:09:46.836
+And you have exposed that as an NCP server.
+
+00:09:46.996 --> 00:09:49.836
+Now it can be reused by multiple agents or applications,
+
+00:09:49.836 --> 00:09:54.716
+but for that it needs to be searchable and it needs
+to be discoverable, right?
+
+00:09:54.756 --> 00:10:00.000
+And AgentCore Gateway and Agent registry allows us to do just that.
+
